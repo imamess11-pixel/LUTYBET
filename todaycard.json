@@ -1,0 +1,25 @@
+[
+  {
+    "gameId": "2787e023f11e64827987a41be824a63b",
+    "away_team": "Detroit Tigers",
+    "home_team": "Tampa Bay Rays",
+    "commence_time": "06/01/2026 06:41 PM",
+    "status": "scheduled",
+    "favorite": "Tampa Bay Rays",
+    "favorite_odds": -154,
+    "underdog": "Detroit Tigers",
+    "underdog_odds": 143,
+    "moneyline": {
+      "Detroit Tigers": 143,
+      "Tampa Bay Rays": -154
+    },
+    "runline": {
+      "Detroit Tigers +1.5": -145,
+      "Tampa Bay Rays -1.5": 129
+    },
+    "totals": {
+      "Over 8": -103,
+      "Under 8": -105
+    }
+  }
+]
