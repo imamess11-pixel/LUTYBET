@@ -73,6 +73,20 @@ async function loadGames(){
 
     games.forEach(game => {
 
+       });
+
+  } catch(error){
+
+    document.getElementById("games").innerHTML =
+      "<h2>Error cargando partidos</h2>";
+
+    console.error(error);
+
+  }
+
+}
+
+
     container.innerHTML += `
 
       <div class="card">
@@ -136,15 +150,3 @@ setInterval(
 
 </body>
 </html>
- });
-
-  } catch(error){
-
-    document.getElementById("games").innerHTML =
-      "<h2>Error cargando partidos</h2>";
-
-    console.error(error);
-
-  }
-
-}
