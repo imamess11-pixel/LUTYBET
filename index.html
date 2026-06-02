@@ -56,24 +56,22 @@ h1{
 <div id="games"></div>
 
 <script>
-
-const API_URL =
-"https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnS8T3NT0rJkeLvRFgGt0C71IEYtKo4qiMnuBIhvyckRumUpiqAG30hj645U-ru7wOMsDzn4aiD5x1y7KlYSLhRwjJE0dj2-e3iQy5UsQkfXwhPlw52HTDrzHq9-C6Nbj_2p97KfJBZT1PZmnrHzHulg46XSVxK4JQnRHmIsb9p3dEWeDC6Viwaqvk0b2lX7bdSSwxD-Iev48LG4kuoFDGSNJFUuYFCgy0LROYdlS8pynQCwsHv5k7RCZpq2pulw1_fXXvzX&lib=Molzmz0bBFVZi3E8XANr4Smo1u7onuRDw";
+const API_URL = "./todaycard.json";
 
 async function loadGames(){
 
-  const response =
-    await fetch(API_URL);
+  try {
 
-  const games =
-    await response.json();
+    const response = await fetch(API_URL);
 
-  const container =
-    document.getElementById("games");
+    const games = await response.json();
 
-  container.innerHTML="";
+    const container =
+      document.getElementById("games");
 
-  games.forEach(game=>{
+    container.innerHTML = "";
+
+    games.forEach(game => {
 
     container.innerHTML += `
 
@@ -138,3 +136,15 @@ setInterval(
 
 </body>
 </html>
+ });
+
+  } catch(error){
+
+    document.getElementById("games").innerHTML =
+      "<h2>Error cargando partidos</h2>";
+
+    console.error(error);
+
+  }
+
+}
