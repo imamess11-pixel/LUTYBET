@@ -62,33 +62,68 @@ const API_URL =
 
 async function loadGames(){
 
-  try {
+  const response =
+    await fetch(API_URL);
 
-    document.getElementById("games").innerHTML =
-      "<h2>Conectando...</h2>";
+  const games =
+    await response.json();
 
-    const response = await fetch(API_URL);
+  const container =
+    document.getElementById("games");
 
-    document.getElementById("games").innerHTML =
-      "<h2>Respuesta recibida</h2>";
+  container.innerHTML="";
 
-    const games = await response.json();
+  games.forEach(game=>{
 
-    document.getElementById("games").innerHTML =
-      "<h2>Juegos: " + games.length + "</h2>";
+    container.innerHTML += `
 
-    console.log(games);
+      <div class="card">
 
-  } catch(error){
+        <h3>
+        ${game.away_team}
+        vs
+        ${game.home_team}
+        </h3>
 
-    console.error(error);
+        <div class="time">
+        ${game.commence_time}
+        </div>
 
-    document.getElementById("games").innerHTML =
-      "<h2>Error:</h2><pre>" +
-      error.message +
-      "</pre>";
+        <hr>
 
-  }
+        <div>
+
+          ${game.favorite}
+          <span class="favorite">
+          (${game.favorite_odds})
+          </span>
+
+        </div>
+
+        <div>
+
+          ${game.underdog}
+          (${game.underdog_odds})
+
+        </div>
+
+        <hr>
+
+        <div>
+
+          Total:
+
+          ${
+            Object.keys(game.totals)[0]
+          }
+
+        </div>
+
+      </div>
+
+    `;
+
+  });
 
 }
 
