@@ -100,14 +100,35 @@ async function loadGames(){
             (${game.underdog_odds})
           </div>
 
-          <hr>
+         <hr>
 
-          <div>
-            Total:
-            ${Object.keys(game.totals)[0]}
-          </div>
+<div>
+<b>Runline</b><br>
 
-        </div>
+${Object.keys(game.runline)[0]}
+ (${Object.values(game.runline)[0]})
+
+<br>
+
+${Object.keys(game.runline)[1]}
+ (${Object.values(game.runline)[1]})
+
+</div>
+
+<hr>
+
+<div>
+<b>Totals</b><br>
+
+${Object.keys(game.totals)[0]}
+ (${Object.values(game.totals)[0]})
+
+<br>
+
+${Object.keys(game.totals)[1]}
+ (${Object.values(game.totals)[1]})
+
+</div>
 
       `;
 
