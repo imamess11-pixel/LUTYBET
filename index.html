@@ -36,11 +36,12 @@ h1{
 
   background:#1b1b1b;
 
-}
 .market-title{
-  color:#7AB26C;
+  color:#f5b041;
   font-weight:bold;
   margin-top:10px;
+  margin-bottom:5px;
+  text-transform:uppercase;
 }
 .line{
   display:flex;
@@ -121,8 +122,8 @@ async function loadGames(){
 
         
 
+<div class="market-title">Runline</div>
 <div>
-<b>Runline</b><br>
 
 ${Object.keys(game.runline)[0]}
  (${Object.values(game.runline)[0]})
@@ -136,8 +137,8 @@ ${Object.keys(game.runline)[1]}
 
 
 
+<div class="market-title">Totals</div>
 <div>
-<b>Totals</b><br>
 
 ${Object.keys(game.totals)[0]}
  (${Object.values(game.totals)[0]})
