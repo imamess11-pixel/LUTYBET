@@ -63,7 +63,6 @@ async function loadGames(){
   try {
 
     const response = await fetch(API_URL);
-
     const games = await response.json();
 
     const container =
@@ -90,31 +89,22 @@ async function loadGames(){
           <hr>
 
           <div>
-
             ${game.favorite}
             <span class="favorite">
               (${game.favorite_odds})
             </span>
-
           </div>
 
           <div>
-
             ${game.underdog}
             (${game.underdog_odds})
-
           </div>
 
           <hr>
 
           <div>
-
             Total:
-
-            ${
-              Object.keys(game.totals)[0]
-            }
-
+            ${Object.keys(game.totals)[0]}
           </div>
 
         </div>
@@ -131,58 +121,6 @@ async function loadGames(){
     console.error(error);
 
   }
-
-}
-
-    container.innerHTML += `
-
-      <div class="card">
-
-        <h3>
-        ${game.away_team}
-        vs
-        ${game.home_team}
-        </h3>
-
-        <div class="time">
-        ${game.commence_time}
-        </div>
-
-        <hr>
-
-        <div>
-
-          ${game.favorite}
-          <span class="favorite">
-          (${game.favorite_odds})
-          </span>
-
-        </div>
-
-        <div>
-
-          ${game.underdog}
-          (${game.underdog_odds})
-
-        </div>
-
-        <hr>
-
-        <div>
-
-          Total:
-
-          ${
-            Object.keys(game.totals)[0]
-          }
-
-        </div>
-
-      </div>
-
-    `;
-
-  });
 
 }
 
