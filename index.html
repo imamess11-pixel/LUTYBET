@@ -43,6 +43,10 @@ h1{
   margin-bottom:5px;
   text-transform:uppercase;
 }
+ .steam{
+  color:#FFD700;
+  font-weight:bold;
+}
 .line{
   display:flex;
   justify-content:space-between;
@@ -90,71 +94,121 @@ async function loadGames(){
 
     container.innerHTML = "";
 
-    games.forEach(game => {
+   const movesResponse =
+  await fetch("./movements.json");
 
-      container.innerHTML += `
+const moves =
+  await movesResponse.json();
 
-        <div class="card">
+   games.forEach(game => {
 
-          <h3>
-            ${game.away_team}
-            vs
-            ${game.home_team}
-          </h3>
+  const gameMoves = moves.filter(
+    move => move.gameId === game.gameId
+  );
 
-          <div class="time">
-            ${game.commence_time}
-          </div>
+  let movementHtml = "";
 
-          <hr>
+  gameMoves.forEach(move => {
 
-          <div>
-            ${game.favorite}
-            <span class="favorite">
-              (${game.favorite_odds})
-            </span>
-          </div>
+    if(Math.abs(move.movement) >= 5){
 
-          <div>
-            ${game.underdog}
-            (${game.underdog_odds})
-          </div>
+      movementHtml += `
 
-        
+        <div>
 
-<div class="market-title">Runline</div>
-<div>
+          ${move.selection}
 
-${Object.keys(game.runline)[0]}
- (${Object.values(game.runline)[0]})
+          <br>
 
-<br>
+          ${move.old_odds}
+          →
+          ${move.new_odds}
 
-${Object.keys(game.runline)[1]}
- (${Object.values(game.runline)[1]})
-
-</div>
-
-
-
-<div class="market-title">Totals</div>
-<div>
-
-${Object.keys(game.totals)[0]}
- (${Object.values(game.totals)[0]})
-
-<br>
-
-${Object.keys(game.totals)[1]}
- (${Object.values(game.totals)[1]})
-
-</div>
-
-</div>
+        </div>
 
       `;
 
-    });
+    }
+
+  });
+
+  container.innerHTML += `
+
+    <div class="card">
+
+      <h3>
+        ${game.away_team}
+        vs
+        ${game.home_team}
+      </h3>
+
+      <div class="time">
+        ${game.commence_time}
+      </div>
+
+      <hr>
+
+      <div>
+        ${game.favorite}
+        <span class="favorite">
+          (${game.favorite_odds})
+        </span>
+      </div>
+
+      <div>
+        ${game.underdog}
+        (${game.underdog_odds})
+      </div>
+
+      <div class="market-title">
+        Runline
+      </div>
+
+      <div>
+
+        ${Object.keys(game.runline)[0]}
+        (${Object.values(game.runline)[0]})
+
+        <br>
+
+        ${Object.keys(game.runline)[1]}
+        (${Object.values(game.runline)[1]})
+
+      </div>
+
+      <div class="market-title">
+        Totals
+      </div>
+
+      <div>
+
+        ${Object.keys(game.totals)[0]}
+        (${Object.values(game.totals)[0]})
+
+        <br>
+
+        ${Object.keys(game.totals)[1]}
+        (${Object.values(game.totals)[1]})
+
+      </div>
+
+      ${movementHtml ? `
+
+        <div class="market-title steam">
+
+          🔥 Movimiento
+
+        </div>
+
+        ${movementHtml}
+
+      ` : ""}
+
+    </div>
+
+  `;
+
+});
 
   } catch(error){
 
