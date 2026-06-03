@@ -5,25 +5,23 @@
     "home_team": "Seattle Mariners",
     "commence_time": "06/03/2026 03:41 PM",
     "status": "scheduled",
-    "favorite": "Seattle Mariners",
-    "favorite_odds": -128,
-    "underdog": "New York Mets",
-    "underdog_odds": 205,
+    "favorite": "New York Mets",
+    "favorite_odds": -3333,
+    "underdog": "Seattle Mariners",
+    "underdog_odds": 1400,
     "moneyline": {
-      "New York Mets": 205,
-      "Seattle Mariners": -128
+      "New York Mets": -3333,
+      "Seattle Mariners": 1400
     },
     "runline": {
-      "New York Mets +1.5": -118,
-      "Seattle Mariners -1.5": 220,
-      "New York Mets -1.5": 192,
-      "Seattle Mariners +1.5": -260,
-      "New York Mets +1": -175,
-      "Seattle Mariners -1": 140
+      "New York Mets -4.5": -143,
+      "Seattle Mariners +4.5": 116,
+      "New York Mets -5": 112,
+      "Seattle Mariners +5": -150
     },
     "totals": {
-      "Over 6.5": -115,
-      "Under 6.5": 111
+      "Over 9.5": 100,
+      "Under 9.5": 102
     }
   },
   {
@@ -56,15 +54,15 @@
     "commence_time": "06/03/2026 06:46 PM",
     "status": "scheduled",
     "favorite": "Boston Red Sox",
-    "favorite_odds": -145,
+    "favorite_odds": -143,
     "underdog": "Baltimore Orioles",
-    "underdog_odds": 132,
+    "underdog_odds": 133,
     "moneyline": {
-      "Baltimore Orioles": 132,
-      "Boston Red Sox": -145
+      "Baltimore Orioles": 133,
+      "Boston Red Sox": -143
     },
     "runline": {
-      "Baltimore Orioles +1.5": -155,
+      "Baltimore Orioles +1.5": -152,
       "Boston Red Sox -1.5": 138
     },
     "totals": {
@@ -79,20 +77,20 @@
     "commence_time": "06/03/2026 07:06 PM",
     "status": "scheduled",
     "favorite": "New York Yankees",
-    "favorite_odds": -146,
+    "favorite_odds": -139,
     "underdog": "Cleveland Guardians",
-    "underdog_odds": 133,
+    "underdog_odds": 130,
     "moneyline": {
-      "Cleveland Guardians": 133,
-      "New York Yankees": -146
+      "Cleveland Guardians": 130,
+      "New York Yankees": -139
     },
     "runline": {
-      "Cleveland Guardians +1.5": -164,
-      "New York Yankees -1.5": 146
+      "Cleveland Guardians +1.5": -171,
+      "New York Yankees -1.5": 152
     },
     "totals": {
       "Over 7.5": 103,
-      "Under 7.5": -115
+      "Under 7.5": -118
     }
   },
   {
@@ -102,11 +100,11 @@
     "commence_time": "06/03/2026 07:11 PM",
     "status": "scheduled",
     "favorite": "Cincinnati Reds",
-    "favorite_odds": -151,
+    "favorite_odds": -150,
     "underdog": "Kansas City Royals",
     "underdog_odds": 138,
     "moneyline": {
-      "Cincinnati Reds": -151,
+      "Cincinnati Reds": -150,
       "Kansas City Royals": 138
     },
     "runline": {
@@ -125,20 +123,20 @@
     "commence_time": "06/03/2026 07:16 PM",
     "status": "scheduled",
     "favorite": "Atlanta Braves",
-    "favorite_odds": -143,
+    "favorite_odds": -139,
     "underdog": "Toronto Blue Jays",
-    "underdog_odds": 131,
+    "underdog_odds": 129,
     "moneyline": {
-      "Atlanta Braves": -143,
-      "Toronto Blue Jays": 131
+      "Atlanta Braves": -139,
+      "Toronto Blue Jays": 129
     },
     "runline": {
-      "Atlanta Braves -1.5": 150,
-      "Toronto Blue Jays +1.5": -160
+      "Atlanta Braves -1.5": 146,
+      "Toronto Blue Jays +1.5": -163
     },
     "totals": {
       "Over 8": -106,
-      "Under 8": -105
+      "Under 8": -103
     }
   },
   {
@@ -148,20 +146,20 @@
     "commence_time": "06/03/2026 07:41 PM",
     "status": "scheduled",
     "favorite": "Milwaukee Brewers",
-    "favorite_odds": -144,
+    "favorite_odds": -136,
     "underdog": "San Francisco Giants",
-    "underdog_odds": 131,
+    "underdog_odds": 123,
     "moneyline": {
-      "Milwaukee Brewers": -144,
-      "San Francisco Giants": 131
+      "Milwaukee Brewers": -136,
+      "San Francisco Giants": 123
     },
     "runline": {
-      "Milwaukee Brewers -1.5": 146,
-      "San Francisco Giants +1.5": -160
+      "Milwaukee Brewers -1.5": 152,
+      "San Francisco Giants +1.5": -165
     },
     "totals": {
-      "Over 8": -105,
-      "Under 8": -104
+      "Over 8": -108,
+      "Under 8": 100
     }
   },
   {
@@ -179,14 +177,14 @@
       "Texas Rangers": 102
     },
     "runline": {
-      "St. Louis Cardinals +1.5": -185,
-      "Texas Rangers -1.5": 170,
-      "St. Louis Cardinals -1.5": 185,
+      "St. Louis Cardinals +1.5": -182,
+      "Texas Rangers -1.5": 168,
+      "St. Louis Cardinals -1.5": 182,
       "Texas Rangers +1.5": -209
     },
     "totals": {
       "Over 7.5": 101,
-      "Under 7.5": 100
+      "Under 7.5": -106
     }
   },
   {
@@ -196,19 +194,19 @@
     "commence_time": "06/03/2026 08:06 PM",
     "status": "scheduled",
     "favorite": "Chicago Cubs",
-    "favorite_odds": -126,
+    "favorite_odds": -127,
     "underdog": "Athletics",
-    "underdog_odds": 117,
+    "underdog_odds": 116,
     "moneyline": {
-      "Athletics": 117,
-      "Chicago Cubs": -126
+      "Athletics": 116,
+      "Chicago Cubs": -127
     },
     "runline": {
       "Athletics +1.5": -175,
-      "Chicago Cubs -1.5": 160
+      "Chicago Cubs -1.5": 156
     },
     "totals": {
-      "Over 8.5": -103,
+      "Over 8.5": -105,
       "Under 8.5": 100
     }
   },
@@ -219,20 +217,20 @@
     "commence_time": "06/03/2026 08:11 PM",
     "status": "scheduled",
     "favorite": "Pittsburgh Pirates",
-    "favorite_odds": -142,
+    "favorite_odds": -138,
     "underdog": "Houston Astros",
-    "underdog_odds": 130,
+    "underdog_odds": 129,
     "moneyline": {
-      "Houston Astros": 130,
-      "Pittsburgh Pirates": -142
+      "Houston Astros": 129,
+      "Pittsburgh Pirates": -138
     },
     "runline": {
       "Houston Astros +1.5": -129,
-      "Pittsburgh Pirates -1.5": 118
+      "Pittsburgh Pirates -1.5": 120
     },
     "totals": {
       "Over 8": 101,
-      "Under 8": -101
+      "Under 8": 100
     }
   },
   {
@@ -274,11 +272,11 @@
     },
     "runline": {
       "Arizona Diamondbacks +1.5": 105,
-      "Los Angeles Dodgers -1.5": -116
+      "Los Angeles Dodgers -1.5": -119
     },
     "totals": {
-      "Over 8.5": -104,
-      "Under 8.5": -107
+      "Over 8.5": -102,
+      "Under 8.5": -110
     }
   }
 ]
