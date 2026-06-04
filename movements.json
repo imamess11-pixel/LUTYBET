@@ -1,91 +1,91 @@
 [
   [
     "gameId",
-    "mercado",
-    "selección",
-    "punto",
+    "market",
+    "selection",
+    "point",
     "old_odds",
-    "nuevas_probabilidades",
-    "movimiento",
-    "dirección",
-    "marca de tiempo"
+    "new_odds",
+    "movement",
+    "direction",
+    "timestamp"
   ],
   [
     "95952a4215c0c1d281c4dcbed7471d28",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Tampa Bay Rays",
     "",
     -147,
     -143,
     4,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "6493e9132fdd464eebd5031d8ad02c41",
-    "LÍNEA DE DINERO",
-    "Mets de Nueva York",
+    "MONEYLINE",
+    "New York Mets",
     "",
     -106,
     -107,
     -1,
     "↓",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "6493e9132fdd464eebd5031d8ad02c41",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     7.5,
     -112,
     -102,
     10,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "57848c1e5cf12fb46c9c6e5c89c1022e",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Texas Rangers",
     "",
     -114,
     -116,
     -2,
     "↓",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "274a30921628d47bff96d4b5f37f6a19",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8.5,
     -110,
     -102,
     8,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "2106f4fc8ef576eac2a39262d02f66e7",
-    "LÍNEA DE DINERO",
-    "Montañas Rocosas de Colorado",
+    "MONEYLINE",
+    "Colorado Rockies",
     "",
     132,
     135,
     3,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "2106f4fc8ef576eac2a39262d02f66e7",
-    "LÍNEA DE DINERO",
-    "Gigantes de San Francisco",
+    "MONEYLINE",
+    "San Francisco Giants",
     "",
     -146,
     -142,
     4,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "2106f4fc8ef576eac2a39262d02f66e7",
@@ -96,7 +96,7 @@
     -117,
     1,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "18e8a4acb1d40019544cfef0a5f07ef1",
@@ -107,18 +107,18 @@
     -185,
     4,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "0efc76f321b5fc7e72e7e7641d5667f6",
-    "LÍNEA DE DINERO",
-    "Rojos de Cincinnati",
+    "MONEYLINE",
+    "Cincinnati Reds",
     "",
     164,
     172,
     8,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "0efc76f321b5fc7e72e7e7641d5667f6",
@@ -129,51 +129,51 @@
     102,
     2,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "0efc76f321b5fc7e72e7e7641d5667f6",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     9.5,
     -105,
     -102,
     3,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "765d27e397e587aa1885002dd751e9da",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8,
     -105,
     -107,
     -2,
     "↓",
-    "29/05/2026 18:41:44"
+    "05/29/2026 06:41:44 PM"
   ],
   [
     "765d27e397e587aa1885002dd751e9da",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8,
     100,
     -105,
     -205,
     "↓",
-    "29/05/2026 18:41:44"
+    "05/29/2026 06:41:44 PM"
   ],
   [
     "8c92a04b11da0a1f6f84d1dfd48fbf9d",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Washington Nationals",
     "",
     135,
     140,
     5,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "8c92a04b11da0a1f6f84d1dfd48fbf9d",
@@ -184,7 +184,7 @@
     118,
     -22,
     "↓",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "8c92a04b11da0a1f6f84d1dfd48fbf9d",
@@ -195,29 +195,29 @@
     -118,
     4,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "ddd9481c210fa90dea318ad8e185cf22",
-    "LÍNEA DE DINERO",
-    "Orioles de Baltimore",
+    "MONEYLINE",
+    "Baltimore Orioles",
     "",
     -120,
     -122,
     -2,
     "↓",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "d32dadf5a576ba276bac1775287783ba",
-    "LÍNEA DE DINERO",
-    "Guardianes de Cleveland",
+    "MONEYLINE",
+    "Cleveland Guardians",
     "",
     -119,
     -120,
     -1,
     "↓",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "0efc76f321b5fc7e72e7e7641d5667f6",
@@ -228,7 +228,7 @@
     -110,
     4,
     "↑",
-    "29/05/2026 18:43:05"
+    "05/29/2026 06:43:05 PM"
   ],
   [
     "0efc76f321b5fc7e72e7e7641d5667f6",
@@ -239,18 +239,18 @@
     -120,
     -11,
     "↓",
-    "29/05/2026 18:43:05"
+    "05/29/2026 06:43:05 PM"
   ],
   [
     "765d27e397e587aa1885002dd751e9da",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8.5,
     110,
     -107,
     -217,
     "↓",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "765d27e397e587aa1885002dd751e9da",
@@ -261,7 +261,7 @@
     147,
     2,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "765d27e397e587aa1885002dd751e9da",
@@ -272,40 +272,40 @@
     -182,
     -4,
     "↓",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "8c92a04b11da0a1f6f84d1dfd48fbf9d",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     10.5,
     -102,
     102,
     204,
     "↑",
-    "29/05/2026 18:53:37"
+    "05/29/2026 06:53:37 PM"
   ],
   [
     "2787e023f11e64827987a41be824a63b",
-    "LÍNEA DE DINERO",
-    "Tigres de Detroit",
+    "MONEYLINE",
+    "Detroit Tigers",
     "",
     143,
     137,
     -6,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "2787e023f11e64827987a41be824a63b",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Tampa Bay Rays",
     "",
     -154,
     -150,
     4,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "2787e023f11e64827987a41be824a63b",
@@ -316,18 +316,18 @@
     132,
     3,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "ff01c7f99eb2c7a83211f3386020fbe8",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Washington Nationals",
     "",
     -136,
     -137,
     -1,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "ff01c7f99eb2c7a83211f3386020fbe8",
@@ -338,7 +338,7 @@
     -164,
     1,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "ff01c7f99eb2c7a83211f3386020fbe8",
@@ -349,51 +349,51 @@
     148,
     -2,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "ff01c7f99eb2c7a83211f3386020fbe8",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8.5,
     100,
     105,
     5,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "ff01c7f99eb2c7a83211f3386020fbe8",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8.5,
     -110,
     105,
     215,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "c49d57a0f27c1800a2c7bbdabba612fe",
-    "LÍNEA DE DINERO",
-    "Rojos de Cincinnati",
+    "MONEYLINE",
+    "Cincinnati Reds",
     "",
     -130,
     -125,
     5,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "c49d57a0f27c1800a2c7bbdabba612fe",
-    "LÍNEA DE DINERO",
-    "Reales de Kansas City",
+    "MONEYLINE",
+    "Kansas City Royals",
     "",
     164,
     114,
     -50,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "c49d57a0f27c1800a2c7bbdabba612fe",
@@ -404,7 +404,7 @@
     152,
     -3,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "c49d57a0f27c1800a2c7bbdabba612fe",
@@ -415,29 +415,29 @@
     -160,
     -48,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "b5208270f224abe601bbcd84e50b538a",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Chicago White Sox",
     "",
     134,
     125,
     -9,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "b5208270f224abe601bbcd84e50b538a",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Minnesota Twins",
     "",
     -139,
     -137,
     2,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "b5208270f224abe601bbcd84e50b538a",
@@ -448,7 +448,7 @@
     -168,
     -12,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "b5208270f224abe601bbcd84e50b538a",
@@ -459,40 +459,40 @@
     150,
     9,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "b5208270f224abe601bbcd84e50b538a",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8,
     -103,
     100,
     203,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "05d72d7bf55653292200aa8a6848aec3",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Milwaukee Brewers",
     "",
     -142,
     -143,
     -1,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "05d72d7bf55653292200aa8a6848aec3",
-    "LÍNEA DE DINERO",
-    "Gigantes de San Francisco",
+    "MONEYLINE",
+    "San Francisco Giants",
     "",
     130,
     132,
     2,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "05d72d7bf55653292200aa8a6848aec3",
@@ -503,73 +503,73 @@
     156,
     6,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "05d72d7bf55653292200aa8a6848aec3",
     "RUNLINE",
-    "Gigantes de San Francisco +1.5",
+    "San Francisco Giants +1.5",
     1.5,
     -165,
     -170,
     -5,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "05d72d7bf55653292200aa8a6848aec3",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     7.5,
     105,
     115,
     10,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "05d72d7bf55653292200aa8a6848aec3",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     7.5,
     103,
     -120,
     -223,
     "↓",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "6e4eb3c6a07da4b8a22a67806cd6a7f0",
-    "LÍNEA DE DINERO",
-    "Cardenales de San Luis",
+    "MONEYLINE",
+    "St. Louis Cardinals",
     "",
     107,
     114,
     7,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "6e4eb3c6a07da4b8a22a67806cd6a7f0",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Texas Rangers",
     "",
     -117,
     -123,
     -6,
     "↓",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "6e4eb3c6a07da4b8a22a67806cd6a7f0",
     "RUNLINE",
-    "Cardenales de San Luis +1.5",
+    "St. Louis Cardinals +1.5",
     1.5,
     -160,
     -154,
     6,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "6e4eb3c6a07da4b8a22a67806cd6a7f0",
@@ -580,40 +580,40 @@
     140,
     -5,
     "↓",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "6e4eb3c6a07da4b8a22a67806cd6a7f0",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     7.5,
     100,
     105,
     5,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "c81dc56167111218eb7d369db230ad62",
-    "LÍNEA DE DINERO",
-    "Montañas Rocosas de Colorado",
+    "MONEYLINE",
+    "Colorado Rockies",
     "",
     170,
     174,
     4,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "c81dc56167111218eb7d369db230ad62",
-    "LÍNEA DE DINERO",
-    "Los Ángeles Ángeles",
+    "MONEYLINE",
+    "Los Angeles Angels",
     "",
     -189,
     -192,
     -3,
     "↓",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "c81dc56167111218eb7d369db230ad62",
@@ -624,7 +624,7 @@
     -119,
     1,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "c81dc56167111218eb7d369db230ad62",
@@ -635,40 +635,40 @@
     107,
     1,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "c81dc56167111218eb7d369db230ad62",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8.5,
     -102,
     100,
     202,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "f2e11191da4c1bb89d2c6b19a7536d9d",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Arizona Diamondbacks",
     "",
     142,
     144,
     2,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "f2e11191da4c1bb89d2c6b19a7536d9d",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Los Angeles Dodgers",
     "",
     -157,
     -158,
     -1,
     "↓",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "f2e11191da4c1bb89d2c6b19a7536d9d",
@@ -679,7 +679,7 @@
     -113,
     2,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "f2e11191da4c1bb89d2c6b19a7536d9d",
@@ -690,29 +690,29 @@
     104,
     -1,
     "↓",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "daef1f1e03324e709f683a56a6ad0487",
-    "LÍNEA DE DINERO",
-    "Mets de Nueva York",
+    "MONEYLINE",
+    "New York Mets",
     "",
     116,
     114,
     -2,
     "↓",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "daef1f1e03324e709f683a56a6ad0487",
-    "LÍNEA DE DINERO",
-    "Marineros de Seattle",
+    "MONEYLINE",
+    "Seattle Mariners",
     "",
     -126,
     -125,
     1,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "daef1f1e03324e709f683a56a6ad0487",
@@ -723,67 +723,67 @@
     173,
     1,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "daef1f1e03324e709f683a56a6ad0487",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     7,
     104,
     105,
     1,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "2787e023f11e64827987a41be824a63b",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8,
     -103,
     -106,
     -3,
     "↓",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "2787e023f11e64827987a41be824a63b",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8,
     -105,
     100,
     205,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "c49d57a0f27c1800a2c7bbdabba612fe",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     9.5,
     -103,
     110,
     213,
     "↑",
-    "06/01/2026 18:11:23"
+    "06/01/2026 06:11:23 PM"
   ],
   [
     "f2e11191da4c1bb89d2c6b19a7536d9d",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8.5,
     -107,
     -110,
     -3,
     "↓",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "507ec1a59ca1a2aa1386a2dbe2fbfa7b",
-    "LÍNEA DE DINERO",
-    "Tigres de Detroit",
+    "MONEYLINE",
+    "Detroit Tigers",
     "",
     119,
     125,
@@ -793,7 +793,7 @@
   ],
   [
     "507ec1a59ca1a2aa1386a2dbe2fbfa7b",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Tampa Bay Rays",
     "",
     -130,
@@ -805,7 +805,7 @@
   [
     "507ec1a59ca1a2aa1386a2dbe2fbfa7b",
     "RUNLINE",
-    "Tigres de Detroit +1.5",
+    "Detroit Tigers +1.5",
     1.5,
     -181,
     -163,
@@ -826,8 +826,8 @@
   ],
   [
     "74f3bd29e00a7932dfcd53369f030251",
-    "LÍNEA DE DINERO",
-    "Filadelfia Phillies",
+    "MONEYLINE",
+    "Philadelphia Phillies",
     "",
     -123,
     -141,
@@ -837,8 +837,8 @@
   ],
   [
     "74f3bd29e00a7932dfcd53369f030251",
-    "LÍNEA DE DINERO",
-    "Padres de San Diego",
+    "MONEYLINE",
+    "San Diego Padres",
     "",
     112,
     132,
@@ -849,7 +849,7 @@
   [
     "74f3bd29e00a7932dfcd53369f030251",
     "RUNLINE",
-    "Filadelfia Phillies -1.5",
+    "Philadelphia Phillies -1.5",
     -1.5,
     150,
     160,
@@ -870,8 +870,8 @@
   ],
   [
     "0aecf375a07f34755e00a1ba7fb63c16",
-    "LÍNEA DE DINERO",
-    "Orioles de Baltimore",
+    "MONEYLINE",
+    "Baltimore Orioles",
     "",
     117,
     123,
@@ -881,7 +881,7 @@
   ],
   [
     "0aecf375a07f34755e00a1ba7fb63c16",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Boston Red Sox",
     "",
     -126,
@@ -914,19 +914,19 @@
   ],
   [
     "0aecf375a07f34755e00a1ba7fb63c16",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     9,
     -113,
     -111,
     2,
     "↑",
-    "06/01/2026 18:11:24"
+    "06/01/2026 06:11:24 PM"
   ],
   [
     "286c7b1ca015708320800e8f2a9bf4de",
-    "LÍNEA DE DINERO",
-    "Guardianes de Cleveland",
+    "MONEYLINE",
+    "Cleveland Guardians",
     "",
     184,
     212,
@@ -936,7 +936,7 @@
   ],
   [
     "286c7b1ca015708320800e8f2a9bf4de",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "New York Yankees",
     "",
     -205,
@@ -969,8 +969,8 @@
   ],
   [
     "996682744f55836e619953bc8cfd16ef",
-    "LÍNEA DE DINERO",
-    "Reales de Kansas City",
+    "MONEYLINE",
+    "Kansas City Royals",
     "",
     100,
     109,
@@ -1002,8 +1002,8 @@
   ],
   [
     "996682744f55836e619953bc8cfd16ef",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     9,
     -110,
     -107,
@@ -1013,8 +1013,8 @@
   ],
   [
     "996682744f55836e619953bc8cfd16ef",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     9,
     -110,
     -107,
@@ -1024,7 +1024,7 @@
   ],
   [
     "d151ae8d551dafc26e657e34d0b4cff3",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Atlanta Braves",
     "",
     -122,
@@ -1035,7 +1035,7 @@
   ],
   [
     "d151ae8d551dafc26e657e34d0b4cff3",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Toronto Blue Jays",
     "",
     114,
@@ -1068,8 +1068,8 @@
   ],
   [
     "d151ae8d551dafc26e657e34d0b4cff3",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     7.5,
     -113,
     101,
@@ -1079,8 +1079,8 @@
   ],
   [
     "d151ae8d551dafc26e657e34d0b4cff3",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     7.5,
     100,
     105,
@@ -1090,7 +1090,7 @@
   ],
   [
     "6c525054ef6bbee384a6400f05a7ef19",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Chicago White Sox",
     "",
     -115,
@@ -1101,7 +1101,7 @@
   ],
   [
     "6c525054ef6bbee384a6400f05a7ef19",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Minnesota Twins",
     "",
     104,
@@ -1134,8 +1134,8 @@
   ],
   [
     "6c525054ef6bbee384a6400f05a7ef19",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8,
     -102,
     -107,
@@ -1145,8 +1145,8 @@
   ],
   [
     "6c525054ef6bbee384a6400f05a7ef19",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8,
     -105,
     -106,
@@ -1156,8 +1156,8 @@
   ],
   [
     "286c7b1ca015708320800e8f2a9bf4de",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     7.5,
     103,
     -105,
@@ -1167,8 +1167,8 @@
   ],
   [
     "286c7b1ca015708320800e8f2a9bf4de",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     7.5,
     -108,
     -109,
@@ -1200,7 +1200,7 @@
   ],
   [
     "28a4a80f7b04c4d03f249c8cb82ad092",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Milwaukee Brewers",
     "",
     -177,
@@ -1211,8 +1211,8 @@
   ],
   [
     "28a4a80f7b04c4d03f249c8cb82ad092",
-    "LÍNEA DE DINERO",
-    "Gigantes de San Francisco",
+    "MONEYLINE",
+    "San Francisco Giants",
     "",
     160,
     216,
@@ -1234,7 +1234,7 @@
   [
     "28a4a80f7b04c4d03f249c8cb82ad092",
     "RUNLINE",
-    "Gigantes de San Francisco +1.5",
+    "San Francisco Giants +1.5",
     1.5,
     -143,
     103,
@@ -1244,8 +1244,8 @@
   ],
   [
     "28a4a80f7b04c4d03f249c8cb82ad092",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     7.5,
     103,
     105,
@@ -1255,8 +1255,8 @@
   ],
   [
     "28a4a80f7b04c4d03f249c8cb82ad092",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     7.5,
     -112,
     101,
@@ -1266,8 +1266,8 @@
   ],
   [
     "748fa098c21c17715ebec1653befb6c2",
-    "LÍNEA DE DINERO",
-    "Cardenales de San Luis",
+    "MONEYLINE",
+    "St. Louis Cardinals",
     "",
     100,
     -105,
@@ -1277,7 +1277,7 @@
   ],
   [
     "748fa098c21c17715ebec1653befb6c2",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Texas Rangers",
     "",
     -110,
@@ -1289,7 +1289,7 @@
   [
     "748fa098c21c17715ebec1653befb6c2",
     "RUNLINE",
-    "Cardenales de San Luis +1.5",
+    "St. Louis Cardinals +1.5",
     1.5,
     -181,
     -180,
@@ -1310,8 +1310,8 @@
   ],
   [
     "7303b906ec24908bb3cff071bf340eec",
-    "LÍNEA DE DINERO",
-    "Atletismo",
+    "MONEYLINE",
+    "Athletics",
     "",
     109,
     110,
@@ -1321,8 +1321,8 @@
   ],
   [
     "7303b906ec24908bb3cff071bf340eec",
-    "LÍNEA DE DINERO",
-    "Cubs de Chicago",
+    "MONEYLINE",
+    "Chicago Cubs",
     "",
     -118,
     -120,
@@ -1344,7 +1344,7 @@
   [
     "e73fadc7fb7502608603de6dfce34fac",
     "RUNLINE",
-    "Piratas de Pittsburgh -1.5",
+    "Pittsburgh Pirates -1.5",
     -1.5,
     158,
     155,
@@ -1354,8 +1354,8 @@
   ],
   [
     "e73fadc7fb7502608603de6dfce34fac",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     9,
     -106,
     -104,
@@ -1365,8 +1365,8 @@
   ],
   [
     "e73fadc7fb7502608603de6dfce34fac",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     9,
     -107,
     -109,
@@ -1376,8 +1376,8 @@
   ],
   [
     "8e66855f2231ccc68e5ba0ad7f2091a5",
-    "LÍNEA DE DINERO",
-    "Montañas Rocosas de Colorado",
+    "MONEYLINE",
+    "Colorado Rockies",
     "",
     140,
     141,
@@ -1409,8 +1409,8 @@
   ],
   [
     "8e66855f2231ccc68e5ba0ad7f2091a5",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8.5,
     107,
     100,
@@ -1420,8 +1420,8 @@
   ],
   [
     "8e66855f2231ccc68e5ba0ad7f2091a5",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8.5,
     100,
     105,
@@ -1453,8 +1453,8 @@
   ],
   [
     "4ff70f42672aed275f8d6a3a5c9f5321",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     9.5,
     102,
     100,
@@ -1464,8 +1464,8 @@
   ],
   [
     "4ff70f42672aed275f8d6a3a5c9f5321",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     9.5,
     103,
     -113,
@@ -1475,8 +1475,8 @@
   ],
   [
     "2fa44becfc394386d661eff0256111d3",
-    "LÍNEA DE DINERO",
-    "Mets de Nueva York",
+    "MONEYLINE",
+    "New York Mets",
     "",
     128,
     130,
@@ -1486,8 +1486,8 @@
   ],
   [
     "2fa44becfc394386d661eff0256111d3",
-    "LÍNEA DE DINERO",
-    "Marineros de Seattle",
+    "MONEYLINE",
+    "Seattle Mariners",
     "",
     -152,
     -143,
@@ -1508,8 +1508,8 @@
   ],
   [
     "2fa44becfc394386d661eff0256111d3",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     7.5,
     -105,
     103,
@@ -1519,8 +1519,8 @@
   ],
   [
     "2fa44becfc394386d661eff0256111d3",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     7.5,
     -115,
     -118,
@@ -1530,25 +1530,25 @@
   ],
   [
     "9e7ec8d783bb18b8a2775b32d91e9824",
-    "LÍNEA DE DINERO",
-    "Mets de Nueva York",
+    "MONEYLINE",
+    "New York Mets",
     "",
     -1111,
     -3333,
     -2222,
     "↓",
-    "06/03/2026 17:34:53"
+    "06/03/2026 05:34:53 PM"
   ],
   [
     "9e7ec8d783bb18b8a2775b32d91e9824",
-    "LÍNEA DE DINERO",
-    "Marineros de Seattle",
+    "MONEYLINE",
+    "Seattle Mariners",
     "",
     900,
     1400,
     500,
     "↑",
-    "06/03/2026 17:34:53"
+    "06/03/2026 05:34:53 PM"
   ],
   [
     "9e7ec8d783bb18b8a2775b32d91e9824",
@@ -1559,7 +1559,7 @@
     -118,
     52,
     "↑",
-    "06/03/2026 16:40:22"
+    "06/03/2026 04:40:22 PM"
   ],
   [
     "9e7ec8d783bb18b8a2775b32d91e9824",
@@ -1570,29 +1570,29 @@
     220,
     67,
     "↑",
-    "06/03/2026 16:40:22"
+    "06/03/2026 04:40:22 PM"
   ],
   [
     "31eba8fe40243a3e0e029a8b9949d756",
-    "LÍNEA DE DINERO",
-    "Filadelfia Phillies",
+    "MONEYLINE",
+    "Philadelphia Phillies",
     "",
     -225,
     -226,
     -1,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "31eba8fe40243a3e0e029a8b9949d756",
-    "LÍNEA DE DINERO",
-    "Padres de San Diego",
+    "MONEYLINE",
+    "San Diego Padres",
     "",
     201,
     202,
     1,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "31eba8fe40243a3e0e029a8b9949d756",
@@ -1603,29 +1603,29 @@
     -102,
     2,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "31eba8fe40243a3e0e029a8b9949d756",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     7.5,
     -103,
     -101,
     2,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "31eba8fe40243a3e0e029a8b9949d756",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     7.5,
     105,
     107,
     2,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "3ca053166f16be8d40c5adfe1a2bd8aa",
@@ -1636,7 +1636,7 @@
     -151,
     1,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "859f56a081b813c2f16240bc2687f241",
@@ -1647,18 +1647,18 @@
     158,
     6,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "682766eb5df9e22bd3689cd7ae59899b",
-    "LÍNEA DE DINERO",
-    "Rojos de Cincinnati",
+    "MONEYLINE",
+    "Cincinnati Reds",
     "",
     -150,
     -149,
     1,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "682766eb5df9e22bd3689cd7ae59899b",
@@ -1669,18 +1669,18 @@
     -150,
     1,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "7440e18762df663a2c7e8fe443772540",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Toronto Blue Jays",
     "",
     129,
     134,
     5,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "7440e18762df663a2c7e8fe443772540",
@@ -1691,29 +1691,29 @@
     -165,
     -2,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "2b93a316b12e1dddfcb752bed7aa43d6",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Milwaukee Brewers",
     "",
     -136,
     -127,
     9,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "2b93a316b12e1dddfcb752bed7aa43d6",
-    "LÍNEA DE DINERO",
-    "Gigantes de San Francisco",
+    "MONEYLINE",
+    "San Francisco Giants",
     "",
     123,
     120,
     -3,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "2b93a316b12e1dddfcb752bed7aa43d6",
@@ -1724,51 +1724,51 @@
     158,
     6,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "2b93a316b12e1dddfcb752bed7aa43d6",
     "RUNLINE",
-    "Gigantes de San Francisco +1.5",
+    "San Francisco Giants +1.5",
     1.5,
     -165,
     -175,
     -10,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "2b93a316b12e1dddfcb752bed7aa43d6",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8,
     -108,
     -112,
     -4,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "54b22c486dccf3bc503a2b33ec17f157",
-    "LÍNEA DE DINERO",
-    "Atletismo",
+    "MONEYLINE",
+    "Athletics",
     "",
     116,
     120,
     4,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "54b22c486dccf3bc503a2b33ec17f157",
-    "LÍNEA DE DINERO",
-    "Cubs de Chicago",
+    "MONEYLINE",
+    "Chicago Cubs",
     "",
     -127,
     -130,
     -3,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "54b22c486dccf3bc503a2b33ec17f157",
@@ -1779,7 +1779,7 @@
     -215,
     -5,
     "↓",
-    "06/03/2026 17:11:11"
+    "06/03/2026 05:11:11 PM"
   ],
   [
     "0823b4e80b16060db3aba85b41348d18",
@@ -1790,18 +1790,18 @@
     -136,
     -7,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "0823b4e80b16060db3aba85b41348d18",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8,
     100,
     -103,
     -203,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "fef20c017b9718b5324615b7ba93f173",
@@ -1812,18 +1812,18 @@
     142,
     -1,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "f8b638ebe3a01e645658b4699fd18198",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Los Angeles Dodgers",
     "",
     -191,
     -195,
     -4,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "f8b638ebe3a01e645658b4699fd18198",
@@ -1834,7 +1834,7 @@
     106,
     1,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "f8b638ebe3a01e645658b4699fd18198",
@@ -1845,78 +1845,78 @@
     -118,
     1,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "859f56a081b813c2f16240bc2687f241",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     7.5,
     -118,
     102,
     220,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "7440e18762df663a2c7e8fe443772540",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8,
     -106,
     -102,
     4,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "7440e18762df663a2c7e8fe443772540",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8,
     -103,
     -105,
     -2,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "9fc40cd3ea77063176a73e678395da73",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     7.5,
     -106,
     -102,
     4,
     "↑",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "54b22c486dccf3bc503a2b33ec17f157",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8.5,
     -105,
     -113,
     -8,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "f8b638ebe3a01e645658b4699fd18198",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8.5,
     -110,
     -113,
     -3,
     "↓",
-    "06/03/2026 18:08:38"
+    "06/03/2026 06:08:38 PM"
   ],
   [
     "8f76a0f8197d7420bf1e1eb9f5d94159",
-    "LÍNEA DE DINERO",
-    "Filadelfia Phillies",
+    "MONEYLINE",
+    "Philadelphia Phillies",
     "",
     -175,
     -196,
@@ -1926,8 +1926,8 @@
   ],
   [
     "8f76a0f8197d7420bf1e1eb9f5d94159",
-    "LÍNEA DE DINERO",
-    "Padres de San Diego",
+    "MONEYLINE",
+    "San Diego Padres",
     "",
     168,
     176,
@@ -1948,8 +1948,8 @@
   ],
   [
     "8f76a0f8197d7420bf1e1eb9f5d94159",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8.5,
     102,
     100,
@@ -1959,8 +1959,8 @@
   ],
   [
     "8f76a0f8197d7420bf1e1eb9f5d94159",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8.5,
     -102,
     -108,
@@ -1970,8 +1970,8 @@
   ],
   [
     "8ba83a5fb0f9d2b93807e073204a5850",
-    "LÍNEA DE DINERO",
-    "Orioles de Baltimore",
+    "MONEYLINE",
+    "Baltimore Orioles",
     "",
     106,
     105,
@@ -1981,7 +1981,7 @@
   ],
   [
     "8ba83a5fb0f9d2b93807e073204a5850",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Boston Red Sox",
     "",
     -108,
@@ -2014,8 +2014,8 @@
   ],
   [
     "a0dbb7bbd28b837d0732bfad7f975e9f",
-    "LÍNEA DE DINERO",
-    "Guardianes de Cleveland",
+    "MONEYLINE",
+    "Cleveland Guardians",
     "",
     145,
     146,
@@ -2025,7 +2025,7 @@
   ],
   [
     "a0dbb7bbd28b837d0732bfad7f975e9f",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "New York Yankees",
     "",
     -160,
@@ -2058,8 +2058,8 @@
   ],
   [
     "a0dbb7bbd28b837d0732bfad7f975e9f",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8.5,
     103,
     101,
@@ -2069,8 +2069,8 @@
   ],
   [
     "a0dbb7bbd28b837d0732bfad7f975e9f",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     8.5,
     -105,
     -110,
@@ -2080,7 +2080,7 @@
   ],
   [
     "5dfa37c10be5e8b012bf4fe64b302fa3",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Atlanta Braves",
     "",
     -188,
@@ -2091,7 +2091,7 @@
   ],
   [
     "5dfa37c10be5e8b012bf4fe64b302fa3",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Toronto Blue Jays",
     "",
     158,
@@ -2124,8 +2124,8 @@
   ],
   [
     "5dfa37c10be5e8b012bf4fe64b302fa3",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     7.5,
     -115,
     -107,
@@ -2135,8 +2135,8 @@
   ],
   [
     "bd13c90444ac849f846564fe0fa941e7",
-    "LÍNEA DE DINERO",
-    "Piratas de Pittsburgh",
+    "MONEYLINE",
+    "Pittsburgh Pirates",
     "",
     -102,
     -101,
@@ -2158,7 +2158,7 @@
   [
     "bd13c90444ac849f846564fe0fa941e7",
     "RUNLINE",
-    "Piratas de Pittsburgh -1.5",
+    "Pittsburgh Pirates -1.5",
     -1.5,
     150,
     155,
@@ -2168,8 +2168,8 @@
   ],
   [
     "bd13c90444ac849f846564fe0fa941e7",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     8.5,
     -107,
     -105,
@@ -2179,7 +2179,7 @@
   ],
   [
     "2acc5473be6d726025c973a3d148e6b0",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Arizona Diamondbacks",
     "",
     128,
@@ -2190,7 +2190,7 @@
   ],
   [
     "2acc5473be6d726025c973a3d148e6b0",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Los Angeles Dodgers",
     "",
     -141,
@@ -2224,13 +2224,13 @@
   [
     "9e7ec8d783bb18b8a2775b32d91e9824",
     "RUNLINE",
-    "Mets de Nueva York -4.5",
+    "New York Mets -4.5",
     -4.5,
     -112,
     -143,
     -31,
     "↓",
-    "06/03/2026 17:34:53"
+    "06/03/2026 05:34:53 PM"
   ],
   [
     "9e7ec8d783bb18b8a2775b32d91e9824",
@@ -2241,11 +2241,11 @@
     116,
     234,
     "↑",
-    "06/03/2026 17:34:53"
+    "06/03/2026 05:34:53 PM"
   ],
   [
     "21eff9bb5b8451ea2abb9e638ed600e3",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Milwaukee Brewers",
     "",
     -156,
@@ -2256,8 +2256,8 @@
   ],
   [
     "21eff9bb5b8451ea2abb9e638ed600e3",
-    "LÍNEA DE DINERO",
-    "Gigantes de San Francisco",
+    "MONEYLINE",
+    "San Francisco Giants",
     "",
     134,
     165,
@@ -2279,7 +2279,7 @@
   [
     "21eff9bb5b8451ea2abb9e638ed600e3",
     "RUNLINE",
-    "Gigantes de San Francisco +1.5",
+    "San Francisco Giants +1.5",
     1.5,
     -150,
     -120,
@@ -2289,8 +2289,8 @@
   ],
   [
     "77284803e3bb753f121e4c2b4a20ea8e",
-    "LÍNEA DE DINERO",
-    "Reales de Kansas City",
+    "MONEYLINE",
+    "Kansas City Royals",
     "",
     -112,
     -114,
@@ -2300,7 +2300,7 @@
   ],
   [
     "77284803e3bb753f121e4c2b4a20ea8e",
-    "LÍNEA DE DINERO",
+    "MONEYLINE",
     "Minnesota Twins",
     "",
     -104,
@@ -2333,8 +2333,8 @@
   ],
   [
     "77284803e3bb753f121e4c2b4a20ea8e",
-    "TOTALES",
-    "Encima",
+    "TOTALS",
+    "Over",
     9,
     -105,
     -117,
@@ -2344,8 +2344,8 @@
   ],
   [
     "77284803e3bb753f121e4c2b4a20ea8e",
-    "TOTALES",
-    "Bajo",
+    "TOTALS",
+    "Under",
     9,
     -115,
     103,
