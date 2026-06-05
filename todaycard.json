@@ -106,8 +106,8 @@
       "Toronto Blue Jays": -145
     },
     "runline": {
-      "Baltimore Orioles +1.5": -155,
-      "Toronto Blue Jays -1.5": 140
+      "Baltimore Orioles +1.5": -157,
+      "Toronto Blue Jays -1.5": 145
     },
     "totals": {
       "Over 8.5": 100,
@@ -213,16 +213,16 @@
     "commence_time": "06/05/2026 08:16 PM",
     "status": "scheduled",
     "favorite": "Cleveland Guardians",
-    "favorite_odds": -131,
+    "favorite_odds": -130,
     "underdog": "Texas Rangers",
-    "underdog_odds": 121,
+    "underdog_odds": 118,
     "moneyline": {
-      "Cleveland Guardians": -131,
-      "Texas Rangers": 121
+      "Cleveland Guardians": -130,
+      "Texas Rangers": 118
     },
     "runline": {
-      "Cleveland Guardians -1.5": 132,
-      "Texas Rangers +1.5": -149
+      "Cleveland Guardians -1.5": 136,
+      "Texas Rangers +1.5": -152
     },
     "totals": {
       "Over 7.5": -110,
@@ -251,7 +251,7 @@
     },
     "totals": {
       "Over 8.5": -102,
-      "Under 8.5": -104
+      "Under 8.5": -110
     }
   },
   {
@@ -292,7 +292,7 @@
       "Washington Nationals": 117
     },
     "runline": {
-      "Arizona Diamondbacks -1.5": 155,
+      "Arizona Diamondbacks -1.5": 158,
       "Washington Nationals +1.5": -173
     },
     "totals": {
@@ -338,7 +338,7 @@
       "Los Angeles Dodgers": -188
     },
     "runline": {
-      "Los Angeles Angels +1.5": -125,
+      "Los Angeles Angels +1.5": -126,
       "Los Angeles Dodgers -1.5": 116
     },
     "totals": {
