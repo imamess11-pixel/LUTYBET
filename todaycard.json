@@ -15,10 +15,10 @@
     },
     "runline": {
       "Chicago Cubs -1.5": 115,
-      "San Francisco Giants +1.5": -126
+      "San Francisco Giants +1.5": -128
     },
     "totals": {
-      "Over 11": 101,
+      "Over 11": 100,
       "Under 11": -109
     }
   },
@@ -38,7 +38,7 @@
     },
     "runline": {
       "Chicago White Sox +1.5": -133,
-      "Philadelphia Phillies -1.5": 120
+      "Philadelphia Phillies -1.5": 118
     },
     "totals": {
       "Over 8.5": -107,
@@ -60,7 +60,7 @@
       "Seattle Mariners": -117
     },
     "runline": {
-      "Detroit Tigers +1.5": -152,
+      "Detroit Tigers +1.5": -155,
       "Seattle Mariners -1.5": 142
     },
     "totals": {
@@ -87,8 +87,8 @@
       "New York Yankees -1.5": 160
     },
     "totals": {
-      "Over 8": 103,
-      "Under 8": 100
+      "Over 8": -102,
+      "Under 8": -105
     }
   },
   {
@@ -98,15 +98,15 @@
     "commence_time": "06/05/2026 07:08 PM",
     "status": "scheduled",
     "favorite": "Toronto Blue Jays",
-    "favorite_odds": -146,
+    "favorite_odds": -145,
     "underdog": "Baltimore Orioles",
     "underdog_odds": 132,
     "moneyline": {
       "Baltimore Orioles": 132,
-      "Toronto Blue Jays": -146
+      "Toronto Blue Jays": -145
     },
     "runline": {
-      "Baltimore Orioles +1.5": -153,
+      "Baltimore Orioles +1.5": -155,
       "Toronto Blue Jays -1.5": 140
     },
     "totals": {
@@ -121,12 +121,12 @@
     "commence_time": "06/05/2026 07:11 PM",
     "status": "scheduled",
     "favorite": "Tampa Bay Rays",
-    "favorite_odds": -135,
+    "favorite_odds": -136,
     "underdog": "Miami Marlins",
     "underdog_odds": 123,
     "moneyline": {
       "Miami Marlins": 123,
-      "Tampa Bay Rays": -135
+      "Tampa Bay Rays": -136
     },
     "runline": {
       "Miami Marlins +1.5": -143,
@@ -146,10 +146,10 @@
     "favorite": "Atlanta Braves",
     "favorite_odds": -141,
     "underdog": "Pittsburgh Pirates",
-    "underdog_odds": 128,
+    "underdog_odds": 130,
     "moneyline": {
       "Atlanta Braves": -141,
-      "Pittsburgh Pirates": 128
+      "Pittsburgh Pirates": 130
     },
     "runline": {
       "Atlanta Braves -1.5": 146,
@@ -213,11 +213,11 @@
     "commence_time": "06/05/2026 08:16 PM",
     "status": "scheduled",
     "favorite": "Cleveland Guardians",
-    "favorite_odds": -130,
+    "favorite_odds": -131,
     "underdog": "Texas Rangers",
     "underdog_odds": 121,
     "moneyline": {
-      "Cleveland Guardians": -130,
+      "Cleveland Guardians": -131,
       "Texas Rangers": 121
     },
     "runline": {
@@ -338,8 +338,8 @@
       "Los Angeles Dodgers": -188
     },
     "runline": {
-      "Los Angeles Angels +1.5": -126,
-      "Los Angeles Dodgers -1.5": 120
+      "Los Angeles Angels +1.5": -125,
+      "Los Angeles Dodgers -1.5": 116
     },
     "totals": {
       "Over 8.5": 102,
