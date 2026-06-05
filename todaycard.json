@@ -6,11 +6,11 @@
     "commence_time": "06/05/2026 02:21 PM",
     "status": "scheduled",
     "favorite": "Chicago Cubs",
-    "favorite_odds": -175,
+    "favorite_odds": -174,
     "underdog": "San Francisco Giants",
     "underdog_odds": 158,
     "moneyline": {
-      "Chicago Cubs": -175,
+      "Chicago Cubs": -174,
       "San Francisco Giants": 158
     },
     "runline": {
@@ -19,7 +19,7 @@
     },
     "totals": {
       "Over 11": 100,
-      "Under 11": -109
+      "Under 11": -115
     }
   },
   {
@@ -37,7 +37,7 @@
       "Philadelphia Phillies": -179
     },
     "runline": {
-      "Chicago White Sox +1.5": -133,
+      "Chicago White Sox +1.5": -132,
       "Philadelphia Phillies -1.5": 118
     },
     "totals": {
@@ -54,17 +54,17 @@
     "favorite": "Seattle Mariners",
     "favorite_odds": -117,
     "underdog": "Detroit Tigers",
-    "underdog_odds": 112,
+    "underdog_odds": 108,
     "moneyline": {
-      "Detroit Tigers": 112,
+      "Detroit Tigers": 108,
       "Seattle Mariners": -117
     },
     "runline": {
-      "Detroit Tigers +1.5": -155,
-      "Seattle Mariners -1.5": 142
+      "Detroit Tigers +1.5": -160,
+      "Seattle Mariners -1.5": 141
     },
     "totals": {
-      "Over 7.5": -113,
+      "Over 7.5": -105,
       "Under 7.5": -102
     }
   },
@@ -84,10 +84,10 @@
     },
     "runline": {
       "Boston Red Sox +1.5": -165,
-      "New York Yankees -1.5": 160
+      "New York Yankees -1.5": 150
     },
     "totals": {
-      "Over 8": -102,
+      "Over 8": -109,
       "Under 8": -105
     }
   },
@@ -100,18 +100,18 @@
     "favorite": "Toronto Blue Jays",
     "favorite_odds": -145,
     "underdog": "Baltimore Orioles",
-    "underdog_odds": 132,
+    "underdog_odds": 131,
     "moneyline": {
-      "Baltimore Orioles": 132,
+      "Baltimore Orioles": 131,
       "Toronto Blue Jays": -145
     },
     "runline": {
       "Baltimore Orioles +1.5": -157,
-      "Toronto Blue Jays -1.5": 145
+      "Toronto Blue Jays -1.5": 140
     },
     "totals": {
       "Over 8.5": 100,
-      "Under 8.5": -102
+      "Under 8.5": 100
     }
   },
   {
@@ -121,12 +121,12 @@
     "commence_time": "06/05/2026 07:11 PM",
     "status": "scheduled",
     "favorite": "Tampa Bay Rays",
-    "favorite_odds": -136,
+    "favorite_odds": -135,
     "underdog": "Miami Marlins",
     "underdog_odds": 123,
     "moneyline": {
       "Miami Marlins": 123,
-      "Tampa Bay Rays": -136
+      "Tampa Bay Rays": -135
     },
     "runline": {
       "Miami Marlins +1.5": -143,
@@ -146,10 +146,10 @@
     "favorite": "Atlanta Braves",
     "favorite_odds": -141,
     "underdog": "Pittsburgh Pirates",
-    "underdog_odds": 130,
+    "underdog_odds": 132,
     "moneyline": {
       "Atlanta Braves": -141,
-      "Pittsburgh Pirates": 130
+      "Pittsburgh Pirates": 132
     },
     "runline": {
       "Atlanta Braves -1.5": 146,
@@ -169,10 +169,10 @@
     "favorite": "Athletics",
     "favorite_odds": -105,
     "underdog": "Houston Astros",
-    "underdog_odds": -103,
+    "underdog_odds": 100,
     "moneyline": {
       "Athletics": -105,
-      "Houston Astros": -103
+      "Houston Astros": 100
     },
     "runline": {
       "Athletics -1.5": 150,
@@ -180,7 +180,7 @@
     },
     "totals": {
       "Over 9": 103,
-      "Under 9": 100
+      "Under 9": -103
     }
   },
   {
@@ -190,15 +190,15 @@
     "commence_time": "06/05/2026 08:16 PM",
     "status": "scheduled",
     "favorite": "St. Louis Cardinals",
-    "favorite_odds": -142,
+    "favorite_odds": -137,
     "underdog": "Cincinnati Reds",
-    "underdog_odds": 131,
+    "underdog_odds": 124,
     "moneyline": {
-      "Cincinnati Reds": 131,
-      "St. Louis Cardinals": -142
+      "Cincinnati Reds": 124,
+      "St. Louis Cardinals": -137
     },
     "runline": {
-      "Cincinnati Reds +1.5": -154,
+      "Cincinnati Reds +1.5": -165,
       "St. Louis Cardinals -1.5": 150
     },
     "totals": {
@@ -213,19 +213,19 @@
     "commence_time": "06/05/2026 08:16 PM",
     "status": "scheduled",
     "favorite": "Cleveland Guardians",
-    "favorite_odds": -130,
+    "favorite_odds": -121,
     "underdog": "Texas Rangers",
     "underdog_odds": 118,
     "moneyline": {
-      "Cleveland Guardians": -130,
+      "Cleveland Guardians": -121,
       "Texas Rangers": 118
     },
     "runline": {
-      "Cleveland Guardians -1.5": 136,
+      "Cleveland Guardians -1.5": 140,
       "Texas Rangers +1.5": -152
     },
     "totals": {
-      "Over 7.5": -110,
+      "Over 7.5": -109,
       "Under 7.5": -104
     }
   },
@@ -245,12 +245,12 @@
     },
     "runline": {
       "Kansas City Royals -1.5": 168,
-      "Minnesota Twins +1.5": -192,
+      "Minnesota Twins +1.5": -190,
       "Kansas City Royals +1.5": -204,
       "Minnesota Twins -1.5": 180
     },
     "totals": {
-      "Over 8.5": -102,
+      "Over 8.5": -104,
       "Under 8.5": -110
     }
   },
@@ -263,9 +263,9 @@
     "favorite": "Milwaukee Brewers",
     "favorite_odds": -148,
     "underdog": "Colorado Rockies",
-    "underdog_odds": 134,
+    "underdog_odds": 136,
     "moneyline": {
-      "Colorado Rockies": 134,
+      "Colorado Rockies": 136,
       "Milwaukee Brewers": -148
     },
     "runline": {
@@ -273,8 +273,8 @@
       "Milwaukee Brewers -1.5": -101
     },
     "totals": {
-      "Over 11.5": -103,
-      "Under 11.5": 100
+      "Over 11.5": -102,
+      "Under 11.5": 101
     }
   },
   {
@@ -284,15 +284,15 @@
     "commence_time": "06/05/2026 09:41 PM",
     "status": "scheduled",
     "favorite": "Arizona Diamondbacks",
-    "favorite_odds": -128,
+    "favorite_odds": -127,
     "underdog": "Washington Nationals",
     "underdog_odds": 117,
     "moneyline": {
-      "Arizona Diamondbacks": -128,
+      "Arizona Diamondbacks": -127,
       "Washington Nationals": 117
     },
     "runline": {
-      "Arizona Diamondbacks -1.5": 158,
+      "Arizona Diamondbacks -1.5": 165,
       "Washington Nationals +1.5": -173
     },
     "totals": {
@@ -330,12 +330,12 @@
     "commence_time": "06/05/2026 10:11 PM",
     "status": "scheduled",
     "favorite": "Los Angeles Dodgers",
-    "favorite_odds": -188,
+    "favorite_odds": -191,
     "underdog": "Los Angeles Angels",
-    "underdog_odds": 169,
+    "underdog_odds": 172,
     "moneyline": {
-      "Los Angeles Angels": 169,
-      "Los Angeles Dodgers": -188
+      "Los Angeles Angels": 172,
+      "Los Angeles Dodgers": -191
     },
     "runline": {
       "Los Angeles Angels +1.5": -126,
