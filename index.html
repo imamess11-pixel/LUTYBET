@@ -247,15 +247,28 @@ h1{
 
   <div id="leagueMenu" class="league-menu">
 
-    <div class="league-item">
-      MLB
-    </div>
+    <div
+  class="league-item"
+  onclick="toggleMLB()"
+>
+  MLB
+</div>
 
   </div>
 
 </div>
 
 <div id="games"></div>
+
+ <script>
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
+    document.getElementById("games")
+      .style.display = "none";
+  }
+);
+</script>
 
 <script>
 const API_URL = "./todaycard.json";
@@ -417,7 +430,26 @@ function toggleLeague(){
   }
 
 }
+function toggleMLB(){
 
+  const gamesDiv =
+    document.getElementById("games");
+
+  if(mlbVisible){
+
+    gamesDiv.style.display = "none";
+
+    mlbVisible = false;
+
+  } else {
+
+    gamesDiv.style.display = "grid";
+
+    mlbVisible = true;
+
+  }
+
+}
  
 loadGames();
 
