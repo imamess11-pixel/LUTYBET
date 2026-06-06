@@ -414,7 +414,23 @@ const moves =
   }
 
 }
+function toggleLeague(){
 
+  const menu =
+    document.getElementById("leagueMenu");
+
+  if(menu.style.display === "block"){
+
+    menu.style.display = "none";
+
+  } else {
+
+    menu.style.display = "block";
+
+  }
+
+}
+ let mlbVisible = false;
 function toggleMLB(){
 
   const gamesDiv =
@@ -435,22 +451,7 @@ function toggleMLB(){
   }
 
 }
-function toggleLeague(){
 
-  const menu =
-    document.getElementById("leagueMenu");
-
-  if(menu.style.display === "block"){
-
-    menu.style.display = "none";
-
-  } else {
-
-    menu.style.display = "block";
-
-  }
-
-}
  
 loadGames();
 
