@@ -9,10 +9,16 @@
  
 
 body{
-  background:#111;
+  background:
+    linear-gradient(
+      180deg,
+      #0b0b0b 0%,
+      #141414 50%,
+      #1b1b1b 100%
+    );
+
   color:white;
-  font-family:Arial;
-  margin:20px;
+  font-family:Arial,sans-serif;
 }
 
 h1{
@@ -28,29 +34,29 @@ h1{
 
 .card{
 
-  border:1px solid #444;
+  background:#1e1e1e;
 
-  border-radius:10px;
+  border:1px solid #333;
 
-  padding:15px;
+  border-radius:14px;
 
-  background:#1b1b1b;
+  box-shadow:
+    0 4px 12px rgba(0,0,0,.4);
 
-.market-title{
-  color:#f5b041;
-  font-weight:bold;
-  margin-top:10px;
-  margin-bottom:5px;
-  text-transform:uppercase;
+  transition:.2s;
 }
- .steam{
+.steam{
+
+  background:#2b1d00;
+
   color:#FFD700;
-  font-weight:bold;
-}
-.line{
-  display:flex;
-  justify-content:space-between;
-  margin:4px 0;
+
+  border-left:4px solid #FFD700;
+
+  padding:8px;
+
+  border-radius:6px;
+
 }
 
 .odds{
@@ -70,12 +76,20 @@ h1{
   color:#aaa;
 }
 .header{
-  background:#181818;
-  border:1px solid #333;
-  border-radius:12px;
+  background:
+    linear-gradient(
+      90deg,
+      #0f0f0f,
+      #1c1c1c
+    );
+
+  border-bottom:2px solid #f5b041;
+
   padding:20px;
-  margin-bottom:20px;
-  text-align:center;
+
+  position:sticky;
+  top:0;
+  z-index:999;
 }
 
 .logo{
