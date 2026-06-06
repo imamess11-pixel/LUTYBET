@@ -69,13 +69,54 @@ h1{
 .time{
   color:#aaa;
 }
+.header{
+  background:#181818;
+  border:1px solid #333;
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:20px;
+  text-align:center;
+}
 
+.logo{
+  font-size:32px;
+  font-weight:bold;
+  color:white;
+}
+
+.subtitle{
+  color:#999;
+  margin-top:5px;
+  font-size:14px;
+}
+
+.game-count{
+  margin-top:10px;
+  color:#4CAF50;
+  font-weight:bold;
+}
+
+ 
 </style>
 </head>
 
 <body>
 
-<h1>⚾ Dr Baseball</h1>
+<header class="header">
+
+  <div class="logo">
+    ⚾ Dr Baseball
+  </div>
+
+  <div class="subtitle">
+    MLB Odds & Line Movements
+  </div>
+
+  <div id="gameCount" class="game-count">
+    Loading...
+  </div>
+
+</header>
 
 <div id="games"></div>
 
@@ -93,6 +134,9 @@ async function loadGames(){
       document.getElementById("games");
 
     container.innerHTML = "";
+
+   document.getElementById("gameCount").innerHTML =
+  `MLB • ${games.length} Games Today`;
 
    const movesResponse =
   await fetch("./movements.json");
