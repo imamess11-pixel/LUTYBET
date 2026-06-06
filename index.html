@@ -72,15 +72,19 @@ h1{
 }
 .steam{
 
-  background:#2b1d00;
-
   color:#FFD700;
+
+  font-weight:bold;
+
+  background:#2b1d00;
 
   border-left:4px solid #FFD700;
 
   padding:8px;
 
   border-radius:6px;
+
+  animation:pulse 2s infinite;
 
 }
 
@@ -134,7 +138,21 @@ h1{
   color:#4CAF50;
   font-weight:bold;
 }
+@keyframes pulse{
 
+  0%{
+    box-shadow:0 0 0 0 rgba(255,215,0,.4);
+  }
+
+  70%{
+    box-shadow:0 0 0 10px rgba(255,215,0,0);
+  }
+
+  100%{
+    box-shadow:0 0 0 0 rgba(255,215,0,0);
+  }
+
+}
  
 </style>
 </head>
