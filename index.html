@@ -153,6 +153,70 @@ h1{
   }
 
 }
+.sports-menu{
+
+  margin-bottom:20px;
+
+}
+
+.sport-btn{
+
+  width:100%;
+
+  background:#1e1e1e;
+
+  color:white;
+
+  border:1px solid #333;
+
+  padding:14px;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  font-size:16px;
+
+  font-weight:bold;
+
+}
+
+.sport-btn:hover{
+
+  background:#2a2a2a;
+
+}
+
+.league-menu{
+
+  display:none;
+
+  margin-top:5px;
+
+  border:1px solid #333;
+
+  border-radius:10px;
+
+  overflow:hidden;
+
+}
+
+.league-item{
+
+  background:#171717;
+
+  padding:12px;
+
+  cursor:pointer;
+
+}
+
+.league-item:hover{
+
+  background:#252525;
+
+}
+
  
 </style>
 </head>
@@ -174,6 +238,22 @@ h1{
   </div>
 
 </header>
+
+ <div class="sports-menu">
+
+  <button class="sport-btn" onclick="toggleLeague()">
+    ⚾ Baseball ▼
+  </button>
+
+  <div id="leagueMenu" class="league-menu">
+
+    <div class="league-item">
+      MLB
+    </div>
+
+  </div>
+
+</div>
 
 <div id="games"></div>
 
@@ -321,7 +401,24 @@ const moves =
   }
 
 }
+function toggleLeague(){
 
+  const menu =
+    document.getElementById("leagueMenu");
+
+  if(menu.style.display === "block"){
+
+    menu.style.display = "none";
+
+  } else {
+
+    menu.style.display = "block";
+
+  }
+
+}
+
+ 
 loadGames();
 
 setInterval(
