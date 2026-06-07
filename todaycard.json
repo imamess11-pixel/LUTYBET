@@ -6,43 +6,20 @@
     "commence_time": "06/07/2026 01:36 PM",
     "status": "scheduled",
     "favorite": "Atlanta Braves",
-    "favorite_odds": -145,
+    "favorite_odds": -833,
     "underdog": "Pittsburgh Pirates",
-    "underdog_odds": 132,
+    "underdog_odds": 800,
     "moneyline": {
-      "Atlanta Braves": -145,
-      "Pittsburgh Pirates": 132
+      "Atlanta Braves": -833,
+      "Pittsburgh Pirates": 800
     },
     "runline": {
-      "Atlanta Braves -1.5": 136,
-      "Pittsburgh Pirates +1.5": -150
+      "Atlanta Braves +1.5": -3333,
+      "Pittsburgh Pirates -1.5": 1600
     },
     "totals": {
-      "Over 8.5": -105,
-      "Under 8.5": 100
-    }
-  },
-  {
-    "gameId": "d8f8c8a1937664863c010e3ed30af57c",
-    "away_team": "Boston Red Sox",
-    "home_team": "New York Yankees",
-    "commence_time": "06/07/2026 01:36 PM",
-    "status": "scheduled",
-    "favorite": "New York Yankees",
-    "favorite_odds": -147,
-    "underdog": "Boston Red Sox",
-    "underdog_odds": 134,
-    "moneyline": {
-      "Boston Red Sox": 134,
-      "New York Yankees": -147
-    },
-    "runline": {
-      "Boston Red Sox +1.5": -160,
-      "New York Yankees -1.5": 143
-    },
-    "totals": {
-      "Over 8": -112,
-      "Under 8": -103
+      "Over 5.5": 550,
+      "Under 5.5": -490
     }
   },
   {
@@ -52,20 +29,22 @@
     "commence_time": "06/07/2026 01:36 PM",
     "status": "scheduled",
     "favorite": "Philadelphia Phillies",
-    "favorite_odds": -161,
+    "favorite_odds": -3333,
     "underdog": "Chicago White Sox",
-    "underdog_odds": 155,
+    "underdog_odds": 1400,
     "moneyline": {
-      "Chicago White Sox": 155,
-      "Philadelphia Phillies": -161
+      "Chicago White Sox": 1400,
+      "Philadelphia Phillies": -3333
     },
     "runline": {
-      "Chicago White Sox +1.5": -136,
-      "Philadelphia Phillies -1.5": 128
+      "Chicago White Sox +3.5": 144,
+      "Philadelphia Phillies -3.5": -165,
+      "Chicago White Sox +4": -114,
+      "Philadelphia Phillies -4": -120
     },
     "totals": {
-      "Over 9": -113,
-      "Under 9": 100
+      "Over 16.5": 125,
+      "Under 16.5": 100
     }
   },
   {
@@ -75,20 +54,20 @@
     "commence_time": "06/07/2026 01:38 PM",
     "status": "scheduled",
     "favorite": "Toronto Blue Jays",
-    "favorite_odds": -130,
+    "favorite_odds": -1400,
     "underdog": "Baltimore Orioles",
-    "underdog_odds": 119,
+    "underdog_odds": 1050,
     "moneyline": {
-      "Baltimore Orioles": 119,
-      "Toronto Blue Jays": -130
+      "Baltimore Orioles": 1050,
+      "Toronto Blue Jays": -1400
     },
     "runline": {
-      "Baltimore Orioles +1.5": -175,
-      "Toronto Blue Jays -1.5": 160
+      "Baltimore Orioles +1.5": 375,
+      "Toronto Blue Jays -1.5": -280
     },
     "totals": {
-      "Over 8": 100,
-      "Under 8": 101
+      "Over 10.5": 340,
+      "Under 10.5": -260
     }
   },
   {
@@ -97,23 +76,21 @@
     "home_team": "Detroit Tigers",
     "commence_time": "06/07/2026 01:41 PM",
     "status": "scheduled",
-    "favorite": "Detroit Tigers",
-    "favorite_odds": -105,
-    "underdog": "Seattle Mariners",
-    "underdog_odds": 100,
+    "favorite": "Seattle Mariners",
+    "favorite_odds": -333,
+    "underdog": "Detroit Tigers",
+    "underdog_odds": 320,
     "moneyline": {
-      "Detroit Tigers": -105,
-      "Seattle Mariners": 100
+      "Detroit Tigers": 320,
+      "Seattle Mariners": -333
     },
     "runline": {
-      "Detroit Tigers +1.5": -175,
-      "Seattle Mariners -1.5": 155,
-      "Detroit Tigers -1.5": 190,
-      "Seattle Mariners +1.5": -207
+      "Detroit Tigers +1.5": -170,
+      "Seattle Mariners -1.5": 240
     },
     "totals": {
-      "Over 8.5": -115,
-      "Under 8.5": 104
+      "Over 8.5": -118,
+      "Under 8.5": 114
     }
   },
   {
@@ -122,21 +99,48 @@
     "home_team": "Miami Marlins",
     "commence_time": "06/07/2026 01:41 PM",
     "status": "scheduled",
-    "favorite": "Tampa Bay Rays",
-    "favorite_odds": -106,
-    "underdog": "Miami Marlins",
-    "underdog_odds": -102,
+    "favorite": "Miami Marlins",
+    "favorite_odds": -10000,
+    "underdog": "Tampa Bay Rays",
+    "underdog_odds": 3300,
     "moneyline": {
-      "Miami Marlins": -102,
-      "Tampa Bay Rays": -106
+      "Miami Marlins": -10000,
+      "Tampa Bay Rays": 3300
     },
     "runline": {
-      "Miami Marlins +1.5": -173,
-      "Tampa Bay Rays -1.5": 155
+      "Miami Marlins -2.5": -650,
+      "Tampa Bay Rays +2.5": 575
     },
     "totals": {
-      "Over 7.5": -106,
-      "Under 7.5": -103
+      "Over 5.5": 550,
+      "Under 5.5": -650
+    }
+  },
+  {
+    "gameId": "d8f8c8a1937664863c010e3ed30af57c",
+    "away_team": "Boston Red Sox",
+    "home_team": "New York Yankees",
+    "commence_time": "06/07/2026 02:00 PM",
+    "status": "scheduled",
+    "favorite": "New York Yankees",
+    "favorite_odds": -118,
+    "underdog": "Boston Red Sox",
+    "underdog_odds": 1200,
+    "moneyline": {
+      "Boston Red Sox": 1200,
+      "New York Yankees": -118
+    },
+    "runline": {
+      "Boston Red Sox +1.5": 360,
+      "New York Yankees -1.5": -470,
+      "Boston Red Sox -1.5": 280,
+      "New York Yankees +1.5": -455,
+      "Boston Red Sox +2.5": -600,
+      "New York Yankees -2.5": 375
+    },
+    "totals": {
+      "Over 4.5": 135,
+      "Under 4.5": -111
     }
   },
   {
@@ -145,23 +149,23 @@
     "home_team": "Houston Astros",
     "commence_time": "06/07/2026 02:11 PM",
     "status": "scheduled",
-    "favorite": "Houston Astros",
-    "favorite_odds": -105,
-    "underdog": "Athletics",
-    "underdog_odds": -101,
+    "favorite": "Athletics",
+    "favorite_odds": -2000,
+    "underdog": "Houston Astros",
+    "underdog_odds": 2200,
     "moneyline": {
-      "Athletics": -101,
-      "Houston Astros": -105
+      "Athletics": -2000,
+      "Houston Astros": 2200
     },
     "runline": {
-      "Athletics -1.5": 150,
-      "Houston Astros +1.5": -167,
-      "Athletics +1.5": -200,
-      "Houston Astros -1.5": 180
+      "Athletics -4.5": -105,
+      "Houston Astros +4.5": 150,
+      "Athletics -5": 117,
+      "Houston Astros +5": -162
     },
     "totals": {
-      "Over 9": -110,
-      "Under 9": -104
+      "Over 6.5": 130,
+      "Under 6.5": 108
     }
   },
   {
@@ -171,20 +175,24 @@
     "commence_time": "06/07/2026 02:11 PM",
     "status": "scheduled",
     "favorite": "Kansas City Royals",
-    "favorite_odds": -108,
+    "favorite_odds": -7000,
     "underdog": "Minnesota Twins",
-    "underdog_odds": -102,
+    "underdog_odds": 1850,
     "moneyline": {
-      "Kansas City Royals": -108,
-      "Minnesota Twins": -102
+      "Kansas City Royals": -7000,
+      "Minnesota Twins": 1850
     },
     "runline": {
-      "Kansas City Royals -1.5": 150,
-      "Minnesota Twins +1.5": -170
+      "Kansas City Royals -3.5": -200,
+      "Minnesota Twins +3.5": 190,
+      "Kansas City Royals -4.5": 175,
+      "Minnesota Twins +4.5": -207,
+      "Kansas City Royals -4": -127,
+      "Minnesota Twins +4": -110
     },
     "totals": {
-      "Over 8.5": 101,
-      "Under 8.5": 100
+      "Over 7.5": 110,
+      "Under 7.5": -117
     }
   },
   {
@@ -194,20 +202,24 @@
     "commence_time": "06/07/2026 02:16 PM",
     "status": "scheduled",
     "favorite": "St. Louis Cardinals",
-    "favorite_odds": -141,
+    "favorite_odds": -128,
     "underdog": "Cincinnati Reds",
-    "underdog_odds": 131,
+    "underdog_odds": 115,
     "moneyline": {
-      "Cincinnati Reds": 131,
-      "St. Louis Cardinals": -141
+      "Cincinnati Reds": 115,
+      "St. Louis Cardinals": -128
     },
     "runline": {
-      "Cincinnati Reds +1.5": -154,
-      "St. Louis Cardinals -1.5": 146
+      "Cincinnati Reds +1.5": -700,
+      "St. Louis Cardinals -1.5": 410,
+      "Cincinnati Reds -1.5": 310,
+      "St. Louis Cardinals +1.5": -350,
+      "Cincinnati Reds -1": 200,
+      "St. Louis Cardinals +1": -315
     },
     "totals": {
-      "Over 9.5": 105,
-      "Under 9.5": 100
+      "Over 8.5": 104,
+      "Under 8.5": -105
     }
   },
   {
@@ -217,43 +229,49 @@
     "commence_time": "06/07/2026 02:36 PM",
     "status": "scheduled",
     "favorite": "Texas Rangers",
-    "favorite_odds": -140,
+    "favorite_odds": -10000,
     "underdog": "Cleveland Guardians",
-    "underdog_odds": 128,
+    "underdog_odds": 3300,
     "moneyline": {
-      "Cleveland Guardians": 128,
-      "Texas Rangers": -140
+      "Cleveland Guardians": 3300,
+      "Texas Rangers": -10000
     },
     "runline": {
-      "Cleveland Guardians +1.5": -175,
-      "Texas Rangers -1.5": 158
+      "Cleveland Guardians +7.5": -185,
+      "Texas Rangers -7.5": 154,
+      "Cleveland Guardians +7": 114,
+      "Texas Rangers -7": -159
     },
     "totals": {
-      "Over 7.5": 105,
-      "Under 7.5": 103
+      "Over 8.5": 130,
+      "Under 8.5": 124
     }
   },
   {
     "gameId": "83ffce787c60a2fcb9c044c111a88c98",
     "away_team": "Milwaukee Brewers",
     "home_team": "Colorado Rockies",
-    "commence_time": "06/07/2026 03:11 PM",
+    "commence_time": "06/07/2026 03:12 PM",
     "status": "scheduled",
-    "favorite": "Milwaukee Brewers",
-    "favorite_odds": -176,
-    "underdog": "Colorado Rockies",
-    "underdog_odds": 162,
+    "favorite": "Colorado Rockies",
+    "favorite_odds": -110,
+    "underdog": "Milwaukee Brewers",
+    "underdog_odds": 123,
     "moneyline": {
-      "Colorado Rockies": 162,
-      "Milwaukee Brewers": -176
+      "Colorado Rockies": -110,
+      "Milwaukee Brewers": 123
     },
     "runline": {
-      "Colorado Rockies +1.5": 110,
-      "Milwaukee Brewers -1.5": -120
+      "Colorado Rockies -1.5": 178,
+      "Milwaukee Brewers +1.5": -200,
+      "Colorado Rockies +1.5": -200,
+      "Milwaukee Brewers -1.5": 165,
+      "Colorado Rockies -1": -105,
+      "Milwaukee Brewers +1": -132
     },
     "totals": {
-      "Over 11.5": -107,
-      "Under 11.5": -107
+      "Over 8.5": 110,
+      "Under 8.5": 110
     }
   },
   {
@@ -263,20 +281,20 @@
     "commence_time": "06/07/2026 03:16 PM",
     "status": "scheduled",
     "favorite": "Arizona Diamondbacks",
-    "favorite_odds": -124,
+    "favorite_odds": -300,
     "underdog": "Washington Nationals",
-    "underdog_odds": 113,
+    "underdog_odds": 257,
     "moneyline": {
-      "Arizona Diamondbacks": -124,
-      "Washington Nationals": 113
+      "Arizona Diamondbacks": -300,
+      "Washington Nationals": 257
     },
     "runline": {
-      "Arizona Diamondbacks -1.5": 162,
-      "Washington Nationals +1.5": -180
+      "Arizona Diamondbacks -1.5": 105,
+      "Washington Nationals +1.5": -105
     },
     "totals": {
-      "Over 8": -113,
-      "Under 8": -102
+      "Over 8.5": 104,
+      "Under 8.5": 100
     }
   },
   {
@@ -286,20 +304,22 @@
     "commence_time": "06/07/2026 04:11 PM",
     "status": "scheduled",
     "favorite": "Los Angeles Dodgers",
-    "favorite_odds": -210,
+    "favorite_odds": -245,
     "underdog": "Los Angeles Angels",
-    "underdog_odds": 189,
+    "underdog_odds": 250,
     "moneyline": {
-      "Los Angeles Angels": 189,
-      "Los Angeles Dodgers": -210
+      "Los Angeles Angels": 250,
+      "Los Angeles Dodgers": -245
     },
     "runline": {
-      "Los Angeles Angels +1.5": -110,
-      "Los Angeles Dodgers -1.5": 104
+      "Los Angeles Angels +1.5": 115,
+      "Los Angeles Dodgers -1.5": -120,
+      "Los Angeles Angels +2": -120,
+      "Los Angeles Dodgers -2": -115
     },
     "totals": {
-      "Over 8.5": 100,
-      "Under 8.5": -110
+      "Over 7.5": -102,
+      "Under 7.5": 100
     }
   },
   {
@@ -309,20 +329,22 @@
     "commence_time": "06/07/2026 04:11 PM",
     "status": "scheduled",
     "favorite": "New York Mets",
-    "favorite_odds": -107,
+    "favorite_odds": -113,
     "underdog": "San Diego Padres",
-    "underdog_odds": -103,
+    "underdog_odds": 122,
     "moneyline": {
-      "New York Mets": -107,
-      "San Diego Padres": -103
+      "New York Mets": -113,
+      "San Diego Padres": 122
     },
     "runline": {
-      "New York Mets -1.5": 158,
-      "San Diego Padres +1.5": -180
+      "New York Mets -1.5": 154,
+      "San Diego Padres +1.5": -154,
+      "New York Mets -1": -110,
+      "San Diego Padres +1": -124
     },
     "totals": {
-      "Over 7.5": -113,
-      "Under 7.5": 100
+      "Over 8.5": 100,
+      "Under 8.5": 100
     }
   },
   {
@@ -332,19 +354,19 @@
     "commence_time": "06/07/2026 08:31 PM",
     "status": "scheduled",
     "favorite": "Chicago Cubs",
-    "favorite_odds": -123,
+    "favorite_odds": -125,
     "underdog": "San Francisco Giants",
-    "underdog_odds": 112,
+    "underdog_odds": 114,
     "moneyline": {
-      "Chicago Cubs": -123,
-      "San Francisco Giants": 112
+      "Chicago Cubs": -125,
+      "San Francisco Giants": 114
     },
     "runline": {
-      "Chicago Cubs -1.5": 180,
-      "San Francisco Giants +1.5": -193
+      "Chicago Cubs -1.5": 170,
+      "San Francisco Giants +1.5": -190
     },
     "totals": {
-      "Over 8": -103,
+      "Over 8": -104,
       "Under 8": -110
     }
   }
