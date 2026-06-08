@@ -273,6 +273,7 @@ body{
 
 }
 
+
 </style>
 
 </head>
@@ -544,26 +545,37 @@ container.innerHTML += `
 
     <hr>
 
-    <div>
+    <div class="market-title">
+  Moneyline
+</div>
 
+<div class="odds-market">
+
+  <div class="odds-btn">
+
+    <span class="team-name">
       ${game.favorite}
+    </span>
 
-      <span class="favorite">
+    <span class="team-odds">
+      ${game.favorite_odds}
+    </span>
 
-        (${game.favorite_odds})
+  </div>
 
-      </span>
+  <div class="odds-btn">
 
-    </div>
-
-    <div>
-
+    <span class="team-name">
       ${game.underdog}
+    </span>
 
-      (${game.underdog_odds})
+    <span class="team-odds">
+      ${game.underdog_odds}
+    </span>
 
-    </div>
+  </div>
 
+</div>
     <div class="market-title">
       Runline
     </div>
