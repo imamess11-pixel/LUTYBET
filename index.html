@@ -205,14 +205,7 @@ body{
   padding:30px;
   color:#999;
 }
-.hot-card{
-  background:#2b1d00;
-  border:1px solid gold;
-  border-radius:10px;
-  padding:12px;
-  text-align:center;
-  font-weight:bold;
-}
+
 </style>
 
 </head>
@@ -232,10 +225,6 @@ body{
   <div id="gameCount" class="game-count">
     Loading...
   </div>
-<div id="lastUpdate" class="subtitle">
-  Last Update: --
-</div>
-
 
 </header>
 
@@ -284,19 +273,6 @@ body{
 </div>
 
 <div id="games"></div>
-<div id="hotGames" class="stats-bar"></div>
-
-<div style="padding:15px">
-
-<button onclick="showAllGames()">
-  Todos
-</button>
-
-<button onclick="showSteamGames()">
-  Steam Moves
-</button>
-
-</div>
 
 <script>
 
@@ -360,54 +336,6 @@ const container =
 container.innerHTML = "";
 
 games.forEach(game => {
-
-const hotGames = [];
-
-games.forEach(game => {
-
-  const count =
-    moves.filter(
-      m =>
-      m.gameId === game.gameId &&
-      Math.abs(m.movement) >= 5
-    ).length;
-
-  hotGames.push({
-    name:
-      game.away_team +
-      " vs " +
-      game.home_team,
-    count
-  });
-
-});
-
-hotGames.sort(
-  (a,b) => b.count - a.count
-);
-
-document.getElementById("hotGames").innerHTML =
-  hotGames
-  .slice(0,3)
-  .map(g => `
-    <div class="hot-card">
-      🔥 ${g.name}
-      <br>
-      ${g.count} Steam Moves
-    </div>
-  `)
-  .join("");
-const steamMovesCount =
-  gameMoves.filter(
-    m => Math.abs(m.movement) >= 5
-  ).length;
-
-if(
-  steamOnly &&
-  steamMovesCount === 0
-){
-  return;
-}
 
 const gameMoves =
   moves.filter(
@@ -507,26 +435,13 @@ document.getElementById("steamCount").innerHTML =
 
 document.getElementById("games").innerHTML =
   "<div class='loading'>Error cargando partidos</div>";
-document.getElementById("lastUpdate").innerHTML =
-  "Last Update: " +
-  new Date().toLocaleTimeString();
 
 console.error(error);
 
 }
 
 }
-let steamOnly = false;
 
-function showAllGames(){
-  steamOnly = false;
-  loadGames();
-}
-
-function showSteamGames(){
-  steamOnly = true;
-  loadGames();
-}
 loadGames();
 
 setInterval(
