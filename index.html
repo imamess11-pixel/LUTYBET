@@ -368,7 +368,50 @@ const movesResponse =
 
 const moves =
   await movesResponse.json();
+const hotGames = [];
 
+games.forEach(game => {
+
+  const count =
+    moves.filter(
+      m =>
+        m.gameId === game.gameId &&
+        Math.abs(m.movement) >= 5
+    ).length;
+
+  hotGames.push({
+    name:
+      game.away_team +
+      " vs " +
+      game.home_team,
+    count
+  });
+
+});
+
+hotGames.sort(
+  (a,b) => b.count - a.count
+);
+
+document.getElementById("hotGames").innerHTML =
+
+  hotGames
+    .filter(g => g.count > 0)
+    .slice(0,3)
+    .map(g => `
+
+      <div class="hot-card">
+
+        🔥 ${g.name}
+
+        <br>
+
+        ${g.count} Steam Moves
+
+      </div>
+
+    `)
+    .join("");
 document.getElementById("gameCount").innerHTML =
   `MLB • ${games.length} Games Today`;
 
