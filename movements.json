@@ -1,46 +1,200 @@
 [
-  {
-    "gameId": "9e3c4b483a958d796d22ec1a44585e9d",
+{
+    "gameId": "aacad21e4cf94bd96bfde87b691ba8d1",
     "market": "MONEYLINE",
-    "selection": "San Francisco Giants",
+    "selection": "New York Yankees",
     "point": "",
-    "old_odds": 112,
-    "new_odds": 114,
-    "movement": 2,
+    "old_odds": 100,
+    "new_odds": 113,
+    "movement": 13,
     "direction": "↑",
-    "timestamp": "06/07/2026 04:22:19 PM"
+    "timestamp": "06/08/2026 11:25:40 AM"
   },
   {
-    "gameId": "9e3c4b483a958d796d22ec1a44585e9d",
+    "gameId": "aacad21e4cf94bd96bfde87b691ba8d1",
     "market": "RUNLINE",
-    "selection": "Chicago Cubs -1.5",
-    "point": -1.5,
-    "old_odds": 180,
-    "new_odds": 170,
-    "movement": -10,
-    "direction": "↓",
-    "timestamp": "06/07/2026 04:22:19 PM"
-  },
-  {
-    "gameId": "9e3c4b483a958d796d22ec1a44585e9d",
-    "market": "RUNLINE",
-    "selection": "San Francisco Giants +1.5",
+    "selection": "Cleveland Guardians +1.5",
     "point": 1.5,
-    "old_odds": -193,
-    "new_odds": -190,
-    "movement": 3,
-    "direction": "↑",
-    "timestamp": "06/07/2026 04:22:19 PM"
+    "old_odds": -194,
+    "new_odds": -210,
+    "movement": -16,
+    "direction": "↓",
+    "timestamp": "06/08/2026 11:25:40 AM"
   },
   {
-    "gameId": "9e3c4b483a958d796d22ec1a44585e9d",
+    "gameId": "aacad21e4cf94bd96bfde87b691ba8d1",
     "market": "TOTALS",
     "selection": "Over",
     "point": 8,
-    "old_odds": -103,
-    "new_odds": -104,
-    "movement": -1,
+    "old_odds": -105,
+    "new_odds": -102,
+    "movement": 3,
+    "direction": "↑",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "aacad21e4cf94bd96bfde87b691ba8d1",
+    "market": "TOTALS",
+    "selection": "Under",
+    "point": 8,
+    "old_odds": -102,
+    "new_odds": -105,
+    "movement": -3,
     "direction": "↓",
-    "timestamp": "06/07/2026 04:22:19 PM"
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "fe4a6df006bf19b0c063b0188fa7361b",
+    "market": "MONEYLINE",
+    "selection": "Philadelphia Phillies",
+    "point": "",
+    "old_odds": -170,
+    "new_odds": -165,
+    "movement": 5,
+    "direction": "↑",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "fe4a6df006bf19b0c063b0188fa7361b",
+    "market": "MONEYLINE",
+    "selection": "Toronto Blue Jays",
+    "point": "",
+    "old_odds": 154,
+    "new_odds": 149,
+    "movement": -5,
+    "direction": "↓",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "fe4a6df006bf19b0c063b0188fa7361b",
+    "market": "RUNLINE",
+    "selection": "Philadelphia Phillies -1.5",
+    "point": -1.5,
+    "old_odds": 100,
+    "new_odds": 102,
+    "movement": 2,
+    "direction": "↑",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "fe4a6df006bf19b0c063b0188fa7361b",
+    "market": "RUNLINE",
+    "selection": "Toronto Blue Jays +1.5",
+    "point": 1.5,
+    "old_odds": -118,
+    "new_odds": -110,
+    "movement": 8,
+    "direction": "↑",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "fe4a6df006bf19b0c063b0188fa7361b",
+    "market": "TOTALS",
+    "selection": "Over",
+    "point": 7.5,
+    "old_odds": 100,
+    "new_odds": -104,
+    "movement": -204,
+    "direction": "↓",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "fe4a6df006bf19b0c063b0188fa7361b",
+    "market": "TOTALS",
+    "selection": "Under",
+    "point": 7.5,
+    "old_odds": -105,
+    "new_odds": -110,
+    "movement": -5,
+    "direction": "↓",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "5c40929fe0ca745e1c3103242f9f25de",
+    "market": "MONEYLINE",
+    "selection": "Cincinnati Reds",
+    "point": "",
+    "old_odds": 122,
+    "new_odds": 118,
+    "movement": -4,
+    "direction": "↓",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "5c40929fe0ca745e1c3103242f9f25de",
+    "market": "RUNLINE",
+    "selection": "Cincinnati Reds +1.5",
+    "point": 1.5,
+    "old_odds": -180,
+    "new_odds": -183,
+    "movement": -3,
+    "direction": "↓",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "5c40929fe0ca745e1c3103242f9f25de",
+    "market": "RUNLINE",
+    "selection": "San Diego Padres -1.5",
+    "point": -1.5,
+    "old_odds": 155,
+    "new_odds": 170,
+    "movement": 15,
+    "direction": "↑",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "1c106a5918ccf59c350e476c157af1fe",
+    "market": "MONEYLINE",
+    "selection": "Athletics",
+    "point": "",
+    "old_odds": 139,
+    "new_odds": 130,
+    "movement": -9,
+    "direction": "↓",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "1c106a5918ccf59c350e476c157af1fe",
+    "market": "MONEYLINE",
+    "selection": "Milwaukee Brewers",
+    "point": "",
+    "old_odds": -146,
+    "new_odds": -141,
+    "movement": 5,
+    "direction": "↑",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "1c106a5918ccf59c350e476c157af1fe",
+    "market": "RUNLINE",
+    "selection": "Athletics +1.5",
+    "point": 1.5,
+    "old_odds": -125,
+    "new_odds": -115,
+    "movement": 10,
+    "direction": "↑",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "1c106a5918ccf59c350e476c157af1fe",
+    "market": "RUNLINE",
+    "selection": "Milwaukee Brewers -1.5",
+    "point": -1.5,
+    "old_odds": 106,
+    "new_odds": 101,
+    "movement": -5,
+    "direction": "↓",
+    "timestamp": "06/08/2026 11:25:40 AM"
+  },
+  {
+    "gameId": "1c106a5918ccf59c350e476c157af1fe",
+    "market": "TOTALS",
+    "selection": "Over",
+    "point": 10.5,
+    "old_odds": -113,
+    "new_odds": -101,
+    "movement": 12,
+    "direction": "↑",
+    "timestamp": "06/08/2026 11:25:40 AM"
   }
 ]
