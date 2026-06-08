@@ -249,6 +249,29 @@ body{
   color:black;
 
 }
+.card-header{
+
+  cursor:pointer;
+
+}
+
+.card-content{
+
+  display:none;
+
+  margin-top:12px;
+
+}
+
+.expand-btn{
+
+  color:#f5b041;
+
+  font-weight:bold;
+
+  margin-top:10px;
+
+}
 
 </style>
 
@@ -489,60 +512,109 @@ container.innerHTML += `
 
 <div class="card">
 
-<h3>
-${game.away_team}
-vs
-${game.home_team}
-</h3>
+  <div
+    class="card-header"
+    onclick="toggleCard('card-${game.gameId}')"
+  >
 
-<div class="time">
-${game.commence_time}
-</div>
+    <h3>
 
-<div>
-<span class="favorite">
-${game.favorite}
-</span>
-(${game.favorite_odds})
-</div>
+      ${game.away_team}
+      vs
+      ${game.home_team}
 
-<div>
-<span class="underdog">
-${game.underdog}
-</span>
-(${game.underdog_odds})
-</div>
+    </h3>
 
-<div class="market-title">
-Runline
-</div>
+    <div class="time">
 
-<div>
-${Object.keys(game.runline)[0]}
-(${Object.values(game.runline)[0]})
-<br>
-${Object.keys(game.runline)[1]}
-(${Object.values(game.runline)[1]})
-</div>
+      ${game.commence_time}
 
-<div class="market-title">
-Totals
-</div>
+    </div>
 
-<div>
-${Object.keys(game.totals)[0]}
-(${Object.values(game.totals)[0]})
-<br>
-${Object.keys(game.totals)[1]}
-(${Object.values(game.totals)[1]})
-</div>
+    <div class="expand-btn">
 
-${movementHtml}
+      ▼ Ver Mercados
+
+    </div>
+
+  </div>
+
+  <div
+    class="card-content"
+    id="card-${game.gameId}"
+  >
+
+    <hr>
+
+    <div>
+
+      ${game.favorite}
+
+      <span class="favorite">
+
+        (${game.favorite_odds})
+
+      </span>
+
+    </div>
+
+    <div>
+
+      ${game.underdog}
+
+      (${game.underdog_odds})
+
+    </div>
+
+    <div class="market-title">
+      Runline
+    </div>
+
+    <div>
+
+      ${Object.keys(game.runline)[0]}
+      (${Object.values(game.runline)[0]})
+
+      <br>
+
+      ${Object.keys(game.runline)[1]}
+      (${Object.values(game.runline)[1]})
+
+    </div>
+
+    <div class="market-title">
+      Totals
+    </div>
+
+    <div>
+
+      ${Object.keys(game.totals)[0]}
+      (${Object.values(game.totals)[0]})
+
+      <br>
+
+      ${Object.keys(game.totals)[1]}
+      (${Object.values(game.totals)[1]})
+
+    </div>
+
+    ${movementHtml ? `
+
+      <div class="market-title steam">
+
+        🔥 Movimiento
+
+      </div>
+
+      ${movementHtml}
+
+    ` : ""}
+
+  </div>
 
 </div>
 
 `;
-
 });
 
 document.getElementById("steamCount").innerHTML =
@@ -558,7 +630,22 @@ console.error(error);
 }
 
 }
+function toggleCard(id){
 
+  const card =
+    document.getElementById(id);
+
+  if(card.style.display === "block"){
+
+    card.style.display = "none";
+
+  } else {
+
+    card.style.display = "block";
+
+  }
+
+}
 loadGames();
 
 setInterval(
