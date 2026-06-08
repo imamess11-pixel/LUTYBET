@@ -289,15 +289,43 @@ body{
 
 </div>
 
+<div style="padding:15px">
+
+  <button onclick="showAllGames()">
+    Todos
+  </button>
+
+  <button onclick="showSteamGames()">
+    Steam Moves
+  </button>
+
+</div>
+
 <div id="hotGames" class="stats-bar"></div>
 
 <div id="games"></div>
-
 <script>
 
 const API_URL = "./todaycard.json";
 
 let mlbVisible = false;
+let steamOnly = false;
+
+function showAllGames(){
+
+  steamOnly = false;
+
+  loadGames();
+
+}
+
+function showSteamGames(){
+
+  steamOnly = true;
+
+  loadGames();
+
+}
 
 function toggleLeague(){
 
