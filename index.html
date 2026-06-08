@@ -242,7 +242,9 @@ body{
   <div id="gameCount" class="game-count">
     Loading...
   </div>
-
+<div id="lastUpdate" class="subtitle">
+  Last Update: --
+</div>
 </header>
 
 <div class="sports-menu">
@@ -370,6 +372,9 @@ const moves =
   await movesResponse.json();
 const hotGames = [];
 
+document.getElementById("lastUpdate").innerHTML =
+  "Last Update: " +
+  new Date().toLocaleTimeString();
 games.forEach(game => {
 
   const count =
@@ -427,6 +432,17 @@ container.innerHTML = "";
 
 games.forEach(game => {
 
+const steamMovesCount =
+  gameMoves.filter(
+    m => Math.abs(m.movement) >= 5
+  ).length;
+
+if(
+  steamOnly &&
+  steamMovesCount === 0
+){
+  return;
+}
 const gameMoves =
   moves.filter(
     m => m.gameId === game.gameId
@@ -510,7 +526,7 @@ ${Object.keys(game.totals)[1]}
 (${Object.values(game.totals)[1]})
 </div>
 
-${movementHtml}
+${movementHtml}	
 
 </div>
 
@@ -543,3 +559,8 @@ setInterval(
 
 </body>
 </html>
+
+
+
+
+
