@@ -432,16 +432,7 @@ container.innerHTML = "";
 
 games.forEach(game => {
 
-const steamMovesCount =
-  gameMoves.filter(
-    m => Math.abs(m.movement) >= 5
-  ).length;
 
-if(
-  steamOnly &&
-  steamMovesCount === 0
-){
-  return;
 }
 const gameMoves =
   moves.filter(
