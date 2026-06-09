@@ -708,31 +708,23 @@ container.innerHTML += `
   <div class="odds-btn">
 
     <span class="team-name">
-
       ${Object.keys(game.runline)[0]}
-
     </span>
 
-    <span class="team-name">
-
+    <span class="team-odds">
       ${Object.values(game.runline)[0]}
-
     </span>
 
   </div>
 
-  <span class="team-name">
+  <div class="odds-btn">
 
-    <span class="team-odds">
-
+    <span class="team-name">
       ${Object.keys(game.runline)[1]}
-
     </span>
 
-    <div class="odds-market">
-
+    <span class="team-odds">
       ${Object.values(game.runline)[1]}
-
     </span>
 
   </div>
@@ -740,39 +732,31 @@ container.innerHTML += `
 </div>
 
    <div class="market-title">
-  Totals
+  Runline
 </div>
 
 <div class="odds-market">
 
-  <span class="team-name">
-
-    <span class="team-odds">
-
-      ${Object.keys(game.totals)[0]}
-
-    </span>
+  <div class="odds-btn">
 
     <span class="team-name">
+      ${Object.keys(game.totals)[0]}
+    </span>
 
+    <span class="team-odds">
       ${Object.values(game.totals)[0]}
-
     </span>
 
   </div>
 
-  <span class="team-name">
-
-    <span class="team-odds">
-
-      ${Object.keys(game.totals)[1]}
-
-    </span>
+  <div class="odds-btn">
 
     <span class="team-name">
+      ${Object.keys(game.totals)[1]}
+    </span>
 
+    <span class="team-odds">
       ${Object.values(game.totals)[1]}
-
     </span>
 
   </div>
