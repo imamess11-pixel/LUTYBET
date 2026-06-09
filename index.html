@@ -703,17 +703,17 @@ container.innerHTML += `
   Runline
 </div>
 
-<div class="market-buttons">
+<div class="odds-market">
 
-  <div class="market-btn">
+  <div class="odds-btn">
 
-    <span class="market-label">
+    <span class="team-name">
 
       ${Object.keys(game.runline)[0]}
 
     </span>
 
-    <span class="market-odds">
+    <span class="team-name">
 
       ${Object.values(game.runline)[0]}
 
@@ -721,15 +721,15 @@ container.innerHTML += `
 
   </div>
 
-  <div class="market-btn">
+  <span class="team-name">
 
-    <span class="market-label">
+    <span class="team-odds">
 
       ${Object.keys(game.runline)[1]}
 
     </span>
 
-    <span class="market-odds">
+    <div class="odds-market">
 
       ${Object.values(game.runline)[1]}
 
@@ -743,17 +743,17 @@ container.innerHTML += `
   Totals
 </div>
 
-<div class="market-buttons">
+<div class="odds-market">
 
-  <div class="market-btn">
+  <span class="team-name">
 
-    <span class="market-label">
+    <span class="team-odds">
 
       ${Object.keys(game.totals)[0]}
 
     </span>
 
-    <span class="market-odds">
+    <span class="team-name">
 
       ${Object.values(game.totals)[0]}
 
@@ -761,15 +761,15 @@ container.innerHTML += `
 
   </div>
 
-  <div class="market-btn">
+  <span class="team-name">
 
-    <span class="market-label">
+    <span class="team-odds">
 
       ${Object.keys(game.totals)[1]}
 
     </span>
 
-    <span class="market-odds">
+    <span class="team-name">
 
       ${Object.values(game.totals)[1]}
 
@@ -838,3 +838,6 @@ setInterval(
 
 </body>
 </html>
+
+
+
