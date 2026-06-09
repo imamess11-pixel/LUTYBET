@@ -284,6 +284,67 @@ body{
 }
 
 .odds-btn{
+.market-buttons{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:8px;
+
+  margin-top:8px;
+
+}
+
+.market-btn{
+
+  background:#222;
+
+  border:1px solid #444;
+
+  border-radius:10px;
+
+  padding:10px;
+
+  text-align:center;
+
+  transition:.2s;
+
+}
+
+.market-btn:hover{
+
+  background:#2f2f2f;
+
+  border-color:#f5b041;
+
+  transform:translateY(-2px);
+
+}
+
+.market-label{
+
+  display:block;
+
+  color:#ccc;
+
+  font-size:12px;
+
+}
+
+.market-odds{
+
+  display:block;
+
+  font-size:18px;
+
+  font-weight:bold;
+
+  margin-top:4px;
+
+  color:white;
+
+}
 
   flex:1;
 
@@ -638,37 +699,85 @@ container.innerHTML += `
   </div>
 
 </div>
-    <div class="market-title">
-      Runline
-    </div>
+   <div class="market-title">
+  Runline
+</div>
 
-    <div>
+<div class="market-buttons">
+
+  <div class="market-btn">
+
+    <span class="market-label">
 
       ${Object.keys(game.runline)[0]}
-      (${Object.values(game.runline)[0]})
 
-      <br>
+    </span>
+
+    <span class="market-odds">
+
+      ${Object.values(game.runline)[0]}
+
+    </span>
+
+  </div>
+
+  <div class="market-btn">
+
+    <span class="market-label">
 
       ${Object.keys(game.runline)[1]}
-      (${Object.values(game.runline)[1]})
 
-    </div>
+    </span>
 
-    <div class="market-title">
-      Totals
-    </div>
+    <span class="market-odds">
 
-    <div>
+      ${Object.values(game.runline)[1]}
+
+    </span>
+
+  </div>
+
+</div>
+
+   <div class="market-title">
+  Totals
+</div>
+
+<div class="market-buttons">
+
+  <div class="market-btn">
+
+    <span class="market-label">
 
       ${Object.keys(game.totals)[0]}
-      (${Object.values(game.totals)[0]})
 
-      <br>
+    </span>
+
+    <span class="market-odds">
+
+      ${Object.values(game.totals)[0]}
+
+    </span>
+
+  </div>
+
+  <div class="market-btn">
+
+    <span class="market-label">
 
       ${Object.keys(game.totals)[1]}
-      (${Object.values(game.totals)[1]})
 
-    </div>
+    </span>
+
+    <span class="market-odds">
+
+      ${Object.values(game.totals)[1]}
+
+    </span>
+
+  </div>
+
+</div>
 
     ${movementHtml ? `
 
@@ -729,4 +838,3 @@ setInterval(
 
 </body>
 </html>
-
