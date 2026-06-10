@@ -681,20 +681,6 @@ function toggleLeague(){
     : "block";
 
 }
-
-function toggleMLB(){
-
-  const games =
-    document.getElementById("games");
-
-  mlbVisible = !mlbVisible;
-
-  games.style.display =
-    mlbVisible
-    ? "grid"
-    : "none";
-
-}
 function toggleSports(){
 
   const menu =
@@ -722,6 +708,20 @@ function toggleLeague(menuId){
       : "block";
 
 }
+function toggleMLB(){
+
+  const games =
+    document.getElementById("games");
+
+  mlbVisible = !mlbVisible;
+
+  games.style.display =
+    mlbVisible
+    ? "grid"
+    : "none";
+
+}
+
 function scrollToGame(gameId){
 
   const card =
