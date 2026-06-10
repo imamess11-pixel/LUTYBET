@@ -56,6 +56,28 @@ body{
   margin-top:4px;
 
 }
+.stat-card-active{
+
+  background:#3a2900 !important;
+
+  border:1px solid #FFD700 !important;
+
+  box-shadow:
+    0 0 15px rgba(255,215,0,.4);
+
+}
+
+.stat-card-active .stat-title{
+
+  color:#FFD700;
+
+}
+
+.stat-card-active .stat-value{
+
+  color:#FFD700;
+
+}
 
 /* MENU */
 
@@ -647,13 +669,22 @@ function filterSteamGames(){
   const cards =
     document.querySelectorAll(".card");
 
+  const steamCard =
+    document.querySelector(
+      ".stat-card:nth-child(2)"
+    );
+
   steamFilter = !steamFilter;
 
   cards.forEach(card => {
 
     if(steamFilter){
 
-      if(!card.classList.contains("has-steam")){
+      if(
+        !card.classList.contains(
+          "has-steam"
+        )
+      ){
 
         card.style.display = "none";
 
@@ -666,6 +697,20 @@ function filterSteamGames(){
     }
 
   });
+
+  if(steamFilter){
+
+    steamCard.classList.add(
+      "stat-card-active"
+    );
+
+  } else {
+
+    steamCard.classList.remove(
+      "stat-card-active"
+    );
+
+  }
 
 }
 async function loadGames(){
