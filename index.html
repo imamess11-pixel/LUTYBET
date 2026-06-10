@@ -609,13 +609,22 @@ function scrollToGame(gameId){
 
     card.scrollIntoView({
       behavior:"smooth",
-      block:"center"
+      block:"start"
     });
+
+    card.style.border =
+      "2px solid gold";
+
+    setTimeout(() => {
+
+      card.style.border =
+        "1px solid #333";
+
+    }, 3000);
 
   }
 
 }
-
 async function loadGames(){
 
 try{
