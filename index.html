@@ -47,6 +47,15 @@ body{
   color:#4CAF50;
   font-weight:bold;
 }
+.last-update{
+
+  color:#999;
+
+  font-size:13px;
+
+  margin-top:4px;
+
+}
 
 /* MENU */
 
@@ -486,7 +495,9 @@ body{
   <div id="gameCount" class="game-count">
     Loading...
   </div>
-
+<div id="lastUpdate" class="last-update">
+  Updated: --
+</div>
 </header>
 
 <div class="sports-menu">
@@ -699,6 +710,21 @@ document.getElementById("hotGames").innerHTML =
     .join("");
 document.getElementById("gameCount").innerHTML =
   `MLB • ${games.length} Games Today`;
+const now = new Date();
+
+document.getElementById(
+  "lastUpdate"
+).innerHTML =
+
+  "Updated: " +
+
+  now.toLocaleTimeString(
+    [],
+    {
+      hour:'2-digit',
+      minute:'2-digit'
+    }
+  );
 
 document.getElementById("gamesToday").innerHTML =
   games.length;
