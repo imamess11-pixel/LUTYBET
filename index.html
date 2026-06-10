@@ -525,10 +525,14 @@ body{
     <div id="gamesToday" class="stat-value">0</div>
   </div>
 
-  <div class="stat-card">
+ <div
+  class="stat-card"
+  onclick="filterSteamGames()"
+  style="cursor:pointer"
+>
     <div class="stat-title">Steam Moves</div>
     <div id="steamCount" class="stat-value">0</div>
-  </div>
+</div>
 
   <div class="stat-card">
     <div class="stat-title">League</div>
@@ -634,6 +638,34 @@ function scrollToGame(gameId){
     }, 3000);
 
   }
+
+}
+let steamFilter = false;
+
+function filterSteamGames(){
+
+  const cards =
+    document.querySelectorAll(".card");
+
+  steamFilter = !steamFilter;
+
+  cards.forEach(card => {
+
+    if(steamFilter){
+
+      if(!card.classList.contains("has-steam")){
+
+        card.style.display = "none";
+
+      }
+
+    } else {
+
+      card.style.display = "";
+
+    }
+
+  });
 
 }
 async function loadGames(){
