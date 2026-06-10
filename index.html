@@ -8,7 +8,13 @@
 <title>Dr Baseball</title>
 
 <style>
+.sub-menu{
 
+  display:none;
+
+  margin-left:20px;
+
+}
 *{
   margin:0;
   padding:0;
@@ -523,6 +529,60 @@ body{
 </header>
 
 <div class="sports-menu">
+<div class="sports-selector">
+
+  <button
+    class="sport-btn"
+    onclick="toggleSports()"
+  >
+    All Sports ▼
+  </button>
+
+  <div
+    id="sportsMenu"
+    class="league-menu"
+  >
+
+    <div
+      class="league-item"
+      onclick="toggleLeague('baseballMenu')"
+    >
+      Baseball ▶
+    </div>
+
+    <div
+      id="baseballMenu"
+      class="sub-menu"
+    >
+
+      <div
+        class="league-item"
+        onclick="toggleMLB()"
+      >
+        MLB
+      </div>
+
+    </div>
+
+    <div class="league-item">
+      Basketball
+    </div>
+
+    <div class="league-item">
+      Football
+    </div>
+
+    <div class="league-item">
+      Hockey
+    </div>
+
+    <div class="league-item">
+      Soccer
+    </div>
+
+  </div>
+
+</div>
 
   <button class="sport-btn" onclick="toggleLeague()">
     ⚾ Baseball ▼
@@ -633,6 +693,33 @@ function toggleMLB(){
     mlbVisible
     ? "grid"
     : "none";
+
+}
+function toggleSports(){
+
+  const menu =
+    document.getElementById(
+      "sportsMenu"
+    );
+
+  menu.style.display =
+    menu.style.display === "block"
+      ? "none"
+      : "block";
+
+}
+
+function toggleLeague(menuId){
+
+  const menu =
+    document.getElementById(
+      menuId
+    );
+
+  menu.style.display =
+    menu.style.display === "block"
+      ? "none"
+      : "block";
 
 }
 function scrollToGame(gameId){
