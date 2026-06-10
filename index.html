@@ -598,6 +598,23 @@ function toggleMLB(){
     : "none";
 
 }
+function scrollToGame(gameId){
+
+  const card =
+    document.getElementById(
+      "game-" + gameId
+    );
+
+  if(card){
+
+    card.scrollIntoView({
+      behavior:"smooth",
+      block:"center"
+    });
+
+  }
+
+}
 
 async function loadGames(){
 
@@ -643,7 +660,11 @@ document.getElementById("hotGames").innerHTML =
     .slice(0,3)
     .map((g,index) => `
 
-      <div class="hot-card">
+      <div
+        class="hot-card"
+        onclick="scrollToGame('${g.gameId}')"
+        style="cursor:pointer"
+      >
 
         <div class="hot-rank">
 
