@@ -506,19 +506,21 @@ body{
 
   display:flex;
 
+  min-height:100vh;
+
 }
 
 .sidebar{
 
-  width:240px;
-
-  min-height:100vh;
+  width:250px;
 
   background:#0f1520;
 
   border-right:1px solid #2a2a2a;
 
   padding:20px;
+
+  flex-shrink:0;
 
 }
 
@@ -534,6 +536,8 @@ body{
 
   font-weight:bold;
 
+  color:#f5b041;
+
   margin-bottom:30px;
 
 }
@@ -544,9 +548,11 @@ body{
 
   font-size:12px;
 
-  margin-top:25px;
+  margin-top:20px;
 
   margin-bottom:10px;
+
+  text-transform:uppercase;
 
 }
 
@@ -558,6 +564,8 @@ body{
 
   cursor:pointer;
 
+  margin-bottom:4px;
+
 }
 
 .sidebar-item:hover{
@@ -568,11 +576,11 @@ body{
 
 .sidebar-subitem{
 
-  margin-left:20px;
+  padding:10px 10px 10px 25px;
 
   color:#4CAF50;
 
-  padding:8px;
+  font-weight:bold;
 
 }
 
@@ -589,10 +597,43 @@ body{
 <body>
 <div class="app-layout">
 <div class="sidebar">
- 
+
+  <div class="sidebar-logo">
+    ⚾ DR BASEBALL
+  </div>
+
+  <div class="sidebar-section">
+    DEPORTES
+  </div>
+
+  <div class="sidebar-item active">
+    ⚾ Baseball
+  </div>
+
+  <div class="sidebar-subitem">
+    MLB
+  </div>
+
+  <div class="sidebar-item">
+    🏀 Basketball
+  </div>
+
+  <div class="sidebar-item">
+    🏈 Football
+  </div>
+
+  <div class="sidebar-item">
+    🏒 Hockey
+  </div>
+
+  <div class="sidebar-item">
+    ⚽ Soccer
+  </div>
+
+</div>
 
 <div class="main-content">
-<header class="header">                                        
+<header class="header">
 
   <div class="logo">
     ⚾ Dr Baseball
@@ -608,7 +649,7 @@ body{
 <div id="lastUpdate" class="last-update">
   Updated: --
 </div>
-</header>                                                       
+</header>
 
 <div class="sports-menu">
 <div class="sports-selector">
@@ -1199,11 +1240,8 @@ setInterval(
 );
 
 </script>
-
 </div>
-
 </div>
-
 </body>
 </html>
 
