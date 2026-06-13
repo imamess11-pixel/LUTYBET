@@ -606,29 +606,64 @@ body{
     DEPORTES
   </div>
 
-  <div class="sidebar-item active">
-    ⚾ Baseball
-  </div>
+  <div
+  class="sidebar-item active"
+  onclick="toggleLeague('sidebarBaseball')"
+>
+  ⚾ Baseball ▼
+</div>
 
-  <div class="sidebar-subitem">
+<div
+  id="sidebarBaseball"
+  class="sub-menu"
+  style="display:block;"
+>
+
+  <div
+    class="sidebar-subitem"
+    onclick="toggleMLB()"
+    style="cursor:pointer;"
+  >
     MLB
   </div>
 
-  <div class="sidebar-item">
-    🏀 Basketball
-  </div>
+</div>
 
-  <div class="sidebar-item">
-    🏈 Football
-  </div>
+<div class="sidebar-item">
+  🏀 Basketball
+</div>
 
-  <div class="sidebar-item">
-    🏒 Hockey
-  </div>
+<div class="sidebar-item">
+  🏈 Football
+</div>
 
-  <div class="sidebar-item">
-    ⚽ Soccer
-  </div>
+<div class="sidebar-item">
+  🏒 Hockey
+</div>
+
+<div class="sidebar-item">
+  ⚽ Soccer
+</div>
+
+<div class="sidebar-section">
+  HERRAMIENTAS
+</div>
+
+<div class="sidebar-item">
+  🔥 Steam Moves
+</div>
+
+<div class="sidebar-item">
+  ⭐ Favorites
+</div>
+
+<div class="sidebar-item">
+  📜 History
+</div>
+
+<div class="sidebar-item">
+  ⚙ Settings
+</div>
 
 </div>
 
@@ -650,62 +685,6 @@ body{
   Updated: --
 </div>
 </header>
-
-<div class="sports-menu">
-<div class="sports-selector">
-
-  <button
-    class="sport-btn"
-    onclick="toggleSports()"
-  >
-    All Sports ▼
-  </button>
-
-  <div
-    id="sportsMenu"
-    class="league-menu"
-  >
-
-    <div
-  class="league-item"
-  onclick="toggleLeague('baseballMenu')"
->
-  ⚾ Baseball ▶
-</div>
-
-    <div
-      id="baseballMenu"
-      class="sub-menu"
-    >
-
-      <div
-        class="league-item"
-        onclick="toggleMLB()"
-      >
-        MLB
-      </div>
-
-    </div>
-
-    <div class="league-item">
-     🏀 Basketball
-    </div>
-
-    <div class="league-item">
-    🏈  Football
-    </div>
-
-    <div class="league-item">
-     🏒 Hockey
-    </div>
-
-    <div class="league-item">
-    ⚽ Soccer
-    </div>
-
-  </div>
-
-</div>
 
 
 <div class="stats-bar">
@@ -778,17 +757,6 @@ function showSteamGames(){
 
 }
 
-function toggleLeague(){
-
-  const menu =
-    document.getElementById("leagueMenu");
-
-  menu.style.display =
-    menu.style.display === "block"
-    ? "none"
-    : "block";
-
-}
 function toggleSports(){
 
   const menu =
@@ -1244,6 +1212,3 @@ setInterval(
 </div>
 </body>
 </html>
-
-
-
