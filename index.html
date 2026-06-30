@@ -686,7 +686,7 @@ body{
 </div>
 </header>
 
-
+<div id="mlbModule" style="display:none;">
 <div class="stats-bar">
 
   <div class="stat-card">
@@ -732,8 +732,7 @@ body{
 </div>
 
 <div id="hotGames" class="stats-bar"></div>
-
-<div id="games"></div>
+  </div>
 <script>
 
 const API_URL = "./todaycard.json";
@@ -786,15 +785,15 @@ function toggleLeague(menuId){
 }
 function toggleMLB(){
 
-  const games =
-    document.getElementById("games");
+  const module =
+    document.getElementById("mlbModule");
 
   mlbVisible = !mlbVisible;
 
-  games.style.display =
+  module.style.display =
     mlbVisible
-    ? "grid"
-    : "none";
+      ? "block"
+      : "none";
 
 }
 
