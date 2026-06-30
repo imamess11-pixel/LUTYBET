@@ -5,10 +5,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dr Baseball</title>
+<title>>LUTYBET<</title>
 
 <style>
 .sub-menu{
+  .league-header{
+
+  margin:20px 15px;
+
+}
+
+.league-header h2{
+
+  font-size:28px;
+
+  margin-bottom:5px;
+
+}
+
+.league-count{
+
+  color:#4CAF50;
+
+  font-weight:bold;
+
+  font-size:15px;
+
+}
 
   display:none;
 
@@ -599,11 +622,11 @@ body{
 <div class="sidebar">
 
   <div class="sidebar-logo">
-    ⚾ DR BASEBALL
+    💎 LUTYBET
   </div>
 
   <div class="sidebar-section">
-    DEPORTES
+   All Sports
   </div>
 
   <div
@@ -671,21 +694,28 @@ body{
 <header class="header">
 
   <div class="logo">
-    ⚾ Dr Baseball
+    💎 LUTYBET
   </div>
 
   <div class="subtitle">
-    MLB Odds & Steam Moves
+    Professional Betting Dashboard
   </div>
 
-  <div id="gameCount" class="game-count">
-    Loading...
-  </div>
+ 
 <div id="lastUpdate" class="last-update">
   Updated: --
 </div>
 </header>
 <div id="mlbModule" style="display:none;">
+  <div class="league-header">
+
+  <h2>⚾ MLB</h2>
+
+  <div id="gameCount" class="league-count">
+    15 Games Today
+  </div>
+
+</div>
 
 <div class="stats-bar">
 
@@ -832,6 +862,7 @@ function toggleMLB(){
     }, 3000);
 
   }
+  
 
 }
 let steamFilter = false;
@@ -867,6 +898,7 @@ function filterSteamGames(){
       card.style.display = "";
 
     }
+    
 
   });
 
