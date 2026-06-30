@@ -685,8 +685,8 @@ body{
   Updated: --
 </div>
 </header>
-
 <div id="mlbModule" style="display:none;">
+
 <div class="stats-bar">
 
   <div class="stat-card">
@@ -732,7 +732,9 @@ body{
 </div>
 
 <div id="hotGames" class="stats-bar"></div>
-  </div>
+
+<div id="games"></div>
+</div>
 <script>
 
 const API_URL = "./todaycard.json";
@@ -788,16 +790,24 @@ function toggleMLB(){
   const module =
     document.getElementById("mlbModule");
 
+  const games =
+    document.getElementById("games");
+
   mlbVisible = !mlbVisible;
 
-  module.style.display =
-    mlbVisible
-      ? "block"
-      : "none";
+  if(mlbVisible){
 
-}
+      module.style.display="block";
 
-function scrollToGame(gameId){
+      games.style.display="grid";
+
+  }else{
+
+      module.style.display="none";
+
+  }
+
+}function scrollToGame(gameId){
 
   const card =
     document.getElementById(
