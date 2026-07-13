@@ -1,1255 +1,756 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>>LUTYBET<</title>
+<title>LUTYBET</title>
 
 <style>
-.sub-menu{
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  body{
+    background:#0f1114;
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+  }
+
+  /* ===== LAYOUT ===== */
+  .app-layout{
+    display:flex;
+    min-height:100vh;
+  }
+
+  .sidebar{
+    width:250px;
+    background:#0f1520;
+    border-right:1px solid #2a2a2a;
+    padding:20px;
+    flex-shrink:0;
+  }
+
+  .main-content{
+    flex:1;
+    min-width:0;
+  }
+
+  .sidebar-logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#f5b041;
+    margin-bottom:30px;
+  }
+
+  .sidebar-section{
+    color:#777;
+    font-size:12px;
+    margin-top:20px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+  }
+
+  .sidebar-item{
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    color:white;
+    font:inherit;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-bottom:4px;
+    display:block;
+  }
+
+  .sidebar-item:hover,
+  .sidebar-item:focus-visible{
+    background:#1f2635;
+    outline:none;
+  }
+
+  .sidebar-item.active{
+    background:#182435;
+  }
+
+  .sidebar-item[disabled]{
+    color:#555;
+    cursor:not-allowed;
+  }
+
+  .sidebar-item[disabled]:hover{
+    background:none;
+  }
+
+  .sub-menu{
+    display:none;
+    margin-left:20px;
+  }
+
+  .sub-menu.open{
+    display:block;
+  }
+
+  .sidebar-subitem{
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    font:inherit;
+    padding:10px 10px 10px 25px;
+    color:#4CAF50;
+    font-weight:bold;
+    cursor:pointer;
+  }
+
+  .sidebar-subitem:hover,
+  .sidebar-subitem:focus-visible{
+    background:#1f2635;
+    outline:none;
+  }
+
+  /* ===== HEADER ===== */
+  .header{
+    background:#14181f;
+    border-bottom:2px solid #f5b041;
+    padding:20px;
+    position:sticky;
+    top:0;
+    z-index:999;
+  }
+
+  .logo{
+    font-size:32px;
+    font-weight:bold;
+  }
+
+  .subtitle{
+    color:#9aa0a6;
+    margin-top:5px;
+  }
+
+  .last-update{
+    color:#999;
+    font-size:13px;
+    margin-top:4px;
+  }
+
+  /* ===== LEAGUE HEADER ===== */
   .league-header{
-
-  margin:20px 15px;
-
-}
-
-.league-header h2{
-
-  font-size:28px;
-
-  margin-bottom:5px;
-
-}
-
-.league-count{
-
-  color:#4CAF50;
-
-  font-weight:bold;
-
-  font-size:15px;
-
-}
-
-  display:none;
-
-  margin-left:20px;
-
-}
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  background:#0f1114;
-  color:white;
-  font-family:Arial,Helvetica,sans-serif;
-}
-
-/* HEADER */
-
-.header{
-  background:#14181f;
-  border-bottom:2px solid #f5b041;
-  padding:20px;
-  position:sticky;
-  top:0;
-  z-index:999;
-}
-
-.logo{
-  font-size:32px;
-  font-weight:bold;
-}
-
-.subtitle{
-  color:#9aa0a6;
-  margin-top:5px;
-}
-
-.game-count{
-  margin-top:10px;
-  color:#4CAF50;
-  font-weight:bold;
-}
-.last-update{
-
-  color:#999;
-
-  font-size:13px;
-
-  margin-top:4px;
-
-}
-.stat-card-active{
-
-  background:#3a2900 !important;
-
-  border:1px solid #FFD700 !important;
-
-  box-shadow:
-    0 0 15px rgba(255,215,0,.4);
-
-}
-
-.stat-card-active .stat-title{
-
-  color:#FFD700;
-
-}
-
-.stat-card-active .stat-value{
-
-  color:#FFD700;
-
-}
-
-/* MENU */
-
-.sports-menu{
-  padding:15px;
-}
-
-.sport-btn{
-  width:100%;
-  background:#1d232d;
-  color:white;
-  border:none;
-  padding:15px;
-  border-radius:10px;
-  cursor:pointer;
-  font-size:16px;
-  font-weight:bold;
-}
-
-.sport-btn:hover{
-  background:#2a3342;
-}
-
-.league-menu{
-  display:none;
-  margin-top:5px;
-}
-
-.league-item{
-  background:#171b22;
-  padding:14px;
-  border-radius:10px;
-  cursor:pointer;
-  margin-top:5px;
-}
-
-.league-item:hover{
-  background:#232a36;
-}
-
-/* STATS */
-
-.stats-bar{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:10px;
-  padding:0 15px 15px;
-}
-
-.stat-card{
-  background:#171b22;
-  padding:15px;
-  border-radius:12px;
-  text-align:center;
-  border:1px solid #252d3a;
-}
-
-.stat-title{
-  color:#9aa0a6;
-  font-size:12px;
-}
-
-.stat-value{
-  font-size:22px;
-  font-weight:bold;
-  margin-top:6px;
-}
-
-/* GAMES */
-
-#games{
-  display:none;
-  grid-template-columns:
-  repeat(auto-fill,minmax(340px,1fr));
-  gap:15px;
-  padding:15px;
-   margin-top:10px;
-}
-
-.card{
-  background:#171b22;
-  border:1px solid #252d3a;
-  border-radius:14px;
-  padding:15px;
-  transition:.2s;
-}
-
-.card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 8px 18px rgba(0,0,0,.45);
-}
-
-.card h3{
-  margin-bottom:8px;
-}
-
-.time{
-  color:#999;
-  margin-bottom:10px;
-}
-
-.market-title{
-  color:#f5b041;
-  font-weight:bold;
-  margin-top:12px;
-  margin-bottom:6px;
-  text-transform:uppercase;
-}
-
-.favorite{
-  color:#4CAF50;
-  font-weight:bold;
-}
-
-.underdog{
-  color:#ff6b6b;
-  font-weight:bold;
-}
-
-.steam{
-  margin-top:12px;
-  background:#332300;
-  border-left:4px solid gold;
-  padding:10px;
-  border-radius:8px;
-  animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-
-  0%{
-    box-shadow:0 0 0 0 rgba(255,215,0,.4);
+    margin:20px 15px;
   }
 
-  70%{
-    box-shadow:0 0 0 12px rgba(255,215,0,0);
+  .league-header h2{
+    font-size:28px;
+    margin-bottom:5px;
   }
 
-  100%{
-    box-shadow:0 0 0 0 rgba(255,215,0,0);
+  .league-count{
+    color:#4CAF50;
+    font-weight:bold;
+    font-size:15px;
   }
 
-}
-
-.move-up{
-  color:#4CAF50;
-  font-weight:bold;
-}
-
-.move-down{
-  color:#ff6b6b;
-  font-weight:bold;
-}
-
-.loading{
-  text-align:center;
-  padding:30px;
-  color:#999;
-}
-.stats-bar{
-  display:grid;
-  grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
-  gap:10px;
-  margin-bottom:20px;
-}
-
-.hot-card{
-  background:#2b1d00;
-  border:1px solid gold;
-  border-radius:10px;
-  padding:12px;
-  text-align:center;
-  font-weight:bold;
-  color:#FFD700;
-}
-.filter-btn{
-
-  background:#1e1e1e;
-
-  color:white;
-
-  border:1px solid #333;
-
-  padding:10px 18px;
-
-  border-radius:8px;
-
-  cursor:pointer;
-
-  margin-right:8px;
-
-  font-weight:bold;
-
-}
-
-.filter-btn:hover{
-
-  background:#f5b041;
-
-  color:black;
-
-}
-.card-header{
-
-  cursor:pointer;
-
-}
-
-.card-content{
-
-  display:none;
-
-  margin-top:12px;
-
-}
-
-.expand-btn{
-
-  color:#f5b041;
-
-  font-weight:bold;
-
-  margin-top:10px;
-
-}
-.odds-market{
-
-  display:flex;
-
-  gap:8px;
-
-  margin-top:8px;
-
-}
-
-.odds-btn{
-.market-buttons{
-
-  display:grid;
-
-  grid-template-columns:1fr 1fr;
-
-  gap:8px;
-
-  margin-top:8px;
-
-}
-
-.market-btn{
-
-  background:#222;
-
-  border:1px solid #444;
-
-  border-radius:10px;
-
-  padding:10px;
-
-  text-align:center;
-
-  transition:.2s;
-
-}
-
-.market-btn:hover{
-
-  background:#2f2f2f;
-
-  border-color:#f5b041;
-
-  transform:translateY(-2px);
-
-}
-
-.market-label{
-
-  display:block;
-
-  color:#ccc;
-
-  font-size:12px;
-
-}
-
-.market-odds{
-
-  display:block;
-
-  font-size:18px;
-
-  font-weight:bold;
-
-  margin-top:4px;
-
-  color:white;
-
-}
-
-  flex:1;
-
-  background:#222;
-
-  border:1px solid #444;
-
-  border-radius:10px;
-
-  padding:10px;
-
-  text-align:center;
-
-  transition:.2s;
-
-}
-
-.odds-btn:hover{
-
-  background:#2f2f2f;
-
-  border-color:#f5b041;
-
-  transform:translateY(-2px);
-
-}
-
-.team-name{
-
-  display:block;
-
-  font-size:13px;
-
-  color:#ccc;
-
-}
-
-.team-odds{
-
-  display:block;
-
-  font-size:18px;
-
-  font-weight:bold;
-
-  color:white;
-
-  margin-top:4px;
-
-}
-.filter-btn{
-
-  background:#1e1e1e;
-
-  color:white;
-
-  border:1px solid #444;
-
-  padding:10px 18px;
-
-  border-radius:8px;
-
-  cursor:pointer;
-
-  margin-right:8px;
-
-  font-weight:bold;
-
-  transition:.2s;
-
-}
-
-.filter-btn:hover{
-
-  background:#f5b041;
-
-  color:black;
-
-}
-.hot-card{
-
-  background:#2b1d00;
-
-  border:1px solid gold;
-
-  border-radius:12px;
-
-  padding:15px;
-
-  text-align:center;
-
-}
-
-.hot-rank{
-
-  font-size:22px;
-
-  font-weight:bold;
-
-  color:#FFD700;
-
-}
-
-.hot-game{
-
-  margin-top:5px;
-
-  font-weight:bold;
-
-  color:white;
-
-}
-
-.hot-count{
-
-  margin-top:6px;
-
-  color:#FFD700;
-
-}
-.app-layout{
-
-  display:flex;
-
-  min-height:100vh;
-
-}
-
-.sidebar{
-
-  width:250px;
-
-  background:#0f1520;
-
-  border-right:1px solid #2a2a2a;
-
-  padding:20px;
-
-  flex-shrink:0;
-
-}
-
-.main-content{
-
-  flex:1;
-
-}
-
-.sidebar-logo{
-
-  font-size:24px;
-
-  font-weight:bold;
-
-  color:#f5b041;
-
-  margin-bottom:30px;
-
-}
-
-.sidebar-section{
-
-  color:#777;
-
-  font-size:12px;
-
-  margin-top:20px;
-
-  margin-bottom:10px;
-
-  text-transform:uppercase;
-
-}
-
-.sidebar-item{
-
-  padding:12px;
-
-  border-radius:8px;
-
-  cursor:pointer;
-
-  margin-bottom:4px;
-
-}
-
-.sidebar-item:hover{
-
-  background:#1f2635;
-
-}
-
-.sidebar-subitem{
-
-  padding:10px 10px 10px 25px;
-
-  color:#4CAF50;
-
-  font-weight:bold;
-
-}
-
-.active{
-
-  background:#182435;
-
-}
-
+  /* ===== STATS ===== */
+  .stats-bar{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:10px;
+    padding:0 15px 15px;
+  }
+
+  .stat-card{
+    background:#171b22;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #252d3a;
+    cursor:default;
+  }
+
+  .stat-card.clickable{
+    cursor:pointer;
+  }
+
+  .stat-title{
+    color:#9aa0a6;
+    font-size:12px;
+  }
+
+  .stat-value{
+    font-size:22px;
+    font-weight:bold;
+    margin-top:6px;
+  }
+
+  .stat-card-active{
+    background:#3a2900 !important;
+    border:1px solid #FFD700 !important;
+    box-shadow:0 0 15px rgba(255,215,0,.4);
+  }
+
+  .stat-card-active .stat-title,
+  .stat-card-active .stat-value{
+    color:#FFD700;
+  }
+
+  /* ===== HOT GAMES ===== */
+  .hot-games-bar{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:10px;
+    padding:0 15px 15px;
+  }
+
+  .hot-card{
+    background:#2b1d00;
+    border:1px solid gold;
+    border-radius:12px;
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    color:#FFD700;
+    cursor:pointer;
+  }
+
+  .hot-rank{
+    font-size:22px;
+    font-weight:bold;
+    color:#FFD700;
+  }
+
+  .hot-game{
+    margin-top:5px;
+    font-weight:bold;
+    color:white;
+  }
+
+  .hot-count{
+    margin-top:6px;
+    color:#FFD700;
+  }
+
+  /* ===== FILTER BUTTONS ===== */
+  .filter-btn{
+    background:#1e1e1e;
+    color:white;
+    border:1px solid #444;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:8px;
+    font-weight:bold;
+    transition:.2s;
+  }
+
+  .filter-btn:hover,
+  .filter-btn:focus-visible{
+    background:#f5b041;
+    color:black;
+    outline:none;
+  }
+
+  .filter-btn.active{
+    background:#f5b041;
+    color:black;
+  }
+
+  /* ===== GAMES GRID ===== */
+  #games{
+    display:none;
+    grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+    gap:15px;
+    padding:15px;
+    margin-top:10px;
+  }
+
+  .card{
+    background:#171b22;
+    border:1px solid #252d3a;
+    border-radius:14px;
+    padding:15px;
+    transition:.2s;
+  }
+
+  .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,.45);
+  }
+
+  .card-header{
+    cursor:pointer;
+  }
+
+  .card-header h3{
+    margin-bottom:8px;
+  }
+
+  .time{
+    color:#999;
+    margin-bottom:10px;
+  }
+
+  .expand-btn{
+    color:#f5b041;
+    font-weight:bold;
+    margin-top:10px;
+  }
+
+  .card-content{
+    display:none;
+    margin-top:12px;
+  }
+
+  .card-content.open{
+    display:block;
+  }
+
+  .market-title{
+    color:#f5b041;
+    font-weight:bold;
+    margin-top:12px;
+    margin-bottom:6px;
+    text-transform:uppercase;
+  }
+
+  .odds-market{
+    display:flex;
+    gap:8px;
+    margin-top:8px;
+  }
+
+  .odds-btn{
+    flex:1;
+    background:#222;
+    border:1px solid #444;
+    border-radius:10px;
+    padding:10px;
+    text-align:center;
+    transition:.2s;
+  }
+
+  .odds-btn:hover{
+    background:#2f2f2f;
+    border-color:#f5b041;
+    transform:translateY(-2px);
+  }
+
+  .team-name{
+    display:block;
+    font-size:13px;
+    color:#ccc;
+  }
+
+  .team-odds{
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+    margin-top:4px;
+  }
+
+  .steam{
+    margin-top:12px;
+    background:#332300;
+    border-left:4px solid gold;
+    padding:10px;
+    border-radius:8px;
+    animation:pulse 2s infinite;
+  }
+
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(255,215,0,.4); }
+    70%{ box-shadow:0 0 0 12px rgba(255,215,0,0); }
+    100%{ box-shadow:0 0 0 0 rgba(255,215,0,0); }
+  }
+
+  .loading, .empty-state{
+    text-align:center;
+    padding:30px;
+    color:#999;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 720px){
+    .app-layout{
+      flex-direction:column;
+    }
+    .sidebar{
+      width:100%;
+      border-right:none;
+      border-bottom:1px solid #2a2a2a;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .card, .filter-btn, .odds-btn, .steam{
+      animation:none;
+      transition:none;
+    }
+  }
 </style>
-
 </head>
 
 <body>
 <div class="app-layout">
-<div class="sidebar">
 
-  <div class="sidebar-logo">
-    💎 LUTYBET
+  <nav class="sidebar" aria-label="Deportes">
+    <div class="sidebar-logo">💎 LUTYBET</div>
+
+    <div class="sidebar-section">All Sports</div>
+
+    <button
+      class="sidebar-item active"
+      id="baseballToggle"
+      aria-expanded="true"
+      onclick="toggleSidebarMenu('baseball')"
+    >⚾ Baseball ▼</button>
+
+    <div id="sidebarBaseball" class="sub-menu open">
+      <button class="sidebar-subitem" onclick="toggleMLB()">MLB</button>
+    </div>
+
+    <button class="sidebar-item" disabled title="Próximamente">🏀 Basketball</button>
+    <button class="sidebar-item" disabled title="Próximamente">🏈 Football</button>
+    <button class="sidebar-item" disabled title="Próximamente">🏒 Hockey</button>
+    <button class="sidebar-item" disabled title="Próximamente">⚽ Soccer</button>
+
+    <div class="sidebar-section">Herramientas</div>
+    <button class="sidebar-item" disabled title="Próximamente">🔥 Steam Moves</button>
+    <button class="sidebar-item" disabled title="Próximamente">⭐ Favorites</button>
+    <button class="sidebar-item" disabled title="Próximamente">📜 History</button>
+    <button class="sidebar-item" disabled title="Próximamente">⚙ Settings</button>
+  </nav>
+
+  <div class="main-content">
+    <header class="header">
+      <div class="logo">💎 LUTYBET</div>
+      <div class="subtitle">Professional Betting Dashboard</div>
+      <div id="lastUpdate" class="last-update">Updated: --</div>
+    </header>
+
+    <div id="mlbModule" style="display:none;">
+      <div class="league-header">
+        <h2>⚾ MLB</h2>
+        <div id="gameCount" class="league-count">-- Games Today</div>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat-card">
+          <div class="stat-title">Games</div>
+          <div id="gamesToday" class="stat-value">0</div>
+        </div>
+
+        <div class="stat-card clickable" id="steamStatCard" onclick="toggleSteamOnlyFilter()">
+          <div class="stat-title">Steam Moves</div>
+          <div id="steamCount" class="stat-value">0</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-title">League</div>
+          <div class="stat-value">MLB</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-title">Refresh</div>
+          <div class="stat-value">30s</div>
+        </div>
+      </div>
+
+      <div style="padding:0 15px 15px">
+        <button class="filter-btn active" id="btnAll" onclick="setFilter(false)">All</button>
+        <button class="filter-btn" id="btnSteam" onclick="setFilter(true)">Steam Moves</button>
+      </div>
+
+      <div id="hotGames" class="hot-games-bar"></div>
+
+      <div id="games"></div>
+    </div>
   </div>
-
-  <div class="sidebar-section">
-   All Sports
-  </div>
-
-  <div
-  class="sidebar-item active"
-  onclick="toggleLeague('sidebarBaseball')"
->
-  ⚾ Baseball ▼
 </div>
 
-<div
-  id="sidebarBaseball"
-  class="sub-menu"
-  style="display:block;"
->
-
-  <div
-    class="sidebar-subitem"
-    onclick="toggleMLB()"
-    style="cursor:pointer;"
-  >
-    MLB
-  </div>
-
-</div>
-
-<div class="sidebar-item">
-  🏀 Basketball
-</div>
-
-<div class="sidebar-item">
-  🏈 Football
-</div>
-
-<div class="sidebar-item">
-  🏒 Hockey
-</div>
-
-<div class="sidebar-item">
-  ⚽ Soccer
-</div>
-
-<div class="sidebar-section">
-  HERRAMIENTAS
-</div>
-
-<div class="sidebar-item">
-  🔥 Steam Moves
-</div>
-
-<div class="sidebar-item">
-  ⭐ Favorites
-</div>
-
-<div class="sidebar-item">
-  📜 History
-</div>
-
-<div class="sidebar-item">
-  ⚙ Settings
-</div>
-
-</div>
-
-<div class="main-content">
-<header class="header">
-
-  <div class="logo">
-    💎 LUTYBET
-  </div>
-
-  <div class="subtitle">
-    Professional Betting Dashboard
-  </div>
-
- 
-<div id="lastUpdate" class="last-update">
-  Updated: --
-</div>
-</header>
-<div id="mlbModule" style="display:none;">
-  <div class="league-header">
-
-  <h2>⚾ MLB</h2>
-
-  <div id="gameCount" class="league-count">
-    15 Games Today
-  </div>
-
-</div>
-
-<div class="stats-bar">
-
-  <div class="stat-card">
-    <div class="stat-title">Games</div>
-    <div id="gamesToday" class="stat-value">0</div>
-  </div>
-
- <div
-  class="stat-card"
-  onclick="filterSteamGames()"
-  style="cursor:pointer"
->
-    <div class="stat-title">Steam Moves</div>
-    <div id="steamCount" class="stat-value">0</div>
-</div>
-
-  <div class="stat-card">
-    <div class="stat-title">League</div>
-    <div class="stat-value">MLB</div>
-  </div>
-
-  <div class="stat-card">
-    <div class="stat-title">Refresh</div>
-    <div class="stat-value">30s</div>
-  </div>
-
-</div>
-
-<div style="padding:15px">
-
-  <button
-  class="filter-btn"
-  onclick="showAllGames()">
-  All
-</button>
-
-<button
-  class="filter-btn"
-  onclick="showSteamGames()">
-  Steam Moves
-</button>
-
-</div>
-
-<div id="hotGames" class="stats-bar"></div>
-
-<div id="games"></div>
-</div>
 <script>
-
-const API_URL = "./todaycard.json";
+const ODDS_API_URL = "./todaycard.json";
+const MOVEMENTS_API_URL = "./movements.json";
+const REFRESH_MS = 30000;
 
 let mlbVisible = false;
 let steamOnly = false;
+let latestGames = [];
+let latestMoves = [];
+let refreshTimer = null;
 
-function showAllGames(){
+/* ---------- utilidades ---------- */
 
-  steamOnly = false;
-
-  loadGames();
-
+// Evita inyeccion de HTML/XSS si los datos vienen de una fuente externa
+function escapeHtml(value){
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
-function showSteamGames(){
-
-  steamOnly = true;
-
-  loadGames();
-
+function setText(id, text){
+  const el = document.getElementById(id);
+  if(el) el.textContent = text;
 }
 
-function toggleSports(){
-
-  const menu =
-    document.getElementById(
-      "sportsMenu"
-    );
-
-  menu.style.display =
-    menu.style.display === "block"
-      ? "none"
-      : "block";
-
+// Convierte cuotas americanas a probabilidad implicita (0-1).
+// Restar cuotas americanas directamente no es lineal: cruzar la
+// barrera +100/-100 infla la diferencia numerica aunque el cambio
+// real de mercado sea minimo. Comparar probabilidades evita falsos
+// "steam moves" y detecta mejor los movimientos que si importan.
+function americanToProb(odds){
+  const n = Number(odds);
+  if(Number.isNaN(n) || n === 0) return null;
+  return n < 0 ? (-n) / (-n + 100) : 100 / (n + 100);
 }
 
-function toggleLeague(menuId){
-
-  const menu =
-    document.getElementById(
-      menuId
-    );
-
-  menu.style.display =
-    menu.style.display === "block"
-      ? "none"
-      : "block";
-
+// Cambio real de probabilidad implicita entre dos cuotas americanas,
+// en puntos porcentuales (ej. 12.5 = 12.5 puntos de probabilidad).
+function probPointsMoved(oldOdds, newOdds){
+  const p1 = americanToProb(oldOdds);
+  const p2 = americanToProb(newOdds);
+  if(p1 === null || p2 === null) return 0;
+  return Math.abs(p2 - p1) * 100;
 }
+
+// Umbral de "steam move" en puntos de probabilidad implicita.
+// 3 puntos es un buen punto de partida para MLB; ajustalo si quieres
+// mas o menos sensibilidad.
+const STEAM_THRESHOLD_PROB_POINTS = 3;
+
+/* ---------- navegacion del sidebar ---------- */
+
+function toggleSidebarMenu(key){
+  const menu = document.getElementById("sidebar" + key.charAt(0).toUpperCase() + key.slice(1));
+  const btn = document.getElementById(key + "Toggle");
+  if(!menu) return;
+  const isOpen = menu.classList.toggle("open");
+  if(btn) btn.setAttribute("aria-expanded", String(isOpen));
+}
+
 function toggleMLB(){
-
-  const module =
-    document.getElementById("mlbModule");
-
-  const games =
-    document.getElementById("games");
-
+  const module = document.getElementById("mlbModule");
+  const games = document.getElementById("games");
   mlbVisible = !mlbVisible;
 
   if(mlbVisible){
-
-      module.style.display="block";
-
-      games.style.display="grid";
-
-  }else{
-
-      module.style.display="none";
-
-  }
-
-}function scrollToGame(gameId){
-
-  const card =
-    document.getElementById(
-      "game-" + gameId
-    );
-
-  if(card){
-
-    card.scrollIntoView({
-      behavior:"smooth",
-      block:"start"
-    });
-
-    card.style.border =
-      "2px solid gold";
-
-    setTimeout(() => {
-
-      card.style.border =
-        "1px solid #333";
-
-    }, 3000);
-
-  }
-  
-
-}
-let steamFilter = false;
-
-function filterSteamGames(){
-
-  const cards =
-    document.querySelectorAll(".card");
-
-  const steamCard =
-    document.querySelector(
-      ".stat-card:nth-child(2)"
-    );
-
-  steamFilter = !steamFilter;
-
-  cards.forEach(card => {
-
-    if(steamFilter){
-
-      if(
-        !card.classList.contains(
-          "has-steam"
-        )
-      ){
-
-        card.style.display = "none";
-
-      }
-
-    } else {
-
-      card.style.display = "";
-
-    }
-    
-
-  });
-
-  if(steamFilter){
-
-    steamCard.classList.add(
-      "stat-card-active"
-    );
-
+    module.style.display = "block";
+    games.style.display = "grid";
+    startAutoRefresh();
+    loadGames();
   } else {
-
-    steamCard.classList.remove(
-      "stat-card-active"
-    );
-
+    module.style.display = "none";
+    stopAutoRefresh();
   }
-
-}
-async function loadGames(){
-
-try{
-
-const response =
-  await fetch(API_URL);
-
-const games =
-  await response.json();
-
-const movesResponse =
-  await fetch("./movements.json");
-
-const moves =
-  await movesResponse.json();
-const hotGames = [];
-
-games.forEach(game => {
-
-  const count =
-    moves.filter(
-      m =>
-        m.gameId === game.gameId &&
-        Math.abs(m.movement) >= 5
-    ).length;
-
- hotGames.push({
-  gameId: game.gameId,
-  name: game.away_team + " vs " + game.home_team,
-  count
-});
-
-});
-
-hotGames.sort(
-  (a,b) => b.count - a.count
-);
-document.getElementById("hotGames").innerHTML =
-
-  hotGames
-    .filter(g => g.count > 0)
-    .slice(0,3)
-    .map((g,index) => `
-
-      <div
-        class="hot-card"
-        onclick="scrollToGame('${g.gameId}')"
-        style="cursor:pointer"
-      >
-
-        <div class="hot-rank">
-
-          #${index + 1}
-
-        </div>
-
-        <div class="hot-game">
-
-          🔥 ${g.name}
-
-        </div>
-
-        <div class="hot-count">
-
-          ${g.count} Steam Moves
-
-        </div>
-
-      </div>
-
-    `)
-    .join("");
-document.getElementById("gameCount").innerHTML =
-  `MLB • ${games.length} Games Today`;
-const now = new Date();
-
-document.getElementById(
-  "lastUpdate"
-).innerHTML =
-
-  "Updated: " +
-
-  now.toLocaleTimeString(
-    [],
-    {
-      hour:'2-digit',
-      minute:'2-digit'
-    }
-  );
-
-document.getElementById("gamesToday").innerHTML =
-  games.length;
-
-let steamCount = 0;
-
-const container =
-  document.getElementById("games");
-
-container.innerHTML = "";
-
-games.forEach(game => {
-
-const gameMoves =
-  moves.filter(
-    m => m.gameId === game.gameId
-  );
-const steamMovesCount =
-  gameMoves.filter(
-    move =>
-      Math.abs(move.movement) >= 5
-  ).length;
-
-if(
-  steamOnly &&
-  steamMovesCount === 0
-){
-  return;
-}
-let movementHtml = "";
-
-gameMoves.forEach(move => {
-
-if(Math.abs(move.movement) >= 5){
-
-steamCount++;
-
-movementHtml += `
-<div class="steam">
-
-🔥 ${move.selection}
-
-<br>
-
-${move.old_odds}
-→
-${move.new_odds}
-
-</div>
-`;
-
 }
 
-});
+/* ---------- filtros ---------- */
 
-container.innerHTML += `
-
-<div class="card" id="game-${game.gameId}">
-  <div
-    class="card-header"
-    onclick="toggleCard('card-${game.gameId}')"
-  >
-
-    <h3>
-
-      ${game.away_team}
-      vs
-      ${game.home_team}
-
-    </h3>
-
-    <div class="time">
-
-      ${game.commence_time}
-
-    </div>
-
-    <div class="expand-btn">
-
-      ▼ Ver Mercados
-
-    </div>
-
-  </div>
-
-  <div
-    class="card-content"
-    id="card-${game.gameId}"
-  >
-
-    <hr>
-
-    <div class="market-title">
-  Moneyline
-</div>
-
-<div class="odds-market">
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${game.favorite}
-    </span>
-
-    <span class="team-odds">
-      ${game.favorite_odds}
-    </span>
-
-  </div>
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${game.underdog}
-    </span>
-
-    <span class="team-odds">
-      ${game.underdog_odds}
-    </span>
-
-  </div>
-
-</div>
-   <div class="market-title">
-  Runline
-</div>
-
-<div class="odds-market">
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.runline)[0]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.runline)[0]}
-    </span>
-
-  </div>
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.runline)[1]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.runline)[1]}
-    </span>
-
-  </div>
-
-</div>
-
-   <div class="market-title">
-  Totals
-</div>
-
-<div class="odds-market">
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.totals)[0]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.totals)[0]}
-    </span>
-
-  </div>
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.totals)[1]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.totals)[1]}
-    </span>
-
-  </div>
-
-</div>
-
-    ${movementHtml ? `
-
-      <div class="market-title steam">
-
-        🔥 Movimiento
-
-      </div>
-
-      ${movementHtml}
-
-    ` : ""}
-
-  </div>
-
-</div>
-
-`;
-});
-
-document.getElementById("steamCount").innerHTML =
-  steamCount;
-
-}catch(error){
-
-document.getElementById("games").innerHTML =
-  "<div class='loading'>Error cargando partidos</div>";
-
-console.error(error);
-
+function setFilter(steamOnlyValue){
+  steamOnly = steamOnlyValue;
+  document.getElementById("btnAll").classList.toggle("active", !steamOnly);
+  document.getElementById("btnSteam").classList.toggle("active", steamOnly);
+  renderGames(); // usa los datos ya cargados, no vuelve a pedirlos al servidor
 }
 
+function toggleSteamOnlyFilter(){
+  const card = document.getElementById("steamStatCard");
+  const nowActive = !card.classList.contains("stat-card-active");
+  card.classList.toggle("stat-card-active", nowActive);
+  setFilter(nowActive);
+  document.getElementById("btnAll").classList.toggle("active", !nowActive);
+  document.getElementById("btnSteam").classList.toggle("active", nowActive);
 }
+
+function scrollToGame(gameId){
+  const card = document.getElementById("game-" + gameId);
+  if(!card) return;
+  card.scrollIntoView({ behavior:"smooth", block:"start" });
+  card.style.border = "2px solid gold";
+  setTimeout(() => { card.style.border = "1px solid #252d3a"; }, 3000);
+}
+
 function toggleCard(id){
+  const card = document.getElementById(id);
+  if(card) card.classList.toggle("open");
+}
 
-  const card =
-    document.getElementById(id);
+/* ---------- datos ---------- */
 
-  if(card.style.display === "block"){
+function startAutoRefresh(){
+  stopAutoRefresh();
+  refreshTimer = setInterval(loadGames, REFRESH_MS);
+}
 
-    card.style.display = "none";
+function stopAutoRefresh(){
+  if(refreshTimer){
+    clearInterval(refreshTimer);
+    refreshTimer = null;
+  }
+}
 
-  } else {
+async function loadGames(){
+  try{
+    const [gamesRes, movesRes] = await Promise.all([
+      fetch(ODDS_API_URL),
+      fetch(MOVEMENTS_API_URL)
+    ]);
 
-    card.style.display = "block";
+    if(!gamesRes.ok || !movesRes.ok){
+      throw new Error("Respuesta no valida del servidor");
+    }
 
+    latestGames = await gamesRes.json();
+    latestMoves = await movesRes.json();
+
+    const now = new Date();
+    setText("lastUpdate", "Updated: " + now.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' }));
+
+    renderGames();
+  }catch(error){
+    document.getElementById("games").innerHTML =
+      "<div class='loading'>Error cargando partidos. Reintentando...</div>";
+    console.error("loadGames failed:", error);
+  }
+}
+
+function renderGames(){
+  renderHotGames();
+  renderGameList();
+}
+
+function renderHotGames(){
+  const hotGames = latestGames.map(game => {
+    // Solo movimientos PREGAME cuentan como "steam" real (dinero
+    // inteligente). Los movimientos en vivo son solo el reflejo del
+    // marcador y no deberian aparecer como señal de apuestas.
+    const count = latestMoves.filter(
+      m => m.gameId === game.gameId &&
+           !m.is_live &&
+           probPointsMoved(m.old_odds, m.new_odds) >= STEAM_THRESHOLD_PROB_POINTS
+    ).length;
+    return {
+      gameId: game.gameId,
+      name: `${game.away_team} vs ${game.home_team}`,
+      count
+    };
+  }).filter(g => g.count > 0)
+    .sort((a,b) => b.count - a.count)
+    .slice(0,3);
+
+  document.getElementById("hotGames").innerHTML = hotGames.map((g,index) => `
+    <div class="hot-card" onclick="scrollToGame('${escapeHtml(g.gameId)}')">
+      <div class="hot-rank">#${index + 1}</div>
+      <div class="hot-game">🔥 ${escapeHtml(g.name)}</div>
+      <div class="hot-count">${g.count} Steam Moves</div>
+    </div>
+  `).join("");
+}
+
+function renderGameList(){
+  setText("gameCount", `MLB • ${latestGames.length} Games Today`);
+  setText("gamesToday", latestGames.length);
+
+  const container = document.getElementById("games");
+  let steamCount = 0;
+  let visibleCount = 0;
+
+  // Renderiza un mercado de cuotas como filas de a 2 columnas,
+  // soportando cualquier cantidad de lineas (incluidas alternas).
+  function renderOddsGroup(oddsObj){
+    const entries = Object.entries(oddsObj || {});
+    if(entries.length === 0) return "<div class='time'>Sin datos</div>";
+    const rows = [];
+    for(let i = 0; i < entries.length; i += 2){
+      const pair = entries.slice(i, i + 2);
+      rows.push(`
+        <div class="odds-market">
+          ${pair.map(([label, odds]) => `
+            <div class="odds-btn">
+              <span class="team-name">${escapeHtml(label)}</span>
+              <span class="team-odds">${escapeHtml(odds)}</span>
+            </div>
+          `).join("")}
+        </div>
+      `);
+    }
+    return rows.join("");
   }
 
+  const html = latestGames.map(game => {
+    const gameMoves = latestMoves.filter(m => m.gameId === game.gameId);
+    const significantMoves = gameMoves.filter(
+      m => probPointsMoved(m.old_odds, m.new_odds) >= STEAM_THRESHOLD_PROB_POINTS
+    );
+    const pregameSteam = significantMoves.filter(m => !m.is_live);
+    const liveMoves = significantMoves.filter(m => m.is_live);
+
+    steamCount += pregameSteam.length; // el contador "Steam Moves" es solo pregame
+
+    if(steamOnly && pregameSteam.length === 0) return "";
+    visibleCount++;
+
+    const renderMoveRow = (move, isLive) => `
+      <div class="steam">
+        ${isLive ? "📊 En vivo" : "🔥"} ${escapeHtml(move.selection)}<br>
+        ${escapeHtml(move.old_odds)} → ${escapeHtml(move.new_odds)}
+        <span style="color:#999"> (${probPointsMoved(move.old_odds, move.new_odds).toFixed(1)} pts prob.)</span>
+      </div>
+    `;
+
+    const movementHtml =
+      pregameSteam.map(m => renderMoveRow(m, false)).join("") +
+      liveMoves.map(m => renderMoveRow(m, true)).join("");
+
+    const statusBadge = game.status && game.status !== "scheduled"
+      ? ` &middot; <span style="color:#f5b041">${escapeHtml(game.status)}</span>`
+      : "";
+
+    return `
+      <div class="card" id="game-${escapeHtml(game.gameId)}">
+        <div class="card-header" onclick="toggleCard('card-${escapeHtml(game.gameId)}')">
+          <h3>${escapeHtml(game.away_team)} vs ${escapeHtml(game.home_team)}</h3>
+          <div class="time">${escapeHtml(game.commence_time)}${statusBadge}</div>
+          <div class="expand-btn">▼ Ver Mercados</div>
+        </div>
+
+        <div class="card-content" id="card-${escapeHtml(game.gameId)}">
+          <hr>
+          <div class="market-title">Moneyline</div>
+          <div class="odds-market">
+            <div class="odds-btn">
+              <span class="team-name">${escapeHtml(game.favorite)}</span>
+              <span class="team-odds">${escapeHtml(game.favorite_odds)}</span>
+            </div>
+            <div class="odds-btn">
+              <span class="team-name">${escapeHtml(game.underdog)}</span>
+              <span class="team-odds">${escapeHtml(game.underdog_odds)}</span>
+            </div>
+          </div>
+
+          <div class="market-title">Runline</div>
+          ${renderOddsGroup(game.runline)}
+
+          <div class="market-title">Totals</div>
+          ${renderOddsGroup(game.totals)}
+
+          ${movementHtml ? `<div class="market-title">🔥 Movimiento</div>${movementHtml}` : ""}
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  container.innerHTML = html || "<div class='empty-state'>No hay partidos que coincidan con este filtro.</div>";
+  setText("steamCount", steamCount);
 }
-loadGames();
-
-setInterval(
-  loadGames,
-  30000
-);
-
 </script>
-</div>
-</div>
 </body>
 </html>
+
