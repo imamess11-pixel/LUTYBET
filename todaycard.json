@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-13T21:29:15.360Z",
+  "timestamp": "07/03/2026 05:00:55 PM",
   "games": [
     [
       "gameId",
@@ -19,7 +19,7 @@
       "American League",
       "07/14/2026 08:01 PM",
       "scheduled",
-      "07/13/2026 05:27:41 PM"
+     "timestamp": "07/03/2026 05:00:55 PM"
     ]
   ],
   "odds": [
@@ -36,38 +36,38 @@
       "MONEYLINE",
       "American League",
       "",
-      122, "2026-07-13T21:27:41.000Z"
+      122, "timestamp": "07/03/2026 05:00:55 PM"
     ],
     [
       "7fecfdecc539334a88781da1943c5e9a",
       "MONEYLINE",
       "National League",
       "",
-      -135, "2026-07-13T21:27:41.000Z"
+      -135, "timestamp": "07/03/2026 05:00:55 PM"
     ],
     [
       "7fecfdecc539334a88781da1943c5e9a",
       "RUNLINE",
       "American League +1.5",
-      1.5, -175, "2026-07-13T21:27:41.000Z"
+      1.5, -175,"timestamp": "07/03/2026 05:00:55 PM"
     ],
     [
       "7fecfdecc539334a88781da1943c5e9a",
       "RUNLINE",
       "National League -1.5",
-      -1.5, 154, "2026-07-13T21:27:41.000Z"
+      -1.5, 154, "timestamp": "07/03/2026 05:00:55 PM"
     ],
     [
       "7fecfdecc539334a88781da1943c5e9a",
       "TOTALS",
       "Over",
-      7.5, 100, "2026-07-13T21:27:41.000Z"
+      7.5, 100, "timestamp": "07/03/2026 05:00:55 PM"
     ],
     [
       "7fecfdecc539334a88781da1943c5e9a",
       "TOTALS",
       "Under",
-      7.5, 103, "2026-07-13T21:27:41.000Z"
+      7.5, 103, "timestamp": "07/03/2026 05:00:55 PM"
     ]
   ],
   "lineMovements": [
