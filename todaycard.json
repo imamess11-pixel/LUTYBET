@@ -1,79 +1,83 @@
+[
+  {
+    "gameId": "471b2b7bb19f52be5e618aec359cd8e5",
+    "away_team": "St. Louis Cardinals",
+    "home_team": "Chicago Cubs",
+    "commence_time": "07/03/2026 04:15 PM",
+    "status": "scheduled",
+    "favorite": "Chicago Cubs",
+    "favorite_odds": -124,
+    "underdog": "St. Louis Cardinals",
+    "underdog_odds": 124,
+    "moneyline": {
+      "Chicago Cubs": -124,
+      "St. Louis Cardinals": 124
+    },
     "runline": {
-      "Athletics -1.5": 145,
-      "Miami Marlins +1.5": -160
+      "Chicago Cubs -1.5": 154,
+      "St. Louis Cardinals +1.5": -170,
+      "Chicago Cubs -1": -118,
+      "St. Louis Cardinals +1": -117
     },
     "totals": {
-      "Over 10.5": -112,
-      "Under 10.5": 100
+      "Over 9.5": -110,
+      "Under 9.5": -105
     }
   },
   {
-    "gameId": "bb4dc431a7347100e9781696b2bcf256",
-    "away_team": "Milwaukee Brewers",
-    "home_team": "Arizona Diamondbacks",
-    "commence_time": "07/03/2026 09:45 PM",
+    "gameId": "14423828314cc83167d6c7ce88323746",
+    "away_team": "Pittsburgh Pirates",
+    "home_team": "Washington Nationals",
+    "commence_time": "07/03/2026 06:45 PM",
     "status": "scheduled",
-    "favorite": "Milwaukee Brewers",
-    "favorite_odds": -135,
-    "underdog": "Arizona Diamondbacks",
-    "underdog_odds": 126,
+    "favorite": "Washington Nationals",
+    "favorite_odds": -148,
+    "underdog": "Pittsburgh Pirates",
+    "underdog_odds": 135,
     "moneyline": {
-      "Arizona Diamondbacks": 126,
-      "Milwaukee Brewers": -135
+      "Pittsburgh Pirates": 135,
+      "Washington Nationals": -148
     },
     "runline": {
-      "Arizona Diamondbacks +1.5": -130,
-      "Milwaukee Brewers -1.5": 115
+      "Pittsburgh Pirates +1.5": -158,
+      "Washington Nationals -1.5": 144
     },
     "totals": {
-      "Over 8.5": -107,
-      "Under 8.5": 100
+      "Over 9.5": -105,
+      "Under 9.5": 106
     }
   },
   {
-    "gameId": "0341580e2426c65b63d7fb929214eb65",
-    "away_team": "San Diego Padres",
-    "home_team": "Los Angeles Dodgers",
-    "commence_time": "07/03/2026 10:10 PM",
+    "gameId": "0a7769461d3b3126c2e4bb98b8cee225",
+    "away_team": "Minnesota Twins",
+    "home_team": "New York Yankees",
+    "commence_time": "07/03/2026 07:05 PM",
     "status": "scheduled",
-    "favorite": "Los Angeles Dodgers",
-    "favorite_odds": -245,
-    "underdog": "San Diego Padres",
-    "underdog_odds": 219,
+    "favorite": "New York Yankees",
+    "favorite_odds": -204,
+    "underdog": "Minnesota Twins",
+    "underdog_odds": 186,
     "moneyline": {
-      "Los Angeles Dodgers": -245,
-      "San Diego Padres": 219
+      "Minnesota Twins": 186,
+      "New York Yankees": -204
     },
     "runline": {
-      "Los Angeles Dodgers -1.5": -112,
-      "San Diego Padres +1.5": 108
+      "Minnesota Twins +1.5": -105,
+      "New York Yankees -1.5": -103
     },
     "totals": {
-      "Over 7.5": 100,
-      "Under 7.5": 104
+      "Over 9.5": -104,
+      "Under 9.5": 107
     }
   },
   {
-    "gameId": "90671747520f496e2e8e3b667c7c4286",
-    "away_team": "Toronto Blue Jays",
-    "home_team": "Seattle Mariners",
-    "commence_time": "07/03/2026 10:10 PM",
+    "gameId": "6a7d6767bd4da0f044ab6d250c233769",
+    "away_team": "Baltimore Orioles",
+    "home_team": "Cincinnati Reds",
+    "commence_time": "07/03/2026 07:10 PM",
     "status": "scheduled",
-    "favorite": "Toronto Blue Jays",
-    "favorite_odds": -123,
-    "underdog": "Seattle Mariners",
-    "underdog_odds": 112,
-    "moneyline": {
-      "Seattle Mariners": 112,
-      "Toronto Blue Jays": -123
-    },
-    "runline": {
-      "Seattle Mariners +1.5": -160,
-      "Toronto Blue Jays -1.5": 141
-    },
-    "totals": {
-      "Over 7": -112,
-      "Under 7": -102
-    }
-  }
-]
+    "favorite": "Baltimore Orioles",
+    "favorite_odds": -115,
+    "underdog": "Cincinnati Reds",
+
+
