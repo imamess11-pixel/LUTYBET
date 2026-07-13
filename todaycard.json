@@ -1,84 +1,255 @@
-{
-  "timestamp": "07/03/2026 05:00:55 PM",
-  "games": [
-    [
-      "gameId",
-      "sport",
-      "league",
-      "home_team",
-      "away_team",
-      "commence_time",
-      "status",
-      "last_update"
-    ],
-    [
-      "7fecfdecc539334a88781da1943c5e9a",
-      "baseball_mlb",
-      "MLB",
-      "National League",
-      "American League",
-      "07/14/2026 08:01 PM",
-      "scheduled",
-     "timestamp": "07/03/2026 05:00:55 PM"
-    ]
-  ],
-  "odds": [
-    [
-      "gameId",
-      "market",
-      "selection",
-      "point",
-      "odds",
-      "updated_at"
-    ],
-    [
-      "7fecfdecc539334a88781da1943c5e9a",
-      "MONEYLINE",
-      "American League",
-      "",
-      122, "timestamp": "07/03/2026 05:00:55 PM"
-    ],
-    [
-      "7fecfdecc539334a88781da1943c5e9a",
-      "MONEYLINE",
-      "National League",
-      "",
-      -135, "timestamp": "07/03/2026 05:00:55 PM"
-    ],
-    [
-      "7fecfdecc539334a88781da1943c5e9a",
-      "RUNLINE",
-      "American League +1.5",
-      1.5, -175,"timestamp": "07/03/2026 05:00:55 PM"
-    ],
-    [
-      "7fecfdecc539334a88781da1943c5e9a",
-      "RUNLINE",
-      "National League -1.5",
-      -1.5, 154, "timestamp": "07/03/2026 05:00:55 PM"
-    ],
-    [
-      "7fecfdecc539334a88781da1943c5e9a",
-      "TOTALS",
-      "Over",
-      7.5, 100, "timestamp": "07/03/2026 05:00:55 PM"
-    ],
-    [
-      "7fecfdecc539334a88781da1943c5e9a",
-      "TOTALS",
-      "Under",
-      7.5, 103, "timestamp": "07/03/2026 05:00:55 PM"
-    ]
-  ],
-  "lineMovements": [
-    [
-      "gameId",
-      "market",
-      "selection",
-      "point",
-      "old_odds",
-      "new_odds",
-      "movement",
-      "direction",
-      "timestamp"
-    
+[
+ {
+    "gameId": "471b2b7bb19f52be5e618aec359cd8e5",
+    "market": "MONEYLINE",
+    "selection": "Chicago Cubs",
+    "point": "",
+    "old_odds": -124,
+    "new_odds": 475,
+    "movement": 599,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "471b2b7bb19f52be5e618aec359cd8e5",
+    "market": "MONEYLINE",
+    "selection": "St. Louis Cardinals",
+    "point": "",
+    "old_odds": 124,
+    "new_odds": -521,
+    "movement": -645,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "14423828314cc83167d6c7ce88323746",
+    "market": "MONEYLINE",
+    "selection": "Pittsburgh Pirates",
+    "point": "",
+    "old_odds": 135,
+    "new_odds": 130,
+    "movement": -5,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "14423828314cc83167d6c7ce88323746",
+    "market": "MONEYLINE",
+    "selection": "Washington Nationals",
+    "point": "",
+    "old_odds": -148,
+    "new_odds": -143,
+    "movement": 5,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "14423828314cc83167d6c7ce88323746",
+    "market": "RUNLINE",
+    "selection": "Pittsburgh Pirates +1.5",
+    "point": 1.5,
+    "old_odds": -158,
+    "new_odds": -160,
+    "movement": -2,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "0a7769461d3b3126c2e4bb98b8cee225",
+    "market": "MONEYLINE",
+    "selection": "Minnesota Twins",
+    "point": "",
+    "old_odds": 186,
+    "new_odds": 190,
+    "movement": 4,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "0a7769461d3b3126c2e4bb98b8cee225",
+    "market": "MONEYLINE",
+    "selection": "New York Yankees",
+    "point": "",
+    "old_odds": -204,
+    "new_odds": -208,
+    "movement": -4,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "0a7769461d3b3126c2e4bb98b8cee225",
+    "market": "TOTALS",
+    "selection": "Over",
+    "point": 9.5,
+    "old_odds": -104,
+    "new_odds": -102,
+    "movement": 2,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "6a7d6767bd4da0f044ab6d250c233769",
+    "market": "MONEYLINE",
+    "selection": "Baltimore Orioles",
+    "point": "",
+    "old_odds": -115,
+    "new_odds": -118,
+    "movement": -3,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "6a7d6767bd4da0f044ab6d250c233769",
+    "market": "MONEYLINE",
+    "selection": "Cincinnati Reds",
+    "point": "",
+    "old_odds": 107,
+    "new_odds": 108,
+    "movement": 1,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "b854e09aa9677136666533dc8d2459ff",
+    "market": "RUNLINE",
+    "selection": "Cleveland Guardians -1.5",
+    "point": -1.5,
+    "old_odds": 160,
+    "new_odds": 163,
+    "movement": 3,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "02a01af3575ee92bb974caaf28f76911",
+    "market": "MONEYLINE",
+    "selection": "Atlanta Braves",
+    "point": "",
+    "old_odds": -105,
+    "new_odds": -108,
+    "movement": -3,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "02a01af3575ee92bb974caaf28f76911",
+    "market": "MONEYLINE",
+    "selection": "New York Mets",
+    "point": "",
+    "old_odds": 101,
+    "new_odds": -101,
+    "movement": -202,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "02a01af3575ee92bb974caaf28f76911",
+    "market": "RUNLINE",
+    "selection": "Atlanta Braves +1.5",
+    "point": 1.5,
+    "old_odds": -178,
+    "new_odds": -175,
+    "movement": 3,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "02a01af3575ee92bb974caaf28f76911",
+    "market": "RUNLINE",
+    "selection": "Atlanta Braves -1.5",
+    "point": -1.5,
+    "old_odds": 176,
+    "new_odds": 179,
+    "movement": 3,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "02a01af3575ee92bb974caaf28f76911",
+    "market": "RUNLINE",
+    "selection": "New York Mets +1.5",
+    "point": 1.5,
+    "old_odds": -200,
+    "new_odds": -204,
+    "movement": -4,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "3bf177f10d546535921fa6be841880f7",
+    "market": "MONEYLINE",
+    "selection": "Colorado Rockies",
+    "point": "",
+    "old_odds": 131,
+    "new_odds": 132,
+    "movement": 1,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "3bf177f10d546535921fa6be841880f7",
+    "market": "RUNLINE",
+    "selection": "Colorado Rockies +1.5",
+    "point": 1.5,
+    "old_odds": -115,
+    "new_odds": -111,
+    "movement": 4,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "f0e24a50674443856bff31b645ff5572",
+    "market": "MONEYLINE",
+    "selection": "Houston Astros",
+    "point": "",
+    "old_odds": -102,
+    "new_odds": 103,
+    "movement": 205,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "bb4dc431a7347100e9781696b2bcf256",
+    "market": "MONEYLINE",
+    "selection": "Arizona Diamondbacks",
+    "point": "",
+    "old_odds": 126,
+    "new_odds": 125,
+    "movement": -1,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "0341580e2426c65b63d7fb929214eb65",
+    "market": "RUNLINE",
+    "selection": "Los Angeles Dodgers -1.5",
+    "point": -1.5,
+    "old_odds": -112,
+    "new_odds": -115,
+    "movement": -3,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "304cfd624e72dea59a61624cfad305d8",
+    "market": "TOTALS",
+    "selection": "Over",
+    "point": 8,
+    "old_odds": -113,
+    "new_odds": -119,
+    "movement": -6,
+    "direction": "↓",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  },
+  {
+    "gameId": "304cfd624e72dea59a61624cfad305d8",
+    "market": "TOTALS",
+    "selection": "Under",
+    "point": 8,
+    "old_odds": 102,
+    "new_odds": 107,
+    "movement": 5,
+    "direction": "↑",
+    "timestamp": "07/03/2026 05:00:55 PM"
+  }
+]
