@@ -179,19 +179,122 @@ body{
 
 #games{
   display:none;
-  grid-template-columns:
-  repeat(auto-fill,minmax(340px,1fr));
-  gap:15px;
+  flex-direction:column;
   padding:15px;
-   margin-top:10px;
+  margin-top:10px;
+  gap:0;
+}
+
+.date-bar{
+  display:flex;
+  align-items:center;
+  background:#1d232d;
+  padding:10px 15px;
+  border-radius:8px 8px 0 0;
+  font-weight:bold;
+  color:white;
+  margin-top:15px;
+  text-transform:capitalize;
+}
+
+.date-bar:first-child{
+  margin-top:0;
+}
+
+.date-bar .date-label{
+  flex:1;
+}
+
+.date-bar .col-header{
+  width:150px;
+  text-align:center;
+  color:#9aa0a6;
+  font-size:12px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+.game-row{
+  display:flex;
+  align-items:stretch;
+  background:#171b22;
+  border:1px solid #252d3a;
+  border-top:none;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.game-row:hover{
+  background:#1c222c;
+}
+
+.game-time{
+  width:55px;
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#f5b041;
+  font-weight:bold;
+  font-size:13px;
+  padding:10px 5px;
+  text-align:center;
+}
+
+.game-teams{
+  flex:1;
+  min-width:0;
+  padding:10px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:10px;
+}
+
+.game-team-line{
+  font-weight:bold;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.odds-col{
+  width:150px;
+  flex-shrink:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:10px;
+  padding:10px 8px;
+  border-left:1px solid #252d3a;
+}
+
+.odds-col .odds-line{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:13px;
+}
+
+.odds-col .odds-line .point{
+  color:#9aa0a6;
+}
+
+.odds-col .odds-line .price{
+  color:white;
+  font-weight:bold;
+}
+
+.expand-panel{
+  display:none;
+  background:#12151c;
+  border:1px solid #252d3a;
+  border-top:none;
+  padding:12px 15px;
 }
 
 .card{
-  background:#171b22;
-  border:1px solid #252d3a;
-  border-radius:14px;
-  padding:15px;
-  transition:.2s;
+  /* ya no se usa para el layout de partidos, se deja por compatibilidad */
 }
 
 .card:hover{
@@ -267,16 +370,7 @@ body{
   color:#999;
 }
 
-.date-header{
-  grid-column:1 / -1;
-  font-size:18px;
-  font-weight:bold;
-  color:#f5b041;
-  margin:10px 0 2px;
-  padding-bottom:6px;
-  border-bottom:1px solid #333;
-  text-transform:capitalize;
-}
+/* .date-header ya no se usa - reemplazado por .date-bar */
 .stats-bar{
   display:grid;
   grid-template-columns:
@@ -840,7 +934,7 @@ function toggleMLB(){
 
       module.style.display="block";
 
-      games.style.display="grid";
+      games.style.display="flex";
 
   }else{
 
@@ -881,7 +975,7 @@ let steamFilter = false;
 function filterSteamGames(){
 
   const cards =
-    document.querySelectorAll(".card");
+    document.querySelectorAll(".game-row");
 
   const steamCard =
     document.querySelector(
@@ -1044,8 +1138,8 @@ function dateGroupLabel(date){
   const diffDays = Math.round(
     (startOfDay(date) - startOfDay(new Date())) / 86400000
   );
-  if(diffDays === 0) return "Today";
-  if(diffDays === 1) return "Tomorrow";
+  if(diffDays === 0) return "Hoy";
+  if(diffDays === 1) return "Mañana";
   return date.toLocaleDateString('es-ES', {
     weekday:'long',
     day:'numeric',
@@ -1099,7 +1193,8 @@ ${move.new_odds}
 
 });
 
-// ENCABEZADO DE FECHA (Today / Tomorrow / dia 3) - solo cuando cambia el dia
+// BARRA DE FECHA (Hoy / Mañana / dia 3) - solo cuando cambia el dia,
+// con encabezados de columna como en una casa de apuestas
 const gameDate = new Date(game.commence_time);
 
 if(!isNaN(gameDate)){
@@ -1112,8 +1207,11 @@ if(!isNaN(gameDate)){
     lastGroupKey = groupKey;
 
     container.innerHTML += `
-      <div class="date-header">
-        ${dateGroupLabel(gameDate)}
+      <div class="date-bar">
+        <span class="date-label">${dateGroupLabel(gameDate)}</span>
+        <span class="col-header">Run Line</span>
+        <span class="col-header">Total</span>
+        <span class="col-header">Money Line</span>
       </div>
     `;
 
@@ -1121,151 +1219,83 @@ if(!isNaN(gameDate)){
 
 }
 
+// Lineas alternas extra (mas alla del primer par) para runline/totals,
+// se muestran solo al expandir la fila.
+function lineasExtra(oddsObj){
+
+  const entries = Object.entries(oddsObj || {});
+
+  if(entries.length <= 2) return "";
+
+  return entries.slice(2).map(([label, odds]) => `
+    <div class="odds-line">
+      <span class="point">${label}</span>
+      <span class="price">${odds}</span>
+    </div>
+  `).join("");
+
+}
+
+const runlineKeys = Object.keys(game.runline || {});
+const totalsKeys = Object.keys(game.totals || {});
+
 container.innerHTML += `
 
-<div class="card" id="game-${game.gameId}">
-  <div
-    class="card-header"
-    onclick="toggleCard('card-${game.gameId}')"
-  >
+<div class="game-row" id="game-${game.gameId}" onclick="toggleCard('card-${game.gameId}')">
 
-    <h3>
+  <div class="game-time">
+    ${game.commence_time.split(" ").slice(1).join(" ")}
+  </div>
 
-      ${game.away_team}
-      vs
-      ${game.home_team}
+  <div class="game-teams">
+    <div class="game-team-line">${game.away_team}</div>
+    <div class="game-team-line">${game.home_team}</div>
+  </div>
 
-    </h3>
-
-    <div class="time">
-
-      ${game.commence_time}
-
+  <div class="odds-col">
+    <div class="odds-line">
+      <span class="point">${runlineKeys[0] || ""}</span>
+      <span class="price">${game.runline[runlineKeys[0]] ?? ""}</span>
     </div>
-
-    <div class="expand-btn">
-
-      ▼ Ver Mercados
-
+    <div class="odds-line">
+      <span class="point">${runlineKeys[1] || ""}</span>
+      <span class="price">${game.runline[runlineKeys[1]] ?? ""}</span>
     </div>
-
   </div>
 
-  <div
-    class="card-content"
-    id="card-${game.gameId}"
-  >
-
-    <hr>
-
-    <div class="market-title">
-  Moneyline
-</div>
-
-<div class="odds-market">
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${game.favorite}
-    </span>
-
-    <span class="team-odds">
-      ${game.favorite_odds}
-    </span>
-
+  <div class="odds-col">
+    <div class="odds-line">
+      <span class="point">${totalsKeys[0] || ""}</span>
+      <span class="price">${game.totals[totalsKeys[0]] ?? ""}</span>
+    </div>
+    <div class="odds-line">
+      <span class="point">${totalsKeys[1] || ""}</span>
+      <span class="price">${game.totals[totalsKeys[1]] ?? ""}</span>
+    </div>
   </div>
 
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${game.underdog}
-    </span>
-
-    <span class="team-odds">
-      ${game.underdog_odds}
-    </span>
-
-  </div>
-
-</div>
-   <div class="market-title">
-  Runline
-</div>
-
-<div class="odds-market">
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.runline)[0]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.runline)[0]}
-    </span>
-
-  </div>
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.runline)[1]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.runline)[1]}
-    </span>
-
+  <div class="odds-col">
+    <div class="odds-line">
+      <span class="point">${game.favorite}</span>
+      <span class="price">${game.favorite_odds}</span>
+    </div>
+    <div class="odds-line">
+      <span class="point">${game.underdog}</span>
+      <span class="price">${game.underdog_odds}</span>
+    </div>
   </div>
 
 </div>
 
-   <div class="market-title">
-  Totals
-</div>
+<div class="expand-panel" id="card-${game.gameId}">
 
-<div class="odds-market">
+  ${lineasExtra(game.runline) ? `<div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline)}` : ""}
 
-  <div class="odds-btn">
+  ${lineasExtra(game.totals) ? `<div class="market-title">Totals (lineas alternas)</div>${lineasExtra(game.totals)}` : ""}
 
-    <span class="team-name">
-      ${Object.keys(game.totals)[0]}
-    </span>
+  ${movementHtml ? `<div class="market-title steam">🔥 Movimiento</div>${movementHtml}` : ""}
 
-    <span class="team-odds">
-      ${Object.values(game.totals)[0]}
-    </span>
-
-  </div>
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.totals)[1]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.totals)[1]}
-    </span>
-
-  </div>
-
-</div>
-
-    ${movementHtml ? `
-
-      <div class="market-title steam">
-
-        🔥 Movimiento
-
-      </div>
-
-      ${movementHtml}
-
-    ` : ""}
-
-  </div>
+  ${!lineasExtra(game.runline) && !lineasExtra(game.totals) && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
 
 </div>
 
