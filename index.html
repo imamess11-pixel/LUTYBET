@@ -1044,8 +1044,8 @@ function dateGroupLabel(date){
   const diffDays = Math.round(
     (startOfDay(date) - startOfDay(new Date())) / 86400000
   );
-  if(diffDays === 0) return "Hoy";
-  if(diffDays === 1) return "Mañana";
+  if(diffDays === 0) return "Today";
+  if(diffDays === 1) return "Tomorrow";
   return date.toLocaleDateString('es-ES', {
     weekday:'long',
     day:'numeric',
@@ -1099,7 +1099,7 @@ ${move.new_odds}
 
 });
 
-// ENCABEZADO DE FECHA (Hoy / Mañana / dia 3) - solo cuando cambia el dia
+// ENCABEZADO DE FECHA (Today / Tomorrow / dia 3) - solo cuando cambia el dia
 const gameDate = new Date(game.commence_time);
 
 if(!isNaN(gameDate)){
