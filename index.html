@@ -1192,7 +1192,7 @@ if(!isNaN(gameDate)){
 container.innerHTML += `
 
 <div class="card" id="game-${game.gameId}">
- <div
+<div
   class="board-row"
   onclick="toggleCard('card-${game.gameId}')"
 >
@@ -1254,132 +1254,6 @@ container.innerHTML += `
     <div>
       ${game.underdog_odds}
     </div>
-
-  </div>
-
-</div>
-
-    <div class="expand-btn">
-
-      ▼ Ver Mercados
-
-    </div>
-
-  </div>
-
-  <div
-    class="card-content"
-    id="card-${game.gameId}"
-  >
-
-    <hr>
-
-    <div class="market-title">
-  Moneyline
-</div>
-
-<div class="odds-market">
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${game.favorite}
-    </span>
-
-    <span class="team-odds">
-      ${game.favorite_odds}
-    </span>
-
-  </div>
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${game.underdog}
-    </span>
-
-    <span class="team-odds">
-      ${game.underdog_odds}
-    </span>
-
-  </div>
-
-</div>
-   <div class="market-title">
-  Runline
-</div>
-
-<div class="odds-market">
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.runline)[0]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.runline)[0]}
-    </span>
-
-  </div>
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.runline)[1]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.runline)[1]}
-    </span>
-
-  </div>
-
-</div>
-
-   <div class="market-title">
-  Totals
-</div>
-
-<div class="odds-market">
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.totals)[0]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.totals)[0]}
-    </span>
-
-  </div>
-
-  <div class="odds-btn">
-
-    <span class="team-name">
-      ${Object.keys(game.totals)[1]}
-    </span>
-
-    <span class="team-odds">
-      ${Object.values(game.totals)[1]}
-    </span>
-
-  </div>
-
-</div>
-
-    ${movementHtml ? `
-
-      <div class="market-title steam">
-
-        🔥 Movimiento
-
-      </div>
-
-      ${movementHtml}
-
-    ` : ""}
 
   </div>
 
