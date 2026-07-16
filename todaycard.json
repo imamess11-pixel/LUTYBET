@@ -14,12 +14,12 @@
       "Philadelphia Phillies": -125
     },
     "runline": {
-      "New York Mets +1.5": -175,
+      "New York Mets +1.5": -178,
       "Philadelphia Phillies -1.5": 157
     },
     "totals": {
-      "Over 9.5": -105,
-      "Under 9.5": -105
+      "Over 9.5": -107,
+      "Under 9.5": -103
     }
   },
   {
@@ -37,14 +37,14 @@
       "Tampa Bay Rays": 103
     },
     "runline": {
-      "Boston Red Sox +1.5": -195,
-      "Tampa Bay Rays -1.5": 165,
-      "Boston Red Sox -1.5": 164,
-      "Tampa Bay Rays +1.5": -195
+      "Boston Red Sox +1.5": -200,
+      "Tampa Bay Rays -1.5": 170,
+      "Boston Red Sox -1.5": 163,
+      "Tampa Bay Rays +1.5": -194
     },
     "totals": {
-      "Over 8.5": -110,
-      "Under 8.5": -103
+      "Over 8.5": -103,
+      "Under 8.5": -108
     }
   },
   {
@@ -62,8 +62,8 @@
       "New York Yankees": -106
     },
     "runline": {
-      "Los Angeles Dodgers -1.5": 146,
-      "New York Yankees +1.5": -170
+      "Los Angeles Dodgers -1.5": 155,
+      "New York Yankees +1.5": -176
     },
     "totals": {
       "Over 9": -115,
@@ -85,8 +85,8 @@
       "Pittsburgh Pirates": 113
     },
     "runline": {
-      "Cleveland Guardians -1.5": 170,
-      "Pittsburgh Pirates +1.5": -200,
+      "Cleveland Guardians -1.5": 180,
+      "Pittsburgh Pirates +1.5": -207,
       "Cleveland Guardians +1.5": -235,
       "Pittsburgh Pirates -1.5": 175
     },
@@ -110,12 +110,35 @@
       "Toronto Blue Jays": -125
     },
     "runline": {
-      "Chicago White Sox +1.5": -185,
-      "Toronto Blue Jays -1.5": 160
+      "Chicago White Sox +1.5": -180,
+      "Toronto Blue Jays -1.5": 155
     },
     "totals": {
       "Over 8.5": -107,
       "Under 8.5": -107
+    }
+  },
+  {
+    "gameId": "11dadeb57de8089d2a80fb4a82fbff1d",
+    "away_team": "Miami Marlins",
+    "home_team": "Milwaukee Brewers",
+    "commence_time": "07/17/2026 07:41 PM",
+    "status": "scheduled",
+    "favorite": "Milwaukee Brewers",
+    "favorite_odds": -135,
+    "underdog": "Miami Marlins",
+    "underdog_odds": 124,
+    "moneyline": {
+      "Miami Marlins": 124,
+      "Milwaukee Brewers": -135
+    },
+    "runline": {
+      "Miami Marlins +1.5": -178,
+      "Milwaukee Brewers -1.5": 146
+    },
+    "totals": {
+      "Over 8": 103,
+      "Under 8": 100
     }
   },
   {
@@ -134,7 +157,7 @@
     },
     "runline": {
       "Kansas City Royals +1.5": -170,
-      "San Diego Padres -1.5": 145
+      "San Diego Padres -1.5": 146
     },
     "totals": {
       "Over 10": -107,
