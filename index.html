@@ -623,6 +623,74 @@ body{
   background:#182435;
 
 }
+.board-row{
+
+  display:grid;
+
+  grid-template-columns:
+  120px
+  1fr
+  180px
+  140px
+  120px;
+
+  gap:15px;
+
+  align-items:center;
+
+  cursor:pointer;
+
+}
+
+.board-time{
+
+  color:#aaa;
+
+  font-size:13px;
+
+}
+
+.board-game{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:8px;
+
+}
+
+.team-row{
+
+  font-weight:bold;
+
+  color:white;
+
+}
+
+.board-spread,
+.board-total,
+.board-ml{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:8px;
+
+  text-align:center;
+
+  font-weight:bold;
+
+}
+
+.board-row:hover{
+
+  background:#182435;
+
+  border-radius:10px;
+
+}
 
 </style>
 
@@ -1124,24 +1192,72 @@ if(!isNaN(gameDate)){
 container.innerHTML += `
 
 <div class="card" id="game-${game.gameId}">
-  <div
-    class="card-header"
-    onclick="toggleCard('card-${game.gameId}')"
-  >
+ <div
+  class="board-row"
+  onclick="toggleCard('card-${game.gameId}')"
+>
 
-    <h3>
+  <div class="board-time">
+    ${game.commence_time}
+  </div>
 
-      ${game.away_team}
-      vs
-      ${game.home_team}
+  <div class="board-game">
 
-    </h3>
+    <div class="team-row">
 
-    <div class="time">
-
-      ${game.commence_time}
+      <span class="team-name-board">
+        ${game.away_team}
+      </span>
 
     </div>
+
+    <div class="team-row">
+
+      <span class="team-name-board">
+        ${game.home_team}
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="board-spread">
+
+    <div>
+      ${Object.keys(game.runline)[0]}
+    </div>
+
+    <div>
+      ${Object.keys(game.runline)[1]}
+    </div>
+
+  </div>
+
+  <div class="board-total">
+
+    <div>
+      ${Object.keys(game.totals)[0]}
+    </div>
+
+    <div>
+      ${Object.keys(game.totals)[1]}
+    </div>
+
+  </div>
+
+  <div class="board-ml">
+
+    <div>
+      ${game.favorite_odds}
+    </div>
+
+    <div>
+      ${game.underdog_odds}
+    </div>
+
+  </div>
+
+</div>
 
     <div class="expand-btn">
 
