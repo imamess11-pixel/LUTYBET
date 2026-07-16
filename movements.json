@@ -1,25 +1,112 @@
 [
-{
-    "gameId": "f20d3f5cf3efbb324f11686e68db809c",
-    "market": "RUNLINE",
-    "selection": "Los Angeles Dodgers -1.5",
-    "point": -1.5,
-    "old_odds": 150,
-    "new_odds": 146,
-    "movement": -4,
+ {
+    "gameId": "7ad2e88701ead09625333188a5b653b2",
+    "market": "TOTALS",
+    "selection": "Over",
+    "point": 9.5,
+    "old_odds": -105,
+    "new_odds": -107,
+    "movement": -2,
     "direction": "↓",
-    "timestamp": "07/16/2026 01:34:51 PM"
+    "timestamp": "07/16/2026 02:16:57 PM"
   },
   {
-    "gameId": "f20d3f5cf3efbb324f11686e68db809c",
+    "gameId": "7ad2e88701ead09625333188a5b653b2",
+    "market": "TOTALS",
+    "selection": "Under",
+    "point": 9.5,
+    "old_odds": -104,
+    "new_odds": -103,
+    "movement": 1,
+    "direction": "↑",
+    "timestamp": "07/16/2026 02:16:57 PM"
+  },
+  {
+    "gameId": "c137da348b9193a96f85af78c01a1aca",
     "market": "RUNLINE",
-    "selection": "New York Yankees +1.5",
-    "point": 1.5,
-    "old_odds": -175,
-    "new_odds": -170,
+    "selection": "Cleveland Guardians -1.5",
+    "point": -1.5,
+    "old_odds": 175,
+    "new_odds": 180,
     "movement": 5,
     "direction": "↑",
-    "timestamp": "07/16/2026 01:34:51 PM"
+    "timestamp": "07/16/2026 02:16:57 PM"
+  },
+  {
+    "gameId": "cfb2e85cbd19eb03e617782d90d2c60e",
+    "market": "RUNLINE",
+    "selection": "Chicago White Sox +1.5",
+    "point": 1.5,
+    "old_odds": -185,
+    "new_odds": -180,
+    "movement": 5,
+    "direction": "↑",
+    "timestamp": "07/16/2026 02:16:57 PM"
+  },
+  {
+    "gameId": "cfb2e85cbd19eb03e617782d90d2c60e",
+    "market": "RUNLINE",
+    "selection": "Toronto Blue Jays -1.5",
+    "point": -1.5,
+    "old_odds": 160,
+    "new_odds": 155,
+    "movement": -5,
+    "direction": "↓",
+    "timestamp": "07/16/2026 02:16:57 PM"
+  },
+  {
+    "gameId": "704ba175e571a9f003f1c83cd86e48e6",
+    "market": "RUNLINE",
+    "selection": "San Diego Padres -1.5",
+    "point": -1.5,
+    "old_odds": 145,
+    "new_odds": 146,
+    "movement": 1,
+    "direction": "↑",
+    "timestamp": "07/16/2026 02:16:57 PM"
+  },
+  {
+    "gameId": "43706fff6ae5bb5201b9add3c0945034",
+    "market": "TOTALS",
+    "selection": "Over",
+    "point": 8.5,
+    "old_odds": -110,
+    "new_odds": -103,
+    "movement": 7,
+    "direction": "↑",
+    "timestamp": "07/16/2026 02:16:57 PM"
+  },
+  {
+    "gameId": "43706fff6ae5bb5201b9add3c0945034",
+    "market": "TOTALS",
+    "selection": "Under",
+    "point": 8.5,
+    "old_odds": -103,
+    "new_odds": -108,
+    "movement": -5,
+    "direction": "↓",
+    "timestamp": "07/16/2026 02:16:57 PM"
+  },
+  {
+    "gameId": "43706fff6ae5bb5201b9add3c0945034",
+    "market": "RUNLINE",
+    "selection": "Boston Red Sox -1.5",
+    "point": -1.5,
+    "old_odds": 164,
+    "new_odds": 163,
+    "movement": -1,
+    "direction": "↓",
+    "timestamp": "07/16/2026 02:16:57 PM"
+  },
+  {
+    "gameId": "43706fff6ae5bb5201b9add3c0945034",
+    "market": "RUNLINE",
+    "selection": "Tampa Bay Rays +1.5",
+    "point": 1.5,
+    "old_odds": -195,
+    "new_odds": -194,
+    "movement": 1,
+    "direction": "↑",
+    "timestamp": "07/16/2026 02:16:57 PM"
   }
 ]
-  
