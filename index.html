@@ -285,17 +285,37 @@ body{
   font-weight:bold;
 }
 
-.odds-pick{
+.odds-pick,
+.odds-pick-empty{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
   background:#222;
   border:1px solid #444;
   border-radius:6px;
-  color:white;
-  font-weight:bold;
-  font-size:13px;
-  padding:4px 10px;
+  padding:6px 10px;
   cursor:pointer;
   transition:.15s;
   font-family:inherit;
+}
+
+.odds-pick-empty{
+  cursor:default;
+  color:#666;
+}
+
+.odds-pick .pick-point,
+.odds-pick-empty .pick-point{
+  color:#9aa0a6;
+  font-size:12px;
+}
+
+.odds-pick .pick-price,
+.odds-pick-empty .pick-price{
+  color:white;
+  font-weight:bold;
+  font-size:13px;
 }
 
 .odds-pick:hover{
@@ -305,6 +325,10 @@ body{
 .odds-pick.selected{
   background:#f5b041;
   border-color:#f5b041;
+}
+
+.odds-pick.selected .pick-point,
+.odds-pick.selected .pick-price{
   color:#14181f;
 }
 
@@ -1250,12 +1274,9 @@ function lineasExtra(oddsObj, gameId, market){
 
   if(entries.length <= 2) return "";
 
-  return entries.slice(2).map(([label, odds]) => `
-    <div class="odds-line">
-      <span class="point">${label}</span>
-      ${renderPick(gameId, market, label, odds)}
-    </div>
-  `).join("");
+  return entries.slice(2).map(([label, odds]) =>
+    renderPick(gameId, market, label, label, odds)
+  ).join("");
 
 }
 
@@ -1276,20 +1297,32 @@ function ordenarPorEquipo(oddsObj, awayTeam, homeTeam){
   return { away, home };
 }
 
-// Boton clickeable para una cuota. Guarda los datos de la selección
-// en data-* attributes; togglePick() se encarga de resaltarlo y
-// guardarlo en la boleta.
-function renderPick(gameId, market, selection, odds){
-  if(odds === "" || odds === undefined || odds === null) return `<span class="price">-</span>`;
+// Boton clickeable para una seleccion completa (punto + cuota juntos
+// como una sola unidad). Guarda los datos en data-* attributes;
+// togglePick() resalta el boton entero y lo guarda en la boleta.
+function renderPick(gameId, market, selectionKey, pointLabel, odds){
+
+  if(odds === "" || odds === undefined || odds === null){
+    return `
+      <div class="odds-pick odds-pick-empty">
+        <span class="pick-point">${pointLabel || ""}</span>
+        <span class="pick-price">-</span>
+      </div>
+    `;
+  }
+
   return `
     <button
       class="odds-pick"
       data-game="${gameId}"
       data-market="${market}"
-      data-selection="${String(selection).replace(/"/g,'&quot;')}"
+      data-selection="${String(selectionKey).replace(/"/g,'&quot;')}"
       data-odds="${odds}"
       onclick="event.stopPropagation(); togglePick(this)"
-    >${odds}</button>
+    >
+      <span class="pick-point">${pointLabel || ""}</span>
+      <span class="pick-price">${odds}</span>
+    </button>
   `;
 }
 
@@ -1320,34 +1353,18 @@ container.innerHTML += `
   </div>
 
   <div class="odds-col">
-    <div class="odds-line">
-      <span class="point">${awayRL ? extraerPunto(awayRL[0], game.away_team) : ""}</span>
-      ${renderPick(game.gameId, "Runline", awayRL ? awayRL[0] : "", awayRL ? awayRL[1] : "")}
-    </div>
-    <div class="odds-line">
-      <span class="point">${homeRL ? extraerPunto(homeRL[0], game.home_team) : ""}</span>
-      ${renderPick(game.gameId, "Runline", homeRL ? homeRL[0] : "", homeRL ? homeRL[1] : "")}
-    </div>
+    ${renderPick(game.gameId, "Runline", awayRL ? awayRL[0] : "", awayRL ? extraerPunto(awayRL[0], game.away_team) : "", awayRL ? awayRL[1] : "")}
+    ${renderPick(game.gameId, "Runline", homeRL ? homeRL[0] : "", homeRL ? extraerPunto(homeRL[0], game.home_team) : "", homeRL ? homeRL[1] : "")}
   </div>
 
   <div class="odds-col">
-    <div class="odds-line">
-      <span class="point">${awayTot ? awayTot[0] : ""}</span>
-      ${renderPick(game.gameId, "Totals", awayTot ? awayTot[0] : "", awayTot ? awayTot[1] : "")}
-    </div>
-    <div class="odds-line">
-      <span class="point">${homeTot ? homeTot[0] : ""}</span>
-      ${renderPick(game.gameId, "Totals", homeTot ? homeTot[0] : "", homeTot ? homeTot[1] : "")}
-    </div>
+    ${renderPick(game.gameId, "Totals", awayTot ? awayTot[0] : "", awayTot ? awayTot[0] : "", awayTot ? awayTot[1] : "")}
+    ${renderPick(game.gameId, "Totals", homeTot ? homeTot[0] : "", homeTot ? homeTot[0] : "", homeTot ? homeTot[1] : "")}
   </div>
 
   <div class="odds-col">
-    <div class="odds-line">
-      ${renderPick(game.gameId, "Moneyline", game.away_team, awayML)}
-    </div>
-    <div class="odds-line">
-      ${renderPick(game.gameId, "Moneyline", game.home_team, homeML)}
-    </div>
+    ${renderPick(game.gameId, "Moneyline", game.away_team, game.away_team, awayML)}
+    ${renderPick(game.gameId, "Moneyline", game.home_team, game.home_team, homeML)}
   </div>
 
 </div>
