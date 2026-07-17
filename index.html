@@ -285,6 +285,29 @@ body{
   font-weight:bold;
 }
 
+.odds-pick{
+  background:#222;
+  border:1px solid #444;
+  border-radius:6px;
+  color:white;
+  font-weight:bold;
+  font-size:13px;
+  padding:4px 10px;
+  cursor:pointer;
+  transition:.15s;
+  font-family:inherit;
+}
+
+.odds-pick:hover{
+  border-color:#f5b041;
+}
+
+.odds-pick.selected{
+  background:#f5b041;
+  border-color:#f5b041;
+  color:#14181f;
+}
+
 .expand-panel{
   display:none;
   background:#12151c;
@@ -1221,7 +1244,7 @@ if(!isNaN(gameDate)){
 
 // Lineas alternas extra (mas alla del primer par) para runline/totals,
 // se muestran solo al expandir la fila.
-function lineasExtra(oddsObj){
+function lineasExtra(oddsObj, gameId, market){
 
   const entries = Object.entries(oddsObj || {});
 
@@ -1230,14 +1253,58 @@ function lineasExtra(oddsObj){
   return entries.slice(2).map(([label, odds]) => `
     <div class="odds-line">
       <span class="point">${label}</span>
-      <span class="price">${odds}</span>
+      ${renderPick(gameId, market, label, odds)}
     </div>
   `).join("");
 
 }
 
-const runlineKeys = Object.keys(game.runline || {});
-const totalsKeys = Object.keys(game.totals || {});
+// Extrae solo el punto (ej "-1.5") de una key tipo "Team Name -1.5",
+// para no repetir el nombre del equipo que ya aparece a la izquierda.
+function extraerPunto(label, teamName){
+  if(!label) return "";
+  return label.replace(teamName, "").trim() || label;
+}
+
+// Ordena un objeto de odds (runline) para que la primera entrada sea
+// la del equipo visitante y la segunda la del local, alineado con
+// el orden en que se muestran los equipos a la izquierda.
+function ordenarPorEquipo(oddsObj, awayTeam, homeTeam){
+  const entries = Object.entries(oddsObj || {});
+  const away = entries.find(([label]) => label.startsWith(awayTeam));
+  const home = entries.find(([label]) => label.startsWith(homeTeam));
+  return { away, home };
+}
+
+// Boton clickeable para una cuota. Guarda los datos de la selección
+// en data-* attributes; togglePick() se encarga de resaltarlo y
+// guardarlo en la boleta.
+function renderPick(gameId, market, selection, odds){
+  if(odds === "" || odds === undefined || odds === null) return `<span class="price">-</span>`;
+  return `
+    <button
+      class="odds-pick"
+      data-game="${gameId}"
+      data-market="${market}"
+      data-selection="${String(selection).replace(/"/g,'&quot;')}"
+      data-odds="${odds}"
+      onclick="event.stopPropagation(); togglePick(this)"
+    >${odds}</button>
+  `;
+}
+
+const { away: awayRL, home: homeRL } =
+  ordenarPorEquipo(game.runline, game.away_team, game.home_team);
+
+const { away: awayTot, home: homeTot } = (() => {
+  const entries = Object.entries(game.totals || {});
+  // Totals no es por equipo (Over/Under), se deja en el orden que venga
+  return { away: entries[0], home: entries[1] };
+})();
+
+const awayIsFavorite = game.favorite === game.away_team;
+const awayML = awayIsFavorite ? game.favorite_odds : game.underdog_odds;
+const homeML = awayIsFavorite ? game.underdog_odds : game.favorite_odds;
 
 container.innerHTML += `
 
@@ -1254,34 +1321,32 @@ container.innerHTML += `
 
   <div class="odds-col">
     <div class="odds-line">
-      <span class="point">${runlineKeys[0] || ""}</span>
-      <span class="price">${game.runline[runlineKeys[0]] ?? ""}</span>
+      <span class="point">${awayRL ? extraerPunto(awayRL[0], game.away_team) : ""}</span>
+      ${renderPick(game.gameId, "Runline", awayRL ? awayRL[0] : "", awayRL ? awayRL[1] : "")}
     </div>
     <div class="odds-line">
-      <span class="point">${runlineKeys[1] || ""}</span>
-      <span class="price">${game.runline[runlineKeys[1]] ?? ""}</span>
-    </div>
-  </div>
-
-  <div class="odds-col">
-    <div class="odds-line">
-      <span class="point">${totalsKeys[0] || ""}</span>
-      <span class="price">${game.totals[totalsKeys[0]] ?? ""}</span>
-    </div>
-    <div class="odds-line">
-      <span class="point">${totalsKeys[1] || ""}</span>
-      <span class="price">${game.totals[totalsKeys[1]] ?? ""}</span>
+      <span class="point">${homeRL ? extraerPunto(homeRL[0], game.home_team) : ""}</span>
+      ${renderPick(game.gameId, "Runline", homeRL ? homeRL[0] : "", homeRL ? homeRL[1] : "")}
     </div>
   </div>
 
   <div class="odds-col">
     <div class="odds-line">
-      <span class="point">${game.favorite}</span>
-      <span class="price">${game.favorite_odds}</span>
+      <span class="point">${awayTot ? awayTot[0] : ""}</span>
+      ${renderPick(game.gameId, "Totals", awayTot ? awayTot[0] : "", awayTot ? awayTot[1] : "")}
     </div>
     <div class="odds-line">
-      <span class="point">${game.underdog}</span>
-      <span class="price">${game.underdog_odds}</span>
+      <span class="point">${homeTot ? homeTot[0] : ""}</span>
+      ${renderPick(game.gameId, "Totals", homeTot ? homeTot[0] : "", homeTot ? homeTot[1] : "")}
+    </div>
+  </div>
+
+  <div class="odds-col">
+    <div class="odds-line">
+      ${renderPick(game.gameId, "Moneyline", game.away_team, awayML)}
+    </div>
+    <div class="odds-line">
+      ${renderPick(game.gameId, "Moneyline", game.home_team, homeML)}
     </div>
   </div>
 
@@ -1289,13 +1354,13 @@ container.innerHTML += `
 
 <div class="expand-panel" id="card-${game.gameId}">
 
-  ${lineasExtra(game.runline) ? `<div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline)}` : ""}
+  ${lineasExtra(game.runline, game.gameId, "Runline") ? `<div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline, game.gameId, "Runline")}` : ""}
 
-  ${lineasExtra(game.totals) ? `<div class="market-title">Totals (lineas alternas)</div>${lineasExtra(game.totals)}` : ""}
+  ${lineasExtra(game.totals, game.gameId, "Totals") ? `<div class="market-title">Totals (lineas alternas)</div>${lineasExtra(game.totals, game.gameId, "Totals")}` : ""}
 
   ${movementHtml ? `<div class="market-title steam">🔥 Movimiento</div>${movementHtml}` : ""}
 
-  ${!lineasExtra(game.runline) && !lineasExtra(game.totals) && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
+  ${!lineasExtra(game.runline, game.gameId, "Runline") && !lineasExtra(game.totals, game.gameId, "Totals") && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
 
 </div>
 
@@ -1315,6 +1380,42 @@ console.error(error);
 }
 
 }
+// Boleta de apuestas en memoria - por ahora solo guarda las
+// selecciones. El panel visual para mostrarla (con stake, total,
+// etc.) se puede construir despues sobre este mismo array.
+let selectedBets = [];
+
+function togglePick(btn){
+
+  const isSelected = btn.classList.toggle("selected");
+
+  const pick = {
+    gameId: btn.dataset.game,
+    market: btn.dataset.market,
+    selection: btn.dataset.selection,
+    odds: btn.dataset.odds
+  };
+
+  if(isSelected){
+
+    selectedBets.push(pick);
+
+  } else {
+
+    selectedBets = selectedBets.filter(b =>
+      !(
+        b.gameId === pick.gameId &&
+        b.market === pick.market &&
+        b.selection === pick.selection
+      )
+    );
+
+  }
+
+  console.log("Selecciones actuales:", selectedBets);
+
+}
+
 function toggleCard(id){
 
   const card =
