@@ -1391,11 +1391,7 @@ container.innerHTML += `
   onclick="toggleCard('card-${game.gameId}')"
 >
   ◄ Back to MLB Board
-</div>
-
-
-
-<div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline, game.gameId, "Runline")}` : ""}
+</div><div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline, game.gameId, "Runline")}` : ""}
 
   ${lineasExtra(game.totals, game.gameId, "Totals") ? `<div class="market-title">Totals (lineas alternas)</div>${lineasExtra(game.totals, game.gameId, "Totals")}` : ""}
 
