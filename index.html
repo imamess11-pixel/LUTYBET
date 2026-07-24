@@ -179,169 +179,19 @@ body{
 
 #games{
   display:none;
-  flex-direction:column;
+  grid-template-columns:
+  repeat(auto-fill,minmax(340px,1fr));
+  gap:15px;
   padding:15px;
-  margin-top:10px;
-  gap:0;
-}
-
-.date-bar{
-  display:flex;
-  align-items:center;
-  background:#1d232d;
-  padding:10px 15px;
-  border-radius:8px 8px 0 0;
-  font-weight:bold;
-  color:white;
-  margin-top:15px;
-  text-transform:capitalize;
-}
-
-.date-bar:first-child{
-  margin-top:0;
-}
-
-.date-bar .date-label{
-  flex:1;
-}
-
-.date-bar .col-header{
-  width:150px;
-  text-align:center;
-  color:#9aa0a6;
-  font-size:12px;
-  font-weight:bold;
-  text-transform:uppercase;
-}
-
-.game-row{
-  display:flex;
-  align-items:stretch;
-  background:#171b22;
-  border:1px solid #252d3a;
-  border-top:none;
-  cursor:pointer;
-  transition:.2s;
-}
-
-.game-row:hover{
-  background:#1c222c;
-}
-
-.game-time{
-  width:55px;
-  flex-shrink:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#f5b041;
-  font-weight:bold;
-  font-size:13px;
-  padding:10px 5px;
-  text-align:center;
-}
-
-.game-teams{
-  flex:1;
-  min-width:0;
-  padding:10px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  gap:10px;
-}
-
-.game-team-line{
-  font-weight:bold;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-}
-
-.odds-col{
-  width:150px;
-  flex-shrink:0;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  gap:10px;
-  padding:10px 8px;
-  border-left:1px solid #252d3a;
-}
-
-.odds-col .odds-line{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-size:13px;
-}
-
-.odds-col .odds-line .point{
-  color:#9aa0a6;
-}
-
-.odds-col .odds-line .price{
-  color:white;
-  font-weight:bold;
-}
-
-.odds-pick,
-.odds-pick-empty{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  width:100%;
-  background:#222;
-  border:1px solid #444;
-  border-radius:6px;
-  padding:6px 10px;
-  cursor:pointer;
-  transition:.15s;
-  font-family:inherit;
-}
-
-.odds-pick-empty{
-  cursor:default;
-  color:#666;
-}
-
-.odds-pick .pick-point,
-.odds-pick-empty .pick-point{
-  color:#9aa0a6;
-  font-size:12px;
-}
-
-.odds-pick .pick-price,
-.odds-pick-empty .pick-price{
-  color:white;
-  font-weight:bold;
-  font-size:13px;
-}
-
-.odds-pick:hover{
-  border-color:#f5b041;
-}
-
-.odds-pick.selected{
-  background:#f5b041;
-  border-color:#f5b041;
-}
-
-.odds-pick.selected .pick-point,
-.odds-pick.selected .pick-price{
-  color:#14181f;
-}
-
-.expand-panel{
-  display:none;
-  background:#12151c;
-  border:1px solid #252d3a;
-  border-top:none;
-  padding:12px 15px;
+   margin-top:10px;
 }
 
 .card{
-  /* ya no se usa para el layout de partidos, se deja por compatibilidad */
+  background:#171b22;
+  border:1px solid #252d3a;
+  border-radius:14px;
+  padding:15px;
+  transition:.2s;
 }
 
 .card:hover{
@@ -416,8 +266,6 @@ body{
   padding:30px;
   color:#999;
 }
-
-/* .date-header ya no se usa - reemplazado por .date-bar */
 .stats-bar{
   display:grid;
   grid-template-columns:
@@ -764,6 +612,23 @@ body{
   background:#182435;
 
 }
+.back-btn{
+
+  color:#FFD700;
+
+  font-weight:bold;
+
+  margin-bottom:15px;
+
+  cursor:pointer;
+
+}
+
+.back-btn:hover{
+
+  color:white;
+
+}
 
 </style>
 
@@ -923,6 +788,7 @@ const API_URL = "./todaycard.json";
 
 let mlbVisible = false;
 let steamOnly = false;
+let activeGame = null;
 
 function showAllGames(){
 
@@ -981,7 +847,7 @@ function toggleMLB(){
 
       module.style.display="block";
 
-      games.style.display="flex";
+      games.style.display="grid";
 
   }else{
 
@@ -1022,7 +888,7 @@ let steamFilter = false;
 function filterSteamGames(){
 
   const cards =
-    document.querySelectorAll(".game-row");
+    document.querySelectorAll(".card");
 
   const steamCard =
     document.querySelector(
@@ -1169,33 +1035,6 @@ const container =
 
 container.innerHTML = "";
 
-// ORDENAR POR FECHA REAL (para que el agrupado por dia salga bien)
-games.sort((a, b) => {
-  const da = new Date(a.commence_time);
-  const db = new Date(b.commence_time);
-  if (isNaN(da) || isNaN(db)) return 0;
-  return da - db;
-});
-
-function startOfDay(d){
-  return new Date(d.getFullYear(), d.getMonth(), d.getDate());
-}
-
-function dateGroupLabel(date){
-  const diffDays = Math.round(
-    (startOfDay(date) - startOfDay(new Date())) / 86400000
-  );
-  if(diffDays === 0) return "Hoy";
-  if(diffDays === 1) return "Mañana";
-  return date.toLocaleDateString('es-ES', {
-    weekday:'long',
-    day:'numeric',
-    month:'long'
-  });
-}
-
-let lastGroupKey = null;
-
 games.forEach(game => {
 
 const gameMoves =
@@ -1240,144 +1079,156 @@ ${move.new_odds}
 
 });
 
-// BARRA DE FECHA (Hoy / Mañana / dia 3) - solo cuando cambia el dia,
-// con encabezados de columna como en una casa de apuestas
-const gameDate = new Date(game.commence_time);
-
-if(!isNaN(gameDate)){
-
-  const groupKey =
-    startOfDay(gameDate).toISOString();
-
-  if(groupKey !== lastGroupKey){
-
-    lastGroupKey = groupKey;
-
-    container.innerHTML += `
-      <div class="date-bar">
-        <span class="date-label">${dateGroupLabel(gameDate)}</span>
-        <span class="col-header">Run Line</span>
-        <span class="col-header">Total</span>
-        <span class="col-header">Money Line</span>
-      </div>
-    `;
-
-  }
-
-}
-
-// Lineas alternas extra (mas alla del primer par) para runline/totals,
-// se muestran solo al expandir la fila.
-function lineasExtra(oddsObj, gameId, market){
-
-  const entries = Object.entries(oddsObj || {});
-
-  if(entries.length <= 2) return "";
-
-  return entries.slice(2).map(([label, odds]) =>
-    renderPick(gameId, market, label, label, odds)
-  ).join("");
-
-}
-
-// Extrae solo el punto (ej "-1.5") de una key tipo "Team Name -1.5",
-// para no repetir el nombre del equipo que ya aparece a la izquierda.
-function extraerPunto(label, teamName){
-  if(!label) return "";
-  return label.replace(teamName, "").trim() || label;
-}
-
-// Ordena un objeto de odds (runline) para que la primera entrada sea
-// la del equipo visitante y la segunda la del local, alineado con
-// el orden en que se muestran los equipos a la izquierda.
-function ordenarPorEquipo(oddsObj, awayTeam, homeTeam){
-  const entries = Object.entries(oddsObj || {});
-  const away = entries.find(([label]) => label.startsWith(awayTeam));
-  const home = entries.find(([label]) => label.startsWith(homeTeam));
-  return { away, home };
-}
-
-// Boton clickeable para una seleccion completa (punto + cuota juntos
-// como una sola unidad). Guarda los datos en data-* attributes;
-// togglePick() resalta el boton entero y lo guarda en la boleta.
-function renderPick(gameId, market, selectionKey, pointLabel, odds){
-
-  if(odds === "" || odds === undefined || odds === null){
-    return `
-      <div class="odds-pick odds-pick-empty">
-        <span class="pick-point">${pointLabel || ""}</span>
-        <span class="pick-price">-</span>
-      </div>
-    `;
-  }
-
-  return `
-    <button
-      class="odds-pick"
-      data-game="${gameId}"
-      data-market="${market}"
-      data-selection="${String(selectionKey).replace(/"/g,'&quot;')}"
-      data-odds="${odds}"
-      onclick="event.stopPropagation(); togglePick(this)"
-    >
-      <span class="pick-point">${pointLabel || ""}</span>
-      <span class="pick-price">${odds}</span>
-    </button>
-  `;
-}
-
-const { away: awayRL, home: homeRL } =
-  ordenarPorEquipo(game.runline, game.away_team, game.home_team);
-
-const { away: awayTot, home: homeTot } = (() => {
-  const entries = Object.entries(game.totals || {});
-  // Totals no es por equipo (Over/Under), se deja en el orden que venga
-  return { away: entries[0], home: entries[1] };
-})();
-
-const awayIsFavorite = game.favorite === game.away_team;
-const awayML = awayIsFavorite ? game.favorite_odds : game.underdog_odds;
-const homeML = awayIsFavorite ? game.underdog_odds : game.favorite_odds;
-
 container.innerHTML += `
 
-<div class="game-row" id="game-${game.gameId}" onclick="toggleCard('card-${game.gameId}')">
+<div class="card" id="game-${game.gameId}">
+  <div
+    class="card-header"
+    onclick="toggleCard('card-${game.gameId}')"
+  >
 
-  <div class="game-time">
-    ${game.commence_time.split(" ").slice(1).join(" ")}
+    <h3>
+
+      ${game.away_team}
+      vs
+      ${game.home_team}
+
+    </h3>
+
+    <div class="time">
+
+      ${game.commence_time}
+
+    </div>
+
+    <div class="expand-btn">
+
+      ▼ Ver Mercados
+
+    </div>
+
   </div>
 
-  <div class="game-teams">
-    <div class="game-team-line">${game.away_team}</div>
-    <div class="game-team-line">${game.home_team}</div>
+  <div
+    class="card-content"
+    id="card-${game.gameId}"
+  >
+
+    <hr>
+<div
+  class="back-btn"
+  onclick="toggleCard('card-${game.gameId}')"
+>
+  ◄ Back to MLB Board
+</div>
+    <div class="market-title">
+  Moneyline
+</div>
+
+<div class="odds-market">
+
+  <div class="odds-btn">
+
+    <span class="team-name">
+      ${game.favorite}
+    </span>
+
+    <span class="team-odds">
+      ${game.favorite_odds}
+    </span>
+
   </div>
 
-  <div class="odds-col">
-    ${renderPick(game.gameId, "Runline", awayRL ? awayRL[0] : "", awayRL ? extraerPunto(awayRL[0], game.away_team) : "", awayRL ? awayRL[1] : "")}
-    ${renderPick(game.gameId, "Runline", homeRL ? homeRL[0] : "", homeRL ? extraerPunto(homeRL[0], game.home_team) : "", homeRL ? homeRL[1] : "")}
+  <div class="odds-btn">
+
+    <span class="team-name">
+      ${game.underdog}
+    </span>
+
+    <span class="team-odds">
+      ${game.underdog_odds}
+    </span>
+
   </div>
 
-  <div class="odds-col">
-    ${renderPick(game.gameId, "Totals", awayTot ? awayTot[0] : "", awayTot ? awayTot[0] : "", awayTot ? awayTot[1] : "")}
-    ${renderPick(game.gameId, "Totals", homeTot ? homeTot[0] : "", homeTot ? homeTot[0] : "", homeTot ? homeTot[1] : "")}
+</div>
+   <div class="market-title">
+  Runline
+</div>
+
+<div class="odds-market">
+
+  <div class="odds-btn">
+
+    <span class="team-name">
+      ${Object.keys(game.runline)[0]}
+    </span>
+
+    <span class="team-odds">
+      ${Object.values(game.runline)[0]}
+    </span>
+
   </div>
 
-  <div class="odds-col">
-    ${renderPick(game.gameId, "Moneyline", game.away_team, game.away_team, awayML)}
-    ${renderPick(game.gameId, "Moneyline", game.home_team, game.home_team, homeML)}
+  <div class="odds-btn">
+
+    <span class="team-name">
+      ${Object.keys(game.runline)[1]}
+    </span>
+
+    <span class="team-odds">
+      ${Object.values(game.runline)[1]}
+    </span>
+
   </div>
 
 </div>
 
-<div class="expand-panel" id="card-${game.gameId}">
+   <div class="market-title">
+  Totals
+</div>
 
-  ${lineasExtra(game.runline, game.gameId, "Runline") ? `<div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline, game.gameId, "Runline")}` : ""}
+<div class="odds-market">
 
-  ${lineasExtra(game.totals, game.gameId, "Totals") ? `<div class="market-title">Totals (lineas alternas)</div>${lineasExtra(game.totals, game.gameId, "Totals")}` : ""}
+  <div class="odds-btn">
 
-  ${movementHtml ? `<div class="market-title steam">🔥 Movimiento</div>${movementHtml}` : ""}
+    <span class="team-name">
+      ${Object.keys(game.totals)[0]}
+    </span>
 
-  ${!lineasExtra(game.runline, game.gameId, "Runline") && !lineasExtra(game.totals, game.gameId, "Totals") && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
+    <span class="team-odds">
+      ${Object.values(game.totals)[0]}
+    </span>
+
+  </div>
+
+  <div class="odds-btn">
+
+    <span class="team-name">
+      ${Object.keys(game.totals)[1]}
+    </span>
+
+    <span class="team-odds">
+      ${Object.values(game.totals)[1]}
+    </span>
+
+  </div>
+
+</div>
+
+    ${movementHtml ? `
+
+      <div class="market-title steam">
+
+        🔥 Movimiento
+
+      </div>
+
+      ${movementHtml}
+
+    ` : ""}
+
+  </div>
 
 </div>
 
@@ -1397,56 +1248,52 @@ console.error(error);
 }
 
 }
-// Boleta de apuestas en memoria - por ahora solo guarda las
-// selecciones. El panel visual para mostrarla (con stake, total,
-// etc.) se puede construir despues sobre este mismo array.
-let selectedBets = [];
-
-function togglePick(btn){
-
-  const isSelected = btn.classList.toggle("selected");
-
-  const pick = {
-    gameId: btn.dataset.game,
-    market: btn.dataset.market,
-    selection: btn.dataset.selection,
-    odds: btn.dataset.odds
-  };
-
-  if(isSelected){
-
-    selectedBets.push(pick);
-
-  } else {
-
-    selectedBets = selectedBets.filter(b =>
-      !(
-        b.gameId === pick.gameId &&
-        b.market === pick.market &&
-        b.selection === pick.selection
-      )
-    );
-
-  }
-
-  console.log("Selecciones actuales:", selectedBets);
-
-}
-
 function toggleCard(id){
 
-  const card =
+  const content =
     document.getElementById(id);
 
-  if(card.style.display === "block"){
+  const gameId =
+    id.replace("card-","");
 
-    card.style.display = "none";
+  // Si ya está abierto, cerrarlo
+  if(activeGame === gameId){
 
-  } else {
+    activeGame = null;
 
-    card.style.display = "block";
+    document
+      .querySelectorAll(".card")
+      .forEach(card => {
 
+        card.style.display = "";
+
+      });
+
+    content.style.display = "none";
+
+    return;
   }
+
+  // Oculta todos los juegos
+  document
+    .querySelectorAll(".card")
+    .forEach(card => {
+
+      card.style.display = "none";
+
+    });
+
+  // Muestra solo el juego seleccionado
+  const selectedCard =
+    document.getElementById(
+      "game-" + gameId
+    );
+
+  selectedCard.style.display = "";
+
+  content.style.display = "block";
+
+  activeGame = gameId;
 
 }
 loadGames();
