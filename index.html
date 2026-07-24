@@ -1,3 +1,9 @@
+
+
+
+
+julio 24 original ya con la baras horizontals
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -764,23 +770,6 @@ body{
   background:#182435;
 
 }
-.back-btn{
-
-  color:#FFD700;
-
-  font-weight:bold;
-
-  margin-bottom:15px;
-
-  cursor:pointer;
-
-}
-
-.back-btn:hover{
-
-  color:white;
-
-}
 
 </style>
 
@@ -940,7 +929,6 @@ const API_URL = "./todaycard.json";
 
 let mlbVisible = false;
 let steamOnly = false;
-let activeGame = null;
 
 function showAllGames(){
 
@@ -1386,12 +1374,10 @@ container.innerHTML += `
   </div>
 
 </div>
-<div
-  class="back-btn"
-  onclick="toggleCard('card-${game.gameId}')"
->
-  ◄ Back to MLB Board
-</div><div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline, game.gameId, "Runline")}` : ""}
+
+<div class="expand-panel" id="card-${game.gameId}">
+
+  ${lineasExtra(game.runline, game.gameId, "Runline") ? `<div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline, game.gameId, "Runline")}` : ""}
 
   ${lineasExtra(game.totals, game.gameId, "Totals") ? `<div class="market-title">Totals (lineas alternas)</div>${lineasExtra(game.totals, game.gameId, "Totals")}` : ""}
 
@@ -1452,52 +1438,21 @@ function togglePick(btn){
   console.log("Selecciones actuales:", selectedBets);
 
 }
+
 function toggleCard(id){
 
-  const content =
+  const card =
     document.getElementById(id);
 
-  const gameId =
-    id.replace("card-","");
+  if(card.style.display === "block"){
 
-  // Si ya está abierto, cerrarlo
-  if(activeGame === gameId){
+    card.style.display = "none";
 
-    activeGame = null;
+  } else {
 
-    document
-      .querySelectorAll(".card")
-      .forEach(card => {
+    card.style.display = "block";
 
-        card.style.display = "";
-
-      });
-
-    content.style.display = "none";
-
-    return;
   }
-
-  // Oculta todos los juegos
-  document
-    .querySelectorAll(".card")
-    .forEach(card => {
-
-      card.style.display = "none";
-
-    });
-
-  // Muestra solo el juego seleccionado
-  const selectedCard =
-    document.getElementById(
-      "game-" + gameId
-    );
-
-  selectedCard.style.display = "";
-
-  content.style.display = "block";
-
-  activeGame = gameId;
 
 }
 loadGames();
