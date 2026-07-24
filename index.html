@@ -911,6 +911,15 @@ body{
   Steam Moves
 </button>
 
+<button
+  class="filter-btn"
+  id="backToAllBtn"
+  onclick="exitFocusMode()"
+  style="display:none; background:#f5b041; color:black;"
+>
+  ← Volver a todos los partidos
+</button>
+
 </div>
 
 <div id="hotGames" class="stats-bar"></div>
@@ -923,6 +932,7 @@ const API_URL = "./todaycard.json";
 
 let mlbVisible = false;
 let steamOnly = false;
+let focusedGameId = null;
 
 function showAllGames(){
 
@@ -1341,7 +1351,7 @@ const homeML = awayIsFavorite ? game.underdog_odds : game.favorite_odds;
 
 container.innerHTML += `
 
-<div class="game-row" id="game-${game.gameId}" onclick="toggleCard('card-${game.gameId}')">
+<div class="game-row" id="game-${game.gameId}" onclick="toggleFocus('${game.gameId}')">
 
   <div class="game-time">
     ${game.commence_time.split(" ").slice(1).join(" ")}
@@ -1386,6 +1396,10 @@ container.innerHTML += `
 
 document.getElementById("steamCount").innerHTML =
   steamCount;
+
+// Reaplica el modo "enfocado" (si hay uno activo) despues de cada
+// refresco, para que el refresco automatico de 30s no lo resetee.
+applyFocusMode();
 
 }catch(error){
 
@@ -1433,6 +1447,52 @@ function togglePick(btn){
 
 }
 
+// MODO ENFOCADO: al hacer click en un partido, se oculta el resto
+// (y las barras de fecha) y solo queda visible ese partido expandido.
+// El estado se guarda en focusedGameId para que sobreviva al refresco
+// automatico de cada 30s (ver applyFocusMode() al final de loadGames).
+
+function toggleFocus(gameId){
+  focusedGameId = (focusedGameId === gameId) ? null : gameId;
+  applyFocusMode();
+}
+
+function exitFocusMode(){
+  focusedGameId = null;
+  applyFocusMode();
+}
+
+function applyFocusMode(){
+
+  const container = document.getElementById("games");
+  const backBtn = document.getElementById("backToAllBtn");
+
+  if(!container) return;
+
+  if(!focusedGameId){
+
+    container.querySelectorAll(".game-row").forEach(r => r.style.display = "flex");
+    container.querySelectorAll(".date-bar").forEach(d => d.style.display = "flex");
+    container.querySelectorAll(".expand-panel").forEach(p => p.style.display = "none");
+    if(backBtn) backBtn.style.display = "none";
+    return;
+
+  }
+
+  container.querySelectorAll(".game-row").forEach(r => {
+    r.style.display = (r.id === "game-" + focusedGameId) ? "flex" : "none";
+  });
+
+  container.querySelectorAll(".date-bar").forEach(d => d.style.display = "none");
+
+  container.querySelectorAll(".expand-panel").forEach(p => {
+    p.style.display = (p.id === "card-" + focusedGameId) ? "block" : "none";
+  });
+
+  if(backBtn) backBtn.style.display = "inline-block";
+
+}
+
 function toggleCard(id){
 
   const card =
@@ -1461,6 +1521,3 @@ setInterval(
 </div>
 </body>
 </html>
-
-
-
