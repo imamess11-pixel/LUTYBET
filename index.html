@@ -773,8 +773,16 @@ body{
 <div class="app-layout">
 <div class="sidebar">
 
-  <div class="sidebar-logo">
+  <div class="sidebar-logo" onclick="goHome()" style="cursor:pointer; margin-bottom:4px;" title="Refresh odds / back to main page">
     💎 LUTYBET
+  </div>
+
+  <div class="subtitle" style="font-size:13px; margin-bottom:8px;">
+    Professional Betting Dashboard
+  </div>
+
+  <div id="lastUpdate" class="last-update" style="margin-bottom:20px;">
+    Updated: --
   </div>
 
   <div class="sidebar-section">
@@ -843,23 +851,9 @@ body{
 </div>
 
 <div class="main-content">
-<header class="header">
-
-  <div class="logo">
-    💎 LUTYBET
-  </div>
-
-  <div class="subtitle">
-    Professional Betting Dashboard
-  </div>
-
- 
-<div id="lastUpdate" class="last-update">
-  Updated: --
-</div>
-</header>
 <div id="mlbModule" style="display:none;">
   <div class="league-header">
+
 
   <h2>⚾ MLB</h2>
 
@@ -917,7 +911,7 @@ body{
   onclick="exitFocusMode()"
   style="display:none; background:#f5b041; color:black;"
 >
-  ← Volver a todos los partidos
+  ← Back to all games
 </button>
 
 </div>
@@ -933,6 +927,14 @@ const API_URL = "./todaycard.json";
 let mlbVisible = false;
 let steamOnly = false;
 let focusedGameId = null;
+
+// Click en el logo LUTYBET: actualiza las cuotas y vuelve a la
+// vista principal (sin filtro de steam, sin partido enfocado).
+function goHome(){
+  steamOnly = false;
+  focusedGameId = null;
+  loadGames();
+}
 
 function showAllGames(){
 
@@ -1195,9 +1197,9 @@ function dateGroupLabel(date){
   const diffDays = Math.round(
     (startOfDay(date) - startOfDay(new Date())) / 86400000
   );
-  if(diffDays === 0) return "Hoy";
-  if(diffDays === 1) return "Mañana";
-  return date.toLocaleDateString('es-ES', {
+  if(diffDays === 0) return "Today";
+  if(diffDays === 1) return "Tomorrow";
+  return date.toLocaleDateString('en-US', {
     weekday:'long',
     day:'numeric',
     month:'long'
