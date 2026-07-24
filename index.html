@@ -1358,12 +1358,6 @@ const awayML = awayIsFavorite ? game.favorite_odds : game.underdog_odds;
 const homeML = awayIsFavorite ? game.underdog_odds : game.favorite_odds;
 
 container.innerHTML += `
-<div
-  class="back-btn"
-  onclick="toggleCard('card-${game.gameId}')"
->
-  ◄ Back to MLB Board
-</div>
 
 <div class="game-row" id="game-${game.gameId}" onclick="toggleCard('card-${game.gameId}')">
 
@@ -1391,6 +1385,12 @@ container.innerHTML += `
     ${renderPick(game.gameId, "Moneyline", game.home_team, game.home_team, homeML)}
   </div>
 
+</div>
+<div
+  class="back-btn"
+  onclick="toggleCard('card-${game.gameId}')"
+>
+  ◄ Back to MLB Board
 </div>
 
 
