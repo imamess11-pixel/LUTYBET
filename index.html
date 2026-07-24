@@ -1388,14 +1388,15 @@ container.innerHTML += `
 </div>
 
 <div class="expand-panel" id="card-${game.gameId}">
-<div
+
+  ${lineasExtra(game.runline, game.gameId, "Runline") ? `<div
   class="back-btn"
   onclick="toggleCard('card-${game.gameId}')"
 >
   ◄ Back to MLB Board
 </div>
 
-  ${lineasExtra(game.runline, game.gameId, "Runline") ? `<div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline, game.gameId, "Runline")}` : ""}
+<div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline, game.gameId, "Runline")}` : ""}
 
   ${lineasExtra(game.totals, game.gameId, "Totals") ? `<div class="market-title">Totals (lineas alternas)</div>${lineasExtra(game.totals, game.gameId, "Totals")}` : ""}
 
