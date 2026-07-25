@@ -195,6 +195,12 @@ body{
   color:white;
   margin-top:15px;
   text-transform:capitalize;
+  cursor:pointer;
+  user-select:none;
+}
+
+.date-bar:hover{
+  background:#232b38;
 }
 
 .date-bar:first-child{
@@ -341,6 +347,36 @@ body{
 .alt-line-row .odds-pick,
 .alt-line-row .odds-pick-empty{
   flex:1;
+}
+
+.alt-toggle{
+  cursor:pointer;
+  user-select:none;
+}
+
+.alt-toggle:hover{
+  color:#ffcf7a;
+}
+
+.alt-section{
+  padding:10px 0 0 0;
+  border:none;
+  background:none;
+}
+
+.alt-header-row{
+  display:flex;
+  gap:8px;
+  margin-bottom:6px;
+  color:#9aa0a6;
+  font-size:11px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+.alt-header-row span{
+  flex:1;
+  text-align:center;
 }
 
 .expand-panel{
@@ -1218,6 +1254,8 @@ function dateGroupLabel(date){
 }
 
 let lastGroupKey = null;
+let groupIndex = 0;
+let currentGroupId = null;
 
 games.forEach(game => {
 
@@ -1264,7 +1302,9 @@ ${move.new_odds}
 });
 
 // BARRA DE FECHA (Hoy / Mañana / dia 3) - solo cuando cambia el dia,
-// con encabezados de columna como en una casa de apuestas
+// con encabezados de columna como en una casa de apuestas. Cada grupo
+// de fecha ahora es colapsable (clic en la barra oculta/muestra sus
+// partidos), para reducir el espacio de busqueda.
 const gameDate = new Date(game.commence_time);
 
 if(!isNaN(gameDate)){
@@ -1274,15 +1314,23 @@ if(!isNaN(gameDate)){
 
   if(groupKey !== lastGroupKey){
 
+    // Cierra el div del grupo anterior antes de abrir el siguiente
+    if(currentGroupId){
+      container.innerHTML += `</div>`;
+    }
+
     lastGroupKey = groupKey;
+    groupIndex++;
+    currentGroupId = "dategroup-" + groupIndex;
 
     container.innerHTML += `
-      <div class="date-bar">
-        <span class="date-label">${dateGroupLabel(gameDate)}</span>
+      <div class="date-bar" onclick="toggleSection('${currentGroupId}')">
+        <span class="date-label"><span id="${currentGroupId}-arrow">▾</span> ${dateGroupLabel(gameDate)}</span>
         <span class="col-header">Run Line</span>
         <span class="col-header">Total</span>
         <span class="col-header">Money Line</span>
       </div>
+      <div class="date-group" id="${currentGroupId}" style="display:block;">
     `;
 
   }
@@ -1301,7 +1349,16 @@ function extraerPuntoNumerico(label){
   return isNaN(num) ? null : num;
 }
 
-function agruparAltRunline(altRunlineObj, awayTeam, homeTeam){
+// Punto de la linea principal (para excluirlo de las alternas y no
+// repetirlo dos veces).
+function puntoPrincipal(oddsObj){
+  const entries = Object.entries(oddsObj || {});
+  if(entries.length === 0) return null;
+  const p = extraerPuntoNumerico(entries[0][0]);
+  return p === null ? null : Math.abs(p);
+}
+
+function agruparAltRunline(altRunlineObj, awayTeam, homeTeam, puntoPrimario){
 
   const entries = Object.entries(altRunlineObj || {});
   const groups = {};
@@ -1312,6 +1369,10 @@ function agruparAltRunline(altRunlineObj, awayTeam, homeTeam){
     if(point === null) return;
 
     const key = Math.abs(point);
+
+    // No repetir la linea principal dentro de las alternas
+    if(puntoPrimario !== null && Math.abs(key - puntoPrimario) < 0.001) return;
+
     if(!groups[key]) groups[key] = {};
 
     if(label.startsWith(awayTeam)) groups[key].away = { label, odds };
@@ -1326,7 +1387,7 @@ function agruparAltRunline(altRunlineObj, awayTeam, homeTeam){
 
 }
 
-function agruparAltTotals(altTotalsObj){
+function agruparAltTotals(altTotalsObj, puntoPrimario){
 
   const entries = Object.entries(altTotalsObj || {});
   const groups = {};
@@ -1335,6 +1396,9 @@ function agruparAltTotals(altTotalsObj){
 
     const point = extraerPuntoNumerico(label);
     if(point === null) return;
+
+    // No repetir la linea principal dentro de las alternas
+    if(puntoPrimario !== null && Math.abs(point - puntoPrimario) < 0.001) return;
 
     if(!groups[point]) groups[point] = {};
 
@@ -1366,9 +1430,30 @@ function renderAltPairRow(leftEntry, rightEntry, leftLabelText, rightLabelText, 
 
 }
 
-function renderAltRunline(altRunlineObj, gameId, awayTeam, homeTeam){
+// Seccion colapsable completa (encabezado clickeable + contenido oculto
+// por defecto) para Alternate Run Lines / Alternate Totals.
+function renderAltSection(sectionId, titleText, headerLeft, headerRight, rowsHtml){
 
-  const groups = agruparAltRunline(altRunlineObj, awayTeam, homeTeam);
+  if(!rowsHtml) return "";
+
+  return `
+    <div class="market-title alt-toggle" onclick="toggleSection('${sectionId}')">
+      <span id="${sectionId}-arrow">▸</span> ${titleText}
+    </div>
+    <div class="expand-panel alt-section" id="${sectionId}" style="display:none;">
+      <div class="alt-header-row">
+        <span>${headerLeft}</span>
+        <span>${headerRight}</span>
+      </div>
+      ${rowsHtml}
+    </div>
+  `;
+
+}
+
+function renderAltRunline(altRunlineObj, gameId, awayTeam, homeTeam, puntoPrimario){
+
+  const groups = agruparAltRunline(altRunlineObj, awayTeam, homeTeam, puntoPrimario);
 
   if(groups.length === 0) return "";
 
@@ -1381,9 +1466,9 @@ function renderAltRunline(altRunlineObj, gameId, awayTeam, homeTeam){
 
 }
 
-function renderAltTotals(altTotalsObj, gameId){
+function renderAltTotals(altTotalsObj, gameId, puntoPrimario){
 
-  const groups = agruparAltTotals(altTotalsObj);
+  const groups = agruparAltTotals(altTotalsObj, puntoPrimario);
 
   if(groups.length === 0) return "";
 
@@ -1487,18 +1572,35 @@ container.innerHTML += `
 
 <div class="expand-panel" id="card-${game.gameId}">
 
-  ${renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team) ? `<div class="market-title">Runline (lineas alternas)</div>${renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team)}` : ""}
+  ${renderAltSection(
+    "altrunline-" + game.gameId,
+    "Alternate Run Lines",
+    game.away_team,
+    game.home_team,
+    renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipal(game.runline))
+  )}
 
-  ${renderAltTotals(game.alt_totals, game.gameId) ? `<div class="market-title">Totals (lineas alternas)</div>${renderAltTotals(game.alt_totals, game.gameId)}` : ""}
+  ${renderAltSection(
+    "alttotals-" + game.gameId,
+    "Alternate Totals",
+    "Over",
+    "Under",
+    renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals))
+  )}
 
   ${movementHtml ? `<div class="market-title steam">🔥 Movimiento</div>${movementHtml}` : ""}
 
-  ${!renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team) && !renderAltTotals(game.alt_totals, game.gameId) && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
+  ${!renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipal(game.runline)) && !renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals)) && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
 
 </div>
 
 `;
 });
+
+// Cierra el ultimo grupo de fecha que haya quedado abierto
+if(currentGroupId){
+  container.innerHTML += `</div>`;
+}
 
 document.getElementById("steamCount").innerHTML =
   steamCount;
@@ -1596,6 +1698,22 @@ function applyFocusMode(){
   });
 
   if(backBtn) backBtn.style.display = "inline-block";
+
+}
+
+// Toggle generico para secciones colapsables (lineas alternas, grupos
+// de fecha). Actualiza tambien la flechita si existe un span con id
+// "{id}-arrow".
+function toggleSection(id){
+
+  const el = document.getElementById(id);
+  if(!el) return;
+
+  const willOpen = el.style.display !== "block";
+  el.style.display = willOpen ? "block" : "none";
+
+  const arrow = document.getElementById(id + "-arrow");
+  if(arrow) arrow.textContent = willOpen ? "▾" : "▸";
 
 }
 
