@@ -1256,6 +1256,22 @@ function dateGroupLabel(date){
 let lastGroupKey = null;
 let groupIndex = 0;
 let currentGroupId = null;
+let currentGroupHeaderHtml = "";
+let currentGroupHtml = "";
+
+// IMPORTANTE: container.innerHTML += "<div>" (sin cerrar) NO funciona
+// para "dejar una etiqueta abierta" entre varias llamadas - el
+// navegador auto-cierra las etiquetas sin cerrar cada vez que
+// reprocesa el HTML. Por eso armamos el grupo completo (header +
+// contenido + cierre) como un solo string y lo insertamos de una vez.
+function flushGroup(){
+  if(currentGroupId){
+    container.innerHTML +=
+      currentGroupHeaderHtml +
+      `<div class="date-group" id="${currentGroupId}" style="display:block;">${currentGroupHtml}</div>`;
+  }
+  currentGroupHtml = "";
+}
 
 games.forEach(game => {
 
@@ -1314,23 +1330,20 @@ if(!isNaN(gameDate)){
 
   if(groupKey !== lastGroupKey){
 
-    // Cierra el div del grupo anterior antes de abrir el siguiente
-    if(currentGroupId){
-      container.innerHTML += `</div>`;
-    }
+    // Cierra (flushea) el grupo anterior antes de empezar el siguiente
+    flushGroup();
 
     lastGroupKey = groupKey;
     groupIndex++;
     currentGroupId = "dategroup-" + groupIndex;
 
-    container.innerHTML += `
+    currentGroupHeaderHtml = `
       <div class="date-bar" onclick="toggleSection('${currentGroupId}')">
         <span class="date-label"><span id="${currentGroupId}-arrow">▾</span> ${dateGroupLabel(gameDate)}</span>
         <span class="col-header">Run Line</span>
         <span class="col-header">Total</span>
         <span class="col-header">Money Line</span>
       </div>
-      <div class="date-group" id="${currentGroupId}" style="display:block;">
     `;
 
   }
@@ -1361,29 +1374,51 @@ function puntoPrincipal(oddsObj){
 function agruparAltRunline(altRunlineObj, awayTeam, homeTeam, puntoPrimario){
 
   const entries = Object.entries(altRunlineObj || {});
-  const groups = {};
+  const awayEntries = [];
+  const homeEntries = [];
 
   entries.forEach(([label, odds]) => {
 
     const point = extraerPuntoNumerico(label);
     if(point === null) return;
 
-    const key = Math.abs(point);
-
-    // No repetir la linea principal dentro de las alternas
-    if(puntoPrimario !== null && Math.abs(key - puntoPrimario) < 0.001) return;
-
-    if(!groups[key]) groups[key] = {};
-
-    if(label.startsWith(awayTeam)) groups[key].away = { label, odds };
-    else if(label.startsWith(homeTeam)) groups[key].home = { label, odds };
+    if(label.startsWith(awayTeam)) awayEntries.push({ label, odds, point });
+    else if(label.startsWith(homeTeam)) homeEntries.push({ label, odds, point });
 
   });
 
-  return Object.keys(groups)
-    .map(k => parseFloat(k))
-    .sort((a, b) => a - b)
-    .map(k => groups[k]);
+  // IMPORTANTE: un mismo partido puede tener 2 lineas alternas reales
+  // con la misma magnitud pero direcciones opuestas (ej. "Arizona -1.0"
+  // y "Arizona +1.0" son 2 apuestas distintas, no la misma linea).
+  // Por eso emparejamos cada entrada del visitante con la del local
+  // que tenga el punto EXACTAMENTE opuesto, en vez de agrupar solo por
+  // magnitud absoluta (lo cual pisaba una linea con la otra).
+  const usedHome = new Set();
+  const rows = [];
+
+  awayEntries.forEach(awayEntry => {
+
+    const homeEntry = homeEntries.find(h =>
+      !usedHome.has(h) && Math.abs(h.point + awayEntry.point) < 0.001
+    );
+
+    if(homeEntry) usedHome.add(homeEntry);
+
+    rows.push({ point: awayEntry.point, away: awayEntry, home: homeEntry || null });
+
+  });
+
+  // Cualquier entrada del local que no haya encontrado pareja del
+  // visitante (el bookmaker solo publico ese lado)
+  homeEntries.forEach(homeEntry => {
+    if(!usedHome.has(homeEntry)){
+      rows.push({ point: -homeEntry.point, away: null, home: homeEntry });
+    }
+  });
+
+  return rows
+    .filter(r => puntoPrimario === null || Math.abs(Math.abs(r.point) - puntoPrimario) > 0.001)
+    .sort((a, b) => a.point - b.point);
 
 }
 
@@ -1540,7 +1575,7 @@ const awayIsFavorite = game.favorite === game.away_team;
 const awayML = awayIsFavorite ? game.favorite_odds : game.underdog_odds;
 const homeML = awayIsFavorite ? game.underdog_odds : game.favorite_odds;
 
-container.innerHTML += `
+currentGroupHtml += `
 
 <div class="game-row" id="game-${game.gameId}" onclick="toggleFocus('${game.gameId}')">
 
@@ -1597,10 +1632,8 @@ container.innerHTML += `
 `;
 });
 
-// Cierra el ultimo grupo de fecha que haya quedado abierto
-if(currentGroupId){
-  container.innerHTML += `</div>`;
-}
+// Flushea el ultimo grupo de fecha que haya quedado en el buffer
+flushGroup();
 
 document.getElementById("steamCount").innerHTML =
   steamCount;
