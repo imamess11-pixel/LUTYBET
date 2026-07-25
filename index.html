@@ -975,6 +975,21 @@ let mlbVisible = false;
 let steamOnly = false;
 let focusedGameId = null;
 
+// El refresco automatico de 30s reconstruye toda la lista desde cero,
+// asi que sin esto, cualquier seccion que el usuario abriera/cerrara
+// manualmente (grupos de fecha, alternos) volvia a su estado por
+// defecto en cada refresco - parecia que "se cerraban solas". Este
+// Map guarda el estado real (abierto/cerrado) por id y sobrevive
+// entre llamadas a loadGames().
+let sectionOpenState = new Map();
+
+// Devuelve si una seccion deberia estar abierta: prioriza lo que el
+// usuario eligio manualmente, y si nunca la toco usa el default del
+// tipo de seccion (alternos: cerrado: grupos de fecha: abierto).
+function seccionEstaAbierta(id, defaultOpen){
+  return sectionOpenState.has(id) ? sectionOpenState.get(id) : defaultOpen;
+}
+
 // Click en el logo LUTYBET: actualiza las cuotas y vuelve a la
 // vista principal (sin filtro de steam, sin partido enfocado).
 function goHome(){
@@ -1258,6 +1273,7 @@ let groupIndex = 0;
 let currentGroupId = null;
 let currentGroupHeaderHtml = "";
 let currentGroupHtml = "";
+let currentGroupOpen = true;
 
 // IMPORTANTE: container.innerHTML += "<div>" (sin cerrar) NO funciona
 // para "dejar una etiqueta abierta" entre varias llamadas - el
@@ -1268,7 +1284,7 @@ function flushGroup(){
   if(currentGroupId){
     container.innerHTML +=
       currentGroupHeaderHtml +
-      `<div class="date-group" id="${currentGroupId}" style="display:block;">${currentGroupHtml}</div>`;
+      `<div class="date-group" id="${currentGroupId}" style="display:${currentGroupOpen ? "block" : "none"};">${currentGroupHtml}</div>`;
   }
   currentGroupHtml = "";
 }
@@ -1337,14 +1353,18 @@ if(!isNaN(gameDate)){
     groupIndex++;
     currentGroupId = "dategroup-" + groupIndex;
 
+    const grupoAbierto = seccionEstaAbierta(currentGroupId, true);
+
     currentGroupHeaderHtml = `
       <div class="date-bar" onclick="toggleSection('${currentGroupId}')">
-        <span class="date-label"><span id="${currentGroupId}-arrow">▾</span> ${dateGroupLabel(gameDate)}</span>
+        <span class="date-label"><span id="${currentGroupId}-arrow">${grupoAbierto ? "▾" : "▸"}</span> ${dateGroupLabel(gameDate)}</span>
         <span class="col-header">Run Line</span>
         <span class="col-header">Total</span>
         <span class="col-header">Money Line</span>
       </div>
     `;
+
+    currentGroupOpen = grupoAbierto;
 
   }
 
@@ -1454,6 +1474,11 @@ function agruparAltRunline(altRunlineObj, awayTeam, homeTeam, primarioAwaySigned
 
 }
 
+// Limite de rango para totales alternos: MLB rara vez tiene lineas
+// utiles fuera de este rango, asi que se recortan los extremos.
+const ALT_TOTALS_MIN = 6.5;
+const ALT_TOTALS_MAX = 11.5;
+
 function agruparAltTotals(altTotalsObj, puntoPrimario){
 
   const entries = Object.entries(altTotalsObj || {});
@@ -1466,6 +1491,9 @@ function agruparAltTotals(altTotalsObj, puntoPrimario){
 
     // No repetir la linea principal dentro de las alternas
     if(puntoPrimario !== null && Math.abs(point - puntoPrimario) < 0.001) return;
+
+    // Limite de rango (6.5 a 11.5)
+    if(point < ALT_TOTALS_MIN || point > ALT_TOTALS_MAX) return;
 
     if(!groups[point]) groups[point] = {};
 
@@ -1497,17 +1525,22 @@ function renderAltPairRow(leftEntry, rightEntry, leftLabelText, rightLabelText, 
 
 }
 
-// Seccion colapsable completa (encabezado clickeable + contenido oculto
-// por defecto) para Alternate Run Lines / Alternate Totals.
+// Seccion colapsable completa (encabezado clickeable + contenido
+// oculto por defecto) para Alternate Run Lines / Alternate Totals.
+// Empieza CERRADA - el usuario la abre haciendo click. Si el usuario
+// ya la habia abierto/cerrado antes, respeta esa eleccion aunque
+// pase el refresco automatico de 30s.
 function renderAltSection(sectionId, titleText, headerLeft, headerRight, rowsHtml){
 
   if(!rowsHtml) return "";
 
+  const abierta = seccionEstaAbierta(sectionId, false);
+
   return `
     <div class="market-title alt-toggle" onclick="toggleSection('${sectionId}')">
-      <span id="${sectionId}-arrow">▸</span> ${titleText}
+      <span id="${sectionId}-arrow">${abierta ? "▾" : "▸"}</span> ${titleText}
     </div>
-    <div class="expand-panel alt-section" id="${sectionId}" style="display:none;">
+    <div class="expand-panel alt-section" id="${sectionId}" style="display:${abierta ? "block" : "none"};">
       <div class="alt-header-row">
         <span>${headerLeft}</span>
         <span>${headerRight}</span>
@@ -1776,6 +1809,10 @@ function toggleSection(id){
 
   const willOpen = el.style.display !== "block";
   el.style.display = willOpen ? "block" : "none";
+
+  // Recuerda la eleccion del usuario para que sobreviva al proximo
+  // refresco automatico de 30s.
+  sectionOpenState.set(id, willOpen);
 
   const arrow = document.getElementById(id + "-arrow");
   if(arrow) arrow.textContent = willOpen ? "▾" : "▸";
