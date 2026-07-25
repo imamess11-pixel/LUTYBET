@@ -1363,7 +1363,8 @@ function extraerPuntoNumerico(label){
 }
 
 // Punto de la linea principal (para excluirlo de las alternas y no
-// repetirlo dos veces).
+// repetirlo dos veces). Usado para TOTALS (no direccional, valor
+// absoluto sirve porque Over/Under ya se emparejan por igual punto).
 function puntoPrincipal(oddsObj){
   const entries = Object.entries(oddsObj || {});
   if(entries.length === 0) return null;
@@ -1371,7 +1372,26 @@ function puntoPrincipal(oddsObj){
   return p === null ? null : Math.abs(p);
 }
 
-function agruparAltRunline(altRunlineObj, awayTeam, homeTeam, puntoPrimario){
+// Punto CON SIGNO de la linea principal del equipo visitante (para
+// RUNLINE). A diferencia de puntoPrincipal(), esto no usa valor
+// absoluto porque necesitamos distinguir la linea principal exacta
+// (ej. Arizona -1.5) de su inversa a la misma magnitud (Arizona +1.5),
+// que es una linea alterna real y NO debe excluirse.
+function puntoPrincipalRunlineAway(runlineObj, awayTeam){
+  const entries = Object.entries(runlineObj || {});
+  const awayEntry = entries.find(([label]) => label.startsWith(awayTeam));
+  if(!awayEntry) return null;
+  return extraerPuntoNumerico(awayEntry[0]);
+}
+
+// Limites de lineas alternas de runline, medidos desde la perspectiva
+// del FAVORITO: direccion normal (favorito da carreras, valor negativo)
+// hasta -4.5; direccion inversa (favorito recibe carreras, valor
+// positivo) hasta +2.5. El equipo dog usa los mismos limites reflejados.
+const ALT_RUNLINE_NORMAL_MAX = 4.5;
+const ALT_RUNLINE_REVERSE_MAX = 2.5;
+
+function agruparAltRunline(altRunlineObj, awayTeam, homeTeam, primarioAwaySigned, awayEsFavorito){
 
   const entries = Object.entries(altRunlineObj || {});
   const awayEntries = [];
@@ -1417,7 +1437,19 @@ function agruparAltRunline(altRunlineObj, awayTeam, homeTeam, puntoPrimario){
   });
 
   return rows
-    .filter(r => puntoPrimario === null || Math.abs(Math.abs(r.point) - puntoPrimario) > 0.001)
+    // Excluye SOLO la linea principal exacta (mismo punto Y mismo
+    // signo desde la perspectiva del visitante) - no toda la magnitud,
+    // para no tapar la inversa real a ese mismo numero.
+    .filter(r => primarioAwaySigned === null || Math.abs(r.point - primarioAwaySigned) > 0.001)
+    // Limite de rango: normal (favorito da carreras) hasta -4.5 /
+    // inversa (favorito recibe carreras) hasta +2.5, reflejado para
+    // el equipo dog.
+    .filter(r => {
+      const pointFavorito = awayEsFavorito ? r.point : -r.point;
+      return pointFavorito < 0
+        ? Math.abs(pointFavorito) <= ALT_RUNLINE_NORMAL_MAX
+        : pointFavorito <= ALT_RUNLINE_REVERSE_MAX;
+    })
     .sort((a, b) => a.point - b.point);
 
 }
@@ -1486,9 +1518,9 @@ function renderAltSection(sectionId, titleText, headerLeft, headerRight, rowsHtm
 
 }
 
-function renderAltRunline(altRunlineObj, gameId, awayTeam, homeTeam, puntoPrimario){
+function renderAltRunline(altRunlineObj, gameId, awayTeam, homeTeam, primarioAwaySigned, awayEsFavorito){
 
-  const groups = agruparAltRunline(altRunlineObj, awayTeam, homeTeam, puntoPrimario);
+  const groups = agruparAltRunline(altRunlineObj, awayTeam, homeTeam, primarioAwaySigned, awayEsFavorito);
 
   if(groups.length === 0) return "";
 
@@ -1612,7 +1644,7 @@ currentGroupHtml += `
     "Alternate Run Lines",
     game.away_team,
     game.home_team,
-    renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipal(game.runline))
+    renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipalRunlineAway(game.runline, game.away_team), game.favorite === game.away_team)
   )}
 
   ${renderAltSection(
@@ -1625,7 +1657,7 @@ currentGroupHtml += `
 
   ${movementHtml ? `<div class="market-title steam">🔥 Movimiento</div>${movementHtml}` : ""}
 
-  ${!renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipal(game.runline)) && !renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals)) && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
+  ${!renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipalRunlineAway(game.runline, game.away_team), game.favorite === game.away_team) && !renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals)) && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
 
 </div>
 
