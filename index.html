@@ -1278,15 +1278,16 @@ if(!isNaN(gameDate)){
 
 }
 
-// Lineas alternas extra (mas alla del primer par) para runline/totals,
-// se muestran solo al expandir la fila.
-function lineasExtra(oddsObj, gameId, market){
+// Lineas alternas (ALT_RUNLINE / ALT_TOTALS) que ahora vienen como
+// campos propios desde el doGet (game.alt_runline / game.alt_totals),
+// en vez de mezcladas dentro de runline/totals.
+function renderAltLines(oddsObj, gameId, market){
 
   const entries = Object.entries(oddsObj || {});
 
-  if(entries.length <= 2) return "";
+  if(entries.length === 0) return "";
 
-  return entries.slice(2).map(([label, odds]) =>
+  return entries.map(([label, odds]) =>
     renderPick(gameId, market, label, label, odds)
   ).join("");
 
@@ -1383,13 +1384,13 @@ container.innerHTML += `
 
 <div class="expand-panel" id="card-${game.gameId}">
 
-  ${lineasExtra(game.runline, game.gameId, "Runline") ? `<div class="market-title">Runline (lineas alternas)</div>${lineasExtra(game.runline, game.gameId, "Runline")}` : ""}
+  ${renderAltLines(game.alt_runline, game.gameId, "ALT_RUNLINE") ? `<div class="market-title">Runline (lineas alternas)</div>${renderAltLines(game.alt_runline, game.gameId, "ALT_RUNLINE")}` : ""}
 
-  ${lineasExtra(game.totals, game.gameId, "Totals") ? `<div class="market-title">Totals (lineas alternas)</div>${lineasExtra(game.totals, game.gameId, "Totals")}` : ""}
+  ${renderAltLines(game.alt_totals, game.gameId, "ALT_TOTALS") ? `<div class="market-title">Totals (lineas alternas)</div>${renderAltLines(game.alt_totals, game.gameId, "ALT_TOTALS")}` : ""}
 
   ${movementHtml ? `<div class="market-title steam">🔥 Movimiento</div>${movementHtml}` : ""}
 
-  ${!lineasExtra(game.runline, game.gameId, "Runline") && !lineasExtra(game.totals, game.gameId, "Totals") && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
+  ${!renderAltLines(game.alt_runline, game.gameId, "ALT_RUNLINE") && !renderAltLines(game.alt_totals, game.gameId, "ALT_TOTALS") && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
 
 </div>
 
