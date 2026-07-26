@@ -203,6 +203,21 @@ body{
   background:#232b38;
 }
 
+.live-bar{
+  background:#2a1414;
+  border:1px solid #7a2020;
+}
+
+.live-bar:hover{
+  background:#341818;
+}
+
+.live-badge{
+  color:#ff5555;
+  font-weight:bold;
+  font-size:11px;
+}
+
 .date-bar:first-child{
   margin-top:0;
 }
@@ -1251,6 +1266,14 @@ games.sort((a, b) => {
   return da - db;
 });
 
+// Los partidos en vivo van primero, en su propia seccion "Live Now"
+// (el orden cronologico interno de cada grupo ya quedo bien gracias
+// al sort de arriba, filter() preserva ese orden relativo).
+const gamesOrdenados = [
+  ...games.filter(g => g.is_live),
+  ...games.filter(g => !g.is_live)
+];
+
 function startOfDay(d){
   return new Date(d.getFullYear(), d.getMonth(), d.getDate());
 }
@@ -1289,7 +1312,7 @@ function flushGroup(){
   currentGroupHtml = "";
 }
 
-games.forEach(game => {
+gamesOrdenados.forEach(game => {
 
 const gameMoves =
   moves.filter(
@@ -1337,12 +1360,16 @@ ${move.new_odds}
 // con encabezados de columna como en una casa de apuestas. Cada grupo
 // de fecha ahora es colapsable (clic en la barra oculta/muestra sus
 // partidos), para reducir el espacio de busqueda.
+// Los partidos EN VIVO (game.is_live) van en su propia seccion fija
+// "🔴 Live Now" en vez de agruparse por fecha.
 const gameDate = new Date(game.commence_time);
+const esValidDate = !isNaN(gameDate);
 
-if(!isNaN(gameDate)){
+const groupKey = game.is_live
+  ? "LIVE"
+  : (esValidDate ? startOfDay(gameDate).toISOString() : null);
 
-  const groupKey =
-    startOfDay(gameDate).toISOString();
+if(groupKey !== null){
 
   if(groupKey !== lastGroupKey){
 
@@ -1355,14 +1382,29 @@ if(!isNaN(gameDate)){
 
     const grupoAbierto = seccionEstaAbierta(currentGroupId, true);
 
-    currentGroupHeaderHtml = `
-      <div class="date-bar" onclick="toggleSection('${currentGroupId}')">
-        <span class="date-label"><span id="${currentGroupId}-arrow">${grupoAbierto ? "▾" : "▸"}</span> ${dateGroupLabel(gameDate)}</span>
-        <span class="col-header">Run Line</span>
-        <span class="col-header">Total</span>
-        <span class="col-header">Money Line</span>
-      </div>
-    `;
+    if(game.is_live){
+
+      currentGroupHeaderHtml = `
+        <div class="date-bar live-bar" onclick="toggleSection('${currentGroupId}')">
+          <span class="date-label"><span id="${currentGroupId}-arrow">${grupoAbierto ? "▾" : "▸"}</span> 🔴 Live Now</span>
+          <span class="col-header">Run Line</span>
+          <span class="col-header">Total</span>
+          <span class="col-header">Money Line</span>
+        </div>
+      `;
+
+    } else {
+
+      currentGroupHeaderHtml = `
+        <div class="date-bar" onclick="toggleSection('${currentGroupId}')">
+          <span class="date-label"><span id="${currentGroupId}-arrow">${grupoAbierto ? "▾" : "▸"}</span> ${dateGroupLabel(gameDate)}</span>
+          <span class="col-header">Run Line</span>
+          <span class="col-header">Total</span>
+          <span class="col-header">Money Line</span>
+        </div>
+      `;
+
+    }
 
     currentGroupOpen = grupoAbierto;
 
@@ -1645,7 +1687,7 @@ currentGroupHtml += `
 <div class="game-row" id="game-${game.gameId}" onclick="toggleFocus('${game.gameId}')">
 
   <div class="game-time">
-    ${game.commence_time.split(" ").slice(1).join(" ")}
+    ${game.is_live ? '<span class="live-badge">🔴 LIVE</span>' : game.commence_time.split(" ").slice(1).join(" ")}
   </div>
 
   <div class="game-teams">
