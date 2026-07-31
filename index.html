@@ -394,6 +394,40 @@ body{
   text-align:center;
 }
 
+.prop-row{
+  margin-bottom:10px;
+}
+
+.prop-subject{
+  font-size:13px;
+  font-weight:bold;
+  color:#e0e0e0;
+  margin-bottom:4px;
+}
+
+.prop-point{
+  color:#9aa0a6;
+  font-weight:normal;
+  font-size:12px;
+}
+
+.prop-filter-row{
+  display:flex;
+  gap:8px;
+  margin-bottom:12px;
+}
+
+.prop-filter{
+  padding:6px 14px;
+  font-size:13px;
+  margin-right:0;
+}
+
+.prop-filter.active{
+  background:#f5b041;
+  color:black;
+}
+
 .expand-panel{
   display:none;
   background:#12151c;
@@ -1623,6 +1657,148 @@ function renderAltTotals(altTotalsObj, gameId, puntoPrimario){
 
 }
 
+// ============================================================
+// TEAM TOTALS / PLAYER PROPS / PITCHER PROPS
+// Estos ya vienen agrupados por jugador/equipo desde el doGet
+// (cada fila trae { player o team, point, over, under }), asi que
+// aca solo hace falta renderizarlos - no hay que emparejar nada.
+// ============================================================
+
+// Renderiza una lista de filas {player/team, point, over, under}
+// como bloques: nombre + punto arriba, botones Over/Under abajo.
+function renderSubjectPropList(rows, gameId, marketLabel, subjectField){
+
+  if(!rows || rows.length === 0) return "";
+
+  return rows.map(r => {
+    const subject = r[subjectField] || "";
+    return `
+      <div class="prop-row">
+        <div class="prop-subject">${escapeHtml(subject)} <span class="prop-point">${escapeHtml(r.point)}</span></div>
+        <div class="alt-line-row">
+          ${renderPick(gameId, marketLabel, subject + " Over " + r.point, "Over", r.over)}
+          ${renderPick(gameId, marketLabel, subject + " Under " + r.point, "Under", r.under)}
+        </div>
+      </div>
+    `;
+  }).join("");
+
+}
+
+function renderTeamTotalsSection(game){
+
+  const rows = game.team_totals || [];
+  if(rows.length === 0) return "";
+
+  const sectionId = "teamtotals-" + game.gameId;
+  const abierta = seccionEstaAbierta(sectionId, false);
+
+  return `
+    <div class="market-title alt-toggle" onclick="toggleSection('${sectionId}')">
+      <span id="${sectionId}-arrow">${abierta ? "▾" : "▸"}</span> Team Totals
+    </div>
+    <div class="expand-panel alt-section" id="${sectionId}" style="display:${abierta ? "block" : "none"};">
+      ${renderSubjectPropList(rows, game.gameId, "TEAM_TOTALS", "team")}
+    </div>
+  `;
+
+}
+
+// Botones de filtro (Hits/HR/RBI o Strikeouts/Outs/Earned Runs) que
+// muestran una lista a la vez. setPropFilter()/aplicarPropFilter()
+// manejan cual esta activa, y recuerdan la eleccion entre refrescos
+// igual que sectionOpenState.
+function renderStatFilterSection(sectionId, titleText, gameId, category, stats, dataByStat){
+
+  const tieneAlgo = stats.some(s => (dataByStat[s.key] || []).length > 0);
+  if(!tieneAlgo) return "";
+
+  const abierta = seccionEstaAbierta(sectionId, false);
+
+  const filterButtons = stats.map(s => `
+    <button
+      class="filter-btn prop-filter"
+      id="${category}propbtn-${s.key}-${gameId}"
+      onclick="event.stopPropagation(); setPropFilter('${gameId}', '${category}', '${s.key}')"
+    >${s.label}</button>
+  `).join("");
+
+  const lists = stats.map(s => `
+    <div id="${category}prop-${s.key}-${gameId}">
+      ${renderSubjectPropList(dataByStat[s.key], gameId, s.market, "player")}
+    </div>
+  `).join("");
+
+  return `
+    <div class="market-title alt-toggle" onclick="toggleSection('${sectionId}')">
+      <span id="${sectionId}-arrow">${abierta ? "▾" : "▸"}</span> ${titleText}
+    </div>
+    <div class="expand-panel alt-section" id="${sectionId}" style="display:${abierta ? "block" : "none"};">
+      <div class="prop-filter-row">${filterButtons}</div>
+      ${lists}
+    </div>
+  `;
+
+}
+
+const PLAYER_PROP_STATS = [
+  { key: "hits", label: "Hits", market: "PLAYER_PROP_HITS" },
+  { key: "hr", label: "HR", market: "PLAYER_PROP_HR" },
+  { key: "rbi", label: "RBI", market: "PLAYER_PROP_RBI" }
+];
+
+const PITCHER_PROP_STATS = [
+  { key: "strikeouts", label: "Strikeouts", market: "PITCHER_PROP_K" },
+  { key: "outs", label: "Outs", market: "PITCHER_PROP_OUTS" },
+  { key: "earned_runs", label: "Earned Runs", market: "PITCHER_PROP_ER" }
+];
+
+function renderPlayerPropsSection(game){
+  return renderStatFilterSection(
+    "playerprops-" + game.gameId,
+    "Player Props",
+    game.gameId,
+    "player",
+    PLAYER_PROP_STATS,
+    game.player_props || {}
+  );
+}
+
+function renderPitcherPropsSection(game){
+  return renderStatFilterSection(
+    "pitcherprops-" + game.gameId,
+    "Pitcher Props",
+    game.gameId,
+    "pitcher",
+    PITCHER_PROP_STATS,
+    game.pitcher_props || {}
+  );
+}
+
+// Recuerda que stat (hits/hr/rbi, o strikeouts/outs/earned_runs) esta
+// activo por partido, para que sobreviva al refresco automatico de 30s.
+let propFilterState = new Map();
+
+function aplicarPropFilter(gameId, category, stats){
+  const key = category + "-" + gameId;
+  const defaultStat = stats[0].key;
+  const activo = propFilterState.has(key) ? propFilterState.get(key) : defaultStat;
+
+  stats.forEach(s => {
+    const el = document.getElementById(`${category}prop-${s.key}-${gameId}`);
+    if(el) el.style.display = (s.key === activo) ? "block" : "none";
+
+    const btn = document.getElementById(`${category}propbtn-${s.key}-${gameId}`);
+    if(btn) btn.classList.toggle("active", s.key === activo);
+  });
+}
+
+function setPropFilter(gameId, category, statKey){
+  propFilterState.set(category + "-" + gameId, statKey);
+  const stats = category === "player" ? PLAYER_PROP_STATS : PITCHER_PROP_STATS;
+  aplicarPropFilter(gameId, category, stats);
+}
+
 // Extrae solo el punto (ej "-1.5") de una key tipo "Team Name -1.5",
 // para no repetir el nombre del equipo que ya aparece a la izquierda.
 function extraerPunto(label, teamName){
@@ -1730,6 +1906,12 @@ currentGroupHtml += `
     renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals))
   )}
 
+  ${renderTeamTotalsSection(game)}
+
+  ${renderPlayerPropsSection(game)}
+
+  ${renderPitcherPropsSection(game)}
+
   ${movementHtml ? `<div class="market-title steam">🔥 Movimiento</div>${movementHtml}` : ""}
 
   ${!renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipalRunlineAway(game.runline, game.away_team), game.favorite === game.away_team) && !renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals)) && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
@@ -1741,6 +1923,15 @@ currentGroupHtml += `
 
 // Flushea el ultimo grupo de fecha que haya quedado en el buffer
 flushGroup();
+
+// Aplica el filtro de props activo (Hits/HR/RBI, Strikeouts/Outs/
+// Earned Runs) para cada partido. Se llama para todos aunque un
+// partido no tenga esa seccion - simplemente no encuentra los
+// elementos y no hace nada (inofensivo).
+gamesOrdenados.forEach(g => {
+  aplicarPropFilter(g.gameId, "player", PLAYER_PROP_STATS);
+  aplicarPropFilter(g.gameId, "pitcher", PITCHER_PROP_STATS);
+});
 
 document.getElementById("steamCount").innerHTML =
   steamCount;
