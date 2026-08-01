@@ -91,18 +91,457 @@
       "Under 9": -150,
       "Under 10": -220
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": -125,
+        "under": 105,
+        "team": "St. Louis Cardinals"
+      },
+      {
+        "point": 4.5,
+        "over": 105,
+        "under": -122,
+        "team": "Toronto Blue Jays"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 170,
+          "player": "Ivan Herrera"
+        },
+        {
+          "point": 0.5,
+          "over": -210,
+          "under": 161,
+          "player": "Alejandro Kirk"
+        },
+        {
+          "point": 0.5,
+          "over": -210,
+          "under": 164,
+          "player": "George Springer"
+        },
+        {
+          "point": 0.5,
+          "over": -163,
+          "under": 128,
+          "player": "Lars Nootbaar"
+        },
+        {
+          "point": 1.5,
+          "over": -275,
+          "under": 190,
+          "player": "Vladimir Guerrero Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -177,
+          "under": 140,
+          "player": "Daulton Varsho"
+        },
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 160,
+          "player": "Kazuma Okamoto"
+        },
+        {
+          "point": 0.5,
+          "over": -115,
+          "under": -104,
+          "player": "Jimmy Crooks"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": 120,
+          "player": "Nathan Church"
+        },
+        {
+          "point": 1.5,
+          "over": 190,
+          "under": -225,
+          "player": "Ernie Clement"
+        },
+        {
+          "point": 0.5,
+          "over": -195,
+          "under": 165,
+          "player": "Jordan Walker"
+        },
+        {
+          "point": 0.5,
+          "over": -105,
+          "under": -120,
+          "player": "Davis Schneider"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 136,
+          "player": "Masyn Winn"
+        },
+        {
+          "point": 0.5,
+          "over": -220,
+          "under": 175,
+          "player": "JJ Wetherholt"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 104,
+          "player": "Luis Urias"
+        },
+        {
+          "point": 0.5,
+          "over": -159,
+          "under": 125,
+          "player": "Blaze Jordan"
+        },
+        {
+          "point": 1.5,
+          "over": -250,
+          "under": 188,
+          "player": "Alec Burleson"
+        },
+        {
+          "point": 0.5,
+          "over": -125,
+          "under": -105,
+          "player": "Myles Straw"
+        }
+      ],
+      "hr": [
+        {
+          "point": 1.5,
+          "over": 550,
+          "player": "Luis Urias"
+        },
+        {
+          "point": 1.5,
+          "over": 550,
+          "player": "Ivan Herrera"
+        },
+        {
+          "point": 2.5,
+          "over": 400,
+          "player": "Alec Burleson"
+        },
+        {
+          "point": 1.5,
+          "over": 475,
+          "player": "JJ Wetherholt"
+        },
+        {
+          "point": 2.5,
+          "over": 410,
+          "player": "Kazuma Okamoto"
+        },
+        {
+          "point": 1.5,
+          "over": 600,
+          "player": "Alejandro Kirk"
+        },
+        {
+          "point": 2.5,
+          "over": 440,
+          "player": "George Springer"
+        },
+        {
+          "point": 2.5,
+          "over": 500,
+          "player": "Vladimir Guerrero Jr."
+        },
+        {
+          "point": 2.5,
+          "over": 750,
+          "player": "Ernie Clement"
+        },
+        {
+          "point": 1.5,
+          "over": 900,
+          "player": "Masyn Winn"
+        },
+        {
+          "point": 2.5,
+          "over": 550,
+          "player": "Daulton Varsho"
+        },
+        {
+          "point": 1.5,
+          "over": 450,
+          "player": "Lars Nootbaar"
+        },
+        {
+          "point": 1.5,
+          "over": 400,
+          "player": "Jordan Walker"
+        },
+        {
+          "point": 1.5,
+          "over": 750,
+          "player": "Nathan Church"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 160,
+          "under": -165,
+          "player": "Kazuma Okamoto"
+        },
+        {
+          "point": 0.5,
+          "over": 161,
+          "under": -200,
+          "player": "Alec Burleson"
+        },
+        {
+          "point": 0.5,
+          "over": 166,
+          "under": -210,
+          "player": "Alejandro Kirk"
+        },
+        {
+          "point": 0.5,
+          "over": 171,
+          "under": -210,
+          "player": "Vladimir Guerrero Jr."
+        },
+        {
+          "point": 0.5,
+          "over": 174,
+          "under": -210,
+          "player": "George Springer"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": -210,
+          "player": "Jordan Walker"
+        },
+        {
+          "point": 0.5,
+          "over": 209,
+          "under": -250,
+          "player": "Daulton Varsho"
+        },
+        {
+          "point": 0.5,
+          "over": 225,
+          "under": -275,
+          "player": "Ivan Herrera"
+        },
+        {
+          "point": 0.5,
+          "over": 216,
+          "under": -235,
+          "player": "Ernie Clement"
+        },
+        {
+          "point": 0.5,
+          "over": 217,
+          "under": -275,
+          "player": "Lars Nootbaar"
+        },
+        {
+          "point": 0.5,
+          "over": 249,
+          "under": -275,
+          "player": "JJ Wetherholt"
+        },
+        {
+          "point": 0.5,
+          "over": 256,
+          "under": -325,
+          "player": "Masyn Winn"
+        },
+        {
+          "point": 0.5,
+          "over": 264,
+          "under": -295,
+          "player": "Blaze Jordan"
+        },
+        {
+          "point": 0.5,
+          "over": 275,
+          "under": -300,
+          "player": "Nathan Church"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -295,
+          "player": "Luis Urias"
+        },
+        {
+          "point": 0.5,
+          "over": 300,
+          "under": -450,
+          "player": "Myles Straw"
+        },
+        {
+          "point": 0.5,
+          "over": 230,
+          "under": -325,
+          "player": "Davis Schneider"
+        },
+        {
+          "point": 0.5,
+          "over": 260,
+          "under": -375,
+          "player": "Jimmy Crooks"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": 113,
+          "under": -141,
+          "player": "Alec Burleson"
+        },
+        {
+          "point": 1.5,
+          "over": -165,
+          "under": 125,
+          "player": "Lars Nootbaar"
+        },
+        {
+          "point": 1.5,
+          "over": 155,
+          "under": -175,
+          "player": "Ivan Herrera"
+        },
+        {
+          "point": 1.5,
+          "over": 139,
+          "under": -175,
+          "player": "George Springer"
+        },
+        {
+          "point": 1.5,
+          "over": 146,
+          "under": -189,
+          "player": "Alejandro Kirk"
+        },
+        {
+          "point": 1.5,
+          "over": 113,
+          "under": -135,
+          "player": "Vladimir Guerrero Jr."
+        },
+        {
+          "point": 1.5,
+          "over": 135,
+          "under": -161,
+          "player": "Jordan Walker"
+        },
+        {
+          "point": 1.5,
+          "over": -185,
+          "under": 135,
+          "player": "Daulton Varsho"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": 135,
+          "player": "Masyn Winn"
+        },
+        {
+          "point": 1.5,
+          "over": 112,
+          "under": -135,
+          "player": "Ernie Clement"
+        },
+        {
+          "point": 1.5,
+          "over": 134,
+          "under": -155,
+          "player": "Kazuma Okamoto"
+        },
+        {
+          "point": 0.5,
+          "over": -103,
+          "under": -125,
+          "player": "Davis Schneider"
+        },
+        {
+          "point": 0.5,
+          "over": -115,
+          "under": -112,
+          "player": "Jimmy Crooks"
+        },
+        {
+          "point": 1.5,
+          "over": 134,
+          "under": -170,
+          "player": "JJ Wetherholt"
+        },
+        {
+          "point": 0.5,
+          "over": -164,
+          "under": 125,
+          "player": "Blaze Jordan"
+        },
+        {
+          "point": 0.5,
+          "over": 188,
+          "under": 102,
+          "player": "Luis Urias"
+        },
+        {
+          "point": 0.5,
+          "over": 215,
+          "under": 120,
+          "player": "Nathan Church"
+        },
+        {
+          "point": 0.5,
+          "over": -125,
+          "under": -105,
+          "player": "Myles Straw"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 5.5,
+          "over": 125,
+          "under": -136,
+          "player": "Kevin Gausman"
+        }
+      ],
+      "outs": [
+        {
+          "point": 17.5,
+          "over": -162,
+          "under": 125,
+          "player": "Kevin Gausman"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 2.5,
+          "over": 113,
+          "under": -151,
+          "player": "Kevin Gausman"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 5.5,
+          "over": 120,
+          "under": -140,
+          "player": "Kevin Gausman"
+        }
+      ]
     }
   },
   {
@@ -196,18 +635,452 @@
       "Under 8": -125,
       "Under 9": -190
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": 105,
+        "under": -120,
+        "team": "Chicago White Sox"
+      },
+      {
+        "point": 4.5,
+        "over": 112,
+        "under": -130,
+        "team": "Tampa Bay Rays"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 1.5,
+          "over": 190,
+          "under": -237,
+          "player": "Yandy Diaz"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 159,
+          "player": "Jonathan Aranda"
+        },
+        {
+          "point": 1.5,
+          "over": -235,
+          "under": 170,
+          "player": "Junior Caminero"
+        },
+        {
+          "point": 0.5,
+          "over": -115,
+          "under": 105,
+          "player": "Taylor Walls"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 117,
+          "player": "Andrew Benintendi"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 158,
+          "player": "Jonny Deluca"
+        },
+        {
+          "point": 0.5,
+          "over": -139,
+          "under": 111,
+          "player": "Munetaka Murakami"
+        },
+        {
+          "point": 0.5,
+          "over": -165,
+          "under": 144,
+          "player": "Miguel Vargas"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 111,
+          "player": "Colson Montgomery"
+        },
+        {
+          "point": 0.5,
+          "over": 105,
+          "under": -125,
+          "player": "Drew Romo"
+        },
+        {
+          "point": 0.5,
+          "over": -143,
+          "under": 112,
+          "player": "Chase Meidroth"
+        },
+        {
+          "point": 0.5,
+          "over": -125,
+          "under": 110,
+          "player": "Tristan Peters"
+        },
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 134,
+          "player": "Nick Fortes"
+        },
+        {
+          "point": 0.5,
+          "over": -165,
+          "under": 144,
+          "player": "Ryan Vilade"
+        },
+        {
+          "point": 0.5,
+          "over": -225,
+          "under": 193,
+          "player": "Chandler Simpson"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 143,
+          "player": "Ben Williamson"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 116,
+          "player": "Braden Montgomery"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 155,
+          "player": "Sam Antonacci"
+        }
+      ],
+      "hr": [
+        {
+          "point": 1.5,
+          "over": 700,
+          "player": "Sam Antonacci"
+        },
+        {
+          "point": 2.5,
+          "over": 540,
+          "player": "Yandy Diaz"
+        },
+        {
+          "point": 1.5,
+          "over": 600,
+          "player": "Ryan Vilade"
+        },
+        {
+          "point": 2.5,
+          "over": 750,
+          "player": "Jonathan Aranda"
+        },
+        {
+          "point": 1.5,
+          "over": 340,
+          "player": "Junior Caminero"
+        },
+        {
+          "point": 1.5,
+          "over": 800,
+          "player": "Jonny Deluca"
+        },
+        {
+          "point": 1.5,
+          "over": 1000,
+          "player": "Tristan Peters"
+        },
+        {
+          "point": 2.5,
+          "over": 440,
+          "player": "Colson Montgomery"
+        },
+        {
+          "point": 1.5,
+          "over": 1000,
+          "player": "Braden Montgomery"
+        },
+        {
+          "point": 1.5,
+          "over": 850,
+          "player": "Ben Williamson"
+        },
+        {
+          "point": 2.5,
+          "over": 400,
+          "player": "Munetaka Murakami"
+        },
+        {
+          "point": 2.5,
+          "over": 540,
+          "player": "Andrew Benintendi"
+        },
+        {
+          "point": 2.5,
+          "over": 370,
+          "player": "Miguel Vargas"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 138,
+          "under": -175,
+          "player": "Junior Caminero"
+        },
+        {
+          "point": 0.5,
+          "over": 185,
+          "under": -250,
+          "player": "Miguel Vargas"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": -249,
+          "player": "Ryan Vilade"
+        },
+        {
+          "point": 0.5,
+          "over": 188,
+          "under": -250,
+          "player": "Jonny Deluca"
+        },
+        {
+          "point": 0.5,
+          "over": 182,
+          "under": -220,
+          "player": "Yandy Diaz"
+        },
+        {
+          "point": 0.5,
+          "over": 195,
+          "under": -250,
+          "player": "Colson Montgomery"
+        },
+        {
+          "point": 0.5,
+          "over": 235,
+          "under": -287,
+          "player": "Chandler Simpson"
+        },
+        {
+          "point": 0.5,
+          "over": 215,
+          "under": -235,
+          "player": "Munetaka Murakami"
+        },
+        {
+          "point": 0.5,
+          "over": 220,
+          "under": -275,
+          "player": "Jonathan Aranda"
+        },
+        {
+          "point": 0.5,
+          "over": 225,
+          "under": -295,
+          "player": "Ben Williamson"
+        },
+        {
+          "point": 0.5,
+          "over": 225,
+          "under": -275,
+          "player": "Nick Fortes"
+        },
+        {
+          "point": 0.5,
+          "over": 260,
+          "under": -370,
+          "player": "Andrew Benintendi"
+        },
+        {
+          "point": 0.5,
+          "over": 273,
+          "under": -375,
+          "player": "Taylor Walls"
+        },
+        {
+          "point": 0.5,
+          "over": 306,
+          "under": -375,
+          "player": "Tristan Peters"
+        },
+        {
+          "point": 0.5,
+          "over": 310,
+          "under": -350,
+          "player": "Sam Antonacci"
+        },
+        {
+          "point": 0.5,
+          "over": 329,
+          "under": -375,
+          "player": "Braden Montgomery"
+        },
+        {
+          "point": 0.5,
+          "over": 337,
+          "under": -375,
+          "player": "Chase Meidroth"
+        },
+        {
+          "point": 0.5,
+          "over": 359,
+          "under": -450,
+          "player": "Drew Romo"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": -190,
+          "under": 140,
+          "player": "Jonathan Aranda"
+        },
+        {
+          "point": 1.5,
+          "over": -175,
+          "under": 130,
+          "player": "Jonny Deluca"
+        },
+        {
+          "point": 1.5,
+          "over": 110,
+          "under": -135,
+          "player": "Yandy Diaz"
+        },
+        {
+          "point": 1.5,
+          "over": -135,
+          "under": 100,
+          "player": "Andrew Benintendi"
+        },
+        {
+          "point": 1.5,
+          "over": 110,
+          "under": -139,
+          "player": "Junior Caminero"
+        },
+        {
+          "point": 0.5,
+          "over": -115,
+          "under": -101,
+          "player": "Taylor Walls"
+        },
+        {
+          "point": 1.5,
+          "over": -165,
+          "under": 125,
+          "player": "Miguel Vargas"
+        },
+        {
+          "point": 1.5,
+          "over": -135,
+          "under": 100,
+          "player": "Colson Montgomery"
+        },
+        {
+          "point": 1.5,
+          "over": -165,
+          "under": 125,
+          "player": "Ryan Vilade"
+        },
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 130,
+          "player": "Nick Fortes"
+        },
+        {
+          "point": 1.5,
+          "over": -225,
+          "under": 165,
+          "player": "Chandler Simpson"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 105,
+          "player": "Chase Meidroth"
+        },
+        {
+          "point": 1.5,
+          "over": -150,
+          "under": 110,
+          "player": "Munetaka Murakami"
+        },
+        {
+          "point": 0.5,
+          "over": 170,
+          "under": 142,
+          "player": "Ben Williamson"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": 115,
+          "player": "Braden Montgomery"
+        },
+        {
+          "point": 1.5,
+          "over": -200,
+          "under": 150,
+          "player": "Sam Antonacci"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -105,
+          "player": "Tristan Peters"
+        },
+        {
+          "point": 0.5,
+          "over": -105,
+          "under": -125,
+          "player": "Drew Romo"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 5.5,
+          "over": -125,
+          "under": 108,
+          "player": "Drew Rasmussen"
+        }
+      ],
+      "outs": [
+        {
+          "point": 17.5,
+          "over": -115,
+          "under": -116,
+          "player": "Drew Rasmussen"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 1.5,
+          "over": -122,
+          "under": -109,
+          "player": "Drew Rasmussen"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 4.5,
+          "over": 107,
+          "under": -135,
+          "player": "Drew Rasmussen"
+        }
+      ]
     }
   },
   {
@@ -299,18 +1172,475 @@
       "Under 8": 130,
       "Under 10": -170
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": 112,
+        "under": -135,
+        "team": "Miami Marlins"
+      },
+      {
+        "point": 4.5,
+        "over": -104,
+        "under": -117,
+        "team": "New York Mets"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -161,
+          "under": 129,
+          "player": "Francisco Alvarez"
+        },
+        {
+          "point": 1.5,
+          "over": 150,
+          "under": -185,
+          "player": "Otto Lopez"
+        },
+        {
+          "point": 0.5,
+          "over": -195,
+          "under": 161,
+          "player": "Kyle Stowers"
+        },
+        {
+          "point": 0.5,
+          "over": -256,
+          "under": 199,
+          "player": "Francisco Lindor"
+        },
+        {
+          "point": 0.5,
+          "over": -230,
+          "under": 185,
+          "player": "Heriberto Hernandez"
+        },
+        {
+          "point": 0.5,
+          "over": -161,
+          "under": 123,
+          "player": "Jared Young"
+        },
+        {
+          "point": 0.5,
+          "over": -158,
+          "under": 135,
+          "player": "Marcus Semien"
+        },
+        {
+          "point": 0.5,
+          "over": -168,
+          "under": 129,
+          "player": "Joe Mack"
+        },
+        {
+          "point": 0.5,
+          "over": -220,
+          "under": 181,
+          "player": "Liam Hicks"
+        },
+        {
+          "point": 0.5,
+          "over": -230,
+          "under": 180,
+          "player": "Javier Sanoja"
+        },
+        {
+          "point": 0.5,
+          "over": -119,
+          "under": 102,
+          "player": "Esteury Ruiz"
+        },
+        {
+          "point": 0.5,
+          "over": -152,
+          "under": 117,
+          "player": "Jorge Polanco"
+        },
+        {
+          "point": 1.5,
+          "over": 195,
+          "under": -239,
+          "player": "Bo Bichette"
+        },
+        {
+          "point": 0.5,
+          "over": -206,
+          "under": 164,
+          "player": "Luis Robert Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -233,
+          "under": 173,
+          "player": "Carson Benge"
+        },
+        {
+          "point": 0.5,
+          "over": -237,
+          "under": 181,
+          "player": "A.J. Ewing"
+        },
+        {
+          "point": 0.5,
+          "over": -146,
+          "under": 116,
+          "player": "Leo Jimenez"
+        },
+        {
+          "point": 1.5,
+          "over": -245,
+          "under": 185,
+          "player": "Xavier Edwards"
+        }
+      ],
+      "hr": [
+        {
+          "point": 1.5,
+          "over": 550,
+          "player": "Carson Benge"
+        },
+        {
+          "point": 1.5,
+          "over": 540,
+          "player": "Bo Bichette"
+        },
+        {
+          "point": 2.5,
+          "over": 750,
+          "player": "Leo Jimenez"
+        },
+        {
+          "point": 1.5,
+          "over": 900,
+          "player": "Xavier Edwards"
+        },
+        {
+          "point": 1.5,
+          "over": 540,
+          "player": "Jorge Polanco"
+        },
+        {
+          "point": 1.5,
+          "over": 525,
+          "player": "Luis Robert Jr."
+        },
+        {
+          "point": 1.5,
+          "over": 360,
+          "player": "Francisco Alvarez"
+        },
+        {
+          "point": 1.5,
+          "over": 340,
+          "player": "Francisco Lindor"
+        },
+        {
+          "point": 2.5,
+          "over": 500,
+          "player": "Otto Lopez"
+        },
+        {
+          "point": 1.5,
+          "over": 300,
+          "player": "Heriberto Hernandez"
+        },
+        {
+          "point": 2.5,
+          "over": 600,
+          "player": "A.J. Ewing"
+        },
+        {
+          "point": 2.5,
+          "over": 750,
+          "player": "Javier Sanoja"
+        },
+        {
+          "point": 2.5,
+          "over": 370,
+          "player": "Kyle Stowers"
+        },
+        {
+          "point": 1.5,
+          "over": 850,
+          "player": "Liam Hicks"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 147,
+          "under": -205,
+          "player": "Heriberto Hernandez"
+        },
+        {
+          "point": 0.5,
+          "over": 163,
+          "under": -230,
+          "player": "Francisco Lindor"
+        },
+        {
+          "point": 0.5,
+          "over": 166,
+          "under": -233,
+          "player": "Bo Bichette"
+        },
+        {
+          "point": 0.5,
+          "over": 173,
+          "under": -243,
+          "player": "Carson Benge"
+        },
+        {
+          "point": 0.5,
+          "over": 175,
+          "under": -247,
+          "player": "Kyle Stowers"
+        },
+        {
+          "point": 0.5,
+          "over": 181,
+          "under": -257,
+          "player": "Luis Robert Jr."
+        },
+        {
+          "point": 0.5,
+          "over": 186,
+          "under": -264,
+          "player": "Otto Lopez"
+        },
+        {
+          "point": 0.5,
+          "over": 190,
+          "under": -270,
+          "player": "Francisco Alvarez"
+        },
+        {
+          "point": 0.5,
+          "over": 193,
+          "under": -274,
+          "player": "Javier Sanoja"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": -285,
+          "player": "Xavier Edwards"
+        },
+        {
+          "point": 0.5,
+          "over": 217,
+          "under": -311,
+          "player": "Marcus Semien"
+        },
+        {
+          "point": 0.5,
+          "over": 221,
+          "under": -318,
+          "player": "Liam Hicks"
+        },
+        {
+          "point": 0.5,
+          "over": 224,
+          "under": -323,
+          "player": "Jorge Polanco"
+        },
+        {
+          "point": 0.5,
+          "over": 226,
+          "under": -325,
+          "player": "Joe Mack"
+        },
+        {
+          "point": 0.5,
+          "over": 238,
+          "under": -345,
+          "player": "A.J. Ewing"
+        },
+        {
+          "point": 0.5,
+          "over": 251,
+          "under": -366,
+          "player": "Esteury Ruiz"
+        },
+        {
+          "point": 0.5,
+          "over": 255,
+          "under": -372,
+          "player": "Leo Jimenez"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": 115,
+          "under": -149,
+          "player": "Francisco Lindor"
+        },
+        {
+          "point": 1.5,
+          "over": -105,
+          "under": -120,
+          "player": "Otto Lopez"
+        },
+        {
+          "point": 1.5,
+          "over": 148,
+          "under": -185,
+          "player": "Javier Sanoja"
+        },
+        {
+          "point": 1.5,
+          "over": 143,
+          "under": -180,
+          "player": "Xavier Edwards"
+        },
+        {
+          "point": 1.5,
+          "over": 136,
+          "under": -170,
+          "player": "Kyle Stowers"
+        },
+        {
+          "point": 1.5,
+          "over": 167,
+          "under": -222,
+          "player": "Francisco Alvarez"
+        },
+        {
+          "point": 1.5,
+          "over": 199,
+          "under": -270,
+          "player": "Jorge Polanco"
+        },
+        {
+          "point": 0.5,
+          "over": -108,
+          "under": -120,
+          "player": "Esteury Ruiz"
+        },
+        {
+          "point": 1.5,
+          "over": 105,
+          "under": -133,
+          "player": "Heriberto Hernandez"
+        },
+        {
+          "point": 1.5,
+          "over": 155,
+          "under": -185,
+          "player": "Liam Hicks"
+        },
+        {
+          "point": 0.5,
+          "over": -143,
+          "under": 110,
+          "player": "Marcus Semien"
+        },
+        {
+          "point": 1.5,
+          "over": 190,
+          "under": -256,
+          "player": "Jared Young"
+        },
+        {
+          "point": 1.5,
+          "over": 136,
+          "under": -179,
+          "player": "Carson Benge"
+        },
+        {
+          "point": 1.5,
+          "over": 135,
+          "under": -169,
+          "player": "A.J. Ewing"
+        },
+        {
+          "point": 1.5,
+          "over": 144,
+          "under": -189,
+          "player": "Luis Robert Jr."
+        },
+        {
+          "point": 1.5,
+          "over": 117,
+          "under": -144,
+          "player": "Bo Bichette"
+        },
+        {
+          "point": 0.5,
+          "over": 205,
+          "under": 115,
+          "player": "Leo Jimenez"
+        },
+        {
+          "point": 1.5,
+          "over": 178,
+          "under": -238,
+          "player": "Joe Mack"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 4.5,
+          "over": 135,
+          "under": -153,
+          "player": "Zach Thornton"
+        },
+        {
+          "point": 3.5,
+          "over": -104,
+          "under": -120,
+          "player": "Tyler Phillips"
+        }
+      ],
+      "outs": [
+        {
+          "point": 17.5,
+          "over": -108,
+          "under": -123,
+          "player": "Zach Thornton"
+        },
+        {
+          "point": 14.5,
+          "over": 105,
+          "under": -139,
+          "player": "Tyler Phillips"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 2.5,
+          "over": 104,
+          "under": -138,
+          "player": "Tyler Phillips"
+        },
+        {
+          "point": 2.5,
+          "over": 104,
+          "under": -139,
+          "player": "Zach Thornton"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 4.5,
+          "over": -141,
+          "under": 106,
+          "player": "Tyler Phillips"
+        },
+        {
+          "point": 5.5,
+          "over": -109,
+          "under": -121,
+          "player": "Zach Thornton"
+        }
+      ]
     }
   },
   {
@@ -399,18 +1729,487 @@
       "Under 6": 170,
       "Under 8": -160
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": 114,
+        "under": -130,
+        "team": "Minnesota Twins"
+      },
+      {
+        "point": 3.5,
+        "over": 113,
+        "under": -135,
+        "team": "Seattle Mariners"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -160,
+          "under": 131,
+          "player": "Trevor Larnach"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": 102,
+          "player": "Cal Raleigh"
+        },
+        {
+          "point": 0.5,
+          "over": -152,
+          "under": 140,
+          "player": "Ryan Jeffers"
+        },
+        {
+          "point": 0.5,
+          "over": -172,
+          "under": 133,
+          "player": "Dominic Canzone"
+        },
+        {
+          "point": 0.5,
+          "over": 190,
+          "under": -258,
+          "player": "Julio Rodriguez"
+        },
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 123,
+          "player": "Royce Lewis"
+        },
+        {
+          "point": 0.5,
+          "over": -220,
+          "under": 175,
+          "player": "Randy Arozarena"
+        },
+        {
+          "point": 0.5,
+          "over": -144,
+          "under": 119,
+          "player": "Brooks Lee"
+        },
+        {
+          "point": 0.5,
+          "over": -182,
+          "under": 165,
+          "player": "Cole Young"
+        },
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 126,
+          "player": "Kody Clemens"
+        },
+        {
+          "point": 0.5,
+          "over": -110,
+          "under": -104,
+          "player": "Alan Roden"
+        },
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 120,
+          "player": "Luke Keaschall"
+        },
+        {
+          "point": 0.5,
+          "over": -185,
+          "under": 143,
+          "player": "Josh Naylor"
+        },
+        {
+          "point": 0.5,
+          "over": 105,
+          "under": -121,
+          "player": "Ryan Kreidler"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 120,
+          "player": "Josh Bell"
+        },
+        {
+          "point": 0.5,
+          "over": -110,
+          "under": -108,
+          "player": "Rob Refsnyder"
+        },
+        {
+          "point": 0.5,
+          "over": -105,
+          "under": -109,
+          "player": "Colt Emerson"
+        },
+        {
+          "point": 0.5,
+          "over": -110,
+          "under": -110,
+          "player": "Weston Wilson"
+        },
+        {
+          "point": 0.5,
+          "over": -169,
+          "under": 129,
+          "player": "Victor Caratini"
+        }
+      ],
+      "hr": [
+        {
+          "point": 1.5,
+          "over": 525,
+          "player": "Randy Arozarena"
+        },
+        {
+          "point": 1.5,
+          "over": 410,
+          "player": "Julio Rodriguez"
+        },
+        {
+          "point": 2.5,
+          "over": 450,
+          "player": "Dominic Canzone"
+        },
+        {
+          "point": 2.5,
+          "over": 750,
+          "player": "Brooks Lee"
+        },
+        {
+          "point": 2.5,
+          "over": 375,
+          "player": "Royce Lewis"
+        },
+        {
+          "point": 1.5,
+          "over": 380,
+          "player": "Kody Clemens"
+        },
+        {
+          "point": 2.5,
+          "over": 475,
+          "player": "Ryan Jeffers"
+        },
+        {
+          "point": 1.5,
+          "over": 600,
+          "player": "Josh Bell"
+        },
+        {
+          "point": 2.5,
+          "over": 900,
+          "player": "Luke Keaschall"
+        },
+        {
+          "point": 1.5,
+          "over": 950,
+          "player": "Ryan Kreidler"
+        },
+        {
+          "point": 2.5,
+          "over": 700,
+          "player": "Cole Young"
+        },
+        {
+          "point": 2.5,
+          "over": 650,
+          "player": "Rob Refsnyder"
+        },
+        {
+          "point": 1.5,
+          "over": 350,
+          "player": "Cal Raleigh"
+        },
+        {
+          "point": 2.5,
+          "over": 700,
+          "player": "Josh Naylor"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 163,
+          "under": -200,
+          "player": "Julio Rodriguez"
+        },
+        {
+          "point": 0.5,
+          "over": 181,
+          "under": -250,
+          "player": "Cal Raleigh"
+        },
+        {
+          "point": 0.5,
+          "over": 190,
+          "under": -220,
+          "player": "Dominic Canzone"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -283,
+          "player": "Royce Lewis"
+        },
+        {
+          "point": 0.5,
+          "over": 215,
+          "under": -225,
+          "player": "Randy Arozarena"
+        },
+        {
+          "point": 0.5,
+          "over": 215,
+          "under": -250,
+          "player": "Kody Clemens"
+        },
+        {
+          "point": 0.5,
+          "over": 245,
+          "under": -295,
+          "player": "Josh Bell"
+        },
+        {
+          "point": 0.5,
+          "over": 252,
+          "under": -295,
+          "player": "Josh Naylor"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": -250,
+          "player": "Ryan Jeffers"
+        },
+        {
+          "point": 0.5,
+          "over": 257,
+          "under": -295,
+          "player": "Cole Young"
+        },
+        {
+          "point": 0.5,
+          "over": 290,
+          "under": -401,
+          "player": "Colt Emerson"
+        },
+        {
+          "point": 0.5,
+          "over": 282,
+          "under": -400,
+          "player": "Rob Refsnyder"
+        },
+        {
+          "point": 0.5,
+          "over": 295,
+          "under": -325,
+          "player": "Brooks Lee"
+        },
+        {
+          "point": 0.5,
+          "over": 302,
+          "under": -350,
+          "player": "Luke Keaschall"
+        },
+        {
+          "point": 0.5,
+          "over": 360,
+          "under": -450,
+          "player": "Ryan Kreidler"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -350,
+          "player": "Weston Wilson"
+        },
+        {
+          "point": 0.5,
+          "over": 340,
+          "under": -525,
+          "player": "Alan Roden"
+        },
+        {
+          "point": 0.5,
+          "over": 230,
+          "under": -325,
+          "player": "Trevor Larnach"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": 163,
+          "under": -175,
+          "player": "Ryan Jeffers"
+        },
+        {
+          "point": 1.5,
+          "over": 136,
+          "under": -155,
+          "player": "Randy Arozarena"
+        },
+        {
+          "point": 1.5,
+          "over": -130,
+          "under": -105,
+          "player": "Cal Raleigh"
+        },
+        {
+          "point": 1.5,
+          "over": -155,
+          "under": 115,
+          "player": "Royce Lewis"
+        },
+        {
+          "point": 1.5,
+          "over": -175,
+          "under": 130,
+          "player": "Dominic Canzone"
+        },
+        {
+          "point": 1.5,
+          "over": 115,
+          "under": -130,
+          "player": "Julio Rodriguez"
+        },
+        {
+          "point": 0.5,
+          "over": 290,
+          "under": -135,
+          "player": "Ryan Kreidler"
+        },
+        {
+          "point": 0.5,
+          "over": 205,
+          "under": 120,
+          "player": "Luke Keaschall"
+        },
+        {
+          "point": 1.5,
+          "over": -155,
+          "under": 115,
+          "player": "Kody Clemens"
+        },
+        {
+          "point": 0.5,
+          "over": 100,
+          "under": -120,
+          "player": "Alan Roden"
+        },
+        {
+          "point": 1.5,
+          "over": -155,
+          "under": 115,
+          "player": "Josh Bell"
+        },
+        {
+          "point": 0.5,
+          "over": -105,
+          "under": -114,
+          "player": "Colt Emerson"
+        },
+        {
+          "point": 0.5,
+          "over": 165,
+          "under": 142,
+          "player": "Josh Naylor"
+        },
+        {
+          "point": 0.5,
+          "over": -156,
+          "under": 120,
+          "player": "Trevor Larnach"
+        },
+        {
+          "point": 0.5,
+          "over": 230,
+          "under": -110,
+          "player": "Rob Refsnyder"
+        },
+        {
+          "point": 0.5,
+          "over": 190,
+          "under": 115,
+          "player": "Brooks Lee"
+        },
+        {
+          "point": 0.5,
+          "over": -110,
+          "under": -118,
+          "player": "Weston Wilson"
+        },
+        {
+          "point": 1.5,
+          "over": 170,
+          "under": -185,
+          "player": "Cole Young"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 5.5,
+          "over": -121,
+          "under": 108,
+          "player": "Connor Prielipp"
+        },
+        {
+          "point": 6.5,
+          "over": -115,
+          "under": -104,
+          "player": "Logan Gilbert"
+        }
+      ],
+      "outs": [
+        {
+          "point": 18.5,
+          "over": 115,
+          "under": -152,
+          "player": "Logan Gilbert"
+        },
+        {
+          "point": 16.5,
+          "over": -125,
+          "under": -131,
+          "player": "Connor Prielipp"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 1.5,
+          "over": -119,
+          "under": -111,
+          "player": "Logan Gilbert"
+        },
+        {
+          "point": 2.5,
+          "over": 119,
+          "under": -158,
+          "player": "Connor Prielipp"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 4.5,
+          "over": -101,
+          "under": -110,
+          "player": "Logan Gilbert"
+        },
+        {
+          "point": 4.5,
+          "over": -111,
+          "under": 100,
+          "player": "Connor Prielipp"
+        }
+      ]
     }
   },
   {
@@ -504,15 +2303,517 @@
       "Under 9": -145,
       "Under 10": -220
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": -130,
+        "under": 105,
+        "team": "Cincinnati Reds"
+      },
+      {
+        "point": 4.5,
+        "over": 108,
+        "under": -125,
+        "team": "Pittsburgh Pirates"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 132,
+          "player": "Noelvi Marte"
+        },
+        {
+          "point": 0.5,
+          "over": -139,
+          "under": 122,
+          "player": "Eugenio Suarez"
+        },
+        {
+          "point": 0.5,
+          "over": -186,
+          "under": 175,
+          "player": "Elly De La Cruz"
+        },
+        {
+          "point": 0.5,
+          "over": -205,
+          "under": 167,
+          "player": "Bryan Reynolds"
+        },
+        {
+          "point": 0.5,
+          "over": -156,
+          "under": 130,
+          "player": "Jared Triolo"
+        },
+        {
+          "point": 0.5,
+          "over": -115,
+          "under": 111,
+          "player": "Henry Davis"
+        },
+        {
+          "point": 1.5,
+          "over": 192,
+          "under": -235,
+          "player": "Nick Gonzales"
+        },
+        {
+          "point": 0.5,
+          "over": -148,
+          "under": 133,
+          "player": "JJ Bleday"
+        },
+        {
+          "point": 0.5,
+          "over": -215,
+          "under": 176,
+          "player": "Sal Stewart"
+        },
+        {
+          "point": 0.5,
+          "over": -128,
+          "under": 105,
+          "player": "Jose Trevino"
+        },
+        {
+          "point": 0.5,
+          "over": -139,
+          "under": 109,
+          "player": "Jhostynxon Garcia"
+        },
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 132,
+          "player": "Dane Myers"
+        },
+        {
+          "point": 0.5,
+          "over": -185,
+          "under": 152,
+          "player": "Esmerlyn Valdez"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 153,
+          "player": "Brandon Lowe"
+        },
+        {
+          "point": 0.5,
+          "over": -165,
+          "under": 132,
+          "player": "Nathaniel Lowe"
+        },
+        {
+          "point": 0.5,
+          "over": -137,
+          "under": 125,
+          "player": "Marcell Ozuna"
+        },
+        {
+          "point": 0.5,
+          "over": -139,
+          "under": 120,
+          "player": "Endy Rodriguez"
+        },
+        {
+          "point": 1.5,
+          "over": 233,
+          "under": -323,
+          "player": "Jake Mangum"
+        },
+        {
+          "point": 0.5,
+          "over": -117,
+          "under": -113,
+          "player": "Matt McLain"
+        },
+        {
+          "point": 0.5,
+          "over": -210,
+          "under": 155,
+          "player": "Spencer Steer"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 140,
+          "player": "Tyler Stephenson"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 100,
+          "player": "Ke'Bryan Hayes"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 110,
+          "player": "Edwin Arroyo"
+        }
+      ],
+      "hr": [
+        {
+          "point": 1.5,
+          "over": 750,
+          "player": "Noelvi Marte"
+        },
+        {
+          "point": 1.5,
+          "over": 850,
+          "player": "Jared Triolo"
+        },
+        {
+          "point": 2.5,
+          "over": 400,
+          "player": "Henry Davis"
+        },
+        {
+          "point": 1.5,
+          "over": 525,
+          "player": "Nathaniel Lowe"
+        },
+        {
+          "point": 1.5,
+          "over": 390,
+          "player": "Eugenio Suarez"
+        },
+        {
+          "point": 1.5,
+          "over": 300,
+          "player": "Brandon Lowe"
+        },
+        {
+          "point": 2.5,
+          "over": 400,
+          "player": "Marcell Ozuna"
+        },
+        {
+          "point": 2.5,
+          "over": 440,
+          "player": "JJ Bleday"
+        },
+        {
+          "point": 1.5,
+          "over": 380,
+          "player": "Sal Stewart"
+        },
+        {
+          "point": 2.5,
+          "over": 360,
+          "player": "Bryan Reynolds"
+        },
+        {
+          "point": 2.5,
+          "over": 800,
+          "player": "Nick Gonzales"
+        },
+        {
+          "point": 1.5,
+          "over": 400,
+          "player": "Elly De La Cruz"
+        },
+        {
+          "point": 1.5,
+          "over": 330,
+          "player": "Esmerlyn Valdez"
+        },
+        {
+          "point": 2.5,
+          "over": 750,
+          "player": "Dane Myers"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 150,
+          "under": -174,
+          "player": "Esmerlyn Valdez"
+        },
+        {
+          "point": 0.5,
+          "over": 168,
+          "under": -210,
+          "player": "Brandon Lowe"
+        },
+        {
+          "point": 0.5,
+          "over": 195,
+          "under": -255,
+          "player": "Bryan Reynolds"
+        },
+        {
+          "point": 0.5,
+          "over": 195,
+          "under": -250,
+          "player": "Elly De La Cruz"
+        },
+        {
+          "point": 0.5,
+          "over": 181,
+          "under": -200,
+          "player": "Sal Stewart"
+        },
+        {
+          "point": 0.5,
+          "over": 195,
+          "under": -210,
+          "player": "JJ Bleday"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -281,
+          "player": "Henry Davis"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -235,
+          "player": "Marcell Ozuna"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -292,
+          "player": "Nathaniel Lowe"
+        },
+        {
+          "point": 0.5,
+          "over": 209,
+          "under": -235,
+          "player": "Eugenio Suarez"
+        },
+        {
+          "point": 0.5,
+          "over": 240,
+          "under": -330,
+          "player": "Nick Gonzales"
+        },
+        {
+          "point": 0.5,
+          "over": 230,
+          "under": -275,
+          "player": "Jhostynxon Garcia"
+        },
+        {
+          "point": 0.5,
+          "over": 235,
+          "under": -250,
+          "player": "Endy Rodriguez"
+        },
+        {
+          "point": 0.5,
+          "over": 251,
+          "under": -365,
+          "player": "Noelvi Marte"
+        },
+        {
+          "point": 0.5,
+          "over": 271,
+          "under": -350,
+          "player": "Jared Triolo"
+        },
+        {
+          "point": 0.5,
+          "over": 283,
+          "under": -417,
+          "player": "Matt McLain"
+        },
+        {
+          "point": 0.5,
+          "over": 291,
+          "under": -375,
+          "player": "Dane Myers"
+        },
+        {
+          "point": 0.5,
+          "over": 318,
+          "under": -476,
+          "player": "Jose Trevino"
+        },
+        {
+          "point": 0.5,
+          "over": 275,
+          "under": -400,
+          "player": "Ke'Bryan Hayes"
+        },
+        {
+          "point": 0.5,
+          "over": 290,
+          "under": -450,
+          "player": "Edwin Arroyo"
+        },
+        {
+          "point": 0.5,
+          "over": 160,
+          "under": -220,
+          "player": "Spencer Steer"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -295,
+          "player": "Tyler Stephenson"
+        }
+      ],
+      "bases": [
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": 135,
+          "player": "Noelvi Marte"
+        },
+        {
+          "point": 1.5,
+          "over": 135,
+          "under": -160,
+          "player": "Bryan Reynolds"
+        },
+        {
+          "point": 1.5,
+          "over": -160,
+          "under": 120,
+          "player": "Eugenio Suarez"
+        },
+        {
+          "point": 1.5,
+          "over": 130,
+          "under": -140,
+          "player": "Elly De La Cruz"
+        },
+        {
+          "point": 1.5,
+          "over": 125,
+          "under": -140,
+          "player": "Nick Gonzales"
+        },
+        {
+          "point": 1.5,
+          "over": -115,
+          "under": -115,
+          "player": "Henry Davis"
+        },
+        {
+          "point": 1.5,
+          "over": 125,
+          "under": -160,
+          "player": "Brandon Lowe"
+        },
+        {
+          "point": 1.5,
+          "over": -165,
+          "under": 125,
+          "player": "JJ Bleday"
+        },
+        {
+          "point": 1.5,
+          "over": 126,
+          "under": -150,
+          "player": "Sal Stewart"
+        },
+        {
+          "point": 0.5,
+          "over": -143,
+          "under": 110,
+          "player": "Jose Trevino"
+        },
+        {
+          "point": 1.5,
+          "over": 130,
+          "under": -150,
+          "player": "Esmerlyn Valdez"
+        },
+        {
+          "point": 1.5,
+          "over": 174,
+          "under": -233,
+          "player": "Nathaniel Lowe"
+        },
+        {
+          "point": 1.5,
+          "over": -165,
+          "under": 125,
+          "player": "Marcell Ozuna"
+        },
+        {
+          "point": 0.5,
+          "over": 205,
+          "under": 130,
+          "player": "Jared Triolo"
+        },
+        {
+          "point": 1.5,
+          "over": 161,
+          "under": -213,
+          "player": "Jake Mangum"
+        },
+        {
+          "point": 0.5,
+          "over": 195,
+          "under": 120,
+          "player": "Dane Myers"
+        },
+        {
+          "point": 0.5,
+          "over": -156,
+          "under": 120,
+          "player": "Endy Rodriguez"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 105,
+          "player": "Jhostynxon Garcia"
+        },
+        {
+          "point": 1.5,
+          "over": 125,
+          "under": -165,
+          "player": "Spencer Steer"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 100,
+          "player": "Ke'Bryan Hayes"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 110,
+          "player": "Edwin Arroyo"
+        },
+        {
+          "point": 1.5,
+          "over": 140,
+          "under": -190,
+          "player": "Tyler Stephenson"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
+      "strikeouts": [
+        {
+          "point": 6.5,
+          "over": 105,
+          "under": -107,
+          "player": "Braxton Ashcraft"
+        },
+        {
+          "point": 4.5,
+          "over": 120,
+          "under": -140,
+          "player": "Andrew Abbott"
+        }
+      ],
       "outs": [],
       "earned_runs": [],
       "hits_allowed": []
@@ -609,18 +2910,511 @@
       "Under 9": -150,
       "Under 10": -220
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": -111,
+        "under": -105,
+        "team": "Baltimore Orioles"
+      },
+      {
+        "point": 4.5,
+        "over": 100,
+        "under": -115,
+        "team": "Philadelphia Phillies"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 157,
+          "player": "J.T. Realmuto"
+        },
+        {
+          "point": 0.5,
+          "over": -165,
+          "under": 164,
+          "player": "Kyle Schwarber"
+        },
+        {
+          "point": 0.5,
+          "over": -215,
+          "under": 180,
+          "player": "Brandon Marsh"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 150,
+          "player": "Bryson Stott"
+        },
+        {
+          "point": 0.5,
+          "over": -227,
+          "under": 183,
+          "player": "Bryce Harper"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 145,
+          "player": "Gunnar Henderson"
+        },
+        {
+          "point": 1.5,
+          "over": 185,
+          "under": -208,
+          "player": "Trea Turner"
+        },
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 157,
+          "player": "Pete Alonso"
+        },
+        {
+          "point": 0.5,
+          "over": -160,
+          "under": 135,
+          "player": "Jeremiah Jackson"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": 108,
+          "player": "Coby Mayo"
+        },
+        {
+          "point": 0.5,
+          "over": -164,
+          "under": 135,
+          "player": "Tyler O'Neill"
+        },
+        {
+          "point": 0.5,
+          "over": -210,
+          "under": 169,
+          "player": "Taylor Ward"
+        },
+        {
+          "point": 0.5,
+          "over": -165,
+          "under": 150,
+          "player": "Christian Encarnacion-Strand"
+        },
+        {
+          "point": 0.5,
+          "over": -163,
+          "under": 145,
+          "player": "Justin Crawford"
+        },
+        {
+          "point": 0.5,
+          "over": -132,
+          "under": 102,
+          "player": "Yohel Pozo"
+        },
+        {
+          "point": 1.5,
+          "over": -235,
+          "under": 191,
+          "player": "Alec Bohm"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 136,
+          "player": "Leody Taveras"
+        },
+        {
+          "point": 0.5,
+          "over": -173,
+          "under": 130,
+          "player": "Bryan De La Cruz"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": -105,
+          "player": "Gabriel Rincones Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -110,
+          "under": -120,
+          "player": "Chadwick Tromp"
+        }
+      ],
+      "hr": [
+        {
+          "point": 2.5,
+          "over": 800,
+          "player": "J.T. Realmuto"
+        },
+        {
+          "point": 1.5,
+          "over": 650,
+          "player": "Bryson Stott"
+        },
+        {
+          "point": 1.5,
+          "over": 360,
+          "player": "Bryce Harper"
+        },
+        {
+          "point": 1.5,
+          "over": 510,
+          "player": "Brandon Marsh"
+        },
+        {
+          "point": 1.5,
+          "over": 480,
+          "player": "Trea Turner"
+        },
+        {
+          "point": 2.5,
+          "over": 600,
+          "player": "Taylor Ward"
+        },
+        {
+          "point": 1.5,
+          "over": 215,
+          "player": "Kyle Schwarber"
+        },
+        {
+          "point": 2.5,
+          "over": 380,
+          "player": "Pete Alonso"
+        },
+        {
+          "point": 2.5,
+          "over": 430,
+          "player": "Coby Mayo"
+        },
+        {
+          "point": 2.5,
+          "over": 650,
+          "player": "Alec Bohm"
+        },
+        {
+          "point": 2.5,
+          "over": 800,
+          "player": "Gunnar Henderson"
+        },
+        {
+          "point": 2.5,
+          "over": 420,
+          "player": "Tyler O'Neill"
+        },
+        {
+          "point": 2.5,
+          "over": 700,
+          "player": "Jeremiah Jackson"
+        },
+        {
+          "point": 1.5,
+          "over": 850,
+          "player": "Leody Taveras"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 130,
+          "under": -172,
+          "player": "Kyle Schwarber"
+        },
+        {
+          "point": 0.5,
+          "over": 150,
+          "under": -190,
+          "player": "Bryce Harper"
+        },
+        {
+          "point": 0.5,
+          "over": 185,
+          "under": -250,
+          "player": "Trea Turner"
+        },
+        {
+          "point": 0.5,
+          "over": 181,
+          "under": -235,
+          "player": "Alec Bohm"
+        },
+        {
+          "point": 0.5,
+          "over": 184,
+          "under": -220,
+          "player": "Brandon Marsh"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": -250,
+          "player": "Pete Alonso"
+        },
+        {
+          "point": 0.5,
+          "over": 196,
+          "under": -250,
+          "player": "Tyler O'Neill"
+        },
+        {
+          "point": 0.5,
+          "over": 204,
+          "under": -275,
+          "player": "Bryson Stott"
+        },
+        {
+          "point": 0.5,
+          "over": 215,
+          "under": -309,
+          "player": "Bryan De La Cruz"
+        },
+        {
+          "point": 0.5,
+          "over": 221,
+          "under": -250,
+          "player": "J.T. Realmuto"
+        },
+        {
+          "point": 0.5,
+          "over": 231,
+          "under": -275,
+          "player": "Christian Encarnacion-Strand"
+        },
+        {
+          "point": 0.5,
+          "over": 235,
+          "under": -325,
+          "player": "Coby Mayo"
+        },
+        {
+          "point": 0.5,
+          "over": 265,
+          "under": -325,
+          "player": "Taylor Ward"
+        },
+        {
+          "point": 0.5,
+          "over": 260,
+          "under": -365,
+          "player": "Jeremiah Jackson"
+        },
+        {
+          "point": 0.5,
+          "over": 270,
+          "under": -325,
+          "player": "Gunnar Henderson"
+        },
+        {
+          "point": 0.5,
+          "over": 277,
+          "under": -375,
+          "player": "Justin Crawford"
+        },
+        {
+          "point": 0.5,
+          "over": 298,
+          "under": -442,
+          "player": "Yohel Pozo"
+        },
+        {
+          "point": 0.5,
+          "over": 302,
+          "under": -400,
+          "player": "Leody Taveras"
+        },
+        {
+          "point": 0.5,
+          "over": 310,
+          "under": -450,
+          "player": "Chadwick Tromp"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": -285,
+          "player": "Gabriel Rincones Jr."
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": -190,
+          "under": 140,
+          "player": "Bryson Stott"
+        },
+        {
+          "point": 1.5,
+          "over": 133,
+          "under": -150,
+          "player": "Brandon Marsh"
+        },
+        {
+          "point": 1.5,
+          "over": 115,
+          "under": -125,
+          "player": "Kyle Schwarber"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": 145,
+          "player": "Gunnar Henderson"
+        },
+        {
+          "point": 1.5,
+          "over": 105,
+          "under": -122,
+          "player": "Trea Turner"
+        },
+        {
+          "point": 1.5,
+          "over": 170,
+          "under": -200,
+          "player": "J.T. Realmuto"
+        },
+        {
+          "point": 1.5,
+          "over": 135,
+          "under": -164,
+          "player": "Alec Bohm"
+        },
+        {
+          "point": 1.5,
+          "over": 109,
+          "under": -135,
+          "player": "Bryce Harper"
+        },
+        {
+          "point": 1.5,
+          "over": 145,
+          "under": -179,
+          "player": "Taylor Ward"
+        },
+        {
+          "point": 1.5,
+          "over": -175,
+          "under": 130,
+          "player": "Tyler O'Neill"
+        },
+        {
+          "point": 1.5,
+          "over": 135,
+          "under": -169,
+          "player": "Pete Alonso"
+        },
+        {
+          "point": 0.5,
+          "over": -172,
+          "under": 145,
+          "player": "Justin Crawford"
+        },
+        {
+          "point": 1.5,
+          "over": 155,
+          "under": -190,
+          "player": "Christian Encarnacion-Strand"
+        },
+        {
+          "point": 0.5,
+          "over": -123,
+          "under": -105,
+          "player": "Yohel Pozo"
+        },
+        {
+          "point": 0.5,
+          "over": 170,
+          "under": 130,
+          "player": "Jeremiah Jackson"
+        },
+        {
+          "point": 1.5,
+          "over": -140,
+          "under": 105,
+          "player": "Coby Mayo"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": 110,
+          "player": "Leody Taveras"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": -105,
+          "player": "Gabriel Rincones Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -110,
+          "under": -120,
+          "player": "Chadwick Tromp"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 7.5,
+          "over": -140,
+          "under": 123,
+          "player": "Cristopher Sanchez"
+        },
+        {
+          "point": 5.5,
+          "over": 110,
+          "under": -130,
+          "player": "Shane Baz"
+        }
+      ],
+      "outs": [
+        {
+          "point": 17.5,
+          "over": 125,
+          "under": 140,
+          "player": "Cristopher Sanchez"
+        },
+        {
+          "point": 17.5,
+          "over": -136,
+          "under": 102,
+          "player": "Shane Baz"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 2.5,
+          "over": 124,
+          "under": -165,
+          "player": "Cristopher Sanchez"
+        },
+        {
+          "point": 2.5,
+          "over": -131,
+          "under": -102,
+          "player": "Shane Baz"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 5.5,
+          "over": -115,
+          "under": -102,
+          "player": "Shane Baz"
+        },
+        {
+          "point": 5.5,
+          "over": -105,
+          "under": 102,
+          "player": "Cristopher Sanchez"
+        }
+      ]
     }
   },
   {
@@ -713,18 +3507,475 @@
       "Under 9": -160,
       "Under 10": -230
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": -122,
+        "under": 100,
+        "team": "Houston Astros"
+      },
+      {
+        "point": 4.5,
+        "over": 106,
+        "under": -124,
+        "team": "Texas Rangers"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 1.5,
+          "over": -235,
+          "under": 198,
+          "player": "Yordan Alvarez"
+        },
+        {
+          "point": 0.5,
+          "over": -233,
+          "under": 184,
+          "player": "Jeremy Pena"
+        },
+        {
+          "point": 0.5,
+          "over": -165,
+          "under": 130,
+          "player": "Jose Altuve"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 167,
+          "player": "Corey Seager"
+        },
+        {
+          "point": 0.5,
+          "over": -181,
+          "under": 145,
+          "player": "Ezequiel Duran"
+        },
+        {
+          "point": 0.5,
+          "over": -148,
+          "under": 130,
+          "player": "Joc Pederson"
+        },
+        {
+          "point": 0.5,
+          "over": -162,
+          "under": 128,
+          "player": "Yainer Diaz"
+        },
+        {
+          "point": 0.5,
+          "over": -210,
+          "under": 181,
+          "player": "Wyatt Langford"
+        },
+        {
+          "point": 0.5,
+          "over": -148,
+          "under": 135,
+          "player": "Isaac Paredes"
+        },
+        {
+          "point": 0.5,
+          "over": -128,
+          "under": -101,
+          "player": "Evan Carter"
+        },
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 124,
+          "player": "Jake Burger"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 110,
+          "player": "Christian Walker"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 172,
+          "player": "Brandon Nimmo"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": 116,
+          "player": "Cam Smith"
+        },
+        {
+          "point": 0.5,
+          "over": -109,
+          "under": -119,
+          "player": "Lucas Spence"
+        },
+        {
+          "point": 0.5,
+          "over": -140,
+          "under": 111,
+          "player": "Nicky Lopez"
+        },
+        {
+          "point": 0.5,
+          "over": -129,
+          "under": 100,
+          "player": "Elias Diaz"
+        },
+        {
+          "point": 0.5,
+          "over": -110,
+          "under": -120,
+          "player": "LaMonte Wade Jr."
+        }
+      ],
+      "hr": [
+        {
+          "point": 1.5,
+          "over": 360,
+          "player": "Wyatt Langford"
+        },
+        {
+          "point": 2.5,
+          "over": 380,
+          "player": "Jake Burger"
+        },
+        {
+          "point": 2.5,
+          "over": 600,
+          "player": "Ezequiel Duran"
+        },
+        {
+          "point": 1.5,
+          "over": 295,
+          "player": "Corey Seager"
+        },
+        {
+          "point": 2.5,
+          "over": 390,
+          "player": "Christian Walker"
+        },
+        {
+          "point": 2.5,
+          "over": 650,
+          "player": "Yainer Diaz"
+        },
+        {
+          "point": 1.5,
+          "over": 430,
+          "player": "Isaac Paredes"
+        },
+        {
+          "point": 2.5,
+          "over": 350,
+          "player": "Brandon Nimmo"
+        },
+        {
+          "point": 1.5,
+          "over": 550,
+          "player": "Jose Altuve"
+        },
+        {
+          "point": 1.5,
+          "over": 525,
+          "player": "Jeremy Pena"
+        },
+        {
+          "point": 1.5,
+          "over": 255,
+          "player": "Yordan Alvarez"
+        },
+        {
+          "point": 1.5,
+          "over": 360,
+          "player": "Joc Pederson"
+        },
+        {
+          "point": 1.5,
+          "over": 750,
+          "player": "LaMonte Wade Jr."
+        },
+        {
+          "point": 2.5,
+          "over": 800,
+          "player": "Evan Carter"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 146,
+          "under": -185,
+          "player": "Yordan Alvarez"
+        },
+        {
+          "point": 0.5,
+          "over": 150,
+          "under": -200,
+          "player": "Corey Seager"
+        },
+        {
+          "point": 0.5,
+          "over": 175,
+          "under": -220,
+          "player": "Brandon Nimmo"
+        },
+        {
+          "point": 0.5,
+          "over": 168,
+          "under": -220,
+          "player": "Jake Burger"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": -259,
+          "player": "Christian Walker"
+        },
+        {
+          "point": 0.5,
+          "over": 195,
+          "under": -225,
+          "player": "Wyatt Langford"
+        },
+        {
+          "point": 0.5,
+          "over": 196,
+          "under": -250,
+          "player": "Ezequiel Duran"
+        },
+        {
+          "point": 0.5,
+          "over": 205,
+          "under": -250,
+          "player": "Isaac Paredes"
+        },
+        {
+          "point": 0.5,
+          "over": 225,
+          "under": -295,
+          "player": "Evan Carter"
+        },
+        {
+          "point": 0.5,
+          "over": 220,
+          "under": -295,
+          "player": "Jeremy Pena"
+        },
+        {
+          "point": 0.5,
+          "over": 230,
+          "under": -317,
+          "player": "Elias Diaz"
+        },
+        {
+          "point": 0.5,
+          "over": 260,
+          "under": -321,
+          "player": "Cam Smith"
+        },
+        {
+          "point": 0.5,
+          "over": 223,
+          "under": -275,
+          "player": "Jose Altuve"
+        },
+        {
+          "point": 0.5,
+          "over": 290,
+          "under": -349,
+          "player": "Nicky Lopez"
+        },
+        {
+          "point": 0.5,
+          "over": 270,
+          "under": -325,
+          "player": "Yainer Diaz"
+        },
+        {
+          "point": 0.5,
+          "over": 318,
+          "under": -476,
+          "player": "Lucas Spence"
+        },
+        {
+          "point": 0.5,
+          "over": 275,
+          "under": -400,
+          "player": "LaMonte Wade Jr."
+        },
+        {
+          "point": 0.5,
+          "over": 205,
+          "under": -225,
+          "player": "Joc Pederson"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": -165,
+          "under": 125,
+          "player": "Jose Altuve"
+        },
+        {
+          "point": 1.5,
+          "over": 130,
+          "under": -160,
+          "player": "Jeremy Pena"
+        },
+        {
+          "point": 1.5,
+          "over": 100,
+          "under": -125,
+          "player": "Yordan Alvarez"
+        },
+        {
+          "point": 1.5,
+          "over": 161,
+          "under": -190,
+          "player": "Ezequiel Duran"
+        },
+        {
+          "point": 1.5,
+          "over": 125,
+          "under": -145,
+          "player": "Corey Seager"
+        },
+        {
+          "point": 1.5,
+          "over": 161,
+          "under": -185,
+          "player": "Isaac Paredes"
+        },
+        {
+          "point": 1.5,
+          "over": -155,
+          "under": 115,
+          "player": "Jake Burger"
+        },
+        {
+          "point": 1.5,
+          "over": 115,
+          "under": -147,
+          "player": "Wyatt Langford"
+        },
+        {
+          "point": 1.5,
+          "over": -135,
+          "under": 100,
+          "player": "Christian Walker"
+        },
+        {
+          "point": 1.5,
+          "over": 146,
+          "under": -165,
+          "player": "Joc Pederson"
+        },
+        {
+          "point": 1.5,
+          "over": -175,
+          "under": 130,
+          "player": "Brandon Nimmo"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": 108,
+          "player": "Cam Smith"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": 125,
+          "player": "Yainer Diaz"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": -105,
+          "player": "Evan Carter"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 100,
+          "player": "Elias Diaz"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -120,
+          "player": "LaMonte Wade Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -140,
+          "under": 105,
+          "player": "Nicky Lopez"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 5.5,
+          "over": 122,
+          "under": -149,
+          "player": "Ronel Blanco"
+        },
+        {
+          "point": 6.5,
+          "over": -102,
+          "under": -105,
+          "player": "Jacob deGrom"
+        }
+      ],
+      "outs": [
+        {
+          "point": 17.5,
+          "over": -156,
+          "under": 120,
+          "player": "Jacob deGrom"
+        },
+        {
+          "point": 15.5,
+          "over": -112,
+          "under": -123,
+          "player": "Ronel Blanco"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 2.5,
+          "over": 120,
+          "under": -159,
+          "player": "Jacob deGrom"
+        },
+        {
+          "point": 2.5,
+          "over": -104,
+          "under": -127,
+          "player": "Ronel Blanco"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 4.5,
+          "over": -105,
+          "under": -115,
+          "player": "Ronel Blanco"
+        },
+        {
+          "point": 4.5,
+          "over": -129,
+          "under": 100,
+          "player": "Jacob deGrom"
+        }
+      ]
     }
   },
   {
@@ -819,16 +4070,477 @@
       "Under 9": -160,
       "Under 10": -230
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": -111,
+        "under": -107,
+        "team": "Arizona Diamondbacks"
+      },
+      {
+        "point": 4.5,
+        "over": 102,
+        "under": -122,
+        "team": "Cleveland Guardians"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 169,
+          "player": "Ildemaro Vargas"
+        },
+        {
+          "point": 0.5,
+          "over": -215,
+          "under": 175,
+          "player": "Ketel Marte"
+        },
+        {
+          "point": 0.5,
+          "over": -104,
+          "under": -110,
+          "player": "Austin Hedges"
+        },
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 159,
+          "player": "Brayan Rocchio"
+        },
+        {
+          "point": 0.5,
+          "over": -215,
+          "under": 175,
+          "player": "Geraldo Perdomo"
+        },
+        {
+          "point": 0.5,
+          "over": -244,
+          "under": 181,
+          "player": "Gabriel Moreno"
+        },
+        {
+          "point": 0.5,
+          "over": -185,
+          "under": 162,
+          "player": "Steven Kwan"
+        },
+        {
+          "point": 0.5,
+          "over": -218,
+          "under": 175,
+          "player": "Corbin Carroll"
+        },
+        {
+          "point": 0.5,
+          "over": -235,
+          "under": 195,
+          "player": "Angel Martinez"
+        },
+        {
+          "point": 0.5,
+          "over": -154,
+          "under": 130,
+          "player": "Nolan Arenado"
+        },
+        {
+          "point": 0.5,
+          "over": -244,
+          "under": 190,
+          "player": "Chase DeLauter"
+        },
+        {
+          "point": 0.5,
+          "over": -154,
+          "under": 119,
+          "player": "Rhys Hoskins"
+        },
+        {
+          "point": 0.5,
+          "over": -164,
+          "under": 131,
+          "player": "Travis Bazzana"
+        },
+        {
+          "point": 0.5,
+          "over": -118,
+          "under": -105,
+          "player": "David Fry"
+        },
+        {
+          "point": 0.5,
+          "over": -115,
+          "under": -112,
+          "player": "Petey Halpin"
+        },
+        {
+          "point": 1.5,
+          "over": -269,
+          "under": 197,
+          "player": "Jose Ramirez"
+        },
+        {
+          "point": 0.5,
+          "over": 102,
+          "under": -131,
+          "player": "Jorge Barrosa"
+        },
+        {
+          "point": 0.5,
+          "over": -147,
+          "under": 111,
+          "player": "Ryan Waldschmidt"
+        },
+        {
+          "point": 0.5,
+          "over": -125,
+          "under": -104,
+          "player": "Tim Tawa"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": -105,
+          "player": "Tyler Locklear"
+        }
+      ],
+      "hr": [
+        {
+          "point": 2.5,
+          "over": 750,
+          "player": "Austin Hedges"
+        },
+        {
+          "point": 2.5,
+          "over": 700,
+          "player": "Brayan Rocchio"
+        },
+        {
+          "point": 1.5,
+          "over": 600,
+          "player": "Nolan Arenado"
+        },
+        {
+          "point": 1.5,
+          "over": 310,
+          "player": "Rhys Hoskins"
+        },
+        {
+          "point": 2.5,
+          "over": 525,
+          "player": "Chase DeLauter"
+        },
+        {
+          "point": 2.5,
+          "over": 410,
+          "player": "Ketel Marte"
+        },
+        {
+          "point": 2.5,
+          "over": 440,
+          "player": "Angel Martinez"
+        },
+        {
+          "point": 1.5,
+          "over": 900,
+          "player": "Geraldo Perdomo"
+        },
+        {
+          "point": 2.5,
+          "over": 650,
+          "player": "Gabriel Moreno"
+        },
+        {
+          "point": 2.5,
+          "over": 450,
+          "player": "Corbin Carroll"
+        },
+        {
+          "point": 2.5,
+          "over": 700,
+          "player": "Tim Tawa"
+        },
+        {
+          "point": 1.5,
+          "over": 700,
+          "player": "Travis Bazzana"
+        },
+        {
+          "point": 1.5,
+          "over": 320,
+          "player": "Jose Ramirez"
+        },
+        {
+          "point": 1.5,
+          "over": 750,
+          "player": "Ildemaro Vargas"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 151,
+          "under": -200,
+          "player": "Jose Ramirez"
+        },
+        {
+          "point": 0.5,
+          "over": 160,
+          "under": -212,
+          "player": "Rhys Hoskins"
+        },
+        {
+          "point": 0.5,
+          "over": 162,
+          "under": -190,
+          "player": "Ketel Marte"
+        },
+        {
+          "point": 0.5,
+          "over": 172,
+          "under": -190,
+          "player": "Chase DeLauter"
+        },
+        {
+          "point": 0.5,
+          "over": 181,
+          "under": -250,
+          "player": "Angel Martinez"
+        },
+        {
+          "point": 0.5,
+          "over": 204,
+          "under": -250,
+          "player": "Brayan Rocchio"
+        },
+        {
+          "point": 0.5,
+          "over": 205,
+          "under": -250,
+          "player": "Ildemaro Vargas"
+        },
+        {
+          "point": 0.5,
+          "over": 207,
+          "under": -250,
+          "player": "Gabriel Moreno"
+        },
+        {
+          "point": 0.5,
+          "over": 220,
+          "under": -250,
+          "player": "Corbin Carroll"
+        },
+        {
+          "point": 0.5,
+          "over": 225,
+          "under": -319,
+          "player": "Travis Bazzana"
+        },
+        {
+          "point": 0.5,
+          "over": 235,
+          "under": -295,
+          "player": "Nolan Arenado"
+        },
+        {
+          "point": 0.5,
+          "over": 235,
+          "under": -325,
+          "player": "Steven Kwan"
+        },
+        {
+          "point": 0.5,
+          "over": 273,
+          "under": -375,
+          "player": "Austin Hedges"
+        },
+        {
+          "point": 0.5,
+          "over": 276,
+          "under": -295,
+          "player": "Geraldo Perdomo"
+        },
+        {
+          "point": 0.5,
+          "over": 300,
+          "under": -425,
+          "player": "Ryan Waldschmidt"
+        },
+        {
+          "point": 0.5,
+          "over": 289,
+          "under": -375,
+          "player": "Tim Tawa"
+        },
+        {
+          "point": 0.5,
+          "over": 354,
+          "under": -538,
+          "player": "Jorge Barrosa"
+        },
+        {
+          "point": 0.5,
+          "over": 230,
+          "under": -325,
+          "player": "David Fry"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -350,
+          "player": "Tyler Locklear"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": 130,
+          "under": -155,
+          "player": "Ketel Marte"
+        },
+        {
+          "point": 1.5,
+          "over": 103,
+          "under": -130,
+          "player": "Jose Ramirez"
+        },
+        {
+          "point": 1.5,
+          "over": -190,
+          "under": 140,
+          "player": "Ildemaro Vargas"
+        },
+        {
+          "point": 0.5,
+          "over": 235,
+          "under": -110,
+          "player": "Austin Hedges"
+        },
+        {
+          "point": 1.5,
+          "over": -200,
+          "under": 145,
+          "player": "Brayan Rocchio"
+        },
+        {
+          "point": 1.5,
+          "over": 161,
+          "under": -200,
+          "player": "Geraldo Perdomo"
+        },
+        {
+          "point": 1.5,
+          "over": 116,
+          "under": -149,
+          "player": "Angel Martinez"
+        },
+        {
+          "point": 1.5,
+          "over": 126,
+          "under": -158,
+          "player": "Chase DeLauter"
+        },
+        {
+          "point": 1.5,
+          "over": -185,
+          "under": 135,
+          "player": "Steven Kwan"
+        },
+        {
+          "point": 1.5,
+          "over": 123,
+          "under": -150,
+          "player": "Corbin Carroll"
+        },
+        {
+          "point": 1.5,
+          "over": 135,
+          "under": -172,
+          "player": "Gabriel Moreno"
+        },
+        {
+          "point": 1.5,
+          "over": -155,
+          "under": 115,
+          "player": "Rhys Hoskins"
+        },
+        {
+          "point": 1.5,
+          "over": -175,
+          "under": 130,
+          "player": "Travis Bazzana"
+        },
+        {
+          "point": 0.5,
+          "over": -123,
+          "under": -105,
+          "player": "David Fry"
+        },
+        {
+          "point": 0.5,
+          "over": -103,
+          "under": -125,
+          "player": "Jorge Barrosa"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": 130,
+          "player": "Nolan Arenado"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": -105,
+          "player": "Tyler Locklear"
+        },
+        {
+          "point": 0.5,
+          "over": 215,
+          "under": -105,
+          "player": "Tim Tawa"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 110,
+          "player": "Ryan Waldschmidt"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
+      "strikeouts": [
+        {
+          "point": 4.5,
+          "over": -143,
+          "under": 134,
+          "player": "Parker Messick"
+        },
+        {
+          "point": 3.5,
+          "over": -125,
+          "under": 110,
+          "player": "Kohl Drake"
+        }
+      ],
+      "outs": [
+        {
+          "point": 17.5,
+          "over": -125,
+          "under": -102,
+          "player": "Parker Messick"
+        },
+        {
+          "point": 14.5,
+          "over": -163,
+          "under": 125,
+          "player": "Kohl Drake"
+        }
+      ],
       "earned_runs": [],
       "hits_allowed": []
     }
@@ -924,16 +4636,418 @@
       "Under 10": -145,
       "Under 11": -215
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 4.5,
+        "over": 112,
+        "under": -135,
+        "team": "Atlanta Braves"
+      },
+      {
+        "point": 3.5,
+        "over": -136,
+        "under": 115,
+        "team": "Washington Nationals"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -196,
+          "under": 156,
+          "player": "Austin Riley"
+        },
+        {
+          "point": 1.5,
+          "over": 171,
+          "under": -218,
+          "player": "Ronald Acuna Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -205,
+          "under": 165,
+          "player": "CJ Abrams"
+        },
+        {
+          "point": 1.5,
+          "over": -225,
+          "under": 165,
+          "player": "Ozzie Albies"
+        },
+        {
+          "point": 0.5,
+          "over": -250,
+          "under": 185,
+          "player": "Luis Garcia Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -183,
+          "under": 145,
+          "player": "Keibert Ruiz"
+        },
+        {
+          "point": 0.5,
+          "over": -170,
+          "under": 139,
+          "player": "Jacob Young"
+        },
+        {
+          "point": 1.5,
+          "over": 171,
+          "under": -220,
+          "player": "Michael Harris II"
+        },
+        {
+          "point": 0.5,
+          "over": 185,
+          "under": -250,
+          "player": "Matt Olson"
+        },
+        {
+          "point": 0.5,
+          "over": -225,
+          "under": 199,
+          "player": "Mauricio Dubon"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 135,
+          "player": "Mike Yastrzemski"
+        },
+        {
+          "point": 1.5,
+          "over": 164,
+          "under": -210,
+          "player": "Drake Baldwin"
+        },
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 155,
+          "player": "James Wood"
+        },
+        {
+          "point": 0.5,
+          "over": -125,
+          "under": 110,
+          "player": "Nasim Nunez"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 154,
+          "player": "Dylan Crews"
+        },
+        {
+          "point": 0.5,
+          "over": -199,
+          "under": 165,
+          "player": "Daylen Lile"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 112,
+          "player": "Jorbit Vivas"
+        },
+        {
+          "point": 0.5,
+          "over": -167,
+          "under": 133,
+          "player": "James Jarvis"
+        },
+        {
+          "point": 0.5,
+          "over": 100,
+          "under": -135,
+          "player": "Andrés Chaparro"
+        },
+        {
+          "point": 0.5,
+          "over": -185,
+          "under": 135,
+          "player": "Jose Tena"
+        }
+      ],
+      "hr": [
+        {
+          "point": 1.5,
+          "over": 3500,
+          "player": "Michael Harris II"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 114,
+          "under": -150,
+          "player": "Michael Harris II"
+        },
+        {
+          "point": 0.5,
+          "over": 131,
+          "under": -160,
+          "player": "Matt Olson"
+        },
+        {
+          "point": 0.5,
+          "over": 155,
+          "under": -197,
+          "player": "Ozzie Albies"
+        },
+        {
+          "point": 0.5,
+          "over": 142,
+          "under": -190,
+          "player": "Ronald Acuna Jr."
+        },
+        {
+          "point": 0.5,
+          "over": 157,
+          "under": -185,
+          "player": "Drake Baldwin"
+        },
+        {
+          "point": 0.5,
+          "over": 160,
+          "under": -220,
+          "player": "James Wood"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": -230,
+          "player": "Austin Riley"
+        },
+        {
+          "point": 0.5,
+          "over": 163,
+          "under": -190,
+          "player": "CJ Abrams"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": -255,
+          "player": "Luis Garcia Jr."
+        },
+        {
+          "point": 0.5,
+          "over": 191,
+          "under": -235,
+          "player": "Dylan Crews"
+        },
+        {
+          "point": 0.5,
+          "over": 195,
+          "under": -275,
+          "player": "Mauricio Dubon"
+        },
+        {
+          "point": 0.5,
+          "over": 215,
+          "under": -225,
+          "player": "Daylen Lile"
+        },
+        {
+          "point": 0.5,
+          "over": 215,
+          "under": -275,
+          "player": "Keibert Ruiz"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -350,
+          "player": "James Jarvis"
+        },
+        {
+          "point": 0.5,
+          "over": 266,
+          "under": -389,
+          "player": "Jacob Young"
+        },
+        {
+          "point": 0.5,
+          "over": 290,
+          "under": -412,
+          "player": "Jorbit Vivas"
+        },
+        {
+          "point": 0.5,
+          "over": 331,
+          "under": -498,
+          "player": "Nasim Nunez"
+        },
+        {
+          "point": 0.5,
+          "over": 185,
+          "under": -250,
+          "player": "Mike Yastrzemski"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -300,
+          "player": "Jose Tena"
+        },
+        {
+          "point": 0.5,
+          "over": 300,
+          "under": -450,
+          "player": "Andrés Chaparro"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": 140,
+          "under": -170,
+          "player": "Austin Riley"
+        },
+        {
+          "point": 1.5,
+          "over": -105,
+          "under": -110,
+          "player": "Ronald Acuna Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -149,
+          "under": 115,
+          "player": "Jacob Young"
+        },
+        {
+          "point": 1.5,
+          "over": -109,
+          "under": -118,
+          "player": "Michael Harris II"
+        },
+        {
+          "point": 1.5,
+          "over": 135,
+          "under": -155,
+          "player": "CJ Abrams"
+        },
+        {
+          "point": 1.5,
+          "over": 103,
+          "under": -120,
+          "player": "Matt Olson"
+        },
+        {
+          "point": 1.5,
+          "over": 125,
+          "under": -130,
+          "player": "Ozzie Albies"
+        },
+        {
+          "point": 1.5,
+          "over": 122,
+          "under": -157,
+          "player": "Luis Garcia Jr."
+        },
+        {
+          "point": 1.5,
+          "over": -200,
+          "under": 145,
+          "player": "Keibert Ruiz"
+        },
+        {
+          "point": 1.5,
+          "over": -103,
+          "under": -115,
+          "player": "Drake Baldwin"
+        },
+        {
+          "point": 1.5,
+          "over": 145,
+          "under": -170,
+          "player": "Mauricio Dubon"
+        },
+        {
+          "point": 1.5,
+          "over": 116,
+          "under": -149,
+          "player": "James Wood"
+        },
+        {
+          "point": 1.5,
+          "over": -190,
+          "under": 140,
+          "player": "Dylan Crews"
+        },
+        {
+          "point": 0.5,
+          "over": -123,
+          "under": -105,
+          "player": "Nasim Nunez"
+        },
+        {
+          "point": 1.5,
+          "over": 140,
+          "under": -160,
+          "player": "Daylen Lile"
+        },
+        {
+          "point": 0.5,
+          "over": -172,
+          "under": 133,
+          "player": "James Jarvis"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 108,
+          "player": "Jorbit Vivas"
+        },
+        {
+          "point": 0.5,
+          "over": -169,
+          "under": 130,
+          "player": "Mike Yastrzemski"
+        },
+        {
+          "point": 0.5,
+          "over": 100,
+          "under": -135,
+          "player": "Andrés Chaparro"
+        },
+        {
+          "point": 0.5,
+          "over": -185,
+          "under": 135,
+          "player": "Jose Tena"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
+      "strikeouts": [
+        {
+          "point": 4.5,
+          "over": 122,
+          "under": -134,
+          "player": "Reynaldo Lopez"
+        },
+        {
+          "point": 2.5,
+          "over": 110,
+          "under": -125,
+          "player": "Miles Mikolas"
+        }
+      ],
+      "outs": [
+        {
+          "point": 15.5,
+          "over": 101,
+          "under": -134,
+          "player": "Reynaldo Lopez"
+        }
+      ],
       "earned_runs": [],
       "hits_allowed": []
     }
@@ -1025,15 +5139,457 @@
       "Under 7": -150,
       "Under 8": -240
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 2.5,
+        "over": -132,
+        "under": 110,
+        "team": "Chicago Cubs"
+      },
+      {
+        "point": 3.5,
+        "over": 120,
+        "under": -135,
+        "team": "New York Yankees"
+      }
+    ],
     "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -105,
+          "under": -105,
+          "player": "Dansby Swanson"
+        },
+        {
+          "point": 0.5,
+          "over": -110,
+          "under": -114,
+          "player": "Ian Happ"
+        },
+        {
+          "point": 0.5,
+          "over": -204,
+          "under": 160,
+          "player": "Nico Hoerner"
+        },
+        {
+          "point": 0.5,
+          "over": -152,
+          "under": 145,
+          "player": "Seiya Suzuki"
+        },
+        {
+          "point": 0.5,
+          "over": 107,
+          "under": -132,
+          "player": "Miguel Amaya"
+        },
+        {
+          "point": 0.5,
+          "over": -147,
+          "under": 135,
+          "player": "Anthony Volpe"
+        },
+        {
+          "point": 0.5,
+          "over": -127,
+          "under": 100,
+          "player": "Jazz Chisholm Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -182,
+          "under": 142,
+          "player": "Ben Rice"
+        },
+        {
+          "point": 0.5,
+          "over": -188,
+          "under": 165,
+          "player": "Jasson Domínguez"
+        },
+        {
+          "point": 0.5,
+          "over": -143,
+          "under": 116,
+          "player": "Michael Busch"
+        },
+        {
+          "point": 0.5,
+          "over": -235,
+          "under": 195,
+          "player": "Paul Goldschmidt"
+        },
+        {
+          "point": 0.5,
+          "over": -149,
+          "under": 135,
+          "player": "Carson Kelly"
+        },
+        {
+          "point": 0.5,
+          "over": -165,
+          "under": 138,
+          "player": "Pete Crow-Armstrong"
+        },
+        {
+          "point": 0.5,
+          "over": -153,
+          "under": 122,
+          "player": "Trent Grisham"
+        },
+        {
+          "point": 0.5,
+          "over": -124,
+          "under": 115,
+          "player": "Jose Caballero"
+        },
+        {
+          "point": 0.5,
+          "over": -172,
+          "under": 140,
+          "player": "Amed Rosario"
+        },
+        {
+          "point": 0.5,
+          "over": -164,
+          "under": 140,
+          "player": "Alex Bregman"
+        },
+        {
+          "point": 0.5,
+          "over": -111,
+          "under": -105,
+          "player": "Ali Sanchez"
+        },
+        {
+          "point": 0.5,
+          "over": -140,
+          "under": 105,
+          "player": "Max Schuemann"
+        }
+      ],
+      "hr": [
+        {
+          "point": 1.5,
+          "over": 500,
+          "player": "Paul Goldschmidt"
+        },
+        {
+          "point": 2.5,
+          "over": 1000,
+          "player": "Alex Bregman"
+        },
+        {
+          "point": 2.5,
+          "over": 800,
+          "player": "Trent Grisham"
+        },
+        {
+          "point": 1.5,
+          "over": 900,
+          "player": "Seiya Suzuki"
+        },
+        {
+          "point": 2.5,
+          "over": 900,
+          "player": "Jasson Domínguez"
+        },
+        {
+          "point": 2.5,
+          "over": 900,
+          "player": "Jazz Chisholm Jr."
+        },
+        {
+          "point": 2.5,
+          "over": 650,
+          "player": "Amed Rosario"
+        },
+        {
+          "point": 1.5,
+          "over": 19900,
+          "player": "Nico Hoerner"
+        },
+        {
+          "point": 2.5,
+          "over": 1150,
+          "player": "Michael Busch"
+        },
+        {
+          "point": 1.5,
+          "over": 750,
+          "player": "Pete Crow-Armstrong"
+        },
+        {
+          "point": 1.5,
+          "over": 1150,
+          "player": "Carson Kelly"
+        },
+        {
+          "point": 1.5,
+          "over": 600,
+          "player": "Ben Rice"
+        },
+        {
+          "point": 1.5,
+          "over": 950,
+          "player": "Anthony Volpe"
+        },
+        {
+          "point": 1.5,
+          "over": 900,
+          "player": "Ian Happ"
+        }
+      ],
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 220,
+          "under": -275,
+          "player": "Jasson Domínguez"
+        },
+        {
+          "point": 0.5,
+          "over": 235,
+          "under": -275,
+          "player": "Paul Goldschmidt"
+        },
+        {
+          "point": 0.5,
+          "over": 260,
+          "under": -346,
+          "player": "Amed Rosario"
+        },
+        {
+          "point": 0.5,
+          "over": 239,
+          "under": -295,
+          "player": "Trent Grisham"
+        },
+        {
+          "point": 0.5,
+          "over": 270,
+          "under": -275,
+          "player": "Ben Rice"
+        },
+        {
+          "point": 0.5,
+          "over": 280,
+          "under": -325,
+          "player": "Anthony Volpe"
+        },
+        {
+          "point": 0.5,
+          "over": 280,
+          "under": -413,
+          "player": "Jazz Chisholm Jr."
+        },
+        {
+          "point": 0.5,
+          "over": 285,
+          "under": -325,
+          "player": "Michael Busch"
+        },
+        {
+          "point": 0.5,
+          "over": 282,
+          "under": -300,
+          "player": "Carson Kelly"
+        },
+        {
+          "point": 0.5,
+          "over": 300,
+          "under": -350,
+          "player": "Pete Crow-Armstrong"
+        },
+        {
+          "point": 0.5,
+          "over": 301,
+          "under": -325,
+          "player": "Alex Bregman"
+        },
+        {
+          "point": 0.5,
+          "over": 301,
+          "under": -325,
+          "player": "Seiya Suzuki"
+        },
+        {
+          "point": 0.5,
+          "over": 304,
+          "under": -375,
+          "player": "Jose Caballero"
+        },
+        {
+          "point": 0.5,
+          "over": 312,
+          "under": -325,
+          "player": "Nico Hoerner"
+        },
+        {
+          "point": 0.5,
+          "over": 314,
+          "under": -400,
+          "player": "Ian Happ"
+        },
+        {
+          "point": 0.5,
+          "over": 329,
+          "under": -350,
+          "player": "Dansby Swanson"
+        },
+        {
+          "point": 0.5,
+          "over": 339,
+          "under": -400,
+          "player": "Ali Sanchez"
+        },
+        {
+          "point": 0.5,
+          "over": 393,
+          "under": -550,
+          "player": "Miguel Amaya"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -350,
+          "player": "Max Schuemann"
+        }
+      ],
+      "bases": [
+        {
+          "point": 0.5,
+          "over": 215,
+          "under": 135,
+          "player": "Anthony Volpe"
+        },
+        {
+          "point": 0.5,
+          "over": 260,
+          "under": -115,
+          "player": "Ian Happ"
+        },
+        {
+          "point": 0.5,
+          "over": 205,
+          "under": 145,
+          "player": "Seiya Suzuki"
+        },
+        {
+          "point": 0.5,
+          "over": 230,
+          "under": 115,
+          "player": "Michael Busch"
+        },
+        {
+          "point": 0.5,
+          "over": 185,
+          "under": 120,
+          "player": "Trent Grisham"
+        },
+        {
+          "point": 0.5,
+          "over": 220,
+          "under": 135,
+          "player": "Carson Kelly"
+        },
+        {
+          "point": 1.5,
+          "over": 128,
+          "under": -160,
+          "player": "Paul Goldschmidt"
+        },
+        {
+          "point": 1.5,
+          "over": -165,
+          "under": 125,
+          "player": "Pete Crow-Armstrong"
+        },
+        {
+          "point": 0.5,
+          "over": 220,
+          "under": -115,
+          "player": "Jazz Chisholm Jr."
+        },
+        {
+          "point": 1.5,
+          "over": -185,
+          "under": 135,
+          "player": "Ben Rice"
+        },
+        {
+          "point": 0.5,
+          "over": -141,
+          "under": 115,
+          "player": "Jose Caballero"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": 140,
+          "player": "Alex Bregman"
+        },
+        {
+          "point": 1.5,
+          "over": -190,
+          "under": 140,
+          "player": "Amed Rosario"
+        },
+        {
+          "point": 1.5,
+          "over": 180,
+          "under": -190,
+          "player": "Jasson Domínguez"
+        },
+        {
+          "point": 0.5,
+          "over": 175,
+          "under": 160,
+          "player": "Nico Hoerner"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": -105,
+          "player": "Ali Sanchez"
+        },
+        {
+          "point": 0.5,
+          "over": -140,
+          "under": 105,
+          "player": "Max Schuemann"
+        },
+        {
+          "point": 0.5,
+          "over": -125,
+          "under": -105,
+          "player": "Dansby Swanson"
+        },
+        {
+          "point": 0.5,
+          "over": 100,
+          "under": -135,
+          "player": "Miguel Amaya"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
+      "strikeouts": [
+        {
+          "point": 4.5,
+          "over": -135,
+          "under": 117,
+          "player": "David Peterson"
+        },
+        {
+          "point": 5.5,
+          "over": 134,
+          "under": -152,
+          "player": "Max Fried"
+        }
+      ],
       "outs": [],
       "earned_runs": [],
       "hits_allowed": []
@@ -1136,18 +5692,440 @@
       "Under 12": -125,
       "Under 13": -180
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 5.5,
+        "over": -118,
+        "under": -103,
+        "team": "Colorado Rockies"
+      },
+      {
+        "point": 5.5,
+        "over": -118,
+        "under": 100,
+        "team": "Kansas City Royals"
+      }
+    ],
     "player_props": {
-      "hits": [],
+      "hits": [
+        {
+          "point": 1.5,
+          "over": -275,
+          "under": 190,
+          "player": "Hunter Goodman"
+        },
+        {
+          "point": 1.5,
+          "over": 189,
+          "under": -220,
+          "player": "Michael Massey"
+        },
+        {
+          "point": 0.5,
+          "over": -173,
+          "under": 142,
+          "player": "Ezequiel Tovar"
+        },
+        {
+          "point": 1.5,
+          "over": 176,
+          "under": -210,
+          "player": "Salvador Perez"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 148,
+          "player": "Tyler Tolbert"
+        },
+        {
+          "point": 1.5,
+          "over": -233,
+          "under": 172,
+          "player": "Kyle Karros"
+        },
+        {
+          "point": 1.5,
+          "over": 140,
+          "under": -162,
+          "player": "Jac Caglianone"
+        },
+        {
+          "point": 1.5,
+          "over": 167,
+          "under": -220,
+          "player": "Carter Jensen"
+        },
+        {
+          "point": 0.5,
+          "over": -213,
+          "under": 175,
+          "player": "Troy Johnston"
+        },
+        {
+          "point": 1.5,
+          "over": 187,
+          "under": -250,
+          "player": "Nick Loftin"
+        },
+        {
+          "point": 1.5,
+          "over": 165,
+          "under": -206,
+          "player": "Mickey Moniak"
+        },
+        {
+          "point": 1.5,
+          "over": -269,
+          "under": 198,
+          "player": "Isaac Collins"
+        },
+        {
+          "point": 1.5,
+          "over": 176,
+          "under": -233,
+          "player": "Lane Thomas"
+        },
+        {
+          "point": 1.5,
+          "over": 152,
+          "under": -186,
+          "player": "Jake McCarthy"
+        },
+        {
+          "point": 0.5,
+          "over": -133,
+          "under": 103,
+          "player": "Andrew Velazquez"
+        },
+        {
+          "point": 0.5,
+          "over": -220,
+          "under": 181,
+          "player": "Willi Castro"
+        },
+        {
+          "point": 1.5,
+          "over": 186,
+          "under": -236,
+          "player": "TJ Rumfield"
+        },
+        {
+          "point": 0.5,
+          "over": -209,
+          "under": 165,
+          "player": "Josh Rojas"
+        },
+        {
+          "point": 1.5,
+          "over": 190,
+          "under": -256,
+          "player": "Cole Carrigg"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 140,
+          "player": "Brenton Doyle"
+        }
+      ],
       "hr": [],
-      "rbi": [],
-      "bases": []
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 106,
+          "under": -135,
+          "player": "Jac Caglianone"
+        },
+        {
+          "point": 0.5,
+          "over": 113,
+          "under": -140,
+          "player": "Hunter Goodman"
+        },
+        {
+          "point": 0.5,
+          "over": 115,
+          "under": -140,
+          "player": "Salvador Perez"
+        },
+        {
+          "point": 0.5,
+          "over": 127,
+          "under": -150,
+          "player": "Mickey Moniak"
+        },
+        {
+          "point": 0.5,
+          "over": 131,
+          "under": -175,
+          "player": "Carter Jensen"
+        },
+        {
+          "point": 0.5,
+          "over": 141,
+          "under": -185,
+          "player": "TJ Rumfield"
+        },
+        {
+          "point": 0.5,
+          "over": 143,
+          "under": -190,
+          "player": "Willi Castro"
+        },
+        {
+          "point": 0.5,
+          "over": 150,
+          "under": -175,
+          "player": "Lane Thomas"
+        },
+        {
+          "point": 0.5,
+          "over": 152,
+          "under": -213,
+          "player": "Cole Carrigg"
+        },
+        {
+          "point": 0.5,
+          "over": 153,
+          "under": -185,
+          "player": "Michael Massey"
+        },
+        {
+          "point": 0.5,
+          "over": 161,
+          "under": -210,
+          "player": "Isaac Collins"
+        },
+        {
+          "point": 0.5,
+          "over": 170,
+          "under": -200,
+          "player": "Josh Rojas"
+        },
+        {
+          "point": 0.5,
+          "over": 171,
+          "under": -200,
+          "player": "Jake McCarthy"
+        },
+        {
+          "point": 0.5,
+          "over": 172,
+          "under": -220,
+          "player": "Kyle Karros"
+        },
+        {
+          "point": 0.5,
+          "over": 174,
+          "under": -200,
+          "player": "Troy Johnston"
+        },
+        {
+          "point": 0.5,
+          "over": 176,
+          "under": -220,
+          "player": "Nick Loftin"
+        },
+        {
+          "point": 0.5,
+          "over": 182,
+          "under": -235,
+          "player": "Ezequiel Tovar"
+        },
+        {
+          "point": 0.5,
+          "over": 217,
+          "under": -312,
+          "player": "Andrew Velazquez"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": -250,
+          "player": "Tyler Tolbert"
+        },
+        {
+          "point": 0.5,
+          "over": 155,
+          "under": -210,
+          "player": "Brenton Doyle"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": -185,
+          "under": 135,
+          "player": "Ezequiel Tovar"
+        },
+        {
+          "point": 1.5,
+          "over": 105,
+          "under": -125,
+          "player": "Michael Massey"
+        },
+        {
+          "point": 1.5,
+          "over": -110,
+          "under": -110,
+          "player": "Salvador Perez"
+        },
+        {
+          "point": 1.5,
+          "over": -110,
+          "under": -110,
+          "player": "Hunter Goodman"
+        },
+        {
+          "point": 1.5,
+          "over": -120,
+          "under": -105,
+          "player": "Mickey Moniak"
+        },
+        {
+          "point": 1.5,
+          "over": 113,
+          "under": -135,
+          "player": "Nick Loftin"
+        },
+        {
+          "point": 0.5,
+          "over": -169,
+          "under": 130,
+          "player": "Tyler Tolbert"
+        },
+        {
+          "point": 1.5,
+          "over": 131,
+          "under": -150,
+          "player": "Kyle Karros"
+        },
+        {
+          "point": 1.5,
+          "over": 150,
+          "under": -165,
+          "player": "Troy Johnston"
+        },
+        {
+          "point": 1.5,
+          "over": -115,
+          "under": -110,
+          "player": "Carter Jensen"
+        },
+        {
+          "point": 1.5,
+          "over": -130,
+          "under": 115,
+          "player": "Jac Caglianone"
+        },
+        {
+          "point": 1.5,
+          "over": 125,
+          "under": -154,
+          "player": "Willi Castro"
+        },
+        {
+          "point": 1.5,
+          "over": -108,
+          "under": -114,
+          "player": "Jake McCarthy"
+        },
+        {
+          "point": 1.5,
+          "over": -102,
+          "under": -125,
+          "player": "Lane Thomas"
+        },
+        {
+          "point": 1.5,
+          "over": 117,
+          "under": -149,
+          "player": "Isaac Collins"
+        },
+        {
+          "point": 1.5,
+          "over": 103,
+          "under": -129,
+          "player": "TJ Rumfield"
+        },
+        {
+          "point": 1.5,
+          "over": 145,
+          "under": -175,
+          "player": "Josh Rojas"
+        },
+        {
+          "point": 1.5,
+          "over": 106,
+          "under": -135,
+          "player": "Cole Carrigg"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 140,
+          "player": "Brenton Doyle"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 3.5,
+          "over": 130,
+          "under": -175,
+          "player": "Luinder Avila"
+        },
+        {
+          "point": 3.5,
+          "over": -142,
+          "under": 121,
+          "player": "Ryan Feltner"
+        }
+      ],
+      "outs": [
+        {
+          "point": 15.5,
+          "over": 110,
+          "under": -145,
+          "player": "Ryan Feltner"
+        },
+        {
+          "point": 14.5,
+          "over": -147,
+          "under": 111,
+          "player": "Luinder Avila"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 3.5,
+          "over": 116,
+          "under": -155,
+          "player": "Luinder Avila"
+        },
+        {
+          "point": 3.5,
+          "over": 107,
+          "under": -142,
+          "player": "Ryan Feltner"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 5.5,
+          "over": -120,
+          "under": 101,
+          "player": "Luinder Avila"
+        },
+        {
+          "point": 5.5,
+          "over": -135,
+          "under": 103,
+          "player": "Ryan Feltner"
+        }
+      ]
     }
   },
   {
@@ -1264,18 +6242,422 @@
       "Under 12": -492,
       "Under 13": -800
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 4.5,
+        "over": 107,
+        "under": -129,
+        "team": "San Diego Padres"
+      },
+      {
+        "point": 3.5,
+        "over": -130,
+        "under": 106,
+        "team": "San Francisco Giants"
+      }
+    ],
     "player_props": {
-      "hits": [],
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -213,
+          "under": 170,
+          "player": "Ty France"
+        },
+        {
+          "point": 0.5,
+          "over": -165,
+          "under": 135,
+          "player": "Xander Bogaerts"
+        },
+        {
+          "point": 0.5,
+          "over": -225,
+          "under": 187,
+          "player": "Jung Hoo Lee"
+        },
+        {
+          "point": 0.5,
+          "over": -217,
+          "under": 171,
+          "player": "Heliot Ramos"
+        },
+        {
+          "point": 1.5,
+          "over": 188,
+          "under": -223,
+          "player": "Fernando Tatis Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -204,
+          "under": 156,
+          "player": "Jackson Merrill"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 150,
+          "player": "Jake Cronenworth"
+        },
+        {
+          "point": 0.5,
+          "over": -227,
+          "under": 175,
+          "player": "Manny Machado"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": 106,
+          "player": "Luis Campusano"
+        },
+        {
+          "point": 0.5,
+          "over": -145,
+          "under": 121,
+          "player": "Gavin Sheets"
+        },
+        {
+          "point": 0.5,
+          "over": -140,
+          "under": 112,
+          "player": "Christian Koss"
+        },
+        {
+          "point": 0.5,
+          "over": -153,
+          "under": 126,
+          "player": "Willy Adames"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 137,
+          "player": "Bryce Eldridge"
+        },
+        {
+          "point": 0.5,
+          "over": -161,
+          "under": 123,
+          "player": "Drew Gilbert"
+        },
+        {
+          "point": 1.5,
+          "over": 170,
+          "under": -200,
+          "player": "Luis Arraez"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 150,
+          "player": "Rafael Devers"
+        },
+        {
+          "point": 0.5,
+          "over": -114,
+          "under": -106,
+          "player": "Drew Cavanaugh"
+        },
+        {
+          "point": 0.5,
+          "over": -182,
+          "under": 151,
+          "player": "Luis Rengifo"
+        },
+        {
+          "point": 0.5,
+          "over": -115,
+          "under": -115,
+          "player": "Grant McCray"
+        }
+      ],
       "hr": [],
-      "rbi": [],
-      "bases": []
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 154,
+          "under": -190,
+          "player": "Rafael Devers"
+        },
+        {
+          "point": 0.5,
+          "over": 157,
+          "under": -175,
+          "player": "Manny Machado"
+        },
+        {
+          "point": 0.5,
+          "over": 175,
+          "under": -233,
+          "player": "Fernando Tatis Jr."
+        },
+        {
+          "point": 0.5,
+          "over": 175,
+          "under": -235,
+          "player": "Jackson Merrill"
+        },
+        {
+          "point": 0.5,
+          "over": 175,
+          "under": -220,
+          "player": "Ty France"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": -275,
+          "player": "Bryce Eldridge"
+        },
+        {
+          "point": 0.5,
+          "over": 195,
+          "under": -250,
+          "player": "Willy Adames"
+        },
+        {
+          "point": 0.5,
+          "over": 206,
+          "under": -275,
+          "player": "Heliot Ramos"
+        },
+        {
+          "point": 0.5,
+          "over": 209,
+          "under": -275,
+          "player": "Jake Cronenworth"
+        },
+        {
+          "point": 0.5,
+          "over": 209,
+          "under": -275,
+          "player": "Jung Hoo Lee"
+        },
+        {
+          "point": 0.5,
+          "over": 221,
+          "under": -295,
+          "player": "Gavin Sheets"
+        },
+        {
+          "point": 0.5,
+          "over": 231,
+          "under": -325,
+          "player": "Xander Bogaerts"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -350,
+          "player": "Luis Campusano"
+        },
+        {
+          "point": 0.5,
+          "over": 247,
+          "under": -325,
+          "player": "Luis Rengifo"
+        },
+        {
+          "point": 0.5,
+          "over": 267,
+          "under": -392,
+          "player": "Drew Gilbert"
+        },
+        {
+          "point": 0.5,
+          "over": 278,
+          "under": -300,
+          "player": "Luis Arraez"
+        },
+        {
+          "point": 0.5,
+          "over": 300,
+          "under": -444,
+          "player": "Drew Cavanaugh"
+        },
+        {
+          "point": 0.5,
+          "over": 309,
+          "under": -450,
+          "player": "Christian Koss"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -350,
+          "player": "Grant McCray"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": 136,
+          "under": -165,
+          "player": "Ty France"
+        },
+        {
+          "point": 1.5,
+          "over": 136,
+          "under": -170,
+          "player": "Jackson Merrill"
+        },
+        {
+          "point": 0.5,
+          "over": -127,
+          "under": -102,
+          "player": "Luis Campusano"
+        },
+        {
+          "point": 1.5,
+          "over": 126,
+          "under": -150,
+          "player": "Manny Machado"
+        },
+        {
+          "point": 1.5,
+          "over": 141,
+          "under": -180,
+          "player": "Jung Hoo Lee"
+        },
+        {
+          "point": 1.5,
+          "over": -175,
+          "under": 130,
+          "player": "Jake Cronenworth"
+        },
+        {
+          "point": 1.5,
+          "over": 135,
+          "under": -165,
+          "player": "Heliot Ramos"
+        },
+        {
+          "point": 1.5,
+          "over": 106,
+          "under": -130,
+          "player": "Fernando Tatis Jr."
+        },
+        {
+          "point": 0.5,
+          "over": -165,
+          "under": 130,
+          "player": "Xander Bogaerts"
+        },
+        {
+          "point": 1.5,
+          "over": -150,
+          "under": 110,
+          "player": "Bryce Eldridge"
+        },
+        {
+          "point": 1.5,
+          "over": -145,
+          "under": 105,
+          "player": "Gavin Sheets"
+        },
+        {
+          "point": 0.5,
+          "over": -156,
+          "under": 120,
+          "player": "Drew Gilbert"
+        },
+        {
+          "point": 1.5,
+          "over": -155,
+          "under": 115,
+          "player": "Willy Adames"
+        },
+        {
+          "point": 1.5,
+          "over": 132,
+          "under": -165,
+          "player": "Rafael Devers"
+        },
+        {
+          "point": 1.5,
+          "over": 118,
+          "under": -140,
+          "player": "Luis Arraez"
+        },
+        {
+          "point": 0.5,
+          "over": -182,
+          "under": 138,
+          "player": "Luis Rengifo"
+        },
+        {
+          "point": 0.5,
+          "over": -120,
+          "under": -110,
+          "player": "Drew Cavanaugh"
+        },
+        {
+          "point": 0.5,
+          "over": -140,
+          "under": 105,
+          "player": "Christian Koss"
+        },
+        {
+          "point": 0.5,
+          "over": -115,
+          "under": -115,
+          "player": "Grant McCray"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 4.5,
+          "over": 128,
+          "under": -135,
+          "player": "Walker Buehler"
+        },
+        {
+          "point": 3.5,
+          "over": 125,
+          "under": -165,
+          "player": "Tyler Mahle"
+        }
+      ],
+      "outs": [
+        {
+          "point": 15.5,
+          "over": 110,
+          "under": -145,
+          "player": "Walker Buehler"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 2.5,
+          "over": 123,
+          "under": -145,
+          "player": "Walker Buehler"
+        },
+        {
+          "point": 2.5,
+          "over": -108,
+          "under": -122,
+          "player": "Tyler Mahle"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 4.5,
+          "over": -150,
+          "under": 117,
+          "player": "Walker Buehler"
+        },
+        {
+          "point": 5.5,
+          "over": 120,
+          "under": -139,
+          "player": "Tyler Mahle"
+        }
+      ]
     }
   },
   {
@@ -1369,18 +6751,452 @@
       "Under 8": -135,
       "Under 9": -210
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": 106,
+        "under": -110,
+        "team": "Boston Red Sox"
+      },
+      {
+        "point": 3.5,
+        "over": 114,
+        "under": -130,
+        "team": "Los Angeles Dodgers"
+      }
+    ],
     "player_props": {
-      "hits": [],
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -120,
+          "under": -108,
+          "player": "Enrique Hernandez"
+        },
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 152,
+          "player": "Mookie Betts"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 110,
+          "player": "Jarren Duran"
+        },
+        {
+          "point": 0.5,
+          "over": -112,
+          "under": -106,
+          "player": "Connor Wong"
+        },
+        {
+          "point": 0.5,
+          "over": -225,
+          "under": 174,
+          "player": "Freddie Freeman"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 135,
+          "player": "Miguel Rojas"
+        },
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 171,
+          "player": "Andy Pages"
+        },
+        {
+          "point": 0.5,
+          "over": -202,
+          "under": 165,
+          "player": "Ceddanne Rafaela"
+        },
+        {
+          "point": 0.5,
+          "over": -188,
+          "under": 146,
+          "player": "Wilyer Abreu"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 163,
+          "player": "Masataka Yoshida"
+        },
+        {
+          "point": 0.5,
+          "over": -244,
+          "under": 188,
+          "player": "Shohei Ohtani"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 117,
+          "player": "Teoscar Hernandez"
+        },
+        {
+          "point": 0.5,
+          "over": -185,
+          "under": 155,
+          "player": "Tommy Edman"
+        },
+        {
+          "point": 0.5,
+          "over": -145,
+          "under": 112,
+          "player": "Nick Sogard"
+        },
+        {
+          "point": 0.5,
+          "over": -133,
+          "under": 104,
+          "player": "Dalton Rushing"
+        },
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 144,
+          "player": "Caleb Durbin"
+        },
+        {
+          "point": 0.5,
+          "over": -139,
+          "under": 111,
+          "player": "Andruw Monasterio"
+        },
+        {
+          "point": 0.5,
+          "over": -154,
+          "under": 122,
+          "player": "Anthony Seigler"
+        },
+        {
+          "point": 0.5,
+          "over": -160,
+          "under": 131,
+          "player": "Kyle Tucker"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 100,
+          "player": "Eliezer Alfonzo"
+        },
+        {
+          "point": 0.5,
+          "over": -185,
+          "under": 135,
+          "player": "Willson Contreras"
+        }
+      ],
       "hr": [],
-      "rbi": [],
-      "bases": []
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 153,
+          "under": -190,
+          "player": "Shohei Ohtani"
+        },
+        {
+          "point": 0.5,
+          "over": 188,
+          "under": -220,
+          "player": "Mookie Betts"
+        },
+        {
+          "point": 0.5,
+          "over": 196,
+          "under": -200,
+          "player": "Freddie Freeman"
+        },
+        {
+          "point": 0.5,
+          "over": 199,
+          "under": -235,
+          "player": "Tommy Edman"
+        },
+        {
+          "point": 0.5,
+          "over": 203,
+          "under": -250,
+          "player": "Andy Pages"
+        },
+        {
+          "point": 0.5,
+          "over": 205,
+          "under": -250,
+          "player": "Wilyer Abreu"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -275,
+          "player": "Teoscar Hernandez"
+        },
+        {
+          "point": 0.5,
+          "over": 220,
+          "under": -250,
+          "player": "Kyle Tucker"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -342,
+          "player": "Masataka Yoshida"
+        },
+        {
+          "point": 0.5,
+          "over": 246,
+          "under": -358,
+          "player": "Dalton Rushing"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -350,
+          "player": "Jarren Duran"
+        },
+        {
+          "point": 0.5,
+          "over": 260,
+          "under": -360,
+          "player": "Andruw Monasterio"
+        },
+        {
+          "point": 0.5,
+          "over": 264,
+          "under": -375,
+          "player": "Caleb Durbin"
+        },
+        {
+          "point": 0.5,
+          "over": 264,
+          "under": -387,
+          "player": "Enrique Hernandez"
+        },
+        {
+          "point": 0.5,
+          "over": 270,
+          "under": -300,
+          "player": "Ceddanne Rafaela"
+        },
+        {
+          "point": 0.5,
+          "over": 319,
+          "under": -375,
+          "player": "Anthony Seigler"
+        },
+        {
+          "point": 0.5,
+          "over": 324,
+          "under": -450,
+          "player": "Connor Wong"
+        },
+        {
+          "point": 0.5,
+          "over": 363,
+          "under": -554,
+          "player": "Nick Sogard"
+        },
+        {
+          "point": 0.5,
+          "over": 300,
+          "under": -450,
+          "player": "Eliezer Alfonzo"
+        },
+        {
+          "point": 0.5,
+          "over": 165,
+          "under": -225,
+          "player": "Willson Contreras"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -350,
+          "player": "Miguel Rojas"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": 132,
+          "under": -160,
+          "player": "Freddie Freeman"
+        },
+        {
+          "point": 0.5,
+          "over": -112,
+          "under": -115,
+          "player": "Connor Wong"
+        },
+        {
+          "point": 1.5,
+          "over": 141,
+          "under": -175,
+          "player": "Mookie Betts"
+        },
+        {
+          "point": 1.5,
+          "over": 204,
+          "under": -278,
+          "player": "Enrique Hernandez"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": 100,
+          "player": "Jarren Duran"
+        },
+        {
+          "point": 1.5,
+          "over": 135,
+          "under": -155,
+          "player": "Andy Pages"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 135,
+          "player": "Miguel Rojas"
+        },
+        {
+          "point": 1.5,
+          "over": 102,
+          "under": -125,
+          "player": "Shohei Ohtani"
+        },
+        {
+          "point": 1.5,
+          "over": -150,
+          "under": 110,
+          "player": "Teoscar Hernandez"
+        },
+        {
+          "point": 1.5,
+          "over": 141,
+          "under": -175,
+          "player": "Wilyer Abreu"
+        },
+        {
+          "point": 1.5,
+          "over": 146,
+          "under": -175,
+          "player": "Ceddanne Rafaela"
+        },
+        {
+          "point": 1.5,
+          "over": -185,
+          "under": 135,
+          "player": "Tommy Edman"
+        },
+        {
+          "point": 1.5,
+          "over": -160,
+          "under": 120,
+          "player": "Kyle Tucker"
+        },
+        {
+          "point": 0.5,
+          "over": -156,
+          "under": 120,
+          "player": "Anthony Seigler"
+        },
+        {
+          "point": 0.5,
+          "over": -149,
+          "under": 115,
+          "player": "Caleb Durbin"
+        },
+        {
+          "point": 0.5,
+          "over": -143,
+          "under": 110,
+          "player": "Andruw Monasterio"
+        },
+        {
+          "point": 1.5,
+          "over": -190,
+          "under": 140,
+          "player": "Masataka Yoshida"
+        },
+        {
+          "point": 1.5,
+          "over": 130,
+          "under": -175,
+          "player": "Willson Contreras"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 100,
+          "player": "Eliezer Alfonzo"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 6.5,
+          "over": 105,
+          "under": -118,
+          "player": "Yoshinobu Yamamoto"
+        },
+        {
+          "point": 5.5,
+          "over": 120,
+          "under": -141,
+          "player": "Payton Tolle"
+        }
+      ],
+      "outs": [
+        {
+          "point": 19.5,
+          "over": -104,
+          "under": -127,
+          "player": "Yoshinobu Yamamoto"
+        },
+        {
+          "point": 16.5,
+          "over": -134,
+          "under": 101,
+          "player": "Payton Tolle"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 1.5,
+          "over": -145,
+          "under": 109,
+          "player": "Yoshinobu Yamamoto"
+        },
+        {
+          "point": 2.5,
+          "over": -114,
+          "under": -116,
+          "player": "Payton Tolle"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 5.5,
+          "over": 120,
+          "under": -140,
+          "player": "Yoshinobu Yamamoto"
+        },
+        {
+          "point": 5.5,
+          "over": 115,
+          "under": -152,
+          "player": "Payton Tolle"
+        }
+      ]
     }
   },
   {
@@ -1475,18 +7291,416 @@
       "Under 9": -150,
       "Under 10": -215
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 3.5,
+        "over": 115,
+        "under": -150,
+        "team": "Los Angeles Angels"
+      },
+      {
+        "point": 4.5,
+        "over": -102,
+        "under": -120,
+        "team": "Milwaukee Brewers"
+      }
+    ],
     "player_props": {
-      "hits": [],
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -185,
+          "under": 142,
+          "player": "Mike Trout"
+        },
+        {
+          "point": 0.5,
+          "over": -185,
+          "under": 162,
+          "player": "Christian Yelich"
+        },
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 158,
+          "player": "Jo Adell"
+        },
+        {
+          "point": 0.5,
+          "over": -220,
+          "under": 195,
+          "player": "Brice Turang"
+        },
+        {
+          "point": 0.5,
+          "over": -215,
+          "under": 165,
+          "player": "Zach Neto"
+        },
+        {
+          "point": 1.5,
+          "over": -235,
+          "under": 170,
+          "player": "Jackson Chourio"
+        },
+        {
+          "point": 0.5,
+          "over": -130,
+          "under": 125,
+          "player": "Jake Bauers"
+        },
+        {
+          "point": 0.5,
+          "over": -186,
+          "under": 155,
+          "player": "Nolan Schanuel"
+        },
+        {
+          "point": 0.5,
+          "over": -225,
+          "under": 171,
+          "player": "William Contreras"
+        },
+        {
+          "point": 0.5,
+          "over": -152,
+          "under": 122,
+          "player": "Garrett Mitchell"
+        },
+        {
+          "point": 0.5,
+          "over": -154,
+          "under": 120,
+          "player": "Jorge Soler"
+        },
+        {
+          "point": 0.5,
+          "over": -108,
+          "under": -105,
+          "player": "Travis d'Arnaud"
+        },
+        {
+          "point": 0.5,
+          "over": -147,
+          "under": 120,
+          "player": "Denzer Guzman"
+        },
+        {
+          "point": 0.5,
+          "over": -196,
+          "under": 150,
+          "player": "Andrew Vaughn"
+        },
+        {
+          "point": 0.5,
+          "over": -120,
+          "under": -105,
+          "player": "Jose Siri"
+        },
+        {
+          "point": 0.5,
+          "over": -222,
+          "under": 172,
+          "player": "Vaughn Grissom"
+        },
+        {
+          "point": 0.5,
+          "over": -114,
+          "under": -110,
+          "player": "David Hamilton"
+        },
+        {
+          "point": 0.5,
+          "over": -135,
+          "under": 122,
+          "player": "Cooper Pratt"
+        },
+        {
+          "point": 0.5,
+          "over": -152,
+          "under": 125,
+          "player": "Luis Lara"
+        }
+      ],
       "hr": [],
-      "rbi": [],
-      "bases": []
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 156,
+          "under": -190,
+          "player": "William Contreras"
+        },
+        {
+          "point": 0.5,
+          "over": 159,
+          "under": -210,
+          "player": "Jo Adell"
+        },
+        {
+          "point": 0.5,
+          "over": 180,
+          "under": -232,
+          "player": "Jake Bauers"
+        },
+        {
+          "point": 0.5,
+          "over": 171,
+          "under": -220,
+          "player": "Jackson Chourio"
+        },
+        {
+          "point": 0.5,
+          "over": 181,
+          "under": -225,
+          "player": "Brice Turang"
+        },
+        {
+          "point": 0.5,
+          "over": 187,
+          "under": -250,
+          "player": "Mike Trout"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": -269,
+          "player": "Garrett Mitchell"
+        },
+        {
+          "point": 0.5,
+          "over": 199,
+          "under": -235,
+          "player": "Jorge Soler"
+        },
+        {
+          "point": 0.5,
+          "over": 200,
+          "under": -235,
+          "player": "Zach Neto"
+        },
+        {
+          "point": 0.5,
+          "over": 219,
+          "under": -275,
+          "player": "Luis Lara"
+        },
+        {
+          "point": 0.5,
+          "over": 221,
+          "under": -250,
+          "player": "Christian Yelich"
+        },
+        {
+          "point": 0.5,
+          "over": 230,
+          "under": -325,
+          "player": "Cooper Pratt"
+        },
+        {
+          "point": 0.5,
+          "over": 230,
+          "under": -275,
+          "player": "Vaughn Grissom"
+        },
+        {
+          "point": 0.5,
+          "over": 232,
+          "under": -325,
+          "player": "Jose Siri"
+        },
+        {
+          "point": 0.5,
+          "over": 250,
+          "under": -295,
+          "player": "Denzer Guzman"
+        },
+        {
+          "point": 0.5,
+          "over": 275,
+          "under": -300,
+          "player": "Travis d'Arnaud"
+        },
+        {
+          "point": 0.5,
+          "over": 279,
+          "under": -411,
+          "player": "Nolan Schanuel"
+        },
+        {
+          "point": 0.5,
+          "over": 280,
+          "under": -325,
+          "player": "David Hamilton"
+        }
+      ],
+      "bases": [
+        {
+          "point": 1.5,
+          "over": -185,
+          "under": 135,
+          "player": "Christian Yelich"
+        },
+        {
+          "point": 1.5,
+          "over": 140,
+          "under": -164,
+          "player": "Mike Trout"
+        },
+        {
+          "point": 1.5,
+          "over": 130,
+          "under": -150,
+          "player": "Jo Adell"
+        },
+        {
+          "point": 0.5,
+          "over": -147,
+          "under": 115,
+          "player": "Garrett Mitchell"
+        },
+        {
+          "point": 1.5,
+          "over": 140,
+          "under": -182,
+          "player": "William Contreras"
+        },
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 155,
+          "player": "Nolan Schanuel"
+        },
+        {
+          "point": 1.5,
+          "over": 140,
+          "under": -165,
+          "player": "Brice Turang"
+        },
+        {
+          "point": 1.5,
+          "over": 120,
+          "under": -149,
+          "player": "Zach Neto"
+        },
+        {
+          "point": 1.5,
+          "over": -130,
+          "under": -105,
+          "player": "Jake Bauers"
+        },
+        {
+          "point": 1.5,
+          "over": 125,
+          "under": -145,
+          "player": "Jackson Chourio"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 135,
+          "player": "Andrew Vaughn"
+        },
+        {
+          "point": 0.5,
+          "over": -149,
+          "under": 120,
+          "player": "Denzer Guzman"
+        },
+        {
+          "point": 0.5,
+          "over": -109,
+          "under": -110,
+          "player": "David Hamilton"
+        },
+        {
+          "point": 1.5,
+          "over": -160,
+          "under": 120,
+          "player": "Jorge Soler"
+        },
+        {
+          "point": 0.5,
+          "over": -132,
+          "under": 102,
+          "player": "Cooper Pratt"
+        },
+        {
+          "point": 0.5,
+          "over": -115,
+          "under": -105,
+          "player": "Travis d'Arnaud"
+        },
+        {
+          "point": 1.5,
+          "over": 150,
+          "under": -183,
+          "player": "Vaughn Grissom"
+        },
+        {
+          "point": 0.5,
+          "over": -164,
+          "under": 125,
+          "player": "Luis Lara"
+        },
+        {
+          "point": 1.5,
+          "over": -120,
+          "under": -110,
+          "player": "Jose Siri"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 4.5,
+          "over": -140,
+          "under": 123,
+          "player": "Robert Gasser"
+        },
+        {
+          "point": 5.5,
+          "over": -135,
+          "under": 111,
+          "player": "Jose Soriano"
+        }
+      ],
+      "outs": [
+        {
+          "point": 15.5,
+          "over": -128,
+          "under": -103,
+          "player": "Robert Gasser"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 2.5,
+          "over": 109,
+          "under": -145,
+          "player": "Robert Gasser"
+        },
+        {
+          "point": 2.5,
+          "over": -102,
+          "under": -130,
+          "player": "Jose Soriano"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 4.5,
+          "over": -111,
+          "under": -110,
+          "player": "Jose Soriano"
+        },
+        {
+          "point": 4.5,
+          "over": 110,
+          "under": -150,
+          "player": "Robert Gasser"
+        }
+      ]
     }
   },
   {
@@ -1580,18 +7794,416 @@
       "Under 11": -145,
       "Under 12": -200
     },
-    "team_totals": [],
+    "team_totals": [
+      {
+        "point": 4.5,
+        "over": -120,
+        "under": 105,
+        "team": "Athletics"
+      },
+      {
+        "point": 5.5,
+        "over": -115,
+        "under": -105,
+        "team": "Detroit Tigers"
+      }
+    ],
     "player_props": {
-      "hits": [],
+      "hits": [
+        {
+          "point": 0.5,
+          "over": -155,
+          "under": 131,
+          "player": "Lawrence Butler"
+        },
+        {
+          "point": 0.5,
+          "over": -172,
+          "under": 135,
+          "player": "Zach McKinstry"
+        },
+        {
+          "point": 0.5,
+          "over": -225,
+          "under": 176,
+          "player": "Tyler Soderstrom"
+        },
+        {
+          "point": 0.5,
+          "over": -244,
+          "under": 185,
+          "player": "Riley Greene"
+        },
+        {
+          "point": 0.5,
+          "over": 194,
+          "under": -263,
+          "player": "Jonah Heim"
+        },
+        {
+          "point": 0.5,
+          "over": -200,
+          "under": 154,
+          "player": "Spencer Torkelson"
+        },
+        {
+          "point": 1.5,
+          "over": 175,
+          "under": -205,
+          "player": "Dillon Dingler"
+        },
+        {
+          "point": 0.5,
+          "over": -190,
+          "under": 157,
+          "player": "Colt Keith"
+        },
+        {
+          "point": 1.5,
+          "over": 145,
+          "under": -167,
+          "player": "Jacob Wilson"
+        },
+        {
+          "point": 1.5,
+          "over": 182,
+          "under": -235,
+          "player": "Kevin McGonigle"
+        },
+        {
+          "point": 1.5,
+          "over": 191,
+          "under": -250,
+          "player": "Gleyber Torres"
+        },
+        {
+          "point": 0.5,
+          "over": -210,
+          "under": 167,
+          "player": "Nick Kurtz"
+        },
+        {
+          "point": 0.5,
+          "over": -192,
+          "under": 152,
+          "player": "Hao-Yu Lee"
+        },
+        {
+          "point": 0.5,
+          "over": -175,
+          "under": 165,
+          "player": "Jeff McNeil"
+        },
+        {
+          "point": 1.5,
+          "over": -235,
+          "under": 175,
+          "player": "Tommy White"
+        },
+        {
+          "point": 0.5,
+          "over": -154,
+          "under": 118,
+          "player": "Alika Williams"
+        },
+        {
+          "point": 0.5,
+          "over": -210,
+          "under": 178,
+          "player": "Henry Bolte"
+        },
+        {
+          "point": 1.5,
+          "over": 209,
+          "under": -286,
+          "player": "Javier Baez"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 110,
+          "player": "Donovan Walton"
+        }
+      ],
       "hr": [],
-      "rbi": [],
-      "bases": []
+      "rbi": [
+        {
+          "point": 0.5,
+          "over": 111,
+          "under": -135,
+          "player": "Dillon Dingler"
+        },
+        {
+          "point": 0.5,
+          "over": 131,
+          "under": -150,
+          "player": "Riley Greene"
+        },
+        {
+          "point": 0.5,
+          "over": 137,
+          "under": -165,
+          "player": "Spencer Torkelson"
+        },
+        {
+          "point": 0.5,
+          "over": 150,
+          "under": -200,
+          "player": "Nick Kurtz"
+        },
+        {
+          "point": 0.5,
+          "over": 152,
+          "under": -200,
+          "player": "Jonah Heim"
+        },
+        {
+          "point": 0.5,
+          "over": 160,
+          "under": -216,
+          "player": "Kevin McGonigle"
+        },
+        {
+          "point": 0.5,
+          "over": 155,
+          "under": -210,
+          "player": "Tyler Soderstrom"
+        },
+        {
+          "point": 0.5,
+          "over": 165,
+          "under": -220,
+          "player": "Colt Keith"
+        },
+        {
+          "point": 0.5,
+          "over": 165,
+          "under": -200,
+          "player": "Gleyber Torres"
+        },
+        {
+          "point": 0.5,
+          "over": 179,
+          "under": -225,
+          "player": "Hao-Yu Lee"
+        },
+        {
+          "point": 0.5,
+          "over": 183,
+          "under": -220,
+          "player": "Jacob Wilson"
+        },
+        {
+          "point": 0.5,
+          "over": 195,
+          "under": -260,
+          "player": "Tommy White"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -269,
+          "player": "Henry Bolte"
+        },
+        {
+          "point": 0.5,
+          "over": 204,
+          "under": -235,
+          "player": "Zach McKinstry"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -295,
+          "player": "Lawrence Butler"
+        },
+        {
+          "point": 0.5,
+          "over": 225,
+          "under": -312,
+          "player": "Jeff McNeil"
+        },
+        {
+          "point": 0.5,
+          "over": 238,
+          "under": -345,
+          "player": "Alika Williams"
+        },
+        {
+          "point": 0.5,
+          "over": 210,
+          "under": -300,
+          "player": "Donovan Walton"
+        }
+      ],
+      "bases": [
+        {
+          "point": 0.5,
+          "over": -167,
+          "under": 135,
+          "player": "Zach McKinstry"
+        },
+        {
+          "point": 1.5,
+          "over": 105,
+          "under": -125,
+          "player": "Riley Greene"
+        },
+        {
+          "point": 1.5,
+          "over": 117,
+          "under": -148,
+          "player": "Spencer Torkelson"
+        },
+        {
+          "point": 1.5,
+          "over": 130,
+          "under": -145,
+          "player": "Jonah Heim"
+        },
+        {
+          "point": 1.5,
+          "over": -155,
+          "under": 115,
+          "player": "Lawrence Butler"
+        },
+        {
+          "point": 1.5,
+          "over": 132,
+          "under": -172,
+          "player": "Javier Baez"
+        },
+        {
+          "point": 1.5,
+          "over": -115,
+          "under": 100,
+          "player": "Dillon Dingler"
+        },
+        {
+          "point": 1.5,
+          "over": 130,
+          "under": -161,
+          "player": "Tyler Soderstrom"
+        },
+        {
+          "point": 1.5,
+          "over": 115,
+          "under": -145,
+          "player": "Gleyber Torres"
+        },
+        {
+          "point": 1.5,
+          "over": 120,
+          "under": -150,
+          "player": "Nick Kurtz"
+        },
+        {
+          "point": 1.5,
+          "over": 146,
+          "under": -176,
+          "player": "Colt Keith"
+        },
+        {
+          "point": 1.5,
+          "over": -105,
+          "under": -114,
+          "player": "Jacob Wilson"
+        },
+        {
+          "point": 1.5,
+          "over": 136,
+          "under": -177,
+          "player": "Hao-Yu Lee"
+        },
+        {
+          "point": 1.5,
+          "over": -175,
+          "under": 130,
+          "player": "Jeff McNeil"
+        },
+        {
+          "point": 1.5,
+          "over": 102,
+          "under": -125,
+          "player": "Kevin McGonigle"
+        },
+        {
+          "point": 1.5,
+          "over": 140,
+          "under": -190,
+          "player": "Tommy White"
+        },
+        {
+          "point": 1.5,
+          "over": -210,
+          "under": 155,
+          "player": "Henry Bolte"
+        },
+        {
+          "point": 0.5,
+          "over": -143,
+          "under": 110,
+          "player": "Alika Williams"
+        },
+        {
+          "point": 0.5,
+          "over": -150,
+          "under": 110,
+          "player": "Donovan Walton"
+        }
+      ]
     },
     "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
+      "strikeouts": [
+        {
+          "point": 4.5,
+          "over": -125,
+          "under": 103,
+          "player": "Framber Valdez"
+        },
+        {
+          "point": 4.5,
+          "over": -125,
+          "under": 120,
+          "player": "Jack Perkins"
+        }
+      ],
+      "outs": [
+        {
+          "point": 15.5,
+          "over": 125,
+          "under": -165,
+          "player": "Jack Perkins"
+        }
+      ],
+      "earned_runs": [
+        {
+          "point": 2.5,
+          "over": -127,
+          "under": -104,
+          "player": "Framber Valdez"
+        },
+        {
+          "point": 2.5,
+          "over": -148,
+          "under": 111,
+          "player": "Jack Perkins"
+        }
+      ],
+      "hits_allowed": [
+        {
+          "point": 5.5,
+          "over": -155,
+          "under": 115,
+          "player": "Jack Perkins"
+        },
+        {
+          "point": 5.5,
+          "over": -116,
+          "under": -110,
+          "player": "Framber Valdez"
+        }
+      ]
     }
   }
 ]
