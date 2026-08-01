@@ -1928,17 +1928,31 @@ flushGroup();
 // Earned Runs) para cada partido. Se llama para todos aunque un
 // partido no tenga esa seccion - simplemente no encuentra los
 // elementos y no hace nada (inofensivo).
-gamesOrdenados.forEach(g => {
-  aplicarPropFilter(g.gameId, "player", PLAYER_PROP_STATS);
-  aplicarPropFilter(g.gameId, "pitcher", PITCHER_PROP_STATS);
-});
+// AISLADO en su propio try/catch: si esto falla por cualquier razon,
+// los partidos YA DIBUJADOS arriba se quedan visibles - solo se pierde
+// el filtro de props, no toda la cartelera.
+try {
+  gamesOrdenados.forEach(g => {
+    if(typeof aplicarPropFilter === "function"){
+      aplicarPropFilter(g.gameId, "player", PLAYER_PROP_STATS);
+      aplicarPropFilter(g.gameId, "pitcher", PITCHER_PROP_STATS);
+    }
+  });
+} catch(propFilterError) {
+  console.error("Error aplicando filtro de props (no afecta los partidos):", propFilterError);
+}
 
 document.getElementById("steamCount").innerHTML =
   steamCount;
 
 // Reaplica el modo "enfocado" (si hay uno activo) despues de cada
 // refresco, para que el refresco automatico de 30s no lo resetee.
-applyFocusMode();
+// Tambien aislado - un fallo aca no debe borrar los partidos.
+try {
+  applyFocusMode();
+} catch(focusModeError) {
+  console.error("Error aplicando modo enfocado (no afecta los partidos):", focusModeError);
+}
 
 }catch(error){
 
