@@ -1020,6 +1020,17 @@ body{
 
 const API_URL = "./todaycard.json";
 
+// Evita inyeccion de HTML/XSS al insertar datos externos (nombres de
+// jugadores, equipos, etc.) directamente en el HTML.
+function escapeHtml(value){
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 let mlbVisible = false;
 let steamOnly = false;
 let focusedGameId = null;
