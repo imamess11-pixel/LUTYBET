@@ -1715,16 +1715,16 @@ function renderStatFilterSection(sectionId, titleText, gameId, category, stats, 
 
   const abierta = seccionEstaAbierta(sectionId, false);
 
-  const filterButtons = stats.map(s => `
+  const filterButtons = stats.map((s, idx) => `
     <button
-      class="filter-btn prop-filter"
+      class="filter-btn prop-filter${idx === 0 ? " active" : ""}"
       id="${category}propbtn-${s.key}-${gameId}"
       onclick="event.stopPropagation(); setPropFilter('${gameId}', '${category}', '${s.key}')"
     >${s.label}</button>
   `).join("");
 
-  const lists = stats.map(s => `
-    <div id="${category}prop-${s.key}-${gameId}">
+  const lists = stats.map((s, idx) => `
+    <div id="${category}prop-${s.key}-${gameId}" style="display:${idx === 0 ? "block" : "none"};">
       ${renderSubjectPropList(dataByStat[s.key], gameId, s.market, "player")}
     </div>
   `).join("");
