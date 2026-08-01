@@ -1050,6 +1050,51 @@ function seccionEstaAbierta(id, defaultOpen){
   return sectionOpenState.has(id) ? sectionOpenState.get(id) : defaultOpen;
 }
 
+// FIX: PLAYER_PROP_STATS/PITCHER_PROP_STATS, propFilterState,
+// aplicarPropFilter() y setPropFilter() estaban declaradas DENTRO de
+// loadGames(). Eso las hacia invisibles para los botones onclick del
+// HTML (que se ejecutan en el scope global, no en el de loadGames) -
+// por eso el boton nunca funcionaba, aunque la funcion "existiera" en
+// el archivo. Ademas, al estar dentro de loadGames, propFilterState
+// se reseteaba a un Map vacio en cada refresco de 30s. Todo esto debe
+// vivir a nivel superior del script, igual que sectionOpenState.
+
+const PLAYER_PROP_STATS = [
+  { key: "hits", label: "Hits", market: "PLAYER_PROP_HITS" },
+  { key: "hr", label: "HR", market: "PLAYER_PROP_HR" },
+  { key: "rbi", label: "RBI", market: "PLAYER_PROP_RBI" }
+];
+
+const PITCHER_PROP_STATS = [
+  { key: "strikeouts", label: "Strikeouts", market: "PITCHER_PROP_K" },
+  { key: "outs", label: "Outs", market: "PITCHER_PROP_OUTS" },
+  { key: "earned_runs", label: "Earned Runs", market: "PITCHER_PROP_ER" }
+];
+
+// Recuerda que stat (hits/hr/rbi, o strikeouts/outs/earned_runs) esta
+// activo por partido, para que sobreviva al refresco automatico de 30s.
+let propFilterState = new Map();
+
+function aplicarPropFilter(gameId, category, stats){
+  const key = category + "-" + gameId;
+  const defaultStat = stats[0].key;
+  const activo = propFilterState.has(key) ? propFilterState.get(key) : defaultStat;
+
+  stats.forEach(s => {
+    const el = document.getElementById(`${category}prop-${s.key}-${gameId}`);
+    if(el) el.style.display = (s.key === activo) ? "block" : "none";
+
+    const btn = document.getElementById(`${category}propbtn-${s.key}-${gameId}`);
+    if(btn) btn.classList.toggle("active", s.key === activo);
+  });
+}
+
+function setPropFilter(gameId, category, statKey){
+  propFilterState.set(category + "-" + gameId, statKey);
+  const stats = category === "player" ? PLAYER_PROP_STATS : PITCHER_PROP_STATS;
+  aplicarPropFilter(gameId, category, stats);
+}
+
 // Click en el logo LUTYBET: actualiza las cuotas y vuelve a la
 // vista principal (sin filtro de steam, sin partido enfocado).
 function goHome(){
@@ -1752,18 +1797,6 @@ function renderStatFilterSection(sectionId, titleText, gameId, category, stats, 
 
 }
 
-const PLAYER_PROP_STATS = [
-  { key: "hits", label: "Hits", market: "PLAYER_PROP_HITS" },
-  { key: "hr", label: "HR", market: "PLAYER_PROP_HR" },
-  { key: "rbi", label: "RBI", market: "PLAYER_PROP_RBI" }
-];
-
-const PITCHER_PROP_STATS = [
-  { key: "strikeouts", label: "Strikeouts", market: "PITCHER_PROP_K" },
-  { key: "outs", label: "Outs", market: "PITCHER_PROP_OUTS" },
-  { key: "earned_runs", label: "Earned Runs", market: "PITCHER_PROP_ER" }
-];
-
 function renderPlayerPropsSection(game){
   return renderStatFilterSection(
     "playerprops-" + game.gameId,
@@ -1784,30 +1817,6 @@ function renderPitcherPropsSection(game){
     PITCHER_PROP_STATS,
     game.pitcher_props || {}
   );
-}
-
-// Recuerda que stat (hits/hr/rbi, o strikeouts/outs/earned_runs) esta
-// activo por partido, para que sobreviva al refresco automatico de 30s.
-let propFilterState = new Map();
-
-function aplicarPropFilter(gameId, category, stats){
-  const key = category + "-" + gameId;
-  const defaultStat = stats[0].key;
-  const activo = propFilterState.has(key) ? propFilterState.get(key) : defaultStat;
-
-  stats.forEach(s => {
-    const el = document.getElementById(`${category}prop-${s.key}-${gameId}`);
-    if(el) el.style.display = (s.key === activo) ? "block" : "none";
-
-    const btn = document.getElementById(`${category}propbtn-${s.key}-${gameId}`);
-    if(btn) btn.classList.toggle("active", s.key === activo);
-  });
-}
-
-function setPropFilter(gameId, category, statKey){
-  propFilterState.set(category + "-" + gameId, statKey);
-  const stats = category === "player" ? PLAYER_PROP_STATS : PITCHER_PROP_STATS;
-  aplicarPropFilter(gameId, category, stats);
 }
 
 // Extrae solo el punto (ej "-1.5") de una key tipo "Team Name -1.5",
