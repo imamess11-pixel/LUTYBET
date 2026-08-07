@@ -1,0 +1,368 @@
+[
+  {
+    "gameId": "ce68ba16f736e47ed23f2d9472128894",
+    "sport": "npb",
+    "away_team": "Hanshin Tigers",
+    "home_team": "Yokohama DeNA BayStars",
+    "commence_time": "08/05/2026 04:45 AM",
+    "status": "scheduled",
+    "is_live": true,
+    "favorite": "Hanshin Tigers",
+    "favorite_odds": -141,
+    "underdog": "Yokohama DeNA BayStars",
+    "underdog_odds": 125,
+    "moneyline": {
+      "Hanshin Tigers": -141,
+      "Yokohama DeNA BayStars": 125
+    },
+    "runline": {
+      "Hanshin Tigers -1.5": 132,
+      "Yokohama DeNA BayStars +1.5": -150,
+      "Hanshin Tigers -0.5": -136,
+      "Yokohama DeNA BayStars +0.5": 100
+    },
+    "totals": {
+      "Over 6.5": -104,
+      "Under 6.5": -105,
+      "Over 7": 113,
+      "Under 7": -143
+    },
+    "alt_runline": {
+      "Hanshin Tigers -1": -111,
+      "Hanshin Tigers +1": -252,
+      "Yokohama DeNA BayStars +1": -117,
+      "Yokohama DeNA BayStars -1": 187,
+      "Hanshin Tigers +1.5": -331,
+      "Yokohama DeNA BayStars -1.5": 265,
+      "Hanshin Tigers -2": 165,
+      "Hanshin Tigers +2": -515
+    },
+    "alt_totals": {
+      "Over 3.5": -510,
+      "Under 3.5": 338,
+      "Over 4": -454,
+      "Under 4": 309,
+      "Over 4.5": -312,
+      "Under 4.5": 226,
+      "Over 5": -248,
+      "Under 5": 184
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "379b53ac4c12284b2c8d3cee3d2033d5",
+    "sport": "npb",
+    "away_team": "Saitama Seibu Lions",
+    "home_team": "Chiba Lotte Marines",
+    "commence_time": "08/05/2026 05:00 AM",
+    "status": "scheduled",
+    "is_live": true,
+    "favorite": "Saitama Seibu Lions",
+    "favorite_odds": -113,
+    "underdog": "Chiba Lotte Marines",
+    "underdog_odds": 100,
+    "moneyline": {
+      "Chiba Lotte Marines": 100,
+      "Saitama Seibu Lions": -113
+    },
+    "runline": {
+      "Chiba Lotte Marines +1.5": -170,
+      "Saitama Seibu Lions -1.5": 149,
+      "Chiba Lotte Marines +0.5": -113,
+      "Saitama Seibu Lions -0.5": -121
+    },
+    "totals": {
+      "Over 7.5": -110,
+      "Under 7.5": -110,
+      "Over 7": -141,
+      "Under 7": 111
+    },
+    "alt_runline": {
+      "Chiba Lotte Marines +1": -144,
+      "Chiba Lotte Marines -1": 140,
+      "Saitama Seibu Lions -1": 111,
+      "Saitama Seibu Lions +1": -184,
+      "Chiba Lotte Marines -1.5": 200,
+      "Saitama Seibu Lions +1.5": -246,
+      "Chiba Lotte Marines +2": -248,
+      "Chiba Lotte Marines -2": 280
+    },
+    "alt_totals": {
+      "Over 4.5": -570,
+      "Under 4.5": 369,
+      "Over 5": -479,
+      "Under 5": 322,
+      "Over 5.5": -260,
+      "Under 5.5": 204,
+      "Over 6": -225,
+      "Under 6": 181
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "7aee416761d3e98928c8b14fc047b8b1",
+    "sport": "npb",
+    "away_team": "Tokyo Yakult Swallows",
+    "home_team": "Chunichi Dragons",
+    "commence_time": "08/05/2026 05:00 AM",
+    "status": "scheduled",
+    "is_live": true,
+    "favorite": "Chunichi Dragons",
+    "favorite_odds": -125,
+    "underdog": "Tokyo Yakult Swallows",
+    "underdog_odds": 110,
+    "moneyline": {
+      "Chunichi Dragons": -125,
+      "Tokyo Yakult Swallows": 110
+    },
+    "runline": {
+      "Chunichi Dragons -1.5": 187,
+      "Tokyo Yakult Swallows +1.5": -195,
+      "Chunichi Dragons -0.5": -132,
+      "Tokyo Yakult Swallows +0.5": -104
+    },
+    "totals": {
+      "Over 6.5": -120,
+      "Under 6.5": 106,
+      "Over 7": -104,
+      "Under 7": -115
+    },
+    "alt_runline": {
+      "Chunichi Dragons +1": -188,
+      "Chunichi Dragons -1": 110,
+      "Tokyo Yakult Swallows -1": 143,
+      "Tokyo Yakult Swallows +1": -144,
+      "Chunichi Dragons +1.5": -230,
+      "Tokyo Yakult Swallows -1.5": 175,
+      "Chunichi Dragons +2": -325,
+      "Chunichi Dragons -2": 250
+    },
+    "alt_totals": {
+      "Over 3.5": -660,
+      "Under 3.5": 411,
+      "Over 4": -593,
+      "Under 4": 380,
+      "Over 4.5": -390,
+      "Under 4.5": 273,
+      "Over 5": -316,
+      "Under 5": 228
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "0b4cd511e977d71a1ed72af5de975b6b",
+    "sport": "npb",
+    "away_team": "Hokkaido Nippon-Ham Fighters",
+    "home_team": "Fukuoka SoftBank Hawks",
+    "commence_time": "08/05/2026 05:00 AM",
+    "status": "scheduled",
+    "is_live": true,
+    "favorite": "Fukuoka SoftBank Hawks",
+    "favorite_odds": -133,
+    "underdog": "Hokkaido Nippon-Ham Fighters",
+    "underdog_odds": 120,
+    "moneyline": {
+      "Fukuoka SoftBank Hawks": -133,
+      "Hokkaido Nippon-Ham Fighters": 120
+    },
+    "runline": {
+      "Fukuoka SoftBank Hawks -1.5": 170,
+      "Hokkaido Nippon-Ham Fighters +1.5": -193,
+      "Fukuoka SoftBank Hawks -0.5": -134,
+      "Hokkaido Nippon-Ham Fighters +0.5": -103
+    },
+    "totals": {
+      "Over 6.5": -104,
+      "Under 6.5": -115
+    },
+    "alt_runline": {
+      "Fukuoka SoftBank Hawks +1": -204,
+      "Fukuoka SoftBank Hawks -1": 106,
+      "Hokkaido Nippon-Ham Fighters -1": 154,
+      "Hokkaido Nippon-Ham Fighters +1": -138,
+      "Fukuoka SoftBank Hawks +1.5": -250,
+      "Hokkaido Nippon-Ham Fighters -1.5": 190,
+      "Fukuoka SoftBank Hawks +2": -370,
+      "Fukuoka SoftBank Hawks -2": 250
+    },
+    "alt_totals": {
+      "Over 3.5": -509,
+      "Under 3.5": 338,
+      "Over 4": -451,
+      "Under 4": 307,
+      "Over 4.5": -285,
+      "Under 4.5": 223,
+      "Over 5": -240,
+      "Under 5": 182
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "a88ed577b77d0a457c75b4aff6bc690c",
+    "sport": "npb",
+    "away_team": "Yomiuri Giants",
+    "home_team": "Hiroshima Toyo Carp",
+    "commence_time": "08/05/2026 05:00 AM",
+    "status": "scheduled",
+    "is_live": true,
+    "favorite": "Yomiuri Giants",
+    "favorite_odds": -128,
+    "underdog": "Hiroshima Toyo Carp",
+    "underdog_odds": 110,
+    "moneyline": {
+      "Hiroshima Toyo Carp": 110,
+      "Yomiuri Giants": -128
+    },
+    "runline": {
+      "Hiroshima Toyo Carp +1.5": -167,
+      "Yomiuri Giants -1.5": 149,
+      "Hiroshima Toyo Carp +0.5": -104,
+      "Yomiuri Giants -0.5": -130
+    },
+    "totals": {
+      "Over 6.5": 105,
+      "Under 6.5": -118,
+      "Over 6": -122,
+      "Under 6": -104
+    },
+    "alt_runline": {
+      "Hiroshima Toyo Carp +1": -132,
+      "Hiroshima Toyo Carp -1": 168,
+      "Yomiuri Giants -1": 101,
+      "Yomiuri Giants +1": -224,
+      "Hiroshima Toyo Carp -1.5": 250,
+      "Yomiuri Giants +1.5": -299,
+      "Hiroshima Toyo Carp +2": -248,
+      "Hiroshima Toyo Carp -2": 350
+    },
+    "alt_totals": {
+      "Over 3": -1280,
+      "Under 3": 630,
+      "Over 3.5": -483,
+      "Under 3.5": 325,
+      "Over 4": -428,
+      "Under 4": 294,
+      "Over 4.5": -294,
+      "Under 4.5": 215
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "dc0f1467eec77fa779aa04c1157476c6",
+    "sport": "npb",
+    "away_team": "Tohoku Rakuten Golden Eagles",
+    "home_team": "Orix Buffaloes",
+    "commence_time": "08/05/2026 05:00 AM",
+    "status": "scheduled",
+    "is_live": true,
+    "favorite": "Orix Buffaloes",
+    "favorite_odds": -172,
+    "underdog": "Tohoku Rakuten Golden Eagles",
+    "underdog_odds": 153,
+    "moneyline": {
+      "Orix Buffaloes": -172,
+      "Tohoku Rakuten Golden Eagles": 153
+    },
+    "runline": {
+      "Orix Buffaloes -1.5": 122,
+      "Tohoku Rakuten Golden Eagles +1.5": -135
+    },
+    "totals": {
+      "Over 7.5": -102,
+      "Under 7.5": -115
+    },
+    "alt_runline": {
+      "Orix Buffaloes +1": -255,
+      "Orix Buffaloes -1": -132,
+      "Tohoku Rakuten Golden Eagles -1": 189,
+      "Tohoku Rakuten Golden Eagles +1": 101,
+      "Orix Buffaloes +1.5": -300,
+      "Tohoku Rakuten Golden Eagles -1.5": 225,
+      "Orix Buffaloes +2": -439,
+      "Orix Buffaloes -2": 145
+    },
+    "alt_totals": {
+      "Over 4": -890,
+      "Under 4": 507,
+      "Over 4.5": -535,
+      "Under 4.5": 351,
+      "Over 5": -448,
+      "Under 5": 306,
+      "Over 5.5": -264,
+      "Under 5.5": 195
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  }
+]
