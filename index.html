@@ -906,6 +906,14 @@ body{
     MLB
   </div>
 
+  <div
+    class="sidebar-subitem"
+    onclick="toggleNPB()"
+    style="cursor:pointer;"
+  >
+    NPB (Japan)
+  </div>
+
 </div>
 
 <div class="sidebar-item">
@@ -951,7 +959,7 @@ body{
   <div class="league-header">
 
 
-  <h2>⚾ MLB</h2>
+  <h2 id="leagueTitle">⚾ MLB</h2>
 
   <div id="gameCount" class="league-count">
     15 Games Today
@@ -1018,7 +1026,23 @@ body{
 </div>
 <script>
 
-const API_URL = "./todaycard.json";
+// Cada liga lee de sus propios archivos JSON estaticos (los mismos
+// que subes a mano a GitHub desde ?type=todaycard&sport=XXX). Cuando
+// agregues otra liga, solo hay que sumar una entrada aca.
+const LEAGUES = {
+  mlb: { label: "⚾ MLB", todaycard: "./todaycard.json", movements: "./movements.json" },
+  npb: { label: "⚾ NPB", todaycard: "./todaycard_npb.json", movements: "./movements_npb.json" }
+};
+
+let currentSport = "mlb";
+
+function getTodaycardUrl(){
+  return (LEAGUES[currentSport] || LEAGUES.mlb).todaycard;
+}
+
+function getMovementsUrl(){
+  return (LEAGUES[currentSport] || LEAGUES.mlb).movements;
+}
 
 // Evita inyeccion de HTML/XSS al insertar datos externos (nombres de
 // jugadores, equipos, etc.) directamente en el HTML.
@@ -1146,7 +1170,7 @@ function toggleLeague(menuId){
       : "block";
 
 }
-function toggleMLB(){
+function toggleLeagueModule(sport){
 
   const module =
     document.getElementById("mlbModule");
@@ -1154,21 +1178,42 @@ function toggleMLB(){
   const games =
     document.getElementById("games");
 
-  mlbVisible = !mlbVisible;
+  const yaAbierto = mlbVisible && currentSport === sport;
 
-  if(mlbVisible){
-
-      module.style.display="block";
-
-      games.style.display="flex";
-
-  }else{
-
-      module.style.display="none";
-
+  if(yaAbierto){
+    // Click de nuevo en la misma liga que ya esta abierta -> cerrar
+    mlbVisible = false;
+    module.style.display = "none";
+    return;
   }
 
-}function scrollToGame(gameId){
+  currentSport = sport;
+  mlbVisible = true;
+
+  const leagueTitleEl = document.getElementById("leagueTitle");
+  if(leagueTitleEl) leagueTitleEl.textContent = (LEAGUES[sport] || LEAGUES.mlb).label;
+
+  module.style.display = "block";
+  games.style.display = "flex";
+
+  // Cambiar de liga es come empezar de cero: limpia estado que no
+  // tiene sentido llevar de una liga a otra.
+  focusedGameId = null;
+  steamOnly = false;
+
+  loadGames();
+
+}
+
+function toggleMLB(){
+  toggleLeagueModule("mlb");
+}
+
+function toggleNPB(){
+  toggleLeagueModule("npb");
+}
+
+function scrollToGame(gameId){
 
   const card =
     document.getElementById(
@@ -1253,16 +1298,24 @@ async function loadGames(){
 try{
 
 const response =
-  await fetch(API_URL);
+  await fetch(getTodaycardUrl());
 
 const games =
   await response.json();
 
-const movesResponse =
-  await fetch("./movements.json");
+// Tolerante a fallos: si el archivo de movimientos no existe todavia
+// para esta liga (ej. movements_npb.json antes de armar ese pipeline),
+// no tumba toda la pagina - simplemente no hay steam moves para mostrar.
+let moves = [];
+try {
+  const movesResponse = await fetch(getMovementsUrl());
+  if(movesResponse.ok){
+    moves = await movesResponse.json();
+  }
+} catch(movesError) {
+  console.error("Sin datos de movimientos para " + currentSport + ":", movesError);
+}
 
-const moves =
-  await movesResponse.json();
 const hotGames = [];
 
 games.forEach(game => {
@@ -1321,7 +1374,7 @@ document.getElementById("hotGames").innerHTML =
     `)
     .join("");
 document.getElementById("gameCount").innerHTML =
-  `MLB • ${games.length} Games Today`;
+  `${(LEAGUES[currentSport] || LEAGUES.mlb).label.replace(/^[^\s]+\s/, "")} • ${games.length} Games Today`;
 const now = new Date();
 
 document.getElementById(
