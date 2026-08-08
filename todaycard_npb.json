@@ -21,11 +21,11 @@
     },
     "totals": {
       "Over 8": -105,
-      "Under 8": -115
+      "Under 8": -115,
+      "Over 7.5": -120,
+      "Under 7.5": -103
     },
     "alt_runline": {
-      "Over 7.5": -120,
-      "Under 7.5": -103,
       "Hokkaido Nippon-Ham Fighters +2.5": -509,
       "Hokkaido Nippon-Ham Fighters +2": -453,
       "Hokkaido Nippon-Ham Fighters +1.5": -312,
@@ -42,11 +42,11 @@
       "Tohoku Rakuten Golden Eagles +2.5": -204
     },
     "alt_totals": {
-      "Over 4.5": -650,
+      "Over 7.5": -120,
       "Over 5": -554,
       "Over 5.5": -318,
       "Over 6": -281,
-      "Under 4.5": 406,
+      "Under 7.5": -103,
       "Under 5": 361,
       "Under 5.5": 230,
       "Under 6": 206
