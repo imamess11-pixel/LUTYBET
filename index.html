@@ -1659,15 +1659,24 @@ function agruparAltRunline(altRunlineObj, awayTeam, homeTeam, primarioAwaySigned
 
 }
 
-// Limite de rango para totales alternos: MLB rara vez tiene lineas
-// utiles fuera de este rango, asi que se recortan los extremos.
-const ALT_TOTALS_MIN = 6.5;
-const ALT_TOTALS_MAX = 11.5;
+// Limite de rango para totales alternos, por deporte: MLB rara vez
+// tiene lineas utiles fuera de este rango. NPB (y ligas futuras) usan
+// su propio rango, o ninguno si ya vienen limitadas desde el backend
+// (Apps Script ya recorta NPB a 4 magnitudes antes de llegar aca).
+const ALT_TOTALS_RANGES = {
+  mlb: { min: 6.5, max: 11.5 },
+  npb: { min: 0, max: 999 } // sin filtro extra - ya viene acotado del backend
+};
 
-function agruparAltTotals(altTotalsObj, puntoPrimario){
+function rangoAltTotals(sport){
+  return ALT_TOTALS_RANGES[sport] || ALT_TOTALS_RANGES.mlb;
+}
+
+function agruparAltTotals(altTotalsObj, puntoPrimario, sport){
 
   const entries = Object.entries(altTotalsObj || {});
   const groups = {};
+  const rango = rangoAltTotals(sport);
 
   entries.forEach(([label, odds]) => {
 
@@ -1677,8 +1686,8 @@ function agruparAltTotals(altTotalsObj, puntoPrimario){
     // No repetir la linea principal dentro de las alternas
     if(puntoPrimario !== null && Math.abs(point - puntoPrimario) < 0.001) return;
 
-    // Limite de rango (6.5 a 11.5)
-    if(point < ALT_TOTALS_MIN || point > ALT_TOTALS_MAX) return;
+    // Limite de rango (depende del deporte)
+    if(point < rango.min || point > rango.max) return;
 
     if(!groups[point]) groups[point] = {};
 
@@ -1751,9 +1760,9 @@ function renderAltRunline(altRunlineObj, gameId, awayTeam, homeTeam, primarioAwa
 
 }
 
-function renderAltTotals(altTotalsObj, gameId, puntoPrimario){
+function renderAltTotals(altTotalsObj, gameId, puntoPrimario, sport){
 
-  const groups = agruparAltTotals(altTotalsObj, puntoPrimario);
+  const groups = agruparAltTotals(altTotalsObj, puntoPrimario, sport);
 
   if(groups.length === 0) return "";
 
@@ -1791,6 +1800,67 @@ function renderSubjectPropList(rows, gameId, marketLabel, subjectField){
       </div>
     `;
   }).join("");
+
+}
+
+// Seccion colapsable generica, sin encabezado de columnas fijo (a
+// diferencia de renderAltSection) - para secciones con contenido
+// mixto como Moneyline+Runline+Totals juntos (1 Inning, 1st 5 Innings).
+function renderCollapsibleSection(sectionId, titleText, innerHtml){
+
+  if(!innerHtml) return "";
+
+  const abierta = seccionEstaAbierta(sectionId, false);
+
+  return `
+    <div class="market-title alt-toggle" onclick="toggleSection('${sectionId}')">
+      <span id="${sectionId}-arrow">${abierta ? "▾" : "▸"}</span> ${titleText}
+    </div>
+    <div class="expand-panel alt-section" id="${sectionId}" style="display:${abierta ? "block" : "none"};">
+      ${innerHtml}
+    </div>
+  `;
+
+}
+
+// Muestra un mercado de periodo (moneyline/runline/totals de 1 inning
+// o 1st 5 innings) de a pares, tal cual vienen - normalmente son 1-2
+// lineas, no hace falta la logica de rango/limite de las alternas.
+function renderPeriodPairs(oddsObj, gameId, marketLabel){
+
+  const entries = Object.entries(oddsObj || {});
+  if(entries.length === 0) return "";
+
+  const rows = [];
+  for(let i = 0; i < entries.length; i += 2){
+    const pair = entries.slice(i, i + 2);
+    const picks = pair.map(([label, odds]) => renderPick(gameId, marketLabel, label, label, odds)).join("");
+    rows.push(`<div class="alt-line-row">${picks}</div>`);
+  }
+
+  return rows.join("");
+
+}
+
+function renderPeriodSection(sectionId, titleText, periodData, gameId, marketPrefix){
+
+  if(!periodData) return "";
+
+  const mlHtml = renderPeriodPairs(periodData.moneyline, gameId, marketPrefix + "_ML");
+  const rlHtml = renderPeriodPairs(periodData.runline, gameId, marketPrefix + "_RL");
+  const totHtml = renderPeriodPairs(periodData.totals, gameId, marketPrefix + "_TOT");
+
+  const subTitulo = (texto) =>
+    `<div style="color:#9aa0a6;font-size:11px;font-weight:bold;text-transform:uppercase;margin-top:8px;">${texto}</div>`;
+
+  const contenido =
+    (mlHtml ? subTitulo("Moneyline") + mlHtml : "") +
+    (rlHtml ? subTitulo("Runline") + rlHtml : "") +
+    (totHtml ? subTitulo("Totals") + totHtml : "");
+
+  if(!contenido) return "";
+
+  return renderCollapsibleSection(sectionId, titleText, contenido);
 
 }
 
@@ -1976,8 +2046,12 @@ currentGroupHtml += `
     "Alternate Totals",
     "Over",
     "Under",
-    renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals))
+    renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals), game.sport)
   )}
+
+  ${renderPeriodSection("inning1-" + game.gameId, "1st Inning", game.innings_1, game.gameId, "INN1")}
+
+  ${renderPeriodSection("inning5-" + game.gameId, "1st 5 Innings", game.innings_5, game.gameId, "INN5")}
 
   ${renderTeamTotalsSection(game)}
 
@@ -1987,7 +2061,7 @@ currentGroupHtml += `
 
   ${movementHtml ? `<div class="market-title steam">🔥 Movimiento</div>${movementHtml}` : ""}
 
-  ${!renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipalRunlineAway(game.runline, game.away_team), game.favorite === game.away_team) && !renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals)) && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
+  ${!renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipalRunlineAway(game.runline, game.away_team), game.favorite === game.away_team) && !renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals), game.sport) && !movementHtml ? `<div class="time">Sin datos adicionales por ahora.</div>` : ""}
 
 </div>
 
