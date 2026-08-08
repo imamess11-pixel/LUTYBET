@@ -6,7 +6,7 @@
     "home_team": "Hokkaido Nippon-Ham Fighters",
     "commence_time": "08/08/2026 02:00 AM",
     "status": "scheduled",
-    "is_live": false,
+    "is_live": true,
     "favorite": "Hokkaido Nippon-Ham Fighters",
     "favorite_odds": -180,
     "underdog": "Tohoku Rakuten Golden Eagles",
@@ -21,11 +21,11 @@
     },
     "totals": {
       "Over 8": -105,
-      "Under 8": -115,
-      "Over 7.5": -120,
-      "Under 7.5": -103
+      "Under 8": -115
     },
     "alt_runline": {
+      "Over 7.5": -120,
+      "Under 7.5": -103,
       "Hokkaido Nippon-Ham Fighters +2.5": -509,
       "Hokkaido Nippon-Ham Fighters +2": -453,
       "Hokkaido Nippon-Ham Fighters +1.5": -312,
@@ -98,7 +98,7 @@
     "home_team": "Yomiuri Giants",
     "commence_time": "08/08/2026 02:00 AM",
     "status": "scheduled",
-    "is_live": false,
+    "is_live": true,
     "favorite": "Yomiuri Giants",
     "favorite_odds": -135,
     "underdog": "Tokyo Yakult Swallows",
@@ -115,9 +115,7 @@
     },
     "totals": {
       "Over 6": -120,
-      "Under 6": -105,
-      "Over 6.5": 102,
-      "Under 6.5": -115
+      "Under 6": -105
     },
     "alt_runline": {
       "Tokyo Yakult Swallows -2.5": 282,
@@ -136,6 +134,8 @@
       "Yomiuri Giants -2.5": 280
     },
     "alt_totals": {
+      "Over 6.5": 102,
+      "Under 6.5": -115,
       "Over 2.5": -1420,
       "Over 3": -1180,
       "Over 3.5": -443,
@@ -192,7 +192,7 @@
     "home_team": "Chiba Lotte Marines",
     "commence_time": "08/08/2026 05:00 AM",
     "status": "scheduled",
-    "is_live": false,
+    "is_live": true,
     "favorite": "Orix Buffaloes",
     "favorite_odds": -122,
     "underdog": "Chiba Lotte Marines",
@@ -284,7 +284,7 @@
     "home_team": "Hanshin Tigers",
     "commence_time": "08/08/2026 05:00 AM",
     "status": "scheduled",
-    "is_live": false,
+    "is_live": true,
     "favorite": "Hanshin Tigers",
     "favorite_odds": -130,
     "underdog": "Chunichi Dragons",
@@ -380,7 +380,7 @@
     "home_team": "Saitama Seibu Lions",
     "commence_time": "08/08/2026 05:00 AM",
     "status": "scheduled",
-    "is_live": false,
+    "is_live": true,
     "favorite": "Fukuoka SoftBank Hawks",
     "favorite_odds": -125,
     "underdog": "Saitama Seibu Lions",
@@ -397,11 +397,7 @@
     },
     "totals": {
       "Over 7": -108,
-      "Under 7": -105,
-      "Over 6.5": -140,
-      "Under 6.5": 112,
-      "Over 7.5": -103,
-      "Under 7.5": -132
+      "Under 7": -105
     },
     "alt_runline": {
       "Fukuoka SoftBank Hawks -2.5": 202,
@@ -420,6 +416,10 @@
       "Saitama Seibu Lions -2.5": 314
     },
     "alt_totals": {
+      "Over 6.5": -140,
+      "Under 6.5": 112,
+      "Over 7.5": -103,
+      "Under 7.5": -132,
       "Over 3.5": -740,
       "Over 4": -670,
       "Over 4.5": -439,
@@ -476,7 +476,7 @@
     "home_team": "Yokohama DeNA BayStars",
     "commence_time": "08/08/2026 05:00 AM",
     "status": "scheduled",
-    "is_live": false,
+    "is_live": true,
     "favorite": "Yokohama DeNA BayStars",
     "favorite_odds": -155,
     "underdog": "Hiroshima Toyo Carp",
