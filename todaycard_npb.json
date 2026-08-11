@@ -1,247 +1,55 @@
 [
   {
-    "gameId": "45cf112354f35921b46df22cf1d2033f",
+    "gameId": "6724a6fb2248a3a6f79231a35a9842ca",
     "sport": "npb",
-    "away_team": "Orix Buffaloes",
-    "home_team": "Chiba Lotte Marines",
-    "commence_time": "08/08/2026 05:00 AM",
+    "away_team": "Chiba Lotte Marines",
+    "home_team": "Fukuoka SoftBank Hawks",
+    "commence_time": "08/12/2026 05:00 AM",
     "status": "scheduled",
-    "is_live": true,
-    "favorite": "Orix Buffaloes",
-    "favorite_odds": -122,
-    "underdog": "Chiba Lotte Marines",
-    "underdog_odds": 105,
-    "moneyline": {
-      "Chiba Lotte Marines": 105,
-      "Orix Buffaloes": -122
-    },
-    "runline": {
-      "Chiba Lotte Marines +1.5": -160,
-      "Orix Buffaloes -1.5": 142,
-      "Chiba Lotte Marines +0.5": -112,
-      "Orix Buffaloes -0.5": -122
-    },
-    "totals": {
-      "Over 7.5": -104,
-      "Under 7.5": -115
-    },
-    "alt_runline": {
-      "Chiba Lotte Marines +2.5": -281,
-      "Chiba Lotte Marines +2": -240,
-      "Chiba Lotte Marines +1": -138,
-      "Chiba Lotte Marines -1": 147,
-      "Chiba Lotte Marines -1.5": 210,
-      "Chiba Lotte Marines -2": 263,
-      "Chiba Lotte Marines -2.5": 294,
-      "Orix Buffaloes -2.5": 206,
-      "Orix Buffaloes -2": 179,
-      "Orix Buffaloes -1": 106,
-      "Orix Buffaloes +1": -195,
-      "Orix Buffaloes +1.5": -258,
-      "Orix Buffaloes +2": -373,
-      "Orix Buffaloes +2.5": -427
-    },
-    "alt_totals": {
-      "Over 4": -830,
-      "Over 4.5": -523,
-      "Over 5": -437,
-      "Over 5.5": -250,
-      "Under 4": 483,
-      "Under 4.5": 346,
-      "Under 5": 300,
-      "Under 5.5": 191
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-        "Over 0.5": 106,
-        "Under 0.5": -152
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-        "Chiba Lotte Marines": -105,
-        "Orix Buffaloes": -125
-      },
-      "runline": {
-        "Chiba Lotte Marines +0.5": -146,
-        "Orix Buffaloes -0.5": 115
-      },
-      "totals": {
-        "Over 4": -120,
-        "Under 4": -110
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "60a08646c58aac229d3209553d48c14e",
-    "sport": "npb",
-    "away_team": "Chunichi Dragons",
-    "home_team": "Hanshin Tigers",
-    "commence_time": "08/08/2026 05:00 AM",
-    "status": "scheduled",
-    "is_live": true,
-    "favorite": "Hanshin Tigers",
-    "favorite_odds": -130,
-    "underdog": "Chunichi Dragons",
-    "underdog_odds": 110,
-    "moneyline": {
-      "Chunichi Dragons": 110,
-      "Hanshin Tigers": -130
-    },
-    "runline": {
-      "Chunichi Dragons -1.5": 180,
-      "Hanshin Tigers +1.5": -220,
-      "Chunichi Dragons +1.5": -200,
-      "Hanshin Tigers -1.5": 180,
-      "Chunichi Dragons +0.5": -104,
-      "Hanshin Tigers -0.5": -132
-    },
-    "totals": {
-      "Over 6.5": -106,
-      "Under 6.5": -105
-    },
-    "alt_runline": {
-      "Chunichi Dragons -2.5": 265,
-      "Chunichi Dragons -2": 235,
-      "Chunichi Dragons -1": 142,
-      "Chunichi Dragons +1": -158,
-      "Chunichi Dragons +1.5": -236,
-      "Chunichi Dragons +2": -343,
-      "Chunichi Dragons +2.5": -397,
-      "Hanshin Tigers +2.5": -377,
-      "Hanshin Tigers +2": -326,
-      "Hanshin Tigers +1": -187,
-      "Hanshin Tigers -1": 121,
-      "Hanshin Tigers -1.5": 176,
-      "Hanshin Tigers -2": 245,
-      "Hanshin Tigers -2.5": 277,
-      "Chunichi Dragons -1.5": 180,
-      "Hanshin Tigers +1.5": -240
-    },
-    "alt_totals": {
-      "Over 3.5": -522,
-      "Over 4": -467,
-      "Over 4.5": -322,
-      "Over 5": -250,
-      "Under 3.5": 345,
-      "Under 4": 316,
-      "Under 4.5": 232,
-      "Under 5": 190
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-        "Over 0.5": 125,
-        "Under 0.5": -180
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-        "Chunichi Dragons": 100,
-        "Hanshin Tigers": -125
-      },
-      "runline": {
-        "Chunichi Dragons +0.5": -146,
-        "Hanshin Tigers -0.5": 115
-      },
-      "totals": {
-        "Over 3.5": -115,
-        "Under 3.5": -115
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "dfa49abe7140f55a65eb3d11441c6e5b",
-    "sport": "npb",
-    "away_team": "Fukuoka SoftBank Hawks",
-    "home_team": "Saitama Seibu Lions",
-    "commence_time": "08/08/2026 05:00 AM",
-    "status": "scheduled",
-    "is_live": true,
+    "is_live": false,
     "favorite": "Fukuoka SoftBank Hawks",
-    "favorite_odds": -125,
-    "underdog": "Saitama Seibu Lions",
-    "underdog_odds": 106,
+    "favorite_odds": -240,
+    "underdog": "Chiba Lotte Marines",
+    "underdog_odds": 210,
     "moneyline": {
-      "Fukuoka SoftBank Hawks": -125,
-      "Saitama Seibu Lions": 106
+      "Chiba Lotte Marines": 210,
+      "Fukuoka SoftBank Hawks": -240
     },
     "runline": {
-      "Fukuoka SoftBank Hawks -1.5": 142,
-      "Saitama Seibu Lions +1.5": -160,
-      "Fukuoka SoftBank Hawks -0.5": -125,
-      "Saitama Seibu Lions +0.5": -109
+      "Chiba Lotte Marines +1.5": -103,
+      "Fukuoka SoftBank Hawks -1.5": -117
     },
     "totals": {
-      "Over 7": -108,
-      "Under 7": -105
+      "Over 7.5": -114,
+      "Under 7.5": -106,
+      "Over 8": 100,
+      "Under 8": -120
     },
     "alt_runline": {
-      "Fukuoka SoftBank Hawks -2.5": 202,
-      "Fukuoka SoftBank Hawks -2": 176,
-      "Fukuoka SoftBank Hawks -1": 102,
-      "Fukuoka SoftBank Hawks +1": -207,
-      "Fukuoka SoftBank Hawks +1.5": -272,
-      "Fukuoka SoftBank Hawks +2": -404,
-      "Fukuoka SoftBank Hawks +2.5": -463,
-      "Saitama Seibu Lions +2.5": -276,
-      "Saitama Seibu Lions +2": -235,
-      "Saitama Seibu Lions +1": -133,
-      "Saitama Seibu Lions -1": 156,
-      "Saitama Seibu Lions -1.5": 230,
-      "Saitama Seibu Lions -2": 281,
-      "Saitama Seibu Lions -2.5": 314
+      "Chiba Lotte Marines -2.5": 438,
+      "Chiba Lotte Marines -2": 407,
+      "Chiba Lotte Marines -1.5": 292,
+      "Chiba Lotte Marines -1": 260,
+      "Chiba Lotte Marines +1": 145,
+      "Chiba Lotte Marines +2": -131,
+      "Chiba Lotte Marines +2.5": -160,
+      "Fukuoka SoftBank Hawks +2.5": -720,
+      "Fukuoka SoftBank Hawks +2": -650,
+      "Fukuoka SoftBank Hawks +1.5": -423,
+      "Fukuoka SoftBank Hawks +1": -369,
+      "Fukuoka SoftBank Hawks -1": -191,
+      "Fukuoka SoftBank Hawks -2": 101,
+      "Fukuoka SoftBank Hawks -2.5": 122
     },
     "alt_totals": {
-      "Over 6.5": -140,
-      "Under 6.5": 112,
-      "Over 7.5": -103,
-      "Under 7.5": -132,
-      "Over 3.5": -740,
-      "Over 4": -670,
-      "Over 4.5": -439,
-      "Over 5": -361,
-      "Under 3.5": 445,
-      "Under 4": 416,
-      "Under 4.5": 300,
-      "Under 5": 256
+      "Over 4.5": -630,
+      "Over 5": -535,
+      "Over 5.5": -309,
+      "Over 6": -250,
+      "Under 4.5": 396,
+      "Under 5": 351,
+      "Under 5.5": 224,
+      "Under 6": 200
     },
     "innings_1": {
       "moneyline": {
@@ -251,22 +59,23 @@
 
       },
       "totals": {
-        "Over 0.5": 112,
-        "Under 0.5": -162
+
       }
     },
     "innings_5": {
       "moneyline": {
-        "Fukuoka SoftBank Hawks": -125,
-        "Saitama Seibu Lions": 105
+        "Chiba Lotte Marines": 180,
+        "Fukuoka SoftBank Hawks": -230
       },
       "runline": {
-        "Fukuoka SoftBank Hawks -0.5": 112,
-        "Saitama Seibu Lions +0.5": -145
+        "Chiba Lotte Marines +1.5": -138,
+        "Fukuoka SoftBank Hawks -1.5": 106,
+        "Chiba Lotte Marines +1": -120,
+        "Fukuoka SoftBank Hawks -1": -110
       },
       "totals": {
-        "Over 4": -105,
-        "Under 4": -125
+        "Over 4.5": -105,
+        "Under 4.5": -125
       }
     },
     "team_totals": [],
@@ -284,56 +93,234 @@
     }
   },
   {
-    "gameId": "2482986f3b65acd144b21b5de2cd25a6",
+    "gameId": "c020241d07d2858f50cf64a118f37cac",
+    "sport": "npb",
+    "away_team": "Yokohama DeNA BayStars",
+    "home_team": "Chunichi Dragons",
+    "commence_time": "08/12/2026 05:00 AM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Yokohama DeNA BayStars",
+    "favorite_odds": -141,
+    "underdog": "Chunichi Dragons",
+    "underdog_odds": 121,
+    "moneyline": {
+      "Chunichi Dragons": 121,
+      "Yokohama DeNA BayStars": -141
+    },
+    "runline": {
+      "Chunichi Dragons +1.5": -154,
+      "Yokohama DeNA BayStars -1.5": 134
+    },
+    "totals": {
+      "Over 6.5": -109,
+      "Under 6.5": -110
+    },
+    "alt_runline": {
+      "Chunichi Dragons +2.5": -275,
+      "Chunichi Dragons +2": -231,
+      "Chunichi Dragons +1": -123,
+      "Chunichi Dragons -1": 180,
+      "Chunichi Dragons -1.5": 255,
+      "Chunichi Dragons -2": 331,
+      "Chunichi Dragons -2.5": 366,
+      "Yokohama DeNA BayStars -2.5": 202,
+      "Yokohama DeNA BayStars -2": 173,
+      "Yokohama DeNA BayStars -1": -106,
+      "Yokohama DeNA BayStars +1": -242,
+      "Yokohama DeNA BayStars +1.5": -318,
+      "Yokohama DeNA BayStars +2": -495,
+      "Yokohama DeNA BayStars +2.5": -564
+    },
+    "alt_totals": {
+      "Over 3.5": -525,
+      "Over 4": -468,
+      "Over 4.5": -285,
+      "Over 5": -230,
+      "Under 3.5": 346,
+      "Under 4": 317,
+      "Under 4.5": 232,
+      "Under 5": 191
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+        "Chunichi Dragons": 105,
+        "Yokohama DeNA BayStars": -135
+      },
+      "runline": {
+        "Chunichi Dragons +0.5": -132,
+        "Yokohama DeNA BayStars -0.5": 110
+      },
+      "totals": {
+        "Over 3.5": -105,
+        "Under 3.5": -125
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "beb4399797e83703c661c3260ae182d5",
+    "sport": "npb",
+    "away_team": "Hanshin Tigers",
+    "home_team": "Yomiuri Giants",
+    "commence_time": "08/12/2026 05:00 AM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Hanshin Tigers",
+    "favorite_odds": -141,
+    "underdog": "Yomiuri Giants",
+    "underdog_odds": 121,
+    "moneyline": {
+      "Hanshin Tigers": -141,
+      "Yomiuri Giants": 121
+    },
+    "runline": {
+      "Hanshin Tigers -1.5": 143,
+      "Yomiuri Giants +1.5": -163
+    },
+    "totals": {
+      "Over 5.5": -112,
+      "Under 5.5": -105
+    },
+    "alt_runline": {
+      "Hanshin Tigers -2.5": 221,
+      "Hanshin Tigers -2": 188,
+      "Hanshin Tigers -1": -102,
+      "Hanshin Tigers +1": -254,
+      "Hanshin Tigers +1.5": -340,
+      "Hanshin Tigers +2": -549,
+      "Hanshin Tigers +2.5": -630,
+      "Yomiuri Giants +2.5": -304,
+      "Yomiuri Giants +2": -254,
+      "Yomiuri Giants +1": -127,
+      "Yomiuri Giants -1": 188,
+      "Yomiuri Giants -1.5": 275,
+      "Yomiuri Giants -2": 358,
+      "Yomiuri Giants -2.5": 396
+    },
+    "alt_totals": {
+      "Over 2.5": -1040,
+      "Over 3": -840,
+      "Over 3.5": -350,
+      "Over 4": -260,
+      "Under 2.5": 556,
+      "Under 3": 485,
+      "Under 3.5": 249,
+      "Under 4": 221
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+        "Hanshin Tigers": -140,
+        "Yomiuri Giants": 110
+      },
+      "runline": {
+        "Hanshin Tigers -0.5": 110,
+        "Yomiuri Giants +0.5": -140
+      },
+      "totals": {
+        "Over 3": -115,
+        "Under 3": -115
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "859c15df8787521af0a156bfff26fcb5",
     "sport": "npb",
     "away_team": "Hiroshima Toyo Carp",
-    "home_team": "Yokohama DeNA BayStars",
-    "commence_time": "08/08/2026 05:00 AM",
+    "home_team": "Tokyo Yakult Swallows",
+    "commence_time": "08/12/2026 05:00 AM",
     "status": "scheduled",
-    "is_live": true,
-    "favorite": "Yokohama DeNA BayStars",
-    "favorite_odds": -155,
-    "underdog": "Hiroshima Toyo Carp",
-    "underdog_odds": 135,
+    "is_live": false,
+    "favorite": "Hiroshima Toyo Carp",
+    "favorite_odds": -123,
+    "underdog": "Tokyo Yakult Swallows",
+    "underdog_odds": 104,
     "moneyline": {
-      "Hiroshima Toyo Carp": 135,
-      "Yokohama DeNA BayStars": -155
+      "Hiroshima Toyo Carp": -123,
+      "Tokyo Yakult Swallows": 104
     },
     "runline": {
-      "Hiroshima Toyo Carp +1.5": -150,
-      "Yokohama DeNA BayStars -1.5": 134,
-      "Hiroshima Toyo Carp +0.5": 118,
-      "Yokohama DeNA BayStars -0.5": -162
+      "Hiroshima Toyo Carp -1.5": 155,
+      "Tokyo Yakult Swallows +1.5": -179
     },
     "totals": {
-      "Over 7.5": -110,
-      "Under 7.5": -110
+      "Over 6.5": 108,
+      "Under 6.5": -135,
+      "Over 6": -113,
+      "Under 6": -105
     },
     "alt_runline": {
-      "Hiroshima Toyo Carp -2.5": 290,
-      "Hiroshima Toyo Carp -2": 261,
-      "Hiroshima Toyo Carp -1.5": 210,
-      "Hiroshima Toyo Carp -1": 166,
-      "Hiroshima Toyo Carp +1": -113,
-      "Hiroshima Toyo Carp +2": -219,
-      "Hiroshima Toyo Carp +2.5": -258,
-      "Yokohama DeNA BayStars +2.5": -420,
-      "Yokohama DeNA BayStars +2": -370,
-      "Yokohama DeNA BayStars +1.5": -260,
-      "Yokohama DeNA BayStars +1": -222,
-      "Yokohama DeNA BayStars -1": -115,
-      "Yokohama DeNA BayStars -2": 165,
-      "Yokohama DeNA BayStars -2.5": 191
+      "Hiroshima Toyo Carp -2.5": 229,
+      "Hiroshima Toyo Carp -2": 197,
+      "Hiroshima Toyo Carp -1": 109,
+      "Hiroshima Toyo Carp +1": -212,
+      "Hiroshima Toyo Carp +1.5": -288,
+      "Hiroshima Toyo Carp +2": -437,
+      "Hiroshima Toyo Carp +2.5": -500,
+      "Tokyo Yakult Swallows +2.5": -317,
+      "Tokyo Yakult Swallows +2": -268,
+      "Tokyo Yakult Swallows +1": -142,
+      "Tokyo Yakult Swallows -1": 160,
+      "Tokyo Yakult Swallows -1.5": 230,
+      "Tokyo Yakult Swallows -2": 299,
+      "Tokyo Yakult Swallows -2.5": 334
     },
     "alt_totals": {
-      "Over 4.5": -553,
-      "Over 5": -466,
-      "Over 5.5": -275,
-      "Over 6": -230,
-      "Under 4.5": 360,
-      "Under 5": 316,
-      "Under 5.5": 202,
-      "Under 6": 180
+      "Over 2.5": -1360,
+      "Over 3": -1140,
+      "Over 3.5": -440,
+      "Over 4": -389,
+      "Under 2.5": 650,
+      "Under 3": 588,
+      "Under 3.5": 301,
+      "Under 4": 272
     },
     "innings_1": {
       "moneyline": {
@@ -343,22 +330,203 @@
 
       },
       "totals": {
-        "Over 0.5": 105,
-        "Under 0.5": -150
+
       }
     },
     "innings_5": {
       "moneyline": {
-        "Hiroshima Toyo Carp": 125,
-        "Yokohama DeNA BayStars": -154
+        "Hiroshima Toyo Carp": -125,
+        "Tokyo Yakult Swallows": -105
       },
       "runline": {
-        "Hiroshima Toyo Carp +0.5": -114,
-        "Yokohama DeNA BayStars -0.5": -110
+        "Hiroshima Toyo Carp -0.5": 120,
+        "Tokyo Yakult Swallows +0.5": -154
       },
       "totals": {
-        "Over 4": -130,
-        "Under 4": 100
+        "Over 3": -130,
+        "Under 3": 100
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "2fc1fcc01b7ee86859ef9efd26a3bb3a",
+    "sport": "npb",
+    "away_team": "Saitama Seibu Lions",
+    "home_team": "Hokkaido Nippon-Ham Fighters",
+    "commence_time": "08/12/2026 05:00 AM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Hokkaido Nippon-Ham Fighters",
+    "favorite_odds": -215,
+    "underdog": "Saitama Seibu Lions",
+    "underdog_odds": 183,
+    "moneyline": {
+      "Hokkaido Nippon-Ham Fighters": -215,
+      "Saitama Seibu Lions": 183
+    },
+    "runline": {
+      "Hokkaido Nippon-Ham Fighters -1.5": -104,
+      "Saitama Seibu Lions +1.5": -115
+    },
+    "totals": {
+      "Over 7.5": -101,
+      "Under 7.5": -119
+    },
+    "alt_runline": {
+      "Hokkaido Nippon-Ham Fighters +2.5": -630,
+      "Hokkaido Nippon-Ham Fighters +2": -565,
+      "Hokkaido Nippon-Ham Fighters +1.5": -374,
+      "Hokkaido Nippon-Ham Fighters +1": -322,
+      "Hokkaido Nippon-Ham Fighters -1": -164,
+      "Hokkaido Nippon-Ham Fighters -2": 116,
+      "Hokkaido Nippon-Ham Fighters -2.5": 139,
+      "Saitama Seibu Lions -2.5": 397,
+      "Saitama Seibu Lions -2": 366,
+      "Saitama Seibu Lions -1.5": 265,
+      "Saitama Seibu Lions -1": 232,
+      "Saitama Seibu Lions +1": 126,
+      "Saitama Seibu Lions +2": -152,
+      "Saitama Seibu Lions +2.5": -183
+    },
+    "alt_totals": {
+      "Over 4": -840,
+      "Over 4.5": -516,
+      "Over 5": -434,
+      "Over 5.5": -261,
+      "Under 4": 485,
+      "Under 4.5": 342,
+      "Under 5": 298,
+      "Under 5.5": 193
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+        "Hokkaido Nippon-Ham Fighters": -200,
+        "Saitama Seibu Lions": 165
+      },
+      "runline": {
+        "Hokkaido Nippon-Ham Fighters -0.5": -154,
+        "Saitama Seibu Lions +0.5": 118,
+        "Hokkaido Nippon-Ham Fighters -1": 105,
+        "Saitama Seibu Lions +1": -135
+      },
+      "totals": {
+        "Over 4": -125,
+        "Under 4": -105
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "4670959ea27a3ba8fb8fac73c7be9e04",
+    "sport": "npb",
+    "away_team": "Orix Buffaloes",
+    "home_team": "Tohoku Rakuten Golden Eagles",
+    "commence_time": "08/12/2026 05:00 AM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Orix Buffaloes",
+    "favorite_odds": -150,
+    "underdog": "Tohoku Rakuten Golden Eagles",
+    "underdog_odds": 130,
+    "moneyline": {
+      "Orix Buffaloes": -150,
+      "Tohoku Rakuten Golden Eagles": 130
+    },
+    "runline": {
+      "Orix Buffaloes -1.5": 125,
+      "Tohoku Rakuten Golden Eagles +1.5": -145
+    },
+    "totals": {
+      "Over 6.5": -140,
+      "Under 6.5": 112,
+      "Over 7": -110,
+      "Under 7": -110
+    },
+    "alt_runline": {
+      "Orix Buffaloes -2.5": 184,
+      "Orix Buffaloes -2": 157,
+      "Orix Buffaloes -1": -113,
+      "Orix Buffaloes +1": -247,
+      "Orix Buffaloes +1.5": -319,
+      "Orix Buffaloes +2": -487,
+      "Orix Buffaloes +2.5": -553,
+      "Tohoku Rakuten Golden Eagles +2.5": -247,
+      "Tohoku Rakuten Golden Eagles +2": -208,
+      "Tohoku Rakuten Golden Eagles +1": -115,
+      "Tohoku Rakuten Golden Eagles -1": 184,
+      "Tohoku Rakuten Golden Eagles -1.5": 260,
+      "Tohoku Rakuten Golden Eagles -2": 327,
+      "Tohoku Rakuten Golden Eagles -2.5": 360
+    },
+    "alt_totals": {
+      "Over 3.5": -690,
+      "Over 4": -620,
+      "Over 4.5": -410,
+      "Over 5": -333,
+      "Under 3.5": 424,
+      "Under 4": 394,
+      "Under 4.5": 284,
+      "Under 5": 239
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+        "Orix Buffaloes": -145,
+        "Tohoku Rakuten Golden Eagles": 120
+      },
+      "runline": {
+        "Orix Buffaloes -0.5": 100,
+        "Tohoku Rakuten Golden Eagles +0.5": -125
+      },
+      "totals": {
+        "Over 3.5": -130,
+        "Under 3.5": 100
       }
     },
     "team_totals": [],
