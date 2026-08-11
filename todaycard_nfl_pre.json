@@ -1,1 +1,422 @@
+[
+  {
+    "gameId": "9834ebfb13e9fc42fd44841e7a3761cf",
+    "sport": "nfl_preseason",
+    "away_team": "Detroit Lions",
+    "home_team": "Cincinnati Bengals",
+    "commence_time": "08/13/2026 07:00 PM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Cincinnati Bengals",
+    "favorite_odds": -300,
+    "underdog": "Detroit Lions",
+    "underdog_odds": 255,
+    "moneyline": {
+      "Cincinnati Bengals": -300,
+      "Detroit Lions": 255
+    },
+    "runline": {
+      "Cincinnati Bengals -6.5": -110,
+      "Detroit Lions +6.5": -102,
+      "Cincinnati Bengals -7": -105,
+      "Detroit Lions +7": 100
+    },
+    "totals": {
+      "Over 37.5": -110,
+      "Under 37.5": 100,
+      "Over 38": -107,
+      "Under 38": -107
+    },
+    "alt_runline": {
 
+    },
+    "alt_totals": {
+
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "6af812406f30153e7cd695dcaae99ce5",
+    "sport": "nfl_preseason",
+    "away_team": "Green Bay Packers",
+    "home_team": "Pittsburgh Steelers",
+    "commence_time": "08/13/2026 07:00 PM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Green Bay Packers",
+    "favorite_odds": -120,
+    "underdog": "Pittsburgh Steelers",
+    "underdog_odds": 110,
+    "moneyline": {
+      "Green Bay Packers": -120,
+      "Pittsburgh Steelers": 110
+    },
+    "runline": {
+      "Green Bay Packers -1.5": -105,
+      "Pittsburgh Steelers +1.5": -105
+    },
+    "totals": {
+      "Over 39.5": -102,
+      "Under 39.5": -104
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "ddc6ef447f7a9eb559fdba9a5e2acb5b",
+    "sport": "nfl_preseason",
+    "away_team": "Indianapolis Colts",
+    "home_team": "New England Patriots",
+    "commence_time": "08/13/2026 07:30 PM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Indianapolis Colts",
+    "favorite_odds": -158,
+    "underdog": "New England Patriots",
+    "underdog_odds": 129,
+    "moneyline": {
+      "Indianapolis Colts": -158,
+      "New England Patriots": 129
+    },
+    "runline": {
+      "Indianapolis Colts -2.5": -110,
+      "New England Patriots +2.5": -102,
+      "Indianapolis Colts -3": -105,
+      "New England Patriots +3": -105
+    },
+    "totals": {
+      "Over 36.5": -120,
+      "Under 36.5": -102,
+      "Over 37.5": 103,
+      "Under 37.5": -110,
+      "Over 37": -107,
+      "Under 37": -110
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "195c13c505496d61456337c67bd1f39c",
+    "sport": "nfl_preseason",
+    "away_team": "Arizona Cardinals",
+    "home_team": "Las Vegas Raiders",
+    "commence_time": "08/13/2026 08:00 PM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Las Vegas Raiders",
+    "favorite_odds": -125,
+    "underdog": "Arizona Cardinals",
+    "underdog_odds": 115,
+    "moneyline": {
+      "Arizona Cardinals": 115,
+      "Las Vegas Raiders": -125
+    },
+    "runline": {
+      "Arizona Cardinals +1.5": -105,
+      "Las Vegas Raiders -1.5": -110,
+      "Arizona Cardinals +2": -105,
+      "Las Vegas Raiders -2": -105
+    },
+    "totals": {
+      "Over 39.5": -108,
+      "Under 39.5": 102,
+      "Over 40": -107,
+      "Under 40": -107
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "269f9d83ad930cda427ffe9392c79a59",
+    "sport": "nfl_preseason",
+    "away_team": "Los Angeles Chargers",
+    "home_team": "Houston Texans",
+    "commence_time": "08/13/2026 08:00 PM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Houston Texans",
+    "favorite_odds": -124,
+    "underdog": "Los Angeles Chargers",
+    "underdog_odds": 115,
+    "moneyline": {
+      "Houston Texans": -124,
+      "Los Angeles Chargers": 115
+    },
+    "runline": {
+      "Houston Texans -1.5": -108,
+      "Los Angeles Chargers +1.5": -102,
+      "Houston Texans -1": -120,
+      "Los Angeles Chargers +1": 100
+    },
+    "totals": {
+      "Over 36.5": -110,
+      "Under 36.5": 100,
+      "Over 37": -110,
+      "Under 37": -102
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "774b7c1191ca5664f886fbec1362af8d",
+    "sport": "nfl_preseason",
+    "away_team": "Tennessee Titans",
+    "home_team": "San Francisco 49ers",
+    "commence_time": "08/13/2026 09:00 PM",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Tennessee Titans",
+    "favorite_odds": -143,
+    "underdog": "San Francisco 49ers",
+    "underdog_odds": 135,
+    "moneyline": {
+      "San Francisco 49ers": 135,
+      "Tennessee Titans": -143
+    },
+    "runline": {
+      "San Francisco 49ers +2.5": 105,
+      "Tennessee Titans -2.5": -110,
+      "San Francisco 49ers +3": -110,
+      "Tennessee Titans -3": -110
+    },
+    "totals": {
+      "Over 38.5": -118,
+      "Under 38.5": -104,
+      "Over 39.5": -108,
+      "Under 39.5": 102,
+      "Over 40": -107,
+      "Under 40": -107
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  }
+]
