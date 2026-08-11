@@ -885,52 +885,7 @@ body{
    All Sports
   </div>
 
-  <div
-  class="sidebar-item active"
-  onclick="toggleLeague('sidebarBaseball')"
->
-  ⚾ Baseball ▼
-</div>
-
-<div
-  id="sidebarBaseball"
-  class="sub-menu"
-  style="display:block;"
->
-
-  <div
-    class="sidebar-subitem"
-    onclick="toggleMLB()"
-    style="cursor:pointer;"
-  >
-    MLB
-  </div>
-
-  <div
-    class="sidebar-subitem"
-    onclick="toggleNPB()"
-    style="cursor:pointer;"
-  >
-    NPB (Japan)
-  </div>
-
-</div>
-
-<div class="sidebar-item">
-  🏀 Basketball
-</div>
-
-<div class="sidebar-item">
-  🏈 Football
-</div>
-
-<div class="sidebar-item">
-  🏒 Hockey
-</div>
-
-<div class="sidebar-item">
-  ⚽ Soccer
-</div>
+  <div id="sidebarSportsContainer"></div>
 
 <div class="sidebar-section">
   HERRAMIENTAS
@@ -1029,10 +984,79 @@ body{
 // Cada liga lee de sus propios archivos JSON estaticos (los mismos
 // que subes a mano a GitHub desde ?type=todaycard&sport=XXX). Cuando
 // agregues otra liga, solo hay que sumar una entrada aca.
+// Todo lo que hace falta para agregar una liga nueva al sidebar y a
+// la carga de datos: UNA entrada aca. El sidebar se genera solo a
+// partir de esto - no hace falta escribir HTML a mano nunca mas.
+// "category" debe coincidir con alguna key de SPORT_CATEGORIES.
 const LEAGUES = {
-  mlb: { label: "⚾ MLB", todaycard: "./todaycard.json", movements: "./movements.json" },
-  npb: { label: "⚾ NPB", todaycard: "./todaycard_npb.json", movements: "./movements_npb.json" }
+  mlb:           { label: "MLB",           category: "baseball", todaycard: "./todaycard.json",          movements: "./movements.json" },
+  npb:           { label: "NPB (Japan)",   category: "baseball", todaycard: "./todaycard_npb.json",      movements: "./movements_npb.json" },
+  nfl:           { label: "NFL",           category: "football", todaycard: "./todaycard_nfl.json",      movements: "./movements_nfl.json" },
+  nfl_preseason: { label: "NFL Preseason", category: "football", todaycard: "./todaycard_nfl_pre.json",  movements: "./movements_nfl_pre.json" }
+  // Ejemplo para cuando agreguemos WNBA/Euroleague/NCAAF:
+  // wnba: { label: "WNBA", category: "basketball", todaycard: "./todaycard_wnba.json", movements: "./movements_wnba.json" },
 };
+
+// Categorias del sidebar, en el orden que se muestran. Una categoria
+// sin ninguna liga en LEAGUES sale como item fijo (sin flecha, sin
+// submenu) - listo para cuando le agregues su primera liga.
+const SPORT_CATEGORIES = [
+  { key: "baseball",   icon: "⚾", label: "Baseball" },
+  { key: "basketball", icon: "🏀", label: "Basketball" },
+  { key: "football",   icon: "🏈", label: "Football" },
+  { key: "hockey",     icon: "🏒", label: "Hockey" },
+  { key: "soccer",     icon: "⚽", label: "Soccer" }
+];
+
+// Arma el HTML del sidebar completo a partir de SPORT_CATEGORIES +
+// LEAGUES, y lo inyecta en #sidebarSportsContainer. Se llama una vez
+// al cargar la pagina - agregar una liga nueva no requiere tocar esta
+// funcion, solo el objeto LEAGUES de arriba.
+function construirSidebar(){
+
+  const container = document.getElementById("sidebarSportsContainer");
+  if(!container) return;
+
+  const html = SPORT_CATEGORIES.map(cat => {
+
+    const ligasDeCategoria = Object.entries(LEAGUES).filter(([key, liga]) => liga.category === cat.key);
+
+    if(ligasDeCategoria.length === 0){
+      // Sin ligas todavia en esta categoria - item fijo, sin submenu
+      return `<div class="sidebar-item" style="opacity:0.5;cursor:default;">${cat.icon} ${cat.label}</div>`;
+    }
+
+    const submenuId = "sidebar-" + cat.key;
+
+    const subitems = ligasDeCategoria.map(([key, liga]) => `
+      <div class="sidebar-subitem" onclick="toggleLeagueModule('${key}')" style="cursor:pointer;">
+        ${liga.label}
+      </div>
+    `).join("");
+
+    return `
+      <div class="sidebar-item" onclick="toggleLeague('${submenuId}')" style="cursor:pointer;">
+        ${cat.icon} ${cat.label} ▼
+      </div>
+      <div id="${submenuId}" class="sub-menu">
+        ${subitems}
+      </div>
+    `;
+
+  }).join("");
+
+  container.innerHTML = html;
+
+}
+
+// Busca el icono de la categoria a la que pertenece una liga (ej.
+// "nfl" -> "🏈"), para mostrarlo junto al nombre en el titulo.
+function iconoDeLiga(sport){
+  const liga = LEAGUES[sport];
+  if(!liga) return "⚾";
+  const categoria = SPORT_CATEGORIES.find(c => c.key === liga.category);
+  return categoria ? categoria.icon : "⚾";
+}
 
 let currentSport = "mlb";
 
@@ -1191,7 +1215,7 @@ function toggleLeagueModule(sport){
   mlbVisible = true;
 
   const leagueTitleEl = document.getElementById("leagueTitle");
-  if(leagueTitleEl) leagueTitleEl.textContent = (LEAGUES[sport] || LEAGUES.mlb).label;
+  if(leagueTitleEl) leagueTitleEl.textContent = iconoDeLiga(sport) + " " + (LEAGUES[sport] || LEAGUES.mlb).label;
 
   module.style.display = "block";
   games.style.display = "flex";
@@ -1374,7 +1398,7 @@ document.getElementById("hotGames").innerHTML =
     `)
     .join("");
 document.getElementById("gameCount").innerHTML =
-  `${(LEAGUES[currentSport] || LEAGUES.mlb).label.replace(/^[^\s]+\s/, "")} • ${games.length} Games Today`;
+  `${(LEAGUES[currentSport] || LEAGUES.mlb).label} • ${games.length} Games Today`;
 const now = new Date();
 
 document.getElementById(
@@ -2229,6 +2253,8 @@ function toggleCard(id){
   }
 
 }
+construirSidebar();
+
 loadGames();
 
 setInterval(
