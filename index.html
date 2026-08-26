@@ -940,7 +940,7 @@ body{
 
   <div class="stat-card">
     <div class="stat-title">League</div>
-    <div class="stat-value">MLB</div>
+    <div class="stat-value" id="leagueStatValue">MLB</div>
   </div>
 
   <div class="stat-card">
@@ -1056,6 +1056,25 @@ function iconoDeLiga(sport){
   if(!liga) return "⚾";
   const categoria = SPORT_CATEGORIES.find(c => c.key === liga.category);
   return categoria ? categoria.icon : "⚾";
+}
+
+// "Runline" es jerga de beisbol - en football americano y basketball
+// el mismo tipo de mercado se llama "Spread". Se usa para los
+// encabezados de columna y el titulo de la seccion de alternas.
+function nombreSpread(sport){
+  const liga = LEAGUES[sport];
+  const categoria = liga ? liga.category : "baseball";
+  return categoria === "baseball" ? "Run Line" : "Spread";
+}
+
+// Los props/innings/team totals de esta version son especificos de
+// beisbol (batter_*, pitcher_*, 1st inning, etc.) - no tiene sentido
+// mostrar esas secciones vacias en NFL/basketball. Cuando agreguemos
+// props propios de football/basketball, se puede expandir esto.
+function esBeisbol(sport){
+  const liga = LEAGUES[sport];
+  const categoria = liga ? liga.category : "baseball";
+  return categoria === "baseball";
 }
 
 let currentSport = "mlb";
@@ -1216,6 +1235,9 @@ function toggleLeagueModule(sport){
 
   const leagueTitleEl = document.getElementById("leagueTitle");
   if(leagueTitleEl) leagueTitleEl.textContent = iconoDeLiga(sport) + " " + (LEAGUES[sport] || LEAGUES.mlb).label;
+
+  const leagueStatEl = document.getElementById("leagueStatValue");
+  if(leagueStatEl) leagueStatEl.textContent = (LEAGUES[sport] || LEAGUES.mlb).label;
 
   module.style.display = "block";
   games.style.display = "flex";
@@ -1554,7 +1576,7 @@ if(groupKey !== null){
       currentGroupHeaderHtml = `
         <div class="date-bar live-bar" onclick="toggleSection('${currentGroupId}')">
           <span class="date-label"><span id="${currentGroupId}-arrow">${grupoAbierto ? "▾" : "▸"}</span> 🔴 Live Now</span>
-          <span class="col-header">Run Line</span>
+          <span class="col-header">${nombreSpread(currentSport)}</span>
           <span class="col-header">Total</span>
           <span class="col-header">Money Line</span>
         </div>
@@ -1565,7 +1587,7 @@ if(groupKey !== null){
       currentGroupHeaderHtml = `
         <div class="date-bar" onclick="toggleSection('${currentGroupId}')">
           <span class="date-label"><span id="${currentGroupId}-arrow">${grupoAbierto ? "▾" : "▸"}</span> ${dateGroupLabel(gameDate)}</span>
-          <span class="col-header">Run Line</span>
+          <span class="col-header">${nombreSpread(currentSport)}</span>
           <span class="col-header">Total</span>
           <span class="col-header">Money Line</span>
         </div>
@@ -2059,7 +2081,7 @@ currentGroupHtml += `
 
   ${renderAltSection(
     "altrunline-" + game.gameId,
-    "Alternate Run Lines",
+    "Alternate " + nombreSpread(game.sport) + "s",
     game.away_team,
     game.home_team,
     renderAltRunline(game.alt_runline, game.gameId, game.away_team, game.home_team, puntoPrincipalRunlineAway(game.runline, game.away_team), game.favorite === game.away_team)
@@ -2073,15 +2095,15 @@ currentGroupHtml += `
     renderAltTotals(game.alt_totals, game.gameId, puntoPrincipal(game.totals), game.sport)
   )}
 
-  ${renderPeriodSection("inning1-" + game.gameId, "1st Inning", game.innings_1, game.gameId, "INN1")}
+  ${esBeisbol(game.sport) ? renderPeriodSection("inning1-" + game.gameId, "1st Inning", game.innings_1, game.gameId, "INN1") : ""}
 
-  ${renderPeriodSection("inning5-" + game.gameId, "1st 5 Innings", game.innings_5, game.gameId, "INN5")}
+  ${esBeisbol(game.sport) ? renderPeriodSection("inning5-" + game.gameId, "1st 5 Innings", game.innings_5, game.gameId, "INN5") : ""}
 
-  ${renderTeamTotalsSection(game)}
+  ${esBeisbol(game.sport) ? renderTeamTotalsSection(game) : ""}
 
-  ${renderPlayerPropsSection(game)}
+  ${esBeisbol(game.sport) ? renderPlayerPropsSection(game) : ""}
 
-  ${renderPitcherPropsSection(game)}
+  ${esBeisbol(game.sport) ? renderPitcherPropsSection(game) : ""}
 
   ${movementHtml ? `<div class="market-title steam">🔥 Movimiento</div>${movementHtml}` : ""}
 
