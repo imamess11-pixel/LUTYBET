@@ -1,271 +1,74 @@
 [
   {
-    "gameId": "8c94552d022acec4a0458d70c19d3da9",
-    "sport": "nfl",
-    "away_team": "New England Patriots",
-    "home_team": "Seattle Seahawks",
-    "commence_time": "09/09/2026 08:20 PM",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Seattle Seahawks",
-    "favorite_odds": -175,
-    "underdog": "New England Patriots",
-    "underdog_odds": 160,
-    "moneyline": {
-      "New England Patriots": 160,
-      "Seattle Seahawks": -175
-    },
-    "runline": {
-      "New England Patriots +3.5": -110
-    },
-    "totals": {
-      "Over 44.5": -102,
-      "Under 44.5": -110
-    },
-    "alt_runline": {
-      "Seattle Seahawks -3.5": 105,
-      "New England Patriots -2.5": 190,
-      "New England Patriots -1.5": 156,
-      "New England Patriots +1.5": 140,
-      "New England Patriots +2.5": 125,
-      "Seattle Seahawks +2.5": -234,
-      "Seattle Seahawks +1.5": -213,
-      "Seattle Seahawks -1.5": -165,
-      "Seattle Seahawks -2.5": -165,
-      "New England Patriots +2": 135,
-      "New England Patriots -1": 165,
-      "New England Patriots +1": 145,
-      "New England Patriots +0.5": 155,
-      "New England Patriots 0": 155,
-      "New England Patriots -0.5": 155,
-      "New England Patriots -2": 188,
-      "Seattle Seahawks -2": -165,
-      "Seattle Seahawks +1": -210,
-      "Seattle Seahawks -1": -186,
-      "Seattle Seahawks -0.5": -195,
-      "Seattle Seahawks 0": -195,
-      "Seattle Seahawks +0.5": -195,
-      "Seattle Seahawks +2": -235
-    },
-    "alt_totals": {
-      "Over 44": -110,
-      "Under 44": -105,
-      "Over 23.5": -6000,
-      "Over 24.5": -5000,
-      "Under 23.5": 1400,
-      "Under 24.5": 1300,
-      "Over 19.5": -50000,
-      "Over 20.5": -20000,
-      "Over 21.5": -20000,
-      "Over 22.5": -10000,
-      "Under 19.5": 3000,
-      "Under 20.5": 2000,
-      "Under 21.5": 2000,
-      "Under 22.5": 1700
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "acc580d74344ea3b31bbcdd057fe6a9c",
-    "sport": "nfl",
-    "away_team": "San Francisco 49ers",
-    "home_team": "Los Angeles Rams",
-    "commence_time": "09/10/2026 08:35 PM",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Los Angeles Rams",
-    "favorite_odds": -185,
-    "underdog": "San Francisco 49ers",
-    "underdog_odds": 167,
-    "moneyline": {
-      "Los Angeles Rams": -185,
-      "San Francisco 49ers": 167
-    },
-    "runline": {
-      "Los Angeles Rams -3.5": -105
-    },
-    "totals": {
-      "Over 48": -110,
-      "Under 48": -102
-    },
-    "alt_runline": {
-      "San Francisco 49ers +3.5": -105,
-      "Los Angeles Rams +2.5": -245,
-      "Los Angeles Rams +1.5": -222,
-      "Los Angeles Rams -1.5": -180,
-      "Los Angeles Rams -2.5": -160,
-      "San Francisco 49ers -2.5": 185,
-      "San Francisco 49ers -1.5": 170,
-      "San Francisco 49ers +1.5": 142,
-      "San Francisco 49ers +2.5": 126,
-      "Los Angeles Rams -2": -175,
-      "Los Angeles Rams -1": -190,
-      "Los Angeles Rams +1": -215,
-      "Los Angeles Rams +2": -235,
-      "San Francisco 49ers +2": 135,
-      "San Francisco 49ers +1": 150,
-      "San Francisco 49ers -1": 165,
-      "San Francisco 49ers -2": 180,
-      "Los Angeles Rams +0.5": -205,
-      "Los Angeles Rams 0": -205,
-      "Los Angeles Rams -0.5": -205,
-      "San Francisco 49ers -0.5": 160,
-      "San Francisco 49ers 0": 160,
-      "San Francisco 49ers +0.5": 160
-    },
-    "alt_totals": {
-      "Over 48.5": -105,
-      "Under 48.5": -110,
-      "Over 21.5": -50000,
-      "Over 22.5": -50000,
-      "Over 23.5": -20000,
-      "Over 24.5": -10000,
-      "Over 25.5": -7000,
-      "Over 26.5": -6000,
-      "Under 21.5": 3500,
-      "Under 22.5": 3000,
-      "Under 23.5": 2000,
-      "Under 24.5": 1700,
-      "Under 25.5": 1700,
-      "Under 26.5": 1400
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "95c01d1bb797d6df14824b106c5a9130",
+    "gameId": "e5fbd3b3953b896b1bf897ddadb3cc4b",
     "sport": "nfl",
     "away_team": "Atlanta Falcons",
-    "home_team": "Pittsburgh Steelers",
-    "commence_time": "09/13/2026 01:00 PM",
+    "home_team": "Green Bay Packers",
+    "commence_time": "2026-09-25T03:15:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "Pittsburgh Steelers",
-    "favorite_odds": -177,
+    "favorite": "Green Bay Packers",
+    "favorite_odds": -250,
     "underdog": "Atlanta Falcons",
-    "underdog_odds": 157,
+    "underdog_odds": 230,
     "moneyline": {
-      "Atlanta Falcons": 157,
-      "Pittsburgh Steelers": -177
+      "Atlanta Falcons": 230,
+      "Green Bay Packers": -250
     },
     "runline": {
-      "Atlanta Falcons +3": 110
+      "Green Bay Packers -5.5": 100,
+      "Atlanta Falcons +5.5": -110
     },
     "totals": {
-      "Over 42": -108,
-      "Under 42": -108
+      "Over 43": -102,
+      "Under 43": -108
     },
     "alt_runline": {
-      "Atlanta Falcons +3.5": -118,
-      "Pittsburgh Steelers -3.5": 100,
-      "Pittsburgh Steelers -3": -115,
-      "Atlanta Falcons -2.5": 168,
-      "Atlanta Falcons -1.5": 160,
-      "Atlanta Falcons +1.5": 132,
-      "Atlanta Falcons +2.5": 118,
-      "Pittsburgh Steelers +2.5": -220,
-      "Pittsburgh Steelers +1.5": -195,
-      "Pittsburgh Steelers -1.5": -170,
-      "Pittsburgh Steelers -2.5": -147,
-      "Atlanta Falcons +1": 133,
-      "Atlanta Falcons -0.5": 138,
-      "Atlanta Falcons -2": 155,
-      "Atlanta Falcons +0.5": 138,
-      "Atlanta Falcons +2": 120,
-      "Atlanta Falcons -1": 143,
-      "Atlanta Falcons 0": 138,
-      "Pittsburgh Steelers -1": -167,
-      "Pittsburgh Steelers +0.5": -177,
-      "Pittsburgh Steelers +2": -200,
-      "Pittsburgh Steelers -0.5": -177,
-      "Pittsburgh Steelers -2": -139,
-      "Pittsburgh Steelers +1": -186,
-      "Pittsburgh Steelers 0": -177
+      "Atlanta Falcons +5": -108,
+      "Green Bay Packers -5": -113,
+      "Atlanta Falcons -7.5": 461,
+      "Atlanta Falcons -6.5": 375,
+      "Atlanta Falcons -5.5": 340,
+      "Atlanta Falcons -4.5": 303,
+      "Atlanta Falcons -3.5": 275,
+      "Green Bay Packers -3.5": -137,
+      "Green Bay Packers -4.5": -121,
+      "Green Bay Packers -6.5": 102,
+      "Green Bay Packers -7.5": 128,
+      "Green Bay Packers -5.5": -107,
+      "Atlanta Falcons -4": 300,
+      "Atlanta Falcons -5": 335,
+      "Atlanta Falcons -3": 255,
+      "Atlanta Falcons -6": 390,
+      "Green Bay Packers -4": -129,
+      "Green Bay Packers -7": 128,
+      "Green Bay Packers -8": 155,
+      "Green Bay Packers -3": -162,
+      "Green Bay Packers -6": 102
     },
     "alt_totals": {
-      "Over 42.5": -105,
-      "Under 42.5": -115,
-      "Over 41.5": -107,
-      "Under 41.5": -105,
-      "Over 16.5": -50000,
-      "Over 17.5": -50000,
-      "Over 18.5": -50000,
-      "Over 19.5": -10000,
-      "Over 20.5": -10000,
-      "Over 21.5": -7000,
-      "Under 16.5": 3500,
-      "Under 17.5": 3000,
-      "Under 18.5": 3000,
-      "Under 19.5": 1800,
-      "Under 20.5": 1700,
-      "Under 21.5": 1500
+      "Over 42.5": -125,
+      "Under 42.5": 100,
+      "Over 43.5": 100,
+      "Under 43.5": -115,
+      "Over 40.5": -155,
+      "Over 41.5": -134,
+      "Over 44.5": 115,
+      "Over 45.5": 130,
+      "Under 40.5": 128,
+      "Under 41.5": 112,
+      "Under 44.5": -132,
+      "Under 45.5": -150,
+      "Over 44": 105,
+      "Over 45": 120,
+      "Over 43": -110,
+      "Over 42": -125,
+      "Over 41": -145,
+      "Under 44": -135,
+      "Under 45": -155,
+      "Under 43": -108,
+      "Under 42": 100,
+      "Under 41": 110
     },
     "innings_1": {
       "moneyline": {
@@ -304,368 +107,71 @@
     }
   },
   {
-    "gameId": "b6cfdcbafa61ce220ba87dc2d9b80c77",
+    "gameId": "b225458a282e140c44c45651255f2f6c",
     "sport": "nfl",
-    "away_team": "Baltimore Ravens",
-    "home_team": "Indianapolis Colts",
-    "commence_time": "09/13/2026 01:00 PM",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Baltimore Ravens",
-    "favorite_odds": -170,
-    "underdog": "Indianapolis Colts",
-    "underdog_odds": 155,
-    "moneyline": {
-      "Baltimore Ravens": -170,
-      "Indianapolis Colts": 155
-    },
-    "runline": {
-      "Baltimore Ravens -3.5": 100
-    },
-    "totals": {
-      "Over 48": 100,
-      "Under 48": -110
-    },
-    "alt_runline": {
-      "Indianapolis Colts +3.5": -109,
-      "Baltimore Ravens -2.5": -153,
-      "Baltimore Ravens -1.5": -165,
-      "Baltimore Ravens +1.5": -214,
-      "Baltimore Ravens +2.5": -234,
-      "Indianapolis Colts +2.5": 120,
-      "Indianapolis Colts +1.5": 132,
-      "Indianapolis Colts -1.5": 165,
-      "Indianapolis Colts -2.5": 171,
-      "Baltimore Ravens -1": -177,
-      "Baltimore Ravens +2": -230,
-      "Baltimore Ravens -0.5": -186,
-      "Baltimore Ravens 0": -190,
-      "Baltimore Ravens +0.5": -195,
-      "Baltimore Ravens -2": -159,
-      "Baltimore Ravens +1": -205,
-      "Indianapolis Colts +1": 140,
-      "Indianapolis Colts -2": 175,
-      "Indianapolis Colts +0.5": 145,
-      "Indianapolis Colts 0": 148,
-      "Indianapolis Colts -0.5": 150,
-      "Indianapolis Colts +2": 128,
-      "Indianapolis Colts -1": 160
-    },
-    "alt_totals": {
-      "Over 48.5": -105,
-      "Under 48.5": -115,
-      "Over 47.5": -112,
-      "Under 47.5": -108,
-      "Over 21.5": -50000,
-      "Over 22.5": -50000,
-      "Over 23.5": -20000,
-      "Over 24.5": -10000,
-      "Over 25.5": -10000,
-      "Over 26.5": -6000,
-      "Under 21.5": 3500,
-      "Under 22.5": 3000,
-      "Under 23.5": 2000,
-      "Under 24.5": 1700,
-      "Under 25.5": 1700,
-      "Under 26.5": 1400
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "7e09efed7e12c659b82740b67ce2f9a1",
-    "sport": "nfl",
-    "away_team": "Buffalo Bills",
-    "home_team": "Houston Texans",
-    "commence_time": "09/13/2026 01:00 PM",
+    "away_team": "Los Angeles Chargers",
+    "home_team": "Buffalo Bills",
+    "commence_time": "2026-09-27T20:00:00.000Z",
     "status": "scheduled",
     "is_live": false,
     "favorite": "Buffalo Bills",
-    "favorite_odds": -108,
-    "underdog": "Houston Texans",
-    "underdog_odds": -102,
+    "favorite_odds": -345,
+    "underdog": "Los Angeles Chargers",
+    "underdog_odds": 300,
     "moneyline": {
-      "Buffalo Bills": -108,
-      "Houston Texans": -102
+      "Buffalo Bills": -345,
+      "Los Angeles Chargers": 300
     },
     "runline": {
-      "Buffalo Bills 0": -109,
-      "Houston Texans 0": -101
-    },
-    "totals": {
-      "Over 44.5": -109,
-      "Under 44.5": -105
-    },
-    "alt_runline": {
-      "Houston Texans +1": -112,
-      "Buffalo Bills +1": -124,
-      "Buffalo Bills -1.5": 100,
-      "Houston Texans +1.5": -118,
-      "Buffalo Bills -1": -105,
-      "Houston Texans -1": 102,
-      "Buffalo Bills -2.5": 101,
-      "Buffalo Bills +1.5": -125,
-      "Buffalo Bills +2.5": -135,
-      "Houston Texans +2.5": -130,
-      "Houston Texans -1.5": -105,
-      "Houston Texans -2.5": 114,
-      "Buffalo Bills +2": -130,
-      "Buffalo Bills +0.5": -117,
-      "Buffalo Bills 0": -115,
-      "Buffalo Bills -2": 102,
-      "Buffalo Bills -0.5": -113,
-      "Houston Texans -2": 112,
-      "Houston Texans -0.5": -105,
-      "Houston Texans 0": -106,
-      "Houston Texans +2": -124,
-      "Houston Texans +0.5": -108
-    },
-    "alt_totals": {
-      "Over 23.5": -7000,
-      "Over 24.5": -6000,
-      "Under 23.5": 1500,
-      "Under 24.5": 1400,
-      "Over 19.5": -50000,
-      "Over 20.5": -20000,
-      "Over 21.5": -20000,
-      "Over 22.5": -10000,
-      "Under 19.5": 3000,
-      "Under 20.5": 2500,
-      "Under 21.5": 2000,
-      "Under 22.5": 1700
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "fc362aff0d889ec52d358307a70c32ed",
-    "sport": "nfl",
-    "away_team": "Chicago Bears",
-    "home_team": "Carolina Panthers",
-    "commence_time": "09/13/2026 01:00 PM",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Chicago Bears",
-    "favorite_odds": -152,
-    "underdog": "Carolina Panthers",
-    "underdog_odds": 140,
-    "moneyline": {
-      "Carolina Panthers": 140,
-      "Chicago Bears": -152
-    },
-    "runline": {
-      "Carolina Panthers +3": -115
-    },
-    "totals": {
-      "Over 47": -107,
-      "Under 47": -107
-    },
-    "alt_runline": {
-      "Carolina Panthers +2.5": 100,
-      "Chicago Bears -2.5": -130,
-      "Chicago Bears -3": 100,
-      "Carolina Panthers +1.5": 110,
-      "Carolina Panthers -1.5": 129,
-      "Carolina Panthers -2.5": 155,
-      "Chicago Bears -1.5": -136,
-      "Chicago Bears +1.5": -174,
-      "Chicago Bears +2.5": -189,
-      "Carolina Panthers 0": 125,
-      "Carolina Panthers -1": 135,
-      "Carolina Panthers -2": 150,
-      "Carolina Panthers +1": 120,
-      "Carolina Panthers +2": 105,
-      "Carolina Panthers -0.5": 130,
-      "Carolina Panthers +0.5": 125,
-      "Chicago Bears 0": -159,
-      "Chicago Bears +1": -177,
-      "Chicago Bears +2": -195,
-      "Chicago Bears -1": -139,
-      "Chicago Bears -2": -127,
-      "Chicago Bears +0.5": -167,
-      "Chicago Bears -0.5": -157
-    },
-    "alt_totals": {
-      "Over 47.5": -102,
-      "Under 47.5": -110,
-      "Over 20.5": -50000,
-      "Over 21.5": -50000,
-      "Over 22.5": -20000,
-      "Over 23.5": -10000,
-      "Over 24.5": -7000,
-      "Over 25.5": -7000,
-      "Under 20.5": 3000,
-      "Under 21.5": 3000,
-      "Under 22.5": 2200,
-      "Under 23.5": 1700,
-      "Under 24.5": 1500,
-      "Under 25.5": 1500
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "ed6d24ff979f9c71979fead577b0b3f7",
-    "sport": "nfl",
-    "away_team": "Tampa Bay Buccaneers",
-    "home_team": "Cincinnati Bengals",
-    "commence_time": "09/13/2026 01:00 PM",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Cincinnati Bengals",
-    "favorite_odds": -200,
-    "underdog": "Tampa Bay Buccaneers",
-    "underdog_odds": 185,
-    "moneyline": {
-      "Cincinnati Bengals": -200,
-      "Tampa Bay Buccaneers": 185
-    },
-    "runline": {
-      "Tampa Bay Buccaneers +4": -108
+      "Buffalo Bills -7.5": 104,
+      "Los Angeles Chargers +7.5": -115
     },
     "totals": {
       "Over 50.5": -102,
-      "Under 50.5": -102
+      "Under 50.5": -113
     },
     "alt_runline": {
-      "Cincinnati Bengals -3.5": -112,
-      "Tampa Bay Buccaneers +3.5": -105,
-      "Cincinnati Bengals -4": -102,
-      "Cincinnati Bengals +2.5": -250,
-      "Cincinnati Bengals +1.5": -230,
-      "Cincinnati Bengals -1.5": -186,
-      "Cincinnati Bengals -2.5": -165,
-      "Tampa Bay Buccaneers -2.5": 188,
-      "Tampa Bay Buccaneers -1.5": 175,
-      "Tampa Bay Buccaneers +1.5": 150,
-      "Tampa Bay Buccaneers +2.5": 135,
-      "Cincinnati Bengals +0.5": -215,
-      "Cincinnati Bengals -0.5": -210,
-      "Cincinnati Bengals -1": -200,
-      "Cincinnati Bengals 0": -215,
-      "Cincinnati Bengals +2": -240,
-      "Cincinnati Bengals +1": -225,
-      "Cincinnati Bengals -2": -177,
-      "Tampa Bay Buccaneers -0.5": 163,
-      "Tampa Bay Buccaneers +0.5": 163,
-      "Tampa Bay Buccaneers +1": 155,
-      "Tampa Bay Buccaneers 0": 163,
-      "Tampa Bay Buccaneers -2": 185,
-      "Tampa Bay Buccaneers -1": 170,
-      "Tampa Bay Buccaneers +2": 145
+      "Los Angeles Chargers +7": -105,
+      "Buffalo Bills -7": -110,
+      "Buffalo Bills -5.5": -151,
+      "Buffalo Bills -6.5": -134,
+      "Buffalo Bills -7.5": -109,
+      "Buffalo Bills -8.5": 102,
+      "Buffalo Bills -9.5": 107,
+      "Los Angeles Chargers -9.5": 780,
+      "Los Angeles Chargers -8.5": 730,
+      "Los Angeles Chargers -7.5": 660,
+      "Los Angeles Chargers -6.5": 541,
+      "Los Angeles Chargers -5.5": 482,
+      "Buffalo Bills -10": 133,
+      "Buffalo Bills -9": 118,
+      "Buffalo Bills -6": -143,
+      "Buffalo Bills -8": 107,
+      "Buffalo Bills -5": -165
     },
     "alt_totals": {
-      "Over 23.5": -50000,
-      "Over 24.5": -20000,
-      "Over 25.5": -20000,
-      "Over 26.5": -10000,
-      "Over 27.5": -7000,
-      "Over 28.5": -7000,
-      "Under 23.5": 3000,
-      "Under 24.5": 2500,
-      "Under 25.5": 2500,
-      "Under 26.5": 1700,
-      "Under 27.5": 1500,
-      "Under 28.5": 1500
+      "Over 50": -110,
+      "Under 50": -108,
+      "Over 48.5": -138,
+      "Over 49.5": -122,
+      "Over 51.5": 112,
+      "Over 52.5": 126,
+      "Under 48.5": 110,
+      "Under 49.5": -104,
+      "Under 51.5": -142,
+      "Under 52.5": -160,
+      "Over 50.5": -105,
+      "Under 50.5": -118,
+      "Over 51": 100,
+      "Over 49": -135,
+      "Over 52": 115,
+      "Over 48": -145,
+      "Over 53": 125,
+      "Under 51": -130,
+      "Under 49": 105,
+      "Under 52": -150,
+      "Under 48": 115,
+      "Under 53": -175
     },
     "innings_1": {
       "moneyline": {
@@ -704,72 +210,77 @@
     }
   },
   {
-    "gameId": "e55c6fe19fce094ce214c8b0e5b504e9",
+    "gameId": "613b8cd3a5fab58f7be4e3fd6f76223e",
     "sport": "nfl",
-    "away_team": "Cleveland Browns",
-    "home_team": "Jacksonville Jaguars",
-    "commence_time": "09/13/2026 01:00 PM",
+    "away_team": "Carolina Panthers",
+    "home_team": "Cleveland Browns",
+    "commence_time": "2026-09-27T20:00:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "Jacksonville Jaguars",
-    "favorite_odds": -375,
+    "favorite": "Carolina Panthers",
+    "favorite_odds": -148,
     "underdog": "Cleveland Browns",
-    "underdog_odds": 320,
+    "underdog_odds": 131,
     "moneyline": {
-      "Cleveland Browns": 320,
-      "Jacksonville Jaguars": -375
+      "Carolina Panthers": -148,
+      "Cleveland Browns": 131
     },
     "runline": {
-      "Cleveland Browns +8": -108
+      "Cleveland Browns +2.5": 100,
+      "Carolina Panthers -2.5": -120
     },
     "totals": {
-      "Over 40.5": -107,
-      "Under 40.5": -107
+      "Over 42": -110,
+      "Under 42": -102
     },
     "alt_runline": {
-      "Cleveland Browns +9": -125,
-      "Cleveland Browns +7.5": -105,
-      "Jacksonville Jaguars -7.5": -110,
-      "Jacksonville Jaguars -9": 105,
-      "Jacksonville Jaguars -8": -102,
-      "Cleveland Browns +8.5": -110,
-      "Jacksonville Jaguars -8.5": 100,
-      "Cleveland Browns -2.5": 350,
-      "Cleveland Browns -1.5": 340,
-      "Cleveland Browns +1.5": 275,
-      "Cleveland Browns +2.5": 250,
-      "Jacksonville Jaguars +2.5": -437,
-      "Jacksonville Jaguars +1.5": -397,
-      "Jacksonville Jaguars -1.5": -400,
-      "Jacksonville Jaguars -2.5": -345,
-      "Cleveland Browns -1": 325,
-      "Cleveland Browns 0": 300,
-      "Cleveland Browns -0.5": 300,
-      "Cleveland Browns -2": 350,
-      "Cleveland Browns +1": 290,
-      "Cleveland Browns +2": 260,
-      "Cleveland Browns +0.5": 295,
-      "Jacksonville Jaguars +1": -500,
-      "Jacksonville Jaguars 0": -455,
-      "Jacksonville Jaguars +0.5": -455,
-      "Jacksonville Jaguars +2": -560,
-      "Jacksonville Jaguars -1": -435,
-      "Jacksonville Jaguars -2": -375,
-      "Jacksonville Jaguars -0.5": -455
+      "Cleveland Browns +3": -113,
+      "Carolina Panthers -3": 104,
+      "Carolina Panthers +1.5": -165,
+      "Carolina Panthers +2.5": -180,
+      "Carolina Panthers +3.5": -235,
+      "Carolina Panthers +4.5": -265,
+      "Cleveland Browns +4.5": -143,
+      "Cleveland Browns +3.5": -127,
+      "Cleveland Browns +1.5": 110,
+      "Cleveland Browns +2.5": 100,
+      "Carolina Panthers +2": -175,
+      "Carolina Panthers +0.5": -157,
+      "Carolina Panthers 0": -155,
+      "Carolina Panthers +5": -286,
+      "Carolina Panthers +3": -210,
+      "Carolina Panthers +1": -159,
+      "Carolina Panthers +4": -250,
+      "Cleveland Browns +1": 117,
+      "Cleveland Browns +2": 105,
+      "Cleveland Browns +0.5": 120,
+      "Cleveland Browns 0": 120,
+      "Cleveland Browns +4": -137,
+      "Cleveland Browns +5": -155
     },
     "alt_totals": {
-      "Over 20.5": -6000,
-      "Over 21.5": -6000,
-      "Under 20.5": 1400,
-      "Under 21.5": 1400,
-      "Over 16.5": -50000,
-      "Over 17.5": -20000,
-      "Over 18.5": -20000,
-      "Over 19.5": -10000,
-      "Under 16.5": 3000,
-      "Under 17.5": 2500,
-      "Under 18.5": 2200,
-      "Under 19.5": 1700
+      "Over 42.5": -110,
+      "Under 42.5": -108,
+      "Over 41.5": -120,
+      "Under 41.5": -104,
+      "Over 39.5": -165,
+      "Over 40.5": -140,
+      "Over 43.5": 106,
+      "Over 44.5": 124,
+      "Under 39.5": 130,
+      "Under 40.5": 112,
+      "Under 43.5": -135,
+      "Under 44.5": -160,
+      "Over 43": 100,
+      "Over 44": 115,
+      "Over 40": -160,
+      "Over 42": -110,
+      "Over 41": -130,
+      "Under 43": -130,
+      "Under 44": -150,
+      "Under 40": 125,
+      "Under 42": -108,
+      "Under 41": 105
     },
     "innings_1": {
       "moneyline": {
@@ -808,170 +319,182 @@
     }
   },
   {
-    "gameId": "c1d3fcec25aaeb06ebd2244d33d338e0",
+    "gameId": "71123be049587b6facce3a20c53e5d09",
     "sport": "nfl",
-    "away_team": "New Orleans Saints",
+    "away_team": "Cincinnati Bengals",
+    "home_team": "Pittsburgh Steelers",
+    "commence_time": "2026-09-27T20:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Cincinnati Bengals",
+    "favorite_odds": -184,
+    "underdog": "Pittsburgh Steelers",
+    "underdog_odds": 165,
+    "moneyline": {
+      "Cincinnati Bengals": -184,
+      "Pittsburgh Steelers": 165
+    },
+    "runline": {
+      "Cincinnati Bengals -4": -107,
+      "Pittsburgh Steelers +4": -114
+    },
+    "totals": {
+      "Over 42.5": -107,
+      "Under 42.5": -107
+    },
+    "alt_runline": {
+      "Cincinnati Bengals -3.5": -115,
+      "Pittsburgh Steelers +3.5": -105,
+      "Cincinnati Bengals -6.5": 116,
+      "Cincinnati Bengals -5.5": 102,
+      "Cincinnati Bengals -4.5": -108,
+      "Cincinnati Bengals -2.5": -165,
+      "Cincinnati Bengals -1.5": -180,
+      "Pittsburgh Steelers -1.5": 165,
+      "Pittsburgh Steelers -2.5": 180,
+      "Pittsburgh Steelers -3.5": 230,
+      "Pittsburgh Steelers -4.5": 261,
+      "Pittsburgh Steelers -5.5": 284,
+      "Pittsburgh Steelers -6.5": 316,
+      "Cincinnati Bengals -3": -140,
+      "Cincinnati Bengals -5": 105,
+      "Cincinnati Bengals -6": 120,
+      "Cincinnati Bengals -4": -107,
+      "Cincinnati Bengals -2": -175,
+      "Pittsburgh Steelers -2": 175,
+      "Pittsburgh Steelers -6": 325,
+      "Pittsburgh Steelers -5": 280,
+      "Pittsburgh Steelers -3": 220,
+      "Pittsburgh Steelers -4": 255
+    },
+    "alt_totals": {
+      "Over 40.5": -145,
+      "Over 41.5": -125,
+      "Over 43.5": 104,
+      "Over 44.5": 122,
+      "Under 40.5": 116,
+      "Under 41.5": 105,
+      "Under 43.5": -130,
+      "Under 44.5": -150,
+      "Over 42.5": -110,
+      "Under 42.5": -108,
+      "Over 42": -120,
+      "Over 41": -135,
+      "Over 44": 110,
+      "Over 40": -160,
+      "Over 45": 125,
+      "Over 43": -105,
+      "Under 42": -105,
+      "Under 41": 110,
+      "Under 44": -145,
+      "Under 40": 120,
+      "Under 45": -165,
+      "Under 43": -125
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "07f552badfa8a565d1be22123713e4da",
+    "sport": "nfl",
+    "away_team": "New York Jets",
     "home_team": "Detroit Lions",
-    "commence_time": "09/13/2026 01:00 PM",
+    "commence_time": "2026-09-27T20:00:00.000Z",
     "status": "scheduled",
     "is_live": false,
     "favorite": "Detroit Lions",
-    "favorite_odds": -305,
-    "underdog": "New Orleans Saints",
-    "underdog_odds": 270,
-    "moneyline": {
-      "Detroit Lions": -305,
-      "New Orleans Saints": 270
-    },
-    "runline": {
-      "New Orleans Saints +7": -108
-    },
-    "totals": {
-      "Over 50": -105,
-      "Under 50": -107
-    },
-    "alt_runline": {
-      "Detroit Lions -7": 101,
-      "Detroit Lions -6.5": -122,
-      "New Orleans Saints +6.5": 100,
-      "Detroit Lions +2.5": -428,
-      "Detroit Lions +1.5": -378,
-      "Detroit Lions -1.5": -286,
-      "Detroit Lions -2.5": -275,
-      "New Orleans Saints -2.5": 305,
-      "New Orleans Saints -1.5": 285,
-      "New Orleans Saints +1.5": 230,
-      "New Orleans Saints +2.5": 210,
-      "Detroit Lions +2": -420,
-      "Detroit Lions 0": -335,
-      "Detroit Lions +0.5": -345,
-      "Detroit Lions +1": -400,
-      "Detroit Lions -2": -275,
-      "Detroit Lions -1": -305,
-      "Detroit Lions -0.5": -345,
-      "New Orleans Saints -2": 290,
-      "New Orleans Saints 0": 250,
-      "New Orleans Saints -0.5": 250,
-      "New Orleans Saints -1": 275,
-      "New Orleans Saints +2": 210,
-      "New Orleans Saints +1": 230,
-      "New Orleans Saints +0.5": 245
-    },
-    "alt_totals": {
-      "Over 49.5": -115,
-      "Under 49.5": -105,
-      "Over 22.5": -50000,
-      "Over 23.5": -20000,
-      "Over 24.5": -20000,
-      "Over 25.5": -20000,
-      "Over 26.5": -7000,
-      "Over 27.5": -6000,
-      "Under 22.5": 3500,
-      "Under 23.5": 3000,
-      "Under 24.5": 2500,
-      "Under 25.5": 1800,
-      "Under 26.5": 1500,
-      "Under 27.5": 1400
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "7dddb296a42e7a41a774b24bd1709ce1",
-    "sport": "nfl",
-    "away_team": "New York Jets",
-    "home_team": "Tennessee Titans",
-    "commence_time": "09/13/2026 01:00 PM",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Tennessee Titans",
-    "favorite_odds": -125,
+    "favorite_odds": -300,
     "underdog": "New York Jets",
-    "underdog_odds": 110,
+    "underdog_odds": 260,
     "moneyline": {
-      "New York Jets": 110,
-      "Tennessee Titans": -125
+      "Detroit Lions": -300,
+      "New York Jets": 260
     },
     "runline": {
-      "New York Jets 0": 107,
-      "Tennessee Titans 0": -118
+      "New York Jets +6.5": 100,
+      "Detroit Lions -6.5": -110
     },
     "totals": {
-      "Over 39.5": -102,
-      "Under 39.5": -110
+      "Over 47.5": -109,
+      "Under 47.5": -105
     },
     "alt_runline": {
-      "New York Jets +2": -112,
-      "New York Jets +1.5": -107,
-      "Tennessee Titans -1.5": -114,
-      "New York Jets +2.5": -117,
-      "Tennessee Titans -2.5": -105,
-      "Tennessee Titans -2": -109,
-      "New York Jets -2.5": 120,
-      "New York Jets -1.5": 116,
-      "Tennessee Titans +2.5": -155,
-      "Tennessee Titans +1.5": -143,
-      "New York Jets +1": 104,
-      "New York Jets -2": 120,
-      "New York Jets +0.5": 108,
-      "New York Jets 0": 110,
-      "New York Jets -1": 114,
-      "New York Jets -0.5": 110,
-      "Tennessee Titans -1": -120,
-      "Tennessee Titans +2": -150,
-      "Tennessee Titans -0.5": -134,
-      "Tennessee Titans 0": -130,
-      "Tennessee Titans +1": -141,
-      "Tennessee Titans +0.5": -136
+      "New York Jets +7": -125,
+      "Detroit Lions -7": 109,
+      "Detroit Lions +8.5": -1380,
+      "Detroit Lions +7.5": -1140,
+      "Detroit Lions +6.5": -1200,
+      "Detroit Lions +5.5": -835,
+      "Detroit Lions +4.5": -670,
+      "New York Jets +4.5": 120,
+      "New York Jets +5.5": 108,
+      "New York Jets +7.5": -140,
+      "New York Jets +8.5": -155,
+      "New York Jets +6.5": -104,
+      "Detroit Lions +4": -670,
+      "Detroit Lions +5": -770,
+      "New York Jets +9": -170,
+      "New York Jets +5": 114,
+      "New York Jets +8": -157,
+      "New York Jets +6": 100,
+      "New York Jets +4": 128
     },
     "alt_totals": {
-      "Over 39": -110,
-      "Under 39": -105,
-      "Over 19.5": -6000,
-      "Over 20.5": -5000,
-      "Under 19.5": 1400,
-      "Under 20.5": 1300,
-      "Over 15.5": -50000,
-      "Over 16.5": -20000,
-      "Over 17.5": -20000,
-      "Over 18.5": -10000,
-      "Under 15.5": 3500,
-      "Under 16.5": 2200,
-      "Under 17.5": 1800,
-      "Under 18.5": 1700
+      "Over 45.5": -150,
+      "Over 46.5": -130,
+      "Over 48.5": 105,
+      "Over 49.5": 120,
+      "Under 45.5": 124,
+      "Under 46.5": 112,
+      "Under 48.5": -120,
+      "Under 49.5": -136,
+      "Over 47.5": -110,
+      "Under 47.5": -104,
+      "Over 48": -105,
+      "Over 49": 110,
+      "Over 47": -120,
+      "Over 50": 130,
+      "Over 46": -135,
+      "Over 45": -165,
+      "Under 48": -118,
+      "Under 49": -135,
+      "Under 47": -102,
+      "Under 50": -150,
+      "Under 46": 110,
+      "Under 45": 125
     },
     "innings_1": {
       "moneyline": {
@@ -1010,72 +533,77 @@
     }
   },
   {
-    "gameId": "1edfa5ceaa1ad2cb57df1c1b908731f6",
+    "gameId": "17a730b7d399feeab6a78c30767c29d2",
     "sport": "nfl",
-    "away_team": "Arizona Cardinals",
-    "home_team": "Los Angeles Chargers",
-    "commence_time": "09/13/2026 04:25 PM",
+    "away_team": "Houston Texans",
+    "home_team": "Indianapolis Colts",
+    "commence_time": "2026-09-27T20:00:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "Los Angeles Chargers",
-    "favorite_odds": -520,
-    "underdog": "Arizona Cardinals",
-    "underdog_odds": 425,
+    "favorite": "Houston Texans",
+    "favorite_odds": -140,
+    "underdog": "Indianapolis Colts",
+    "underdog_odds": 130,
     "moneyline": {
-      "Arizona Cardinals": 425,
-      "Los Angeles Chargers": -520
+      "Houston Texans": -140,
+      "Indianapolis Colts": 130
     },
     "runline": {
-      "Arizona Cardinals +10": -110
+      "Houston Texans -3": 103,
+      "Indianapolis Colts +3": -114
     },
     "totals": {
-      "Over 47": -110,
-      "Under 47": -108
+      "Over 42.5": -107,
+      "Under 42.5": -107
     },
     "alt_runline": {
-      "Arizona Cardinals +10.5": -110,
-      "Los Angeles Chargers -10.5": -105,
-      "Los Angeles Chargers -10": 100,
-      "Arizona Cardinals +9.5": -105,
-      "Los Angeles Chargers -9.5": -115,
-      "Arizona Cardinals -2.5": 437,
-      "Arizona Cardinals -1.5": 420,
-      "Arizona Cardinals +1.5": 360,
-      "Arizona Cardinals +2.5": 320,
-      "Los Angeles Chargers +2.5": -750,
-      "Los Angeles Chargers +1.5": -650,
-      "Los Angeles Chargers -1.5": -477,
-      "Los Angeles Chargers -2.5": -419,
-      "Arizona Cardinals +1": 390,
-      "Arizona Cardinals +0.5": 400,
-      "Arizona Cardinals 0": 410,
-      "Arizona Cardinals -0.5": 410,
-      "Arizona Cardinals +2": 350,
-      "Arizona Cardinals -1": 450,
-      "Los Angeles Chargers -1": -670,
-      "Los Angeles Chargers -0.5": -715,
-      "Los Angeles Chargers 0": -715,
-      "Los Angeles Chargers +0.5": -770,
-      "Los Angeles Chargers -2": -560,
-      "Los Angeles Chargers +1": -835
+      "Houston Texans -2.5": -125,
+      "Indianapolis Colts +2.5": 100,
+      "Houston Texans -5.5": 130,
+      "Houston Texans -4.5": 119,
+      "Houston Texans -3.5": 107,
+      "Houston Texans -1.5": -137,
+      "Indianapolis Colts -1.5": 130,
+      "Indianapolis Colts -2.5": 142,
+      "Indianapolis Colts -3.5": 187,
+      "Indianapolis Colts -4.5": 209,
+      "Indianapolis Colts -5.5": 227,
+      "Houston Texans -4": 118,
+      "Houston Texans -5": 132,
+      "Houston Texans -1": -141,
+      "Houston Texans -0.5": -150,
+      "Houston Texans -2": -135,
+      "Houston Texans -3": -104,
+      "Indianapolis Colts -0.5": 118,
+      "Indianapolis Colts -5": 225,
+      "Indianapolis Colts -4": 200,
+      "Indianapolis Colts -3": 170,
+      "Indianapolis Colts -1": 135,
+      "Indianapolis Colts -2": 150
     },
     "alt_totals": {
-      "Over 46.5": -115,
-      "Under 46.5": -105,
-      "Over 47.5": -102,
-      "Under 47.5": -107,
-      "Over 20.5": -50000,
-      "Over 21.5": -50000,
-      "Over 22.5": -20000,
-      "Over 23.5": -10000,
-      "Over 24.5": -10000,
-      "Over 25.5": -7000,
-      "Under 20.5": 3500,
-      "Under 21.5": 3000,
-      "Under 22.5": 2500,
-      "Under 23.5": 1800,
-      "Under 24.5": 1700,
-      "Under 25.5": 1500
+      "Over 43": -108,
+      "Under 43": -120,
+      "Over 40.5": -142,
+      "Over 41.5": -122,
+      "Over 43.5": 106,
+      "Over 44.5": 124,
+      "Under 40.5": 113,
+      "Under 41.5": 100,
+      "Under 43.5": -135,
+      "Under 44.5": -150,
+      "Over 42.5": -110,
+      "Under 42.5": -108,
+      "Over 44": 110,
+      "Over 45": 125,
+      "Over 42": -120,
+      "Over 41": -135,
+      "Over 40": -160,
+      "Under 44": -145,
+      "Under 45": -165,
+      "Under 42": -108,
+      "Under 41": 105,
+      "Under 40": 120
     },
     "innings_1": {
       "moneyline": {
@@ -1114,67 +642,183 @@
     }
   },
   {
-    "gameId": "cb77efed7e711d25a72c1a2a0a1af119",
+    "gameId": "1f3cfd315a24d1a7dd5859a8e6b88e18",
     "sport": "nfl",
-    "away_team": "Green Bay Packers",
-    "home_team": "Minnesota Vikings",
-    "commence_time": "09/13/2026 04:25 PM",
+    "away_team": "New England Patriots",
+    "home_team": "Jacksonville Jaguars",
+    "commence_time": "2026-09-27T20:00:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "Minnesota Vikings",
-    "favorite_odds": -117,
-    "underdog": "Green Bay Packers",
-    "underdog_odds": 105,
+    "favorite": "Jacksonville Jaguars",
+    "favorite_odds": -148,
+    "underdog": "New England Patriots",
+    "underdog_odds": 138,
     "moneyline": {
-      "Green Bay Packers": 105,
-      "Minnesota Vikings": -117
+      "Jacksonville Jaguars": -148,
+      "New England Patriots": 138
     },
     "runline": {
-      "Green Bay Packers +1.5": -105
+      "New England Patriots +2.5": 100,
+      "Jacksonville Jaguars -2.5": -122
+    },
+    "totals": {
+      "Over 45.5": -105,
+      "Under 45.5": -107
+    },
+    "alt_runline": {
+      "New England Patriots +3": -115,
+      "Jacksonville Jaguars -3": -103,
+      "Jacksonville Jaguars +4.5": -275,
+      "Jacksonville Jaguars +3.5": -235,
+      "Jacksonville Jaguars +2.5": -182,
+      "Jacksonville Jaguars +1.5": -167,
+      "New England Patriots +1.5": 112,
+      "New England Patriots +2.5": 100,
+      "New England Patriots +3.5": -132,
+      "New England Patriots +4.5": -150,
+      "Jacksonville Jaguars +5": -295,
+      "Jacksonville Jaguars +3": -215,
+      "Jacksonville Jaguars 0": -155,
+      "Jacksonville Jaguars +1": -159,
+      "Jacksonville Jaguars +0.5": -155,
+      "Jacksonville Jaguars +4": -265,
+      "Jacksonville Jaguars +2": -177,
+      "New England Patriots +4": -141,
+      "New England Patriots 0": 125,
+      "New England Patriots +0.5": 125,
+      "New England Patriots +5": -159,
+      "New England Patriots +2": 110,
+      "New England Patriots +1": 120
+    },
+    "alt_totals": {
+      "Over 45": -118,
+      "Under 45": -110,
+      "Over 43.5": -142,
+      "Over 44.5": -122,
+      "Over 46.5": 105,
+      "Over 47.5": 122,
+      "Under 43.5": 115,
+      "Under 44.5": 100,
+      "Under 46.5": -130,
+      "Under 47.5": -150,
+      "Over 45.5": -108,
+      "Under 45.5": -110,
+      "Over 46": -105,
+      "Over 44": -135,
+      "Over 47": 110,
+      "Over 43": -160,
+      "Over 48": 125,
+      "Under 46": -120,
+      "Under 44": 105,
+      "Under 47": -140,
+      "Under 43": 120,
+      "Under 48": -165
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "0339a0e41bcee12820eb3e64bb5fadb4",
+    "sport": "nfl",
+    "away_team": "Kansas City Chiefs",
+    "home_team": "Miami Dolphins",
+    "commence_time": "2026-09-27T20:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Kansas City Chiefs",
+    "favorite_odds": -700,
+    "underdog": "Miami Dolphins",
+    "underdog_odds": 600,
+    "moneyline": {
+      "Kansas City Chiefs": -700,
+      "Miami Dolphins": 600
+    },
+    "runline": {
+      "Miami Dolphins +10.5": -104,
+      "Kansas City Chiefs -10.5": -118
     },
     "totals": {
       "Over 46": -110,
       "Under 46": -102
     },
     "alt_runline": {
-      "Green Bay Packers +1": -105,
-      "Minnesota Vikings -1.5": -108,
-      "Minnesota Vikings -1": -108,
-      "Green Bay Packers -2.5": 130,
-      "Green Bay Packers -1.5": 110,
-      "Green Bay Packers +2.5": -120,
-      "Minnesota Vikings +2.5": -143,
-      "Minnesota Vikings +1.5": -130,
-      "Minnesota Vikings -2.5": -110,
-      "Green Bay Packers +0.5": -104,
-      "Green Bay Packers +1.5": -110,
-      "Green Bay Packers +2": -115,
-      "Green Bay Packers 0": 105,
-      "Green Bay Packers -0.5": -103,
-      "Green Bay Packers -1": 102,
-      "Green Bay Packers -2": 112,
-      "Minnesota Vikings -0.5": -118,
-      "Minnesota Vikings -2": 104,
-      "Minnesota Vikings 0": -120,
-      "Minnesota Vikings +0.5": -120,
-      "Minnesota Vikings +1": -124,
-      "Minnesota Vikings +2": -137
+      "Miami Dolphins +11": -106,
+      "Kansas City Chiefs -11.5": -102,
+      "Miami Dolphins +11.5": -115,
+      "Kansas City Chiefs -11": -112,
+      "Miami Dolphins +12.5": -125,
+      "Miami Dolphins +10.5": -104,
+      "Miami Dolphins +9.5": 112,
+      "Miami Dolphins +8.5": 122,
+      "Kansas City Chiefs +12.5": -50000,
+      "Kansas City Chiefs +11.5": -20000,
+      "Kansas City Chiefs +10.5": -20000,
+      "Kansas City Chiefs +9.5": -10000,
+      "Kansas City Chiefs +8.5": -10000,
+      "Miami Dolphins +12": -117,
+      "Miami Dolphins +9": 123,
+      "Miami Dolphins +13": -129,
+      "Miami Dolphins +8": 135,
+      "Miami Dolphins +10": 108
     },
     "alt_totals": {
-      "Over 46.5": -105,
-      "Under 46.5": -110,
-      "Over 19.5": -50000,
-      "Over 20.5": -50000,
-      "Over 21.5": -20000,
-      "Over 22.5": -20000,
-      "Over 23.5": -7000,
-      "Over 24.5": -7000,
-      "Under 19.5": 3500,
-      "Under 20.5": 3000,
-      "Under 21.5": 2500,
-      "Under 22.5": 1800,
-      "Under 23.5": 1500,
-      "Under 24.5": 1500
+      "Over 46.5": -106,
+      "Under 46.5": -120,
+      "Over 45.5": -115,
+      "Under 45.5": -105,
+      "Over 40.5": -245,
+      "Over 41.5": -205,
+      "Over 42.5": -184,
+      "Over 43.5": -160,
+      "Over 44.5": -132,
+      "Over 47.5": 112,
+      "Over 48.5": 130,
+      "Over 49.5": 144,
+      "Over 50.5": 162,
+      "Over 51.5": 190,
+      "Under 40.5": 189,
+      "Under 41.5": 160,
+      "Under 42.5": 146,
+      "Under 43.5": 127,
+      "Under 44.5": 110,
+      "Under 47.5": -135,
+      "Under 48.5": -155,
+      "Under 49.5": -175,
+      "Under 50.5": -200,
+      "Under 51.5": -241
     },
     "innings_1": {
       "moneyline": {
@@ -1213,72 +857,77 @@
     }
   },
   {
-    "gameId": "c5d95f48a16849ab6bebc68fbbfcb74a",
+    "gameId": "555afd4a27aaa392662881cffa8f2eef",
     "sport": "nfl",
-    "away_team": "Miami Dolphins",
-    "home_team": "Las Vegas Raiders",
-    "commence_time": "09/13/2026 04:25 PM",
+    "away_team": "Tennessee Titans",
+    "home_team": "New York Giants",
+    "commence_time": "2026-09-27T20:00:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "Las Vegas Raiders",
-    "favorite_odds": -176,
-    "underdog": "Miami Dolphins",
-    "underdog_odds": 160,
+    "favorite": "New York Giants",
+    "favorite_odds": -135,
+    "underdog": "Tennessee Titans",
+    "underdog_odds": 130,
     "moneyline": {
-      "Las Vegas Raiders": -176,
-      "Miami Dolphins": 160
+      "New York Giants": -135,
+      "Tennessee Titans": 130
     },
     "runline": {
-      "Las Vegas Raiders -3.5": 102
+      "Tennessee Titans +2.5": 100,
+      "New York Giants -2.5": -118
     },
     "totals": {
-      "Over 40.5": -110,
-      "Under 40.5": -110
+      "Over 39.5": -105,
+      "Under 39.5": -107
     },
     "alt_runline": {
-      "Miami Dolphins +3.5": -110,
-      "Las Vegas Raiders +2.5": -230,
-      "Las Vegas Raiders +1.5": -210,
-      "Las Vegas Raiders -1.5": -164,
-      "Las Vegas Raiders -2.5": -154,
-      "Miami Dolphins -2.5": 169,
-      "Miami Dolphins -1.5": 164,
-      "Miami Dolphins +1.5": 130,
-      "Miami Dolphins +2.5": 120,
-      "Las Vegas Raiders -0.5": -195,
-      "Las Vegas Raiders +1": -205,
-      "Las Vegas Raiders 0": -195,
-      "Las Vegas Raiders -1": -175,
-      "Las Vegas Raiders +2": -225,
-      "Las Vegas Raiders +0.5": -200,
-      "Las Vegas Raiders -2": -157,
-      "Miami Dolphins +0.5": 155,
-      "Miami Dolphins -1": 160,
-      "Miami Dolphins 0": 155,
-      "Miami Dolphins +1": 138,
-      "Miami Dolphins -2": 170,
-      "Miami Dolphins -0.5": 155,
-      "Miami Dolphins +2": 125
+      "Tennessee Titans +3": -118,
+      "New York Giants -3": 104,
+      "New York Giants +4.5": -278,
+      "New York Giants +3.5": -240,
+      "New York Giants +2.5": -179,
+      "New York Giants +1.5": -164,
+      "Tennessee Titans +1.5": 112,
+      "Tennessee Titans +3.5": -134,
+      "Tennessee Titans +4.5": -155,
+      "Tennessee Titans +2.5": -102,
+      "New York Giants +0.5": -148,
+      "New York Giants +3": -215,
+      "New York Giants +4": -265,
+      "New York Giants +2": -175,
+      "New York Giants +5": -305,
+      "New York Giants 0": -148,
+      "New York Giants +1": -157,
+      "Tennessee Titans +0.5": 116,
+      "Tennessee Titans +5": -165,
+      "Tennessee Titans +4": -148,
+      "Tennessee Titans +2": 104,
+      "Tennessee Titans 0": 118,
+      "Tennessee Titans +1": 117
     },
     "alt_totals": {
-      "Over 40": -110,
-      "Under 40": -110,
-      "Over 41": -107,
-      "Under 41": -107,
-      "Over 39.5": -120,
-      "Under 39.5": -102,
-      "Over 20.5": -6000,
-      "Over 21.5": -5000,
-      "Under 20.5": 1400,
-      "Under 21.5": 1300,
-      "Over 16.5": -50000,
-      "Over 17.5": -20000,
-      "Over 18.5": -20000,
-      "Over 19.5": -7000,
-      "Under 16.5": 3000,
-      "Under 17.5": 2200,
-      "Under 18.5": 2000,
-      "Under 19.5": 1500
+      "Over 40": -108,
+      "Under 40": -120,
+      "Over 37.5": -136,
+      "Over 38.5": -122,
+      "Over 40.5": 108,
+      "Over 41.5": 126,
+      "Under 37.5": 110,
+      "Under 38.5": 100,
+      "Under 40.5": -130,
+      "Under 41.5": -150,
+      "Over 39.5": -106,
+      "Under 39.5": -108,
+      "Over 41": 105,
+      "Over 39": -125,
+      "Over 42": 120,
+      "Over 38": -140,
+      "Over 37": -160,
+      "Under 41": -145,
+      "Under 39": -108,
+      "Under 42": -160,
+      "Under 38": 105,
+      "Under 37": 120
     },
     "innings_1": {
       "moneyline": {
@@ -1317,72 +966,722 @@
     }
   },
   {
-    "gameId": "17885cb8dcade8f6c3bce14b2de805e8",
+    "gameId": "2a529c108305ffa049d8b6cfdbaa4d36",
     "sport": "nfl",
-    "away_team": "Washington Commanders",
-    "home_team": "Philadelphia Eagles",
-    "commence_time": "09/13/2026 04:25 PM",
+    "away_team": "Seattle Seahawks",
+    "home_team": "Washington Commanders",
+    "commence_time": "2026-09-27T20:00:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "Philadelphia Eagles",
-    "favorite_odds": -218,
+    "favorite": "Seattle Seahawks",
+    "favorite_odds": -298,
     "underdog": "Washington Commanders",
-    "underdog_odds": 198,
+    "underdog_odds": 270,
     "moneyline": {
-      "Philadelphia Eagles": -218,
-      "Washington Commanders": 198
+      "Seattle Seahawks": -298,
+      "Washington Commanders": 270
     },
     "runline": {
-      "Washington Commanders +5": -103
+      "Washington Commanders +6.5": 100
+    },
+    "totals": {
+      "Over 40": -107,
+      "Under 40": -107
+    },
+    "alt_runline": {
+      "Washington Commanders +7": -105,
+      "Seattle Seahawks -7": -105,
+      "Seattle Seahawks -6.5": -122,
+      "Seattle Seahawks +4.5": -720,
+      "Seattle Seahawks +5.5": -800,
+      "Seattle Seahawks +6.5": -860,
+      "Seattle Seahawks +7.5": -1200,
+      "Seattle Seahawks +8.5": -1400,
+      "Washington Commanders +8.5": -145,
+      "Washington Commanders +7.5": -130,
+      "Washington Commanders +6.5": -105,
+      "Washington Commanders +5.5": 122,
+      "Washington Commanders +4.5": 134,
+      "Seattle Seahawks +5": -770,
+      "Seattle Seahawks +4": -670,
+      "Washington Commanders +8": -135,
+      "Washington Commanders +5": 125,
+      "Washington Commanders +4": 140,
+      "Washington Commanders +9": -150,
+      "Washington Commanders +6": 115
+    },
+    "alt_totals": {
+      "Over 40.5": -108,
+      "Under 40.5": -110,
+      "Over 37.5": -160,
+      "Over 38.5": -144,
+      "Over 39.5": -125,
+      "Over 41.5": 110,
+      "Over 42.5": 125,
+      "Under 37.5": 130,
+      "Under 38.5": 120,
+      "Under 39.5": 102,
+      "Under 41.5": -132,
+      "Under 42.5": -146,
+      "Over 40": -120,
+      "Over 39": -135,
+      "Over 42": 115,
+      "Over 38": -150,
+      "Over 41": 100,
+      "Under 40": -108,
+      "Under 39": 105,
+      "Under 42": -145,
+      "Under 38": 115,
+      "Under 41": -130
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "9d2b09e0f9b6dd5ce0d985894f4f98fa",
+    "sport": "nfl",
+    "away_team": "Arizona Cardinals",
+    "home_team": "San Francisco 49ers",
+    "commence_time": "2026-09-27T23:05:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "San Francisco 49ers",
+    "favorite_odds": -410,
+    "underdog": "Arizona Cardinals",
+    "underdog_odds": 370,
+    "moneyline": {
+      "Arizona Cardinals": 370,
+      "San Francisco 49ers": -410
+    },
+    "runline": {
+      "San Francisco 49ers -9": 100
+    },
+    "totals": {
+      "Over 48": -107,
+      "Under 48": -107
+    },
+    "alt_runline": {
+      "Arizona Cardinals +9": -116,
+      "Arizona Cardinals +8.5": -105,
+      "San Francisco 49ers -8.5": -113,
+      "Arizona Cardinals -11.5": 1200,
+      "Arizona Cardinals -10.5": 1120,
+      "Arizona Cardinals -9.5": 970,
+      "Arizona Cardinals -8.5": 1200,
+      "Arizona Cardinals -7.5": 840,
+      "Arizona Cardinals -6.5": 690,
+      "San Francisco 49ers -6.5": -162,
+      "San Francisco 49ers -7.5": -126,
+      "San Francisco 49ers -9.5": -107,
+      "San Francisco 49ers -10.5": 111,
+      "San Francisco 49ers -11.5": 122,
+      "San Francisco 49ers -10": 106,
+      "San Francisco 49ers -11": 120,
+      "San Francisco 49ers -8": -120,
+      "San Francisco 49ers -9": -107,
+      "San Francisco 49ers -7": -145
+    },
+    "alt_totals": {
+      "Over 47.5": -120,
+      "Under 47.5": -105,
+      "Over 45.5": -158,
+      "Over 46.5": -142,
+      "Over 48.5": -104,
+      "Over 49.5": 110,
+      "Over 50.5": 122,
+      "Under 45.5": 125,
+      "Under 46.5": 112,
+      "Under 48.5": -122,
+      "Under 49.5": -136,
+      "Under 50.5": -156,
+      "Over 48": -105,
+      "Over 47": -130,
+      "Over 49": 100,
+      "Over 46": -150,
+      "Over 50": 115,
+      "Under 48": -112,
+      "Under 47": 105,
+      "Under 49": -130,
+      "Under 46": 115,
+      "Under 50": -150
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "f1724dead3eab61546033032fc782375",
+    "sport": "nfl",
+    "away_team": "Minnesota Vikings",
+    "home_team": "Tampa Bay Buccaneers",
+    "commence_time": "2026-09-27T23:05:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Minnesota Vikings",
+    "favorite_odds": -120,
+    "underdog": "Tampa Bay Buccaneers",
+    "underdog_odds": 106,
+    "moneyline": {
+      "Minnesota Vikings": -120,
+      "Tampa Bay Buccaneers": 106
+    },
+    "runline": {
+      "Minnesota Vikings -2": 103
+    },
+    "totals": {
+      "Over 42.5": -107,
+      "Under 42.5": -105
+    },
+    "alt_runline": {
+      "Minnesota Vikings 0": -125,
+      "Tampa Bay Buccaneers 0": 102,
+      "Tampa Bay Buccaneers +1": -107,
+      "Tampa Bay Buccaneers +2": -110,
+      "Minnesota Vikings -1.5": -108,
+      "Tampa Bay Buccaneers +1.5": -110,
+      "Minnesota Vikings -1": -117,
+      "Minnesota Vikings -4.5": 145,
+      "Minnesota Vikings -3.5": 130,
+      "Minnesota Vikings -2.5": -105,
+      "Tampa Bay Buccaneers -1.5": 110,
+      "Tampa Bay Buccaneers -2.5": 120,
+      "Tampa Bay Buccaneers -3.5": 155,
+      "Tampa Bay Buccaneers -4.5": 175,
+      "Minnesota Vikings -4": 145,
+      "Minnesota Vikings +0.5": -127,
+      "Minnesota Vikings -2": -108,
+      "Minnesota Vikings -0.5": -122,
+      "Minnesota Vikings -3": 115,
+      "Tampa Bay Buccaneers -4": 175,
+      "Tampa Bay Buccaneers -2": 115,
+      "Tampa Bay Buccaneers -3": 145,
+      "Tampa Bay Buccaneers -0.5": 104,
+      "Tampa Bay Buccaneers +0.5": 100,
+      "Tampa Bay Buccaneers -1": 110
+    },
+    "alt_totals": {
+      "Over 40.5": -144,
+      "Over 41.5": -125,
+      "Over 43.5": 105,
+      "Over 44.5": 120,
+      "Under 40.5": 118,
+      "Under 41.5": 100,
+      "Under 43.5": -128,
+      "Under 44.5": -150,
+      "Over 42.5": -110,
+      "Under 42.5": -108,
+      "Over 42": -120,
+      "Over 41": -140,
+      "Over 40": -165,
+      "Over 45": 125,
+      "Over 43": -108,
+      "Over 44": 110,
+      "Under 42": -108,
+      "Under 41": 105,
+      "Under 40": 125,
+      "Under 45": -165,
+      "Under 43": -120,
+      "Under 44": -145
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "84cfca14efc21363fd605508404cf1ff",
+    "sport": "nfl",
+    "away_team": "Baltimore Ravens",
+    "home_team": "Dallas Cowboys",
+    "commence_time": "2026-09-27T23:25:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Baltimore Ravens",
+    "favorite_odds": -170,
+    "underdog": "Dallas Cowboys",
+    "underdog_odds": 161,
+    "moneyline": {
+      "Baltimore Ravens": -170,
+      "Dallas Cowboys": 161
+    },
+    "runline": {
+      "Dallas Cowboys +3": 103
+    },
+    "totals": {
+      "Over 52.5": -106,
+      "Under 52.5": -105
+    },
+    "alt_runline": {
+      "Baltimore Ravens -3.5": 100,
+      "Dallas Cowboys +3.5": -118,
+      "Baltimore Ravens -3": -120,
+      "Baltimore Ravens +1.5": -195,
+      "Baltimore Ravens +2.5": -220,
+      "Baltimore Ravens +3.5": -295,
+      "Baltimore Ravens +4.5": -345,
+      "Baltimore Ravens +5.5": -410,
+      "Dallas Cowboys +5.5": -149,
+      "Dallas Cowboys +4.5": -137,
+      "Dallas Cowboys +2.5": 125,
+      "Dallas Cowboys +1.5": 135,
+      "Baltimore Ravens +1": -190,
+      "Baltimore Ravens +2": -210,
+      "Baltimore Ravens +3": -275,
+      "Baltimore Ravens +4": -335,
+      "Baltimore Ravens +5": -385,
+      "Dallas Cowboys +3": -103,
+      "Dallas Cowboys +2": 130,
+      "Dallas Cowboys +4": -129,
+      "Dallas Cowboys +1": 145,
+      "Dallas Cowboys +5": -148,
+      "Baltimore Ravens +0.5": -177,
+      "Dallas Cowboys +0.5": 135
+    },
+    "alt_totals": {
+      "Over 53": -108,
+      "Under 53": -120,
+      "Over 50.5": -145,
+      "Over 51.5": -122,
+      "Over 53.5": 102,
+      "Over 54.5": 115,
+      "Under 50.5": 120,
+      "Under 51.5": 105,
+      "Under 53.5": -126,
+      "Under 54.5": -141,
+      "Over 52.5": -108,
+      "Under 52.5": -110,
+      "Over 52": -120,
+      "Over 51": -135,
+      "Over 54": 105,
+      "Over 50": -160,
+      "Over 55": 120,
+      "Under 52": -105,
+      "Under 51": 110,
+      "Under 54": -135,
+      "Under 50": 120,
+      "Under 55": -160
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "2e523fcb0497aa689473e290eb2b97de",
+    "sport": "nfl",
+    "away_team": "Las Vegas Raiders",
+    "home_team": "New Orleans Saints",
+    "commence_time": "2026-09-27T23:25:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "New Orleans Saints",
+    "favorite_odds": -168,
+    "underdog": "Las Vegas Raiders",
+    "underdog_odds": 154,
+    "moneyline": {
+      "Las Vegas Raiders": 154,
+      "New Orleans Saints": -168
+    },
+    "runline": {
+      "Las Vegas Raiders +3": 102
+    },
+    "totals": {
+      "Over 44": -107,
+      "Under 44": -107
+    },
+    "alt_runline": {
+      "New Orleans Saints -3": -112,
+      "Las Vegas Raiders +3.5": -124,
+      "New Orleans Saints -3.5": 106,
+      "Las Vegas Raiders +1.5": 125,
+      "Las Vegas Raiders +2.5": 114,
+      "Las Vegas Raiders +4.5": -143,
+      "Las Vegas Raiders +5.5": -162,
+      "New Orleans Saints +5.5": -400,
+      "New Orleans Saints +4.5": -360,
+      "New Orleans Saints +3.5": -295,
+      "New Orleans Saints +2.5": -215,
+      "New Orleans Saints +1.5": -195,
+      "Las Vegas Raiders +4": -136,
+      "Las Vegas Raiders +0.5": 143,
+      "Las Vegas Raiders +5": -155,
+      "Las Vegas Raiders +1": 138,
+      "Las Vegas Raiders +3": -107,
+      "Las Vegas Raiders +2": 120,
+      "New Orleans Saints +0.5": -186,
+      "New Orleans Saints +5": -385,
+      "New Orleans Saints +2": -205,
+      "New Orleans Saints +4": -335,
+      "New Orleans Saints +1": -190,
+      "New Orleans Saints +3": -265
+    },
+    "alt_totals": {
+      "Over 44.5": -104,
+      "Under 44.5": -122,
+      "Over 43.5": -120,
+      "Under 43.5": -104,
+      "Over 41.5": -160,
+      "Over 42.5": -142,
+      "Over 45.5": 110,
+      "Over 46.5": 130,
+      "Under 41.5": 130,
+      "Under 42.5": 112,
+      "Under 45.5": -136,
+      "Under 46.5": -154,
+      "Over 44": -108,
+      "Over 43": -130,
+      "Over 45": 105,
+      "Over 42": -150,
+      "Over 46": 115,
+      "Under 44": -110,
+      "Under 43": 100,
+      "Under 45": -135,
+      "Under 42": 115,
+      "Under 46": -145
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "3bfd8bfb4b8e9a365a0877879b73b16b",
+    "sport": "nfl",
+    "away_team": "Los Angeles Rams",
+    "home_team": "Denver Broncos",
+    "commence_time": "2026-09-28T03:20:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Los Angeles Rams",
+    "favorite_odds": -140,
+    "underdog": "Denver Broncos",
+    "underdog_odds": 125,
+    "moneyline": {
+      "Denver Broncos": 125,
+      "Los Angeles Rams": -140
+    },
+    "runline": {
+      "Denver Broncos +2": 100
     },
     "totals": {
       "Over 44.5": -107,
       "Under 44.5": -107
     },
     "alt_runline": {
-      "Philadelphia Eagles -5.5": -105,
-      "Washington Commanders +5.5": -108,
-      "Philadelphia Eagles -5": -107,
-      "Philadelphia Eagles -4.5": -110,
-      "Washington Commanders +4.5": -110,
-      "Philadelphia Eagles +2.5": -287,
-      "Philadelphia Eagles +1.5": -262,
-      "Philadelphia Eagles -1.5": -204,
-      "Philadelphia Eagles -2.5": -185,
-      "Washington Commanders -2.5": 204,
-      "Washington Commanders -1.5": 189,
-      "Washington Commanders +1.5": 168,
-      "Washington Commanders +2.5": 150,
-      "Philadelphia Eagles -1": -220,
-      "Philadelphia Eagles -2": -195,
-      "Philadelphia Eagles +1": -250,
+      "Denver Broncos +2.5": -105,
+      "Los Angeles Rams -2.5": -110,
+      "Los Angeles Rams -2": -120,
+      "Denver Broncos +4.5": -159,
+      "Denver Broncos +3.5": -139,
+      "Denver Broncos +1.5": 102,
+      "Los Angeles Rams +1.5": -162,
+      "Los Angeles Rams +2.5": -177,
+      "Los Angeles Rams +3.5": -235,
+      "Los Angeles Rams +4.5": -275,
+      "Denver Broncos 0": 116,
+      "Denver Broncos -0.5": 115,
+      "Denver Broncos +4": -150,
+      "Denver Broncos +1": 110,
+      "Denver Broncos +2": -103,
+      "Denver Broncos +3": -121,
+      "Denver Broncos +0.5": 116,
+      "Los Angeles Rams 0": -143,
+      "Los Angeles Rams +0.5": -141,
+      "Los Angeles Rams +2": -167,
+      "Los Angeles Rams +4": -250,
+      "Los Angeles Rams +3": -210,
+      "Los Angeles Rams +1": -155,
+      "Los Angeles Rams -0.5": -143
+    },
+    "alt_totals": {
+      "Over 45": -110,
+      "Under 45": -108,
+      "Over 45.5": -110,
+      "Under 45.5": -115,
+      "Over 42.5": -166,
+      "Over 43.5": -142,
+      "Over 44.5": -120,
+      "Over 46.5": 102,
+      "Under 42.5": 130,
+      "Under 43.5": 112,
+      "Under 44.5": -104,
+      "Under 46.5": -130,
+      "Over 47": 110,
+      "Over 44": -135,
+      "Over 43": -160,
+      "Over 42": -185,
+      "Over 46": -105,
+      "Under 47": -145,
+      "Under 44": 100,
+      "Under 43": 120,
+      "Under 42": 135,
+      "Under 46": -125
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "47dc7baa254659f3beb2ed2b38c207b6",
+    "sport": "nfl",
+    "away_team": "Philadelphia Eagles",
+    "home_team": "Chicago Bears",
+    "commence_time": "2026-09-29T03:15:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Philadelphia Eagles",
+    "favorite_odds": -225,
+    "underdog": "Chicago Bears",
+    "underdog_odds": 195,
+    "moneyline": {
+      "Chicago Bears": 195,
+      "Philadelphia Eagles": -225
+    },
+    "runline": {
+      "Chicago Bears +4.5": -103
+    },
+    "totals": {
+      "Over 41": -107,
+      "Under 41": -107
+    },
+    "alt_runline": {
+      "Chicago Bears +5": -108,
+      "Philadelphia Eagles -4.5": -107,
+      "Philadelphia Eagles -5": -110,
+      "Chicago Bears +2.5": 150,
+      "Chicago Bears +3.5": 112,
+      "Chicago Bears +4.5": -104,
+      "Chicago Bears +5.5": -114,
+      "Chicago Bears +6.5": -136,
+      "Philadelphia Eagles +6.5": -715,
+      "Philadelphia Eagles +5.5": -560,
+      "Philadelphia Eagles +4.5": -500,
+      "Philadelphia Eagles +3.5": -400,
+      "Philadelphia Eagles +2.5": -295,
+      "Chicago Bears +2": 155,
+      "Chicago Bears +4": 104,
+      "Chicago Bears +7": -159,
+      "Chicago Bears +3": 130,
+      "Chicago Bears +6": -125,
+      "Philadelphia Eagles +5": -560,
+      "Philadelphia Eagles +3": -375,
+      "Philadelphia Eagles +4": -480,
       "Philadelphia Eagles +2": -286,
-      "Philadelphia Eagles -0.5": -230,
-      "Philadelphia Eagles 0": -235,
-      "Philadelphia Eagles +0.5": -235,
-      "Washington Commanders +1": 170,
-      "Washington Commanders +2": 155,
-      "Washington Commanders -1": 190,
-      "Washington Commanders -2": 210,
-      "Washington Commanders +0.5": 175,
-      "Washington Commanders 0": 180,
-      "Washington Commanders -0.5": 180
+      "Philadelphia Eagles +6": -715
     },
     "alt_totals": {
-      "Over 44": -110,
-      "Under 44": -110,
-      "Over 24.5": -6000,
-      "Under 24.5": 1400,
-      "Over 19.5": -50000,
-      "Over 20.5": -20000,
-      "Over 21.5": -20000,
-      "Over 22.5": -10000,
-      "Over 23.5": -7000,
-      "Under 19.5": 3000,
-      "Under 20.5": 2500,
-      "Under 21.5": 2000,
-      "Under 22.5": 1700,
-      "Under 23.5": 1500
+      "Over 41.5": -105,
+      "Under 41.5": -115,
+      "Over 38.5": -165,
+      "Over 39.5": -145,
+      "Over 40.5": -125,
+      "Over 42.5": 110,
+      "Over 43.5": 125,
+      "Under 38.5": 130,
+      "Under 39.5": 114,
+      "Under 40.5": 100,
+      "Under 42.5": -128,
+      "Under 43.5": -150,
+      "Over 43": 115,
+      "Over 42": 100,
+      "Over 41": -112,
+      "Over 40": -130,
+      "Over 39": -150,
+      "Under 43": -145,
+      "Under 42": -125,
+      "Under 41": -105,
+      "Under 40": 105,
+      "Under 39": 120
     },
     "innings_1": {
       "moneyline": {
@@ -1421,171 +1720,38 @@
     }
   },
   {
-    "gameId": "3e646c7479c57f5d9752d8c7dfe7059b",
+    "gameId": "d55cb69fed50a09170560b5b75d8de86",
     "sport": "nfl",
-    "away_team": "Dallas Cowboys",
-    "home_team": "New York Giants",
-    "commence_time": "09/13/2026 08:20 PM",
+    "away_team": "Pittsburgh Steelers",
+    "home_team": "Cleveland Browns",
+    "commence_time": "2026-10-02T03:15:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "Dallas Cowboys",
-    "favorite_odds": -148,
-    "underdog": "New York Giants",
-    "underdog_odds": 138,
+    "favorite": "Pittsburgh Steelers",
+    "favorite_odds": -134,
+    "underdog": "Cleveland Browns",
+    "underdog_odds": 124,
     "moneyline": {
-      "Dallas Cowboys": -148,
-      "New York Giants": 138
+      "Cleveland Browns": 124,
+      "Pittsburgh Steelers": -134
     },
     "runline": {
-      "New York Giants +3": -108
+      "Pittsburgh Steelers -3": -105
     },
     "totals": {
-      "Over 48.5": -105,
-      "Under 48.5": -108
+      "Over 37.5": -105,
+      "Under 37.5": -107
     },
     "alt_runline": {
-      "Dallas Cowboys -2.5": -130,
-      "New York Giants +2.5": 102,
-      "Dallas Cowboys -3": -102,
-      "Dallas Cowboys -1.5": -134,
-      "Dallas Cowboys +1.5": -172,
-      "Dallas Cowboys +2.5": -190,
-      "New York Giants +1.5": 116,
-      "New York Giants -1.5": 128,
-      "New York Giants -2.5": 155,
-      "Dallas Cowboys +0.5": -162,
-      "Dallas Cowboys -0.5": -162,
-      "Dallas Cowboys -1": -152,
-      "Dallas Cowboys +1": -175,
-      "Dallas Cowboys +2": -186,
-      "Dallas Cowboys -2": -127,
-      "Dallas Cowboys 0": -162,
-      "New York Giants -0.5": 128,
-      "New York Giants +0.5": 128,
-      "New York Giants +1": 123,
-      "New York Giants -1": 138,
-      "New York Giants -2": 145,
-      "New York Giants +2": 105,
-      "New York Giants 0": 128
+      "Cleveland Browns +3": -115,
+      "Cleveland Browns +2.5": -105,
+      "Pittsburgh Steelers -2.5": -117
     },
     "alt_totals": {
-      "Over 48": -102,
-      "Under 48": -108,
-      "Over 27.5": -6000,
-      "Under 27.5": 1400,
-      "Over 22.5": -50000,
-      "Over 23.5": -20000,
-      "Over 24.5": -20000,
-      "Over 25.5": -10000,
-      "Over 26.5": -7000,
-      "Under 22.5": 3500,
-      "Under 23.5": 2500,
-      "Under 24.5": 2000,
-      "Under 25.5": 1800,
-      "Under 26.5": 1500
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "5ad8135dc2b5f27de0b777acd317855a",
-    "sport": "nfl",
-    "away_team": "Denver Broncos",
-    "home_team": "Kansas City Chiefs",
-    "commence_time": "09/14/2026 08:15 PM",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Kansas City Chiefs",
-    "favorite_odds": -140,
-    "underdog": "Denver Broncos",
-    "underdog_odds": 130,
-    "moneyline": {
-      "Denver Broncos": 130,
-      "Kansas City Chiefs": -140
-    },
-    "runline": {
-      "Denver Broncos +2.5": 100
-    },
-    "totals": {
-      "Over 43.5": -104,
-      "Under 43.5": -107
-    },
-    "alt_runline": {
-      "Denver Broncos +2": 104,
-      "Denver Broncos +3": -117,
-      "Kansas City Chiefs -3": 100,
-      "Kansas City Chiefs -2.5": -125,
-      "Kansas City Chiefs -2": -125,
-      "Denver Broncos -2.5": 139,
-      "Denver Broncos -1.5": 128,
-      "Denver Broncos +1.5": 107,
-      "Denver Broncos +2.5": -102,
-      "Kansas City Chiefs +2.5": -182,
-      "Kansas City Chiefs +1.5": -167,
-      "Kansas City Chiefs -1.5": -137,
-      "Denver Broncos +1": 115,
-      "Kansas City Chiefs -1": -139,
-      "Denver Broncos -1": 128,
-      "Denver Broncos -0.5": 120,
-      "Denver Broncos -2": 140,
-      "Denver Broncos 0": 120,
-      "Denver Broncos +0.5": 120,
-      "Kansas City Chiefs +1": -159,
-      "Kansas City Chiefs +0.5": -150,
-      "Kansas City Chiefs +2": -177,
-      "Kansas City Chiefs 0": -148,
-      "Kansas City Chiefs -0.5": -150
-    },
-    "alt_totals": {
-      "Over 43": -110,
-      "Under 43": -110,
-      "Over 42.5": -110,
-      "Under 42.5": -108,
-      "Over 22.5": -7000,
-      "Under 22.5": 1500,
-      "Over 17.5": -50000,
-      "Over 18.5": -50000,
-      "Over 19.5": -20000,
-      "Over 20.5": -10000,
-      "Over 21.5": -10000,
-      "Under 17.5": 3500,
-      "Under 18.5": 3500,
-      "Under 19.5": 2200,
-      "Under 20.5": 1800,
-      "Under 21.5": 1700
+      "Over 38": -108,
+      "Under 38": -113,
+      "Over 38.5": -110,
+      "Under 38.5": -110
     },
     "innings_1": {
       "moneyline": {
