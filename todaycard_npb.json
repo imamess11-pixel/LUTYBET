@@ -40,17 +40,15 @@
       "Hokkaido Nippon-Ham Fighters +1": -192
     },
     "alt_totals": {
-       "Over 7": -108,
-      "Under 7": -145,
       "Over 6": -120,
       "Under 6": -104,
-      "Over 4.5": -275,
-      "Under 4.5": 213,
-      "Over 3": -1300,
-      "Over 3.5": -484,
+      "Over 7": -105,
+      "Under 7": -145,
+      "Over 5": -280,
+      "Over 5.5": -190,
       "Over 4": -427,
-      "Under 3": 630,
-      "Under 3.5": 325,
+      "Under 5": 215,
+      "Under 5.5": 150,
       "Under 4": 294
     },
     "innings_1": {
