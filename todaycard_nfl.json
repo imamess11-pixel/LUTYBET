@@ -1,5 +1,5 @@
 [
-  {
+    {
     "gameId": "d55cb69fed50a09170560b5b75d8de86",
     "sport": "nfl",
     "away_team": "Pittsburgh Steelers",
@@ -228,7 +228,8 @@
       "Tennessee Titans": 500
     },
     "runline": {
-      "Baltimore Ravens -10.5": -105
+      "Baltimore Ravens -10.5": -105,
+      "Tennessee Titans +10.5": -105
     },
     "totals": {
       "Over 45": -107,
@@ -236,7 +237,6 @@
     },
     "alt_runline": {
       "Tennessee Titans +10": -107,
-      "Tennessee Titans +10.5": -105,
       "Baltimore Ravens -10": -114
     },
     "alt_totals": {
@@ -296,15 +296,16 @@
       "New England Patriots": 215
     },
     "runline": {
-      "Buffalo Bills -5.5": -105
+      "Buffalo Bills -5.5": -105,
+      "New England Patriots +5.5": -105
     },
     "totals": {
       "Over 50": -107,
       "Under 50": -107
     },
     "alt_runline": {
-      "New England Patriots +5.5": -109,
-      "Buffalo Bills -5.5": -112
+      "Buffalo Bills -5.5": -112,
+      "New England Patriots +5.5": -109
     },
     "alt_totals": {
       "Over 49.5": -110,
@@ -433,7 +434,8 @@
       "Jacksonville Jaguars": 136
     },
     "runline": {
-      "Cincinnati Bengals -2.5": -110
+      "Cincinnati Bengals -2.5": -110,
+      "Jacksonville Jaguars +2.5": 100
     },
     "totals": {
       "Over 50.5": -107,
@@ -442,8 +444,8 @@
     "alt_runline": {
       "Jacksonville Jaguars +3": -110,
       "Cincinnati Bengals -3": -110,
-      "Jacksonville Jaguars +2.5": -104,
-      "Cincinnati Bengals -2.5": -118
+      "Cincinnati Bengals -2.5": -118,
+      "Jacksonville Jaguars +2.5": -104
     },
     "alt_totals": {
       "Over 50": -114,
@@ -572,7 +574,8 @@
       "Tampa Bay Buccaneers": 100
     },
     "runline": {
-      "Green Bay Packers -1.5": 100
+      "Green Bay Packers -1.5": 100,
+      "Tampa Bay Buccaneers +1.5": -110
     },
     "totals": {
       "Over 46": -107,
@@ -580,7 +583,6 @@
     },
     "alt_runline": {
       "Tampa Bay Buccaneers +1": -109,
-      "Tampa Bay Buccaneers +1.5": -110,
       "Green Bay Packers -1": -112
     },
     "alt_totals": {
@@ -712,7 +714,8 @@
       "Minnesota Vikings": -560
     },
     "runline": {
-      "Miami Dolphins +10.5": -110
+      "Miami Dolphins +10.5": -110,
+      "Minnesota Vikings -10.5": -102
     },
     "totals": {
       "Over 42.5": -107,
@@ -720,9 +723,9 @@
     },
     "alt_runline": {
       "Miami Dolphins +10": -105,
-      "Minnesota Vikings -10.5": -108,
       "Minnesota Vikings -10": -105,
-      "Miami Dolphins +10.5": -113
+      "Miami Dolphins +10.5": -113,
+      "Minnesota Vikings -10.5": -108
     },
     "alt_totals": {
       "Over 42": -110,
@@ -927,7 +930,8 @@
       "Seattle Seahawks": -290
     },
     "runline": {
-      "Los Angeles Chargers +6.5": 100
+      "Los Angeles Chargers +6.5": 100,
+      "Seattle Seahawks -6.5": -110
     },
     "totals": {
       "Over 43.5": -107,
@@ -935,9 +939,9 @@
     },
     "alt_runline": {
       "Los Angeles Chargers +7": -115,
-      "Seattle Seahawks -6.5": -115,
       "Seattle Seahawks -7": -105,
-      "Los Angeles Chargers +6.5": -106
+      "Los Angeles Chargers +6.5": -106,
+      "Seattle Seahawks -6.5": -115
     },
     "alt_totals": {
       "Over 43": -110,
