@@ -1,873 +1,127 @@
 [
   {
-    "gameId": "08d9219713246e3edff39b4f549085d8",
+    "gameId": "1bc3bf1d3034010bdfb31d928a71177a",
     "sport": "mlb",
-    "away_team": "Philadelphia Phillies",
+    "away_team": "Los Angeles Dodgers",
     "home_team": "Atlanta Braves",
-    "commence_time": "2026-09-29T21:00:00.000Z",
+    "commence_time": "2026-10-07T01:00:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "Atlanta Braves",
-    "favorite_odds": -184,
-    "underdog": "Philadelphia Phillies",
-    "underdog_odds": 170,
+    "favorite": "Los Angeles Dodgers",
+    "favorite_odds": -105,
+    "underdog": "Atlanta Braves",
+    "underdog_odds": -103,
     "moneyline": {
-      "Atlanta Braves": -184,
-      "Philadelphia Phillies": 170
+      "Atlanta Braves": -103,
+      "Los Angeles Dodgers": -105
     },
     "runline": {
-      "Atlanta Braves -1.5": 127,
-      "Philadelphia Phillies +1.5": -125
+      "Atlanta Braves +1.5": -190,
+      "Los Angeles Dodgers -1.5": 167,
+      "Atlanta Braves -1.5": 210,
+      "Los Angeles Dodgers +1.5": -250
     },
     "totals": {
-      "Over 6.5": -118,
-      "Under 6.5": 103
+      "Over 6.5": -105,
+      "Under 6.5": -107
     },
     "alt_runline": {
-      "Atlanta Braves +3.5": -1560,
-      "Atlanta Braves +3": -1440,
-      "Atlanta Braves +2.5": -750,
-      "Atlanta Braves +2": -660,
-      "Atlanta Braves +1.5": -400,
-      "Atlanta Braves +1": -331,
-      "Atlanta Braves -1": -146,
-      "Atlanta Braves -2": 144,
-      "Atlanta Braves -2.5": 173,
-      "Atlanta Braves -3": 234,
-      "Atlanta Braves -3.5": 264,
-      "Atlanta Braves -4": 363,
-      "Atlanta Braves -4.5": 450,
-      "Atlanta Braves -5": 557,
-      "Atlanta Braves -5.5": 630,
-      "Atlanta Braves -6": 800,
-      "Philadelphia Phillies -3.5": 700,
-      "Philadelphia Phillies -3": 670,
-      "Philadelphia Phillies -2.5": 450,
-      "Philadelphia Phillies -2": 412,
-      "Philadelphia Phillies -1.5": 275,
-      "Philadelphia Phillies -1": 238,
-      "Philadelphia Phillies +1": 112,
-      "Philadelphia Phillies +2": -190,
-      "Philadelphia Phillies +2.5": -231,
-      "Philadelphia Phillies +3": -325,
-      "Philadelphia Phillies +3.5": -375,
-      "Philadelphia Phillies +4": -558,
-      "Philadelphia Phillies +4.5": -720,
-      "Philadelphia Phillies +5": -1040,
-      "Philadelphia Phillies +5.5": -1140,
-      "Philadelphia Phillies +6": -2100,
-      "Atlanta Braves -8.5": 1500,
-      "Atlanta Braves -7.5": 1200,
-      "Atlanta Braves -6.5": 900,
-      "Atlanta Braves -1.5": 115,
-      "Atlanta Braves +4.5": -4500,
-      "Philadelphia Phillies +7.5": -4500,
-      "Philadelphia Phillies +6.5": -2500,
-      "Philadelphia Phillies +1.5": -135,
-      "Philadelphia Phillies -4.5": 1200,
-      "Philadelphia Phillies -5.5": 1500
+      "Atlanta Braves +5": -1880,
+      "Atlanta Braves +4.5": -1020,
+      "Atlanta Braves +4": -940,
+      "Atlanta Braves +3.5": -571,
+      "Atlanta Braves +3": -509,
+      "Atlanta Braves +2.5": -341,
+      "Atlanta Braves +2": -305,
+      "Atlanta Braves +1": -157,
+      "Atlanta Braves -1": 146,
+      "Atlanta Braves -1.5": 190,
+      "Atlanta Braves -2": 294,
+      "Atlanta Braves -2.5": 331,
+      "Atlanta Braves -3": 488,
+      "Atlanta Braves -3.5": 500,
+      "Atlanta Braves -4": 760,
+      "Atlanta Braves -4.5": 790,
+      "Los Angeles Dodgers -5": 770,
+      "Los Angeles Dodgers -4.5": 554,
+      "Los Angeles Dodgers -4": 523,
+      "Los Angeles Dodgers -3.5": 375,
+      "Los Angeles Dodgers -3": 338,
+      "Los Angeles Dodgers -2.5": 243,
+      "Los Angeles Dodgers -2": 211,
+      "Los Angeles Dodgers -1": 120,
+      "Los Angeles Dodgers +1": -182,
+      "Los Angeles Dodgers +1.5": -250,
+      "Los Angeles Dodgers +2": -385,
+      "Los Angeles Dodgers +2.5": -496,
+      "Los Angeles Dodgers +3": -840,
+      "Los Angeles Dodgers +3.5": -940,
+      "Los Angeles Dodgers +4": -1840,
+      "Los Angeles Dodgers +4.5": -1980,
+      "Atlanta Braves -8.5": 1800,
+      "Atlanta Braves -7.5": 1500,
+      "Atlanta Braves -6.5": 1300,
+      "Atlanta Braves -5.5": 1060,
+      "Atlanta Braves +1.5": -200,
+      "Atlanta Braves +5.5": -2500,
+      "Los Angeles Dodgers +5.5": -3500,
+      "Los Angeles Dodgers -1.5": 165,
+      "Los Angeles Dodgers -5.5": 900,
+      "Los Angeles Dodgers -6.5": 1300,
+      "Los Angeles Dodgers -7.5": 1500,
+      "Los Angeles Dodgers -8.5": 1700
     },
     "alt_totals": {
-      "Over 7": 105,
-      "Under 7": -134,
-      "Over 3.5": -610,
-      "Over 4": -545,
-      "Over 4.5": -295,
-      "Over 5": -275,
-      "Over 5.5": -177,
-      "Over 6": -157,
-      "Over 7.5": 136,
-      "Over 8": 170,
-      "Over 8.5": 200,
-      "Over 9": 270,
-      "Over 9.5": 300,
-      "Over 10": 375,
-      "Over 10.5": 400,
-      "Over 11": 525,
-      "Over 11.5": 600,
-      "Under 3.5": 400,
-      "Under 4": 360,
-      "Under 4.5": 270,
-      "Under 5": 220,
-      "Under 5.5": 146,
-      "Under 6": 125,
-      "Under 7.5": -152,
-      "Under 8": -200,
-      "Under 8.5": -210,
-      "Under 9": -305,
-      "Under 9.5": -305,
-      "Under 10": -435,
-      "Under 10.5": -435,
-      "Under 11": -670,
-      "Under 11.5": -1020,
-      "Over 2.5": -2500,
-      "Over 6.5": -120,
-      "Over 12.5": 830,
+      "Over 3.5": -520,
+      "Over 4": -479,
+      "Over 4.5": -278,
+      "Over 5": -225,
+      "Over 5.5": -150,
+      "Over 6": -127,
+      "Over 7": 128,
+      "Over 7.5": 155,
+      "Over 8": 195,
+      "Over 8.5": 215,
+      "Over 9": 300,
+      "Over 9.5": 335,
+      "Over 10": 420,
+      "Over 10.5": 425,
+      "Over 11": 600,
+      "Over 11.5": 630,
+      "Under 3.5": 375,
+      "Under 4": 350,
+      "Under 4.5": 250,
+      "Under 5": 210,
+      "Under 5.5": 135,
+      "Under 6": 110,
+      "Under 7": -148,
+      "Under 7.5": -186,
+      "Under 8": -233,
+      "Under 8.5": -263,
+      "Under 9": -386,
+      "Under 9.5": -440,
+      "Under 10": -590,
+      "Under 10.5": -640,
+      "Under 11": -1060,
+      "Under 11.5": -1140,
+      "Over 2.5": -2000,
+      "Over 6.5": -106,
+      "Over 12.5": 870,
       "Over 13.5": 1100,
       "Over 14.5": 1400,
       "Over 15.5": 1800,
-      "Under 1.5": 1500,
-      "Under 2.5": 900,
-      "Under 6.5": 100,
-      "Under 12.5": -2000,
+      "Under 1.5": 1400,
+      "Under 2.5": 830,
+      "Under 6.5": -110,
+      "Under 12.5": -2200,
       "Under 13.5": -4000,
-      "Over 12": 700,
+      "Over 12": 775,
       "Over 1.5": -10000,
-      "Over 3": -2000,
-      "Over 2": -10000,
-      "Under 12": -1600,
-      "Under 3": 775,
-      "Under 2": 1300
-    },
-    "innings_1": {
-      "moneyline": {
-        "Atlanta Braves": -170,
-        "Philadelphia Phillies": 130
-      },
-      "runline": {
-
-      },
-      "totals": {
-        "Over 0.5": 133,
-        "Under 0.5": -155
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-        "Atlanta Braves": -200,
-        "Philadelphia Phillies": 190
-      },
-      "runline": {
-        "Atlanta Braves -0.5": -132,
-        "Philadelphia Phillies +0.5": 115,
-        "Atlanta Braves -1": 100,
-        "Philadelphia Phillies +1": -130
-      },
-      "totals": {
-        "Over 3.5": -115,
-        "Under 3.5": 100
-      }
-    },
-    "team_totals": [
-      {
-        "point": 3.5,
-        "over": -124,
-        "under": 105,
-        "team": "Atlanta Braves"
-      },
-      {
-        "point": 2.5,
-        "over": -113,
-        "under": -105,
-        "team": "Philadelphia Phillies"
-      },
-      {
-        "point": 4.5,
-        "over": 133,
-        "under": -175,
-        "team": "Atlanta Braves"
-      },
-      {
-        "point": 5.5,
-        "over": 205,
-        "under": -278,
-        "team": "Atlanta Braves"
-      },
-      {
-        "point": 3.5,
-        "over": 155,
-        "under": -200,
-        "team": "Philadelphia Phillies"
-      },
-      {
-        "point": 4.5,
-        "over": 250,
-        "under": -345,
-        "team": "Philadelphia Phillies"
-      }
-    ],
-    "player_props": {
-      "hits": [
-        {
-          "point": 0.5,
-          "over": -210,
-          "under": 194,
-          "player": "Drake Baldwin"
-        },
-        {
-          "point": 0.5,
-          "over": -225,
-          "under": 192,
-          "player": "Michael Harris II"
-        },
-        {
-          "point": 0.5,
-          "over": -180,
-          "under": 179,
-          "player": "Ozzie Albies"
-        },
-        {
-          "point": 0.5,
-          "over": -186,
-          "under": 171,
-          "player": "Mauricio Dubon"
-        },
-        {
-          "point": 0.5,
-          "over": -200,
-          "under": 166,
-          "player": "Matt Olson"
-        },
-        {
-          "point": 0.5,
-          "over": -186,
-          "under": 168,
-          "player": "Ronald Acuna Jr."
-        },
-        {
-          "point": 0.5,
-          "over": -179,
-          "under": 155,
-          "player": "Trea Turner"
-        },
-        {
-          "point": 0.5,
-          "over": -176,
-          "under": 160,
-          "player": "Alec Bohm"
-        },
-        {
-          "point": 0.5,
-          "over": -152,
-          "under": 120,
-          "player": "Bryce Harper"
-        },
-        {
-          "point": 0.5,
-          "over": -148,
-          "under": 118,
-          "player": "Austin Riley"
-        },
-        {
-          "point": 0.5,
-          "over": -135,
-          "under": 107,
-          "player": "Kyle Schwarber"
-        },
-        {
-          "point": 0.5,
-          "over": -128,
-          "under": 120,
-          "player": "Bryson Stott"
-        },
-        {
-          "point": 0.5,
-          "over": -117,
-          "under": 105,
-          "player": "Edmundo Sosa"
-        },
-        {
-          "point": 0.5,
-          "over": -110,
-          "under": 100,
-          "player": "J.T. Realmuto"
-        },
-        {
-          "point": 0.5,
-          "over": -108,
-          "under": 100,
-          "player": "Bryan De La Cruz"
-        },
-        {
-          "point": 0.5,
-          "over": 111,
-          "under": -125,
-          "player": "Sean Murphy"
-        },
-        {
-          "point": 0.5,
-          "over": 141,
-          "under": -150,
-          "player": "Derek Hill"
-        },
-        {
-          "point": 0.5,
-          "over": 112,
-          "under": -130,
-          "player": "Ha-Seong Kim"
-        },
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": -111,
-          "player": "Mike Yastrzemski"
-        },
-        {
-          "point": 1.5,
-          "over": 215,
-          "under": -294,
-          "player": "Drake Baldwin"
-        }
-      ],
-      "hr": [
-        {
-          "point": 0.5,
-          "over": 1200,
-          "player": "Mauricio Dubon"
-        },
-        {
-          "point": 0.5,
-          "over": 460,
-          "player": "Ronald Acuna Jr."
-        },
-        {
-          "point": 0.5,
-          "over": 750,
-          "player": "Ozzie Albies"
-        },
-        {
-          "point": 0.5,
-          "over": 1050,
-          "player": "Ha-Seong Kim"
-        },
-        {
-          "point": 0.5,
-          "over": 1200,
-          "player": "Derek Hill"
-        },
-        {
-          "point": 0.5,
-          "over": 480,
-          "player": "Michael Harris II"
-        },
-        {
-          "point": 0.5,
-          "over": 350,
-          "player": "Kyle Schwarber"
-        },
-        {
-          "point": 0.5,
-          "over": 900,
-          "player": "J.T. Realmuto"
-        },
-        {
-          "point": 0.5,
-          "over": 700,
-          "player": "Sean Murphy"
-        },
-        {
-          "point": 0.5,
-          "over": 525,
-          "player": "Bryce Harper"
-        },
-        {
-          "point": 0.5,
-          "over": 370,
-          "player": "Matt Olson"
-        },
-        {
-          "point": 0.5,
-          "over": 1200,
-          "player": "Bryson Stott"
-        },
-        {
-          "point": 0.5,
-          "over": 550,
-          "player": "Austin Riley"
-        },
-        {
-          "point": 0.5,
-          "over": 1150,
-          "player": "Alec Bohm"
-        },
-        {
-          "point": 0.5,
-          "over": 800,
-          "player": "Trea Turner"
-        },
-        {
-          "point": 0.5,
-          "over": 950,
-          "player": "Bryan De La Cruz"
-        },
-        {
-          "point": 0.5,
-          "over": 550,
-          "player": "Drake Baldwin"
-        },
-        {
-          "point": 0.5,
-          "over": 850,
-          "player": "Edmundo Sosa"
-        }
-      ],
-      "rbi": [
-        {
-          "point": 0.5,
-          "over": 180,
-          "under": -210,
-          "player": "Matt Olson"
-        },
-        {
-          "point": 0.5,
-          "over": 185,
-          "under": -220,
-          "player": "Michael Harris II"
-        },
-        {
-          "point": 0.5,
-          "over": 250,
-          "under": -275,
-          "player": "Drake Baldwin"
-        },
-        {
-          "point": 0.5,
-          "over": 240,
-          "under": -275,
-          "player": "Ozzie Albies"
-        },
-        {
-          "point": 0.5,
-          "over": 210,
-          "under": -301,
-          "player": "Ronald Acuna Jr."
-        },
-        {
-          "point": 0.5,
-          "over": 230,
-          "under": -316,
-          "player": "Kyle Schwarber"
-        },
-        {
-          "point": 0.5,
-          "over": 226,
-          "under": -295,
-          "player": "Austin Riley"
-        },
-        {
-          "point": 0.5,
-          "over": 258,
-          "under": -295,
-          "player": "Mauricio Dubon"
-        },
-        {
-          "point": 0.5,
-          "over": 273,
-          "under": -350,
-          "player": "Bryce Harper"
-        },
-        {
-          "point": 0.5,
-          "over": 277,
-          "under": -408,
-          "player": "Alec Bohm"
-        },
-        {
-          "point": 0.5,
-          "over": 329,
-          "under": -400,
-          "player": "Sean Murphy"
-        },
-        {
-          "point": 0.5,
-          "over": 340,
-          "under": -400,
-          "player": "Trea Turner"
-        },
-        {
-          "point": 0.5,
-          "over": 343,
-          "under": -375,
-          "player": "Edmundo Sosa"
-        },
-        {
-          "point": 0.5,
-          "over": 350,
-          "under": -450,
-          "player": "J.T. Realmuto"
-        },
-        {
-          "point": 0.5,
-          "over": 375,
-          "under": -400,
-          "player": "Bryson Stott"
-        },
-        {
-          "point": 0.5,
-          "over": 389,
-          "under": -450,
-          "player": "Bryan De La Cruz"
-        },
-        {
-          "point": 0.5,
-          "over": 477,
-          "under": -650,
-          "player": "Derek Hill"
-        },
-        {
-          "point": 0.5,
-          "over": 390,
-          "player": "Ha-Seong Kim"
-        },
-        {
-          "point": 0.5,
-          "over": 290,
-          "under": -450,
-          "player": "Mike Yastrzemski"
-        }
-      ],
-      "bases": [
-        {
-          "point": 1.5,
-          "over": 130,
-          "under": -150,
-          "player": "Matt Olson"
-        },
-        {
-          "point": 1.5,
-          "over": 135,
-          "under": -157,
-          "player": "Drake Baldwin"
-        },
-        {
-          "point": 1.5,
-          "over": 140,
-          "under": -160,
-          "player": "Ronald Acuna Jr."
-        },
-        {
-          "point": 1.5,
-          "over": 130,
-          "under": -165,
-          "player": "Michael Harris II"
-        },
-        {
-          "point": 1.5,
-          "over": 170,
-          "under": -170,
-          "player": "Ozzie Albies"
-        },
-        {
-          "point": 1.5,
-          "over": 185,
-          "under": -185,
-          "player": "Mauricio Dubon"
-        },
-        {
-          "point": 1.5,
-          "over": 225,
-          "player": "Edmundo Sosa"
-        },
-        {
-          "point": 1.5,
-          "over": 260,
-          "player": "Sean Murphy"
-        },
-        {
-          "point": 1.5,
-          "over": 175,
-          "player": "Austin Riley"
-        },
-        {
-          "point": 1.5,
-          "over": 300,
-          "player": "Ha-Seong Kim"
-        },
-        {
-          "point": 1.5,
-          "over": 220,
-          "player": "Bryson Stott"
-        },
-        {
-          "point": 1.5,
-          "over": 230,
-          "player": "Bryan De La Cruz"
-        },
-        {
-          "point": 1.5,
-          "over": 164,
-          "under": -200,
-          "player": "Alec Bohm"
-        },
-        {
-          "point": 1.5,
-          "over": 320,
-          "player": "Derek Hill"
-        },
-        {
-          "point": 1.5,
-          "over": 220,
-          "player": "J.T. Realmuto"
-        },
-        {
-          "point": 1.5,
-          "over": 164,
-          "under": -200,
-          "player": "Trea Turner"
-        },
-        {
-          "point": 1.5,
-          "over": 155,
-          "player": "Bryce Harper"
-        },
-        {
-          "point": 1.5,
-          "over": 138,
-          "player": "Kyle Schwarber"
-        },
-        {
-          "point": 0.5,
-          "over": -122,
-          "under": 100,
-          "player": "Bryan De La Cruz"
-        },
-        {
-          "point": 0.5,
-          "over": 117,
-          "under": -150,
-          "player": "Derek Hill"
-        },
-        {
-          "point": 0.5,
-          "over": 102,
-          "under": -125,
-          "player": "Sean Murphy"
-        },
-        {
-          "point": 0.5,
-          "over": -120,
-          "under": 100,
-          "player": "J.T. Realmuto"
-        },
-        {
-          "point": 0.5,
-          "over": -154,
-          "under": 120,
-          "player": "Bryce Harper"
-        },
-        {
-          "point": 0.5,
-          "over": -135,
-          "under": 105,
-          "player": "Edmundo Sosa"
-        },
-        {
-          "point": 0.5,
-          "over": -137,
-          "under": 106,
-          "player": "Kyle Schwarber"
-        },
-        {
-          "point": 0.5,
-          "over": -152,
-          "under": 120,
-          "player": "Bryson Stott"
-        },
-        {
-          "point": 0.5,
-          "over": -147,
-          "under": 115,
-          "player": "Austin Riley"
-        },
-        {
-          "point": 0.5,
-          "over": -103,
-          "under": -125,
-          "player": "Mike Yastrzemski"
-        },
-        {
-          "point": 0.5,
-          "over": -190,
-          "under": 140,
-          "player": "Ozzie Albies"
-        },
-        {
-          "point": 0.5,
-          "over": 115,
-          "under": -149,
-          "player": "Ha-Seong Kim"
-        }
-      ]
-    },
-    "pitcher_props": {
-      "strikeouts": [
-        {
-          "point": 7.5,
-          "over": 100,
-          "under": -118,
-          "player": "Chris Sale"
-        },
-        {
-          "point": 2.5,
-          "over": -126,
-          "under": 100,
-          "player": "Jesus Luzardo"
-        }
-      ],
-      "outs": [
-        {
-          "point": 17.5,
-          "over": -165,
-          "under": 140,
-          "player": "Chris Sale"
-        }
-      ],
-      "earned_runs": [
-        {
-          "point": 0.5,
-          "over": 107,
-          "under": -125,
-          "player": "Jesus Luzardo"
-        },
-        {
-          "point": 1.5,
-          "over": -105,
-          "under": -121,
-          "player": "Chris Sale"
-        }
-      ],
-      "hits_allowed": [
-        {
-          "point": 1.5,
-          "over": -152,
-          "under": 115,
-          "player": "Jesus Luzardo"
-        },
-        {
-          "point": 4.5,
-          "over": 108,
-          "under": -115,
-          "player": "Chris Sale"
-        }
-      ]
-    }
-  },
-  {
-    "gameId": "3a08d35ecf12b54dc25f5912ccecf222",
-    "sport": "mlb",
-    "away_team": "Chicago White Sox",
-    "home_team": "Houston Astros",
-    "commence_time": "2026-09-30T00:00:00.000Z",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Houston Astros",
-    "favorite_odds": -123,
-    "underdog": "Chicago White Sox",
-    "underdog_odds": 116,
-    "moneyline": {
-      "Chicago White Sox": 116,
-      "Houston Astros": -123
-    },
-    "runline": {
-      "Chicago White Sox +1.5": -175,
-      "Houston Astros -1.5": 170
-    },
-    "totals": {
-      "Over 8": -113,
-      "Under 8": -101
-    },
-    "alt_runline": {
-      "Chicago White Sox -4.5": 535,
-      "Chicago White Sox -4": 506,
-      "Chicago White Sox -3.5": 368,
-      "Chicago White Sox -3": 337,
-      "Chicago White Sox -2.5": 245,
-      "Chicago White Sox -2": 215,
-      "Chicago White Sox -1.5": 163,
-      "Chicago White Sox -1": 132,
-      "Chicago White Sox +1": -148,
-      "Chicago White Sox +2": -240,
-      "Chicago White Sox +2.5": -295,
-      "Chicago White Sox +3": -475,
-      "Chicago White Sox +3.5": -475,
-      "Chicago White Sox +4": -800,
-      "Chicago White Sox +4.5": -870,
-      "Chicago White Sox +5": -1500,
-      "Houston Astros +4.5": -970,
-      "Houston Astros +4": -890,
-      "Houston Astros +3.5": -625,
-      "Houston Astros +3": -508,
-      "Houston Astros +2.5": -375,
-      "Houston Astros +2": -275,
-      "Houston Astros +1.5": -200,
-      "Houston Astros +1": -173,
-      "Houston Astros -1": 114,
-      "Houston Astros -2": 185,
-      "Houston Astros -2.5": 238,
-      "Houston Astros -3": 320,
-      "Houston Astros -3.5": 348,
-      "Houston Astros -4": 472,
-      "Houston Astros -4.5": 499,
-      "Houston Astros -5": 690,
-      "Chicago White Sox +6.5": -3000,
-      "Chicago White Sox +5.5": -1600,
-      "Chicago White Sox +1.5": -175,
-      "Chicago White Sox -5.5": 800,
-      "Chicago White Sox -6.5": 1000,
-      "Chicago White Sox -7.5": 1300,
-      "Chicago White Sox -8.5": 1500,
-      "Houston Astros -8.5": 1500,
-      "Houston Astros -7.5": 1300,
-      "Houston Astros -6.5": 1000,
-      "Houston Astros -5.5": 750,
-      "Houston Astros -1.5": 140,
-      "Houston Astros +5.5": -1800,
-      "Houston Astros +6.5": -3000
-    },
-    "alt_totals": {
-      "Over 8.5": 102,
-      "Under 8.5": -120,
-      "Over 4.5": -770,
-      "Over 5": -660,
-      "Over 5.5": -286,
-      "Over 6": -286,
-      "Over 6.5": -200,
-      "Over 7": -186,
-      "Over 7.5": -134,
-      "Over 9": 125,
-      "Over 9.5": 162,
-      "Over 10": 185,
-      "Over 10.5": 215,
-      "Over 11": 270,
-      "Over 11.5": 310,
-      "Over 12": 360,
-      "Over 12.5": 400,
-      "Under 4.5": 475,
-      "Under 5": 450,
-      "Under 5.5": 275,
-      "Under 6": 250,
-      "Under 6.5": 200,
-      "Under 7": 165,
-      "Under 7.5": 118,
-      "Under 9": -160,
-      "Under 9.5": -177,
-      "Under 10": -230,
-      "Under 10.5": -235,
-      "Under 11": -335,
-      "Under 11.5": -335,
-      "Under 12": -480,
-      "Under 12.5": -455,
-      "Over 3.5": -1600,
-      "Over 13.5": 600,
-      "Over 14.5": 800,
-      "Over 15.5": 1060,
-      "Over 16.5": 1300,
-      "Over 17.5": 1700,
-      "Under 2.5": 1400,
-      "Under 3.5": 750,
-      "Under 13.5": -1000,
-      "Under 14.5": -1800,
-      "Under 15.5": -3500,
-      "Over 13": 500,
-      "Over 8": -125,
-      "Under 13": -715,
-      "Under 8": -102,
-      "Over 4": -1400,
-      "Over 14": 675,
-      "Over 3": -10000,
-      "Under 4": 675,
-      "Under 14": -1400,
-      "Under 3": 1300
+      "Over 3": -1600,
+      "Over 2": -5000,
+      "Under 12": -2000,
+      "Under 3": 725,
+      "Under 2": 1100
     },
     "innings_1": {
       "moneyline": {
@@ -877,1416 +131,485 @@
 
       },
       "totals": {
-        "Over 0.5": 100,
-        "Under 0.5": -120
+
       }
     },
     "innings_5": {
       "moneyline": {
-        "Chicago White Sox": 108,
-        "Houston Astros": -120
+
       },
       "runline": {
-        "Chicago White Sox +0.5": -133,
-        "Houston Astros -0.5": 115
+
       },
       "totals": {
-        "Over 4.5": -102,
-        "Under 4.5": -110
+
       }
     },
-    "team_totals": [
-      {
-        "point": 3.5,
-        "over": -121,
-        "under": 105,
-        "team": "Chicago White Sox"
-      },
-      {
-        "point": 3.5,
-        "over": -139,
-        "under": 120,
-        "team": "Houston Astros"
-      },
-      {
-        "point": 4.5,
-        "over": 130,
-        "under": -167,
-        "team": "Chicago White Sox"
-      },
-      {
-        "point": 5.5,
-        "over": 200,
-        "under": -265,
-        "team": "Chicago White Sox"
-      },
-      {
-        "point": 4.5,
-        "over": 117,
-        "under": -143,
-        "team": "Houston Astros"
-      },
-      {
-        "point": 5.5,
-        "over": 180,
-        "under": -240,
-        "team": "Houston Astros"
-      }
-    ],
+    "team_totals": [],
     "player_props": {
-      "hits": [
-        {
-          "point": 0.5,
-          "over": -225,
-          "under": 165,
-          "player": "Yainer Diaz"
-        },
-        {
-          "point": 0.5,
-          "over": -118,
-          "under": 100,
-          "player": "Munetaka Murakami"
-        },
-        {
-          "point": 0.5,
-          "over": 125,
-          "under": -154,
-          "player": "Taylor Trammell"
-        },
-        {
-          "point": 0.5,
-          "over": -123,
-          "under": -104,
-          "player": "Cam Smith"
-        },
-        {
-          "point": 0.5,
-          "over": 105,
-          "under": -122,
-          "player": "Colson Montgomery"
-        },
-        {
-          "point": 0.5,
-          "over": -235,
-          "under": 175,
-          "player": "Jeremy Pena"
-        },
-        {
-          "point": 0.5,
-          "over": -250,
-          "under": 180,
-          "player": "Yordan Alvarez"
-        },
-        {
-          "point": 0.5,
-          "over": -192,
-          "under": 146,
-          "player": "Isaac Paredes"
-        },
-        {
-          "point": 0.5,
-          "over": -125,
-          "under": 101,
-          "player": "Lucas Spence"
-        },
-        {
-          "point": 0.5,
-          "over": -192,
-          "under": 146,
-          "player": "Sam Antonacci"
-        },
-        {
-          "point": 0.5,
-          "over": -190,
-          "under": 155,
-          "player": "Jose Altuve"
-        },
-        {
-          "point": 0.5,
-          "over": -145,
-          "under": 111,
-          "player": "Braden Montgomery"
-        },
-        {
-          "point": 0.5,
-          "over": -155,
-          "under": 120,
-          "player": "Christian Walker"
-        },
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": 104,
-          "player": "Andrew Benintendi"
-        },
-        {
-          "point": 0.5,
-          "over": -167,
-          "under": 130,
-          "player": "Chase Meidroth"
-        },
-        {
-          "point": 0.5,
-          "over": -160,
-          "under": 131,
-          "player": "Miguel Vargas"
-        },
-        {
-          "point": 0.5,
-          "over": -140,
-          "under": 114,
-          "player": "Kyle Teel"
-        },
-        {
-          "point": 0.5,
-          "over": -135,
-          "under": 109,
-          "player": "Tristan Peters"
-        },
-        {
-          "point": 1.5,
-          "over": 220,
-          "under": -303,
-          "player": "Yainer Diaz"
-        },
-        {
-          "point": 1.5,
-          "over": 215,
-          "under": -294,
-          "player": "Jeremy Pena"
-        },
-        {
-          "point": 1.5,
-          "over": 209,
-          "under": -286,
-          "player": "Yordan Alvarez"
-        }
-      ],
-      "hr": [
-        {
-          "point": 0.5,
-          "over": 500,
-          "player": "Christian Walker"
-        },
-        {
-          "point": 0.5,
-          "over": 575,
-          "player": "Yainer Diaz"
-        },
-        {
-          "point": 0.5,
-          "over": 800,
-          "player": "Taylor Trammell"
-        },
-        {
-          "point": 0.5,
-          "over": 950,
-          "player": "Braden Montgomery"
-        },
-        {
-          "point": 0.5,
-          "over": 600,
-          "player": "Isaac Paredes"
-        },
-        {
-          "point": 0.5,
-          "over": 700,
-          "player": "Jose Altuve"
-        },
-        {
-          "point": 0.5,
-          "over": 400,
-          "player": "Munetaka Murakami"
-        },
-        {
-          "point": 0.5,
-          "over": 1150,
-          "player": "Sam Antonacci"
-        },
-        {
-          "point": 0.5,
-          "over": 650,
-          "player": "Cam Smith"
-        },
-        {
-          "point": 0.5,
-          "over": 700,
-          "player": "Lucas Spence"
-        },
-        {
-          "point": 0.5,
-          "over": 300,
-          "player": "Yordan Alvarez"
-        },
-        {
-          "point": 0.5,
-          "over": 430,
-          "player": "Colson Montgomery"
-        },
-        {
-          "point": 0.5,
-          "over": 500,
-          "player": "Jeremy Pena"
-        }
-      ],
-      "rbi": [
-        {
-          "point": 0.5,
-          "over": 230,
-          "under": -325,
-          "player": "Colson Montgomery"
-        },
-        {
-          "point": 0.5,
-          "over": 320,
-          "under": -325,
-          "player": "Cam Smith"
-        },
-        {
-          "point": 0.5,
-          "over": 195,
-          "under": -220,
-          "player": "Yainer Diaz"
-        },
-        {
-          "point": 0.5,
-          "over": 220,
-          "under": -250,
-          "player": "Jose Altuve"
-        },
-        {
-          "point": 0.5,
-          "over": 250,
-          "under": -325,
-          "player": "Braden Montgomery"
-        },
-        {
-          "point": 0.5,
-          "over": 195,
-          "under": -250,
-          "player": "Munetaka Murakami"
-        },
-        {
-          "point": 0.5,
-          "over": 220,
-          "under": -225,
-          "player": "Isaac Paredes"
-        },
-        {
-          "point": 0.5,
-          "over": 200,
-          "under": -250,
-          "player": "Christian Walker"
-        },
-        {
-          "point": 0.5,
-          "over": 225,
-          "under": -275,
-          "player": "Jeremy Pena"
-        },
-        {
-          "point": 0.5,
-          "over": 155,
-          "under": -210,
-          "player": "Yordan Alvarez"
-        },
-        {
-          "point": 0.5,
-          "over": 310,
-          "under": -400,
-          "player": "Lucas Spence"
-        },
-        {
-          "point": 0.5,
-          "over": 260,
-          "under": -375,
-          "player": "Sam Antonacci"
-        },
-        {
-          "point": 0.5,
-          "over": 333,
-          "under": -500,
-          "player": "Taylor Trammell"
-        },
-        {
-          "point": 0.5,
-          "over": 250,
-          "under": -350,
-          "player": "Andrew Benintendi"
-        },
-        {
-          "point": 0.5,
-          "over": 250,
-          "under": -350,
-          "player": "Kyle Teel"
-        },
-        {
-          "point": 0.5,
-          "over": 165,
-          "under": -225,
-          "player": "Miguel Vargas"
-        },
-        {
-          "point": 0.5,
-          "over": 250,
-          "under": -350,
-          "player": "Tristan Peters"
-        },
-        {
-          "point": 0.5,
-          "over": 230,
-          "under": -325,
-          "player": "Chase Meidroth"
-        }
-      ],
-      "bases": [
-        {
-          "point": 1.5,
-          "over": 185,
-          "player": "Braden Montgomery"
-        },
-        {
-          "point": 1.5,
-          "over": 205,
-          "player": "Cam Smith"
-        },
-        {
-          "point": 1.5,
-          "over": 138,
-          "player": "Munetaka Murakami"
-        },
-        {
-          "point": 1.5,
-          "over": 190,
-          "player": "Lucas Spence"
-        },
-        {
-          "point": 1.5,
-          "over": 150,
-          "under": -185,
-          "player": "Isaac Paredes"
-        },
-        {
-          "point": 1.5,
-          "over": 105,
-          "under": -132,
-          "player": "Yordan Alvarez"
-        },
-        {
-          "point": 1.5,
-          "over": 135,
-          "under": -172,
-          "player": "Yainer Diaz"
-        },
-        {
-          "point": 1.5,
-          "over": 150,
-          "player": "Christian Walker"
-        },
-        {
-          "point": 1.5,
-          "over": 155,
-          "player": "Sam Antonacci"
-        },
-        {
-          "point": 1.5,
-          "over": 275,
-          "player": "Taylor Trammell"
-        },
-        {
-          "point": 1.5,
-          "over": 125,
-          "under": -156,
-          "player": "Jeremy Pena"
-        },
-        {
-          "point": 1.5,
-          "over": 145,
-          "under": -189,
-          "player": "Jose Altuve"
-        },
-        {
-          "point": 1.5,
-          "over": 165,
-          "player": "Colson Montgomery"
-        },
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": -125,
-          "player": "Andrew Benintendi"
-        },
-        {
-          "point": 0.5,
-          "over": 128,
-          "under": -165,
-          "player": "Taylor Trammell"
-        },
-        {
-          "point": 0.5,
-          "over": -123,
-          "under": -104,
-          "player": "Lucas Spence"
-        },
-        {
-          "point": 0.5,
-          "over": -145,
-          "under": 111,
-          "player": "Braden Montgomery"
-        },
-        {
-          "point": 0.5,
-          "over": -189,
-          "under": 145,
-          "player": "Sam Antonacci"
-        },
-        {
-          "point": 0.5,
-          "over": -160,
-          "under": 120,
-          "player": "Miguel Vargas"
-        },
-        {
-          "point": 0.5,
-          "over": 105,
-          "under": -135,
-          "player": "Colson Montgomery"
-        },
-        {
-          "point": 0.5,
-          "over": -175,
-          "under": 130,
-          "player": "Chase Meidroth"
-        },
-        {
-          "point": 0.5,
-          "over": -140,
-          "under": 105,
-          "player": "Kyle Teel"
-        },
-        {
-          "point": 0.5,
-          "over": -152,
-          "under": 116,
-          "player": "Christian Walker"
-        },
-        {
-          "point": 0.5,
-          "over": -118,
-          "under": -106,
-          "player": "Munetaka Murakami"
-        },
-        {
-          "point": 0.5,
-          "over": -123,
-          "under": -104,
-          "player": "Cam Smith"
-        },
-        {
-          "point": 0.5,
-          "over": -135,
-          "under": 100,
-          "player": "Tristan Peters"
-        },
-        {
-          "point": 0.5,
-          "over": -190,
-          "under": 140,
-          "player": "Jose Altuve"
-        },
-        {
-          "point": 1.5,
-          "over": 141,
-          "under": -185,
-          "player": "Miguel Vargas"
-        }
-      ]
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
     },
     "pitcher_props": {
       "strikeouts": [],
-      "outs": [
-        {
-          "point": 5.5,
-          "over": -105,
-          "under": -130,
-          "player": "AJ Blubaugh"
-        }
-      ],
-      "earned_runs": [
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": -130,
-          "player": "AJ Blubaugh"
-        }
-      ],
+      "outs": [],
+      "earned_runs": [],
       "hits_allowed": []
     }
   },
   {
-    "gameId": "4cb76cceb16eb603c683038d132f4642",
+    "gameId": "62d8e1c18355ab6b3913d7a28fa677c2",
     "sport": "mlb",
-    "away_team": "Boston Red Sox",
-    "home_team": "New York Yankees",
-    "commence_time": "2026-09-30T03:10:00.000Z",
+    "away_team": "Milwaukee Brewers",
+    "home_team": "San Diego Padres",
+    "commence_time": "2026-10-07T04:30:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "New York Yankees",
+    "favorite": "San Diego Padres",
     "favorite_odds": -133,
-    "underdog": "Boston Red Sox",
-    "underdog_odds": 122,
+    "underdog": "Milwaukee Brewers",
+    "underdog_odds": 123,
     "moneyline": {
-      "Boston Red Sox": 122,
-      "New York Yankees": -133
+      "Milwaukee Brewers": 123,
+      "San Diego Padres": -133
     },
     "runline": {
-      "Boston Red Sox +1.5": -175,
-      "New York Yankees -1.5": 171
+      "Milwaukee Brewers +1.5": -178,
+      "San Diego Padres -1.5": 168
     },
     "totals": {
-      "Over 6.5": -102,
-      "Under 6.5": -113
+      "Over 7.5": -102,
+      "Under 7.5": -106
     },
     "alt_runline": {
-      "Boston Red Sox -4.5": 720,
-      "Boston Red Sox -4": 690,
-      "Boston Red Sox -3.5": 525,
-      "Boston Red Sox -3": 453,
-      "Boston Red Sox -2.5": 319,
-      "Boston Red Sox -2": 255,
-      "Boston Red Sox -1.5": 180,
-      "Boston Red Sox -1": 155,
-      "Boston Red Sox +1": -139,
-      "Boston Red Sox +2": -250,
-      "Boston Red Sox +2.5": -325,
-      "Boston Red Sox +3": -539,
-      "Boston Red Sox +3.5": -610,
-      "Boston Red Sox +4": -940,
-      "Boston Red Sox +4.5": -1020,
-      "Boston Red Sox +5": -1860,
-      "New York Yankees +4.5": -1620,
-      "New York Yankees +4": -1500,
-      "New York Yankees +3.5": -840,
-      "New York Yankees +3": -760,
-      "New York Yankees +2.5": -525,
-      "New York Yankees +2": -335,
-      "New York Yankees +1.5": -230,
-      "New York Yankees +1": -212,
-      "New York Yankees -1": 110,
-      "New York Yankees -2": 205,
-      "New York Yankees -2.5": 251,
-      "New York Yankees -3": 353,
-      "New York Yankees -3.5": 360,
-      "New York Yankees -4": 525,
-      "New York Yankees -4.5": 552,
-      "New York Yankees -5": 760,
-      "Boston Red Sox +1.5": -175,
-      "New York Yankees -1.5": 140,
-      "Boston Red Sox +5.5": -3000,
-      "Boston Red Sox -5.5": 1300,
-      "Boston Red Sox -6.5": 1700,
-      "New York Yankees -6.5": 1400,
-      "New York Yankees -5.5": 1000
+      "Milwaukee Brewers +6.5": -3000,
+      "Milwaukee Brewers +5.5": -1600,
+      "Milwaukee Brewers +4.5": -950,
+      "Milwaukee Brewers +3.5": -525,
+      "Milwaukee Brewers +2.5": -325,
+      "Milwaukee Brewers +1.5": -190,
+      "Milwaukee Brewers -1.5": 190,
+      "Milwaukee Brewers -2.5": 290,
+      "Milwaukee Brewers -3.5": 450,
+      "Milwaukee Brewers -4.5": 680,
+      "Milwaukee Brewers -5.5": 900,
+      "Milwaukee Brewers -6.5": 1200,
+      "Milwaukee Brewers -7.5": 1500,
+      "Milwaukee Brewers -8.5": 1800,
+      "San Diego Padres -8.5": 1500,
+      "San Diego Padres -7.5": 1300,
+      "San Diego Padres -6.5": 1000,
+      "San Diego Padres -5.5": 750,
+      "San Diego Padres -4.5": 540,
+      "San Diego Padres -3.5": 350,
+      "San Diego Padres -2.5": 240,
+      "San Diego Padres -1.5": 146,
+      "San Diego Padres +1.5": -250,
+      "San Diego Padres +2.5": -425,
+      "San Diego Padres +3.5": -750,
+      "San Diego Padres +4.5": -1400,
+      "San Diego Padres +5.5": -2500,
+      "San Diego Padres +6.5": -4500,
+      "Milwaukee Brewers -4": 660,
+      "Milwaukee Brewers -3": 437,
+      "Milwaukee Brewers -2": 269,
+      "Milwaukee Brewers -1": 155,
+      "Milwaukee Brewers +1": -127,
+      "Milwaukee Brewers +2": -265,
+      "Milwaukee Brewers +3": -498,
+      "Milwaukee Brewers +4": -890,
+      "Milwaukee Brewers +5": -1700,
+      "San Diego Padres +4": -1400,
+      "San Diego Padres +3": -720,
+      "San Diego Padres +2": -375,
+      "San Diego Padres +1": -210,
+      "San Diego Padres -1": 106,
+      "San Diego Padres -2": 207,
+      "San Diego Padres -3": 333,
+      "San Diego Padres -4": 507,
+      "San Diego Padres -5": 730
     },
     "alt_totals": {
-      "Over 3.5": -456,
-      "Over 4": -403,
-      "Over 4.5": -240,
-      "Over 5": -215,
-      "Over 5.5": -148,
-      "Over 6": -127,
-      "Over 7": 130,
-      "Over 7.5": 164,
-      "Over 8": 200,
-      "Over 8.5": 230,
-      "Over 9": 310,
-      "Over 9.5": 350,
-      "Over 10": 425,
-      "Over 10.5": 470,
-      "Over 11": 625,
-      "Over 11.5": 750,
-      "Under 3.5": 350,
-      "Under 4": 320,
-      "Under 4.5": 240,
-      "Under 5": 185,
-      "Under 5.5": 125,
-      "Under 6": 100,
-      "Under 7": -162,
-      "Under 7.5": -182,
-      "Under 8": -245,
-      "Under 8.5": -250,
-      "Under 9": -375,
-      "Under 9.5": -375,
-      "Under 10": -560,
-      "Under 10.5": -650,
-      "Under 11": -1020,
-      "Under 11.5": -1100,
-      "Over 6.5": -102,
-      "Over 12": 800,
-      "Over 2": -5000,
-      "Over 1.5": -5000,
-      "Over 2.5": -1600,
-      "Over 3": -1400,
-      "Under 6.5": -118,
-      "Under 12": -2000,
-      "Under 2": 1100,
-      "Under 1.5": 1300,
-      "Under 2.5": 830,
-      "Under 3": 675,
-      "Over 12.5": 900,
-      "Over 13.5": 1300,
-      "Over 14.5": 1500,
-      "Under 12.5": -2500
+      "Over 2.5": -4500,
+      "Over 3.5": -900,
+      "Over 4.5": -480,
+      "Over 5.5": -245,
+      "Over 6.5": -167,
+      "Over 7.5": -102,
+      "Over 8.5": 140,
+      "Over 9.5": 220,
+      "Over 10.5": 290,
+      "Over 11.5": 430,
+      "Over 12.5": 560,
+      "Over 13.5": 830,
+      "Over 14.5": 1060,
+      "Over 15.5": 1400,
+      "Over 16.5": 1700,
+      "Under 1.5": 1700,
+      "Under 2.5": 1200,
+      "Under 3.5": 550,
+      "Under 4.5": 375,
+      "Under 5.5": 210,
+      "Under 6.5": 145,
+      "Under 7.5": -115,
+      "Under 8.5": -162,
+      "Under 9.5": -257,
+      "Under 10.5": -359,
+      "Under 11.5": -560,
+      "Under 12.5": -860,
+      "Under 13.5": -2000,
+      "Under 14.5": -3500,
+      "Over 4": -900,
+      "Over 5": -400,
+      "Over 6": -215,
+      "Over 7": -134,
+      "Over 8": 117,
+      "Over 9": 180,
+      "Over 10": 255,
+      "Over 11": 370,
+      "Over 12": 500,
+      "Over 13": 675,
+      "Over 2": -10000,
+      "Over 3": -5000,
+      "Under 4": 525,
+      "Under 5": 333,
+      "Under 6": 185,
+      "Under 7": 115,
+      "Under 8": -139,
+      "Under 9": -217,
+      "Under 10": -327,
+      "Under 11": -500,
+      "Under 12": -770,
+      "Under 13": -1400,
+      "Under 2": 1850,
+      "Under 3": 1050
     },
     "innings_1": {
       "moneyline": {
-        "Boston Red Sox": 115,
-        "New York Yankees": -150
+
       },
       "runline": {
 
       },
       "totals": {
-        "Over 0.5": 165,
-        "Under 0.5": -166
+
       }
     },
     "innings_5": {
       "moneyline": {
-        "Boston Red Sox": 135,
-        "New York Yankees": -141
+
       },
       "runline": {
-        "Boston Red Sox +0.5": -113,
-        "New York Yankees -0.5": 100
+
       },
       "totals": {
-        "Over 3": -125,
-        "Under 3": 105,
-        "Over 3.5": 114,
-        "Under 3.5": -148
+
       }
     },
-    "team_totals": [
-      {
-        "point": 2.5,
-        "over": -130,
-        "under": 105,
-        "team": "Boston Red Sox"
-      },
-      {
-        "point": 3.5,
-        "over": 112,
-        "under": -133,
-        "team": "New York Yankees"
-      },
-      {
-        "point": 3.5,
-        "over": 130,
-        "under": -165,
-        "team": "Boston Red Sox"
-      },
-      {
-        "point": 4.5,
-        "over": 205,
-        "under": -275,
-        "team": "Boston Red Sox"
-      },
-      {
-        "point": 4.5,
-        "over": 175,
-        "under": -230,
-        "team": "New York Yankees"
-      },
-      {
-        "point": 2.5,
-        "over": -165,
-        "under": 128,
-        "team": "New York Yankees"
-      }
-    ],
+    "team_totals": [],
     "player_props": {
-      "hits": [
-        {
-          "point": 0.5,
-          "over": -190,
-          "under": 152,
-          "player": "Cody Bellinger"
-        },
-        {
-          "point": 0.5,
-          "over": -170,
-          "under": 139,
-          "player": "Aaron Judge"
-        },
-        {
-          "point": 0.5,
-          "over": -170,
-          "under": 140,
-          "player": "Ceddanne Rafaela"
-        },
-        {
-          "point": 0.5,
-          "over": -165,
-          "under": 145,
-          "player": "Paul Goldschmidt"
-        },
-        {
-          "point": 0.5,
-          "over": -140,
-          "under": 116,
-          "player": "Adley Rutschman"
-        },
-        {
-          "point": 0.5,
-          "over": -150,
-          "under": 118,
-          "player": "Ben Rice"
-        },
-        {
-          "point": 0.5,
-          "over": -137,
-          "under": 115,
-          "player": "Caleb Durbin"
-        },
-        {
-          "point": 0.5,
-          "over": -140,
-          "under": 113,
-          "player": "Willson Contreras"
-        },
-        {
-          "point": 0.5,
-          "over": -147,
-          "under": 115,
-          "player": "Amed Rosario"
-        },
-        {
-          "point": 0.5,
-          "over": -141,
-          "under": 110,
-          "player": "Roman Anthony"
-        },
-        {
-          "point": 0.5,
-          "over": -137,
-          "under": 111,
-          "player": "Heliot Ramos"
-        },
-        {
-          "point": 0.5,
-          "over": -125,
-          "under": 102,
-          "player": "Wilyer Abreu"
-        },
-        {
-          "point": 0.5,
-          "over": -118,
-          "under": -106,
-          "player": "Trevor Story"
-        },
-        {
-          "point": 0.5,
-          "over": -114,
-          "under": -106,
-          "player": "George Lombard Jr."
-        },
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": -111,
-          "player": "Nick Sogard"
-        },
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": -118,
-          "player": "Jarren Duran"
-        },
-        {
-          "point": 0.5,
-          "over": -112,
-          "under": -112,
-          "player": "Anthony Volpe"
-        },
-        {
-          "point": 0.5,
-          "over": 130,
-          "under": -146,
-          "player": "Austin Wells"
-        },
-        {
-          "point": 0.5,
-          "over": -115,
-          "under": -115,
-          "player": "Spencer Jones"
-        }
-      ],
-      "hr": [
-        {
-          "point": 0.5,
-          "over": 1050,
-          "player": "Ceddanne Rafaela"
-        },
-        {
-          "point": 0.5,
-          "over": 650,
-          "player": "Roman Anthony"
-        },
-        {
-          "point": 0.5,
-          "over": 650,
-          "player": "Austin Wells"
-        },
-        {
-          "point": 0.5,
-          "over": 600,
-          "player": "Cody Bellinger"
-        },
-        {
-          "point": 0.5,
-          "over": 1300,
-          "player": "Caleb Durbin"
-        },
-        {
-          "point": 0.5,
-          "over": 750,
-          "player": "Jarren Duran"
-        },
-        {
-          "point": 0.5,
-          "over": 900,
-          "player": "Adley Rutschman"
-        },
-        {
-          "point": 0.5,
-          "over": 500,
-          "player": "Willson Contreras"
-        },
-        {
-          "point": 0.5,
-          "over": 650,
-          "player": "Heliot Ramos"
-        },
-        {
-          "point": 0.5,
-          "over": 600,
-          "player": "Wilyer Abreu"
-        },
-        {
-          "point": 0.5,
-          "over": 460,
-          "player": "Ben Rice"
-        },
-        {
-          "point": 0.5,
-          "over": 1200,
-          "player": "Nick Sogard"
-        },
-        {
-          "point": 0.5,
-          "over": 1150,
-          "player": "George Lombard Jr."
-        },
-        {
-          "point": 0.5,
-          "over": 1050,
-          "player": "Trevor Story"
-        }
-      ],
-      "rbi": [
-        {
-          "point": 0.5,
-          "over": 181,
-          "under": -256,
-          "player": "Aaron Judge"
-        },
-        {
-          "point": 0.5,
-          "over": 280,
-          "under": -291,
-          "player": "Ben Rice"
-        },
-        {
-          "point": 0.5,
-          "over": 245,
-          "under": -295,
-          "player": "Willson Contreras"
-        },
-        {
-          "point": 0.5,
-          "over": 290,
-          "under": -300,
-          "player": "Cody Bellinger"
-        },
-        {
-          "point": 0.5,
-          "over": 285,
-          "under": -325,
-          "player": "Wilyer Abreu"
-        },
-        {
-          "point": 0.5,
-          "over": 270,
-          "under": -325,
-          "player": "Heliot Ramos"
-        },
-        {
-          "point": 0.5,
-          "over": 280,
-          "under": -371,
-          "player": "Roman Anthony"
-        },
-        {
-          "point": 0.5,
-          "over": 330,
-          "under": -350,
-          "player": "Adley Rutschman"
-        },
-        {
-          "point": 0.5,
-          "over": 282,
-          "under": -295,
-          "player": "Paul Goldschmidt"
-        },
-        {
-          "point": 0.5,
-          "over": 287,
-          "under": -375,
-          "player": "Amed Rosario"
-        },
-        {
-          "point": 0.5,
-          "over": 330,
-          "under": -350,
-          "player": "Ceddanne Rafaela"
-        },
-        {
-          "point": 0.5,
-          "over": 304,
-          "under": -450,
-          "player": "Jarren Duran"
-        },
-        {
-          "point": 0.5,
-          "over": 360,
-          "under": -450,
-          "player": "Trevor Story"
-        },
-        {
-          "point": 0.5,
-          "over": 337,
-          "under": -450,
-          "player": "Caleb Durbin"
-        },
-        {
-          "point": 0.5,
-          "over": 341,
-          "under": -450,
-          "player": "Anthony Volpe"
-        },
-        {
-          "point": 0.5,
-          "over": 349,
-          "under": -500,
-          "player": "Austin Wells"
-        },
-        {
-          "point": 0.5,
-          "over": 368,
-          "under": -550,
-          "player": "Nick Sogard"
-        },
-        {
-          "point": 0.5,
-          "over": 375,
-          "under": -450,
-          "player": "George Lombard Jr."
-        },
-        {
-          "point": 0.5,
-          "over": 275,
-          "under": -400,
-          "player": "Spencer Jones"
-        }
-      ],
-      "bases": [
-        {
-          "point": 0.5,
-          "over": -115,
-          "under": -115,
-          "player": "Spencer Jones"
-        },
-        {
-          "point": 0.5,
-          "over": -120,
-          "under": -105,
-          "player": "Caleb Durbin"
-        },
-        {
-          "point": 0.5,
-          "over": -182,
-          "under": 140,
-          "player": "Ceddanne Rafaela"
-        },
-        {
-          "point": 0.5,
-          "over": -125,
-          "under": 100,
-          "player": "Wilyer Abreu"
-        },
-        {
-          "point": 0.5,
-          "over": 104,
-          "under": -125,
-          "player": "Jarren Duran"
-        },
-        {
-          "point": 0.5,
-          "over": -130,
-          "under": 105,
-          "player": "Adley Rutschman"
-        },
-        {
-          "point": 0.5,
-          "over": -120,
-          "under": -102,
-          "player": "George Lombard Jr."
-        },
-        {
-          "point": 0.5,
-          "over": 130,
-          "under": -167,
-          "player": "Austin Wells"
-        },
-        {
-          "point": 0.5,
-          "over": 102,
-          "under": -125,
-          "player": "Nick Sogard"
-        },
-        {
-          "point": 0.5,
-          "over": -154,
-          "under": 118,
-          "player": "Heliot Ramos"
-        },
-        {
-          "point": 1.5,
-          "over": 150,
-          "under": -190,
-          "player": "Cody Bellinger"
-        },
-        {
-          "point": 0.5,
-          "over": -120,
-          "under": -108,
-          "player": "Trevor Story"
-        },
-        {
-          "point": 0.5,
-          "over": -135,
-          "under": 110,
-          "player": "Roman Anthony"
-        },
-        {
-          "point": 0.5,
-          "over": -133,
-          "under": 105,
-          "player": "Willson Contreras"
-        },
-        {
-          "point": 0.5,
-          "over": -139,
-          "under": 110,
-          "player": "Ben Rice"
-        },
-        {
-          "point": 0.5,
-          "over": -155,
-          "under": 115,
-          "player": "Amed Rosario"
-        },
-        {
-          "point": 0.5,
-          "over": -109,
-          "under": -115,
-          "player": "Anthony Volpe"
-        },
-        {
-          "point": 1.5,
-          "over": 161,
-          "under": -200,
-          "player": "Paul Goldschmidt"
-        },
-        {
-          "point": 1.5,
-          "over": 132,
-          "under": -172,
-          "player": "Aaron Judge"
-        },
-        {
-          "point": 1.5,
-          "over": 195,
-          "player": "Caleb Durbin"
-        },
-        {
-          "point": 1.5,
-          "over": 250,
-          "player": "Nick Sogard"
-        },
-        {
-          "point": 1.5,
-          "over": 170,
-          "player": "Ceddanne Rafaela"
-        },
-        {
-          "point": 1.5,
-          "over": 175,
-          "player": "Wilyer Abreu"
-        },
-        {
-          "point": 1.5,
-          "over": 163,
-          "player": "Roman Anthony"
-        },
-        {
-          "point": 1.5,
-          "over": 215,
-          "player": "Jarren Duran"
-        },
-        {
-          "point": 1.5,
-          "over": 145,
-          "player": "Ben Rice"
-        },
-        {
-          "point": 1.5,
-          "over": 180,
-          "player": "Adley Rutschman"
-        },
-        {
-          "point": 1.5,
-          "over": 255,
-          "player": "Austin Wells"
-        },
-        {
-          "point": 1.5,
-          "over": 235,
-          "player": "George Lombard Jr."
-        },
-        {
-          "point": 1.5,
-          "over": 150,
-          "player": "Willson Contreras"
-        },
-        {
-          "point": 1.5,
-          "over": 175,
-          "player": "Heliot Ramos"
-        },
-        {
-          "point": 1.5,
-          "over": 230,
-          "player": "Trevor Story"
-        }
-      ]
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
     },
     "pitcher_props": {
-      "strikeouts": [
-        {
-          "point": 7.5,
-          "over": 112,
-          "under": -143,
-          "player": "Payton Tolle"
-        },
-        {
-          "point": 7.5,
-          "over": 120,
-          "under": -148,
-          "player": "Cam Schlittler"
-        },
-        {
-          "point": 6.5,
-          "over": -139,
-          "under": 115,
-          "player": "Payton Tolle"
-        }
-      ],
-      "outs": [
-        {
-          "point": 17.5,
-          "over": -110,
-          "under": -113,
-          "player": "Cam Schlittler"
-        },
-        {
-          "point": 17.5,
-          "over": 100,
-          "under": -130,
-          "player": "Payton Tolle"
-        },
-        {
-          "point": 16.5,
-          "over": -125,
-          "player": "Payton Tolle"
-        },
-        {
-          "point": 16.5,
-          "over": -157,
-          "player": "Cam Schlittler"
-        }
-      ],
-      "earned_runs": [
-        {
-          "point": 1.5,
-          "over": 117,
-          "under": -145,
-          "player": "Cam Schlittler"
-        },
-        {
-          "point": 1.5,
-          "over": -125,
-          "under": 105,
-          "player": "Payton Tolle"
-        }
-      ],
-      "hits_allowed": [
-        {
-          "point": 3.5,
-          "over": -120,
-          "under": -102,
-          "player": "Cam Schlittler"
-        },
-        {
-          "point": 4.5,
-          "over": -115,
-          "under": -113,
-          "player": "Payton Tolle"
-        }
-      ]
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
     }
   },
   {
-    "gameId": "98adc841e3aababc93878e3cf743a2d4",
+    "gameId": "cd974d85e2a617152370056d22cd8deb",
     "sport": "mlb",
-    "away_team": "Chicago Cubs",
-    "home_team": "San Diego Padres",
-    "commence_time": "2026-09-30T05:00:00.000Z",
+    "away_team": "Cleveland Guardians",
+    "home_team": "Chicago White Sox",
+    "commence_time": "2026-10-07T23:00:00.000Z",
     "status": "scheduled",
     "is_live": false,
-    "favorite": "San Diego Padres",
-    "favorite_odds": -121,
-    "underdog": "Chicago Cubs",
-    "underdog_odds": 113,
+    "favorite": "Chicago White Sox",
+    "favorite_odds": -115,
+    "underdog": "Cleveland Guardians",
+    "underdog_odds": 110,
     "moneyline": {
-      "Chicago Cubs": 113,
-      "San Diego Padres": -121
+      "Chicago White Sox": -115,
+      "Cleveland Guardians": 110
     },
     "runline": {
-      "Chicago Cubs +1.5": -182,
-      "San Diego Padres -1.5": 180
+      "Chicago White Sox +1.5": -200,
+      "Cleveland Guardians -1.5": 172,
+      "Chicago White Sox -1.5": 180,
+      "Cleveland Guardians +1.5": -186
     },
     "totals": {
-      "Over 7": -110,
+      "Over 8": 103,
+      "Under 8": -114
+    },
+    "alt_runline": {
+      "Chicago White Sox -7.5": 1500,
+      "Chicago White Sox -6.5": 1200,
+      "Chicago White Sox -5.5": 900,
+      "Chicago White Sox -4.5": 551,
+      "Chicago White Sox -3.5": 374,
+      "Chicago White Sox -2.5": 247,
+      "Chicago White Sox -1.5": 150,
+      "Chicago White Sox +1.5": -230,
+      "Chicago White Sox +2.5": -349,
+      "Chicago White Sox +3.5": -574,
+      "Chicago White Sox +4.5": -1000,
+      "Chicago White Sox +5.5": -1800,
+      "Chicago White Sox +6.5": -3500,
+      "Cleveland Guardians +6.5": -4500,
+      "Cleveland Guardians +5.5": -2500,
+      "Cleveland Guardians +4.5": -1020,
+      "Cleveland Guardians +3.5": -581,
+      "Cleveland Guardians +2.5": -347,
+      "Cleveland Guardians +1.5": -186,
+      "Cleveland Guardians -1.5": 180,
+      "Cleveland Guardians -2.5": 248,
+      "Cleveland Guardians -3.5": 371,
+      "Cleveland Guardians -4.5": 547,
+      "Cleveland Guardians -5.5": 800,
+      "Cleveland Guardians -6.5": 1060,
+      "Cleveland Guardians -7.5": 1400,
+      "Cleveland Guardians -8.5": 1700,
+      "Chicago White Sox +5": -1760,
+      "Chicago White Sox +4": -920,
+      "Chicago White Sox +3": -515,
+      "Chicago White Sox +2": -335,
+      "Chicago White Sox +1": -186,
+      "Chicago White Sox -1": 119,
+      "Chicago White Sox -2": 218,
+      "Chicago White Sox -3": 343,
+      "Chicago White Sox -4": 521,
+      "Cleveland Guardians -5": 750,
+      "Cleveland Guardians -4": 518,
+      "Cleveland Guardians -3": 341,
+      "Cleveland Guardians -2": 219,
+      "Cleveland Guardians -1": 131,
+      "Cleveland Guardians +1": -134,
+      "Cleveland Guardians +2": -265,
+      "Cleveland Guardians +3": -519,
+      "Cleveland Guardians +4": -930
+    },
+    "alt_totals": {
+      "Over 7.5": -120,
+      "Under 7.5": 102,
+      "Over 3.5": -1100,
+      "Over 4.5": -574,
+      "Over 5.5": -285,
+      "Over 6.5": -200,
+      "Over 8.5": 118,
+      "Over 9.5": 185,
+      "Over 10.5": 240,
+      "Over 11.5": 350,
+      "Over 12.5": 450,
+      "Over 13.5": 630,
+      "Over 14.5": 830,
+      "Over 15.5": 1100,
+      "Over 16.5": 1400,
+      "Over 17.5": 1700,
+      "Under 2.5": 1300,
+      "Under 3.5": 600,
+      "Under 4.5": 425,
+      "Under 5.5": 240,
+      "Under 6.5": 165,
+      "Under 8.5": -134,
+      "Under 9.5": -205,
+      "Under 10.5": -278,
+      "Under 11.5": -420,
+      "Under 12.5": -720,
+      "Under 13.5": -1200,
+      "Under 14.5": -2000,
+      "Under 15.5": -4000,
+      "Over 5": -486,
+      "Over 6": -254,
+      "Over 7": -163,
+      "Over 8": -102,
+      "Over 9": 155,
+      "Over 10": 220,
+      "Over 11": 325,
+      "Over 12": 425,
+      "Under 5": 375,
+      "Under 6": 210,
+      "Under 7": 135,
+      "Under 8": -114,
+      "Under 9": -175,
+      "Under 10": -250,
+      "Under 11": -385,
+      "Under 12": -560,
+      "Over 4": -1100,
+      "Over 13": 600,
+      "Over 3": -5000,
+      "Over 2.5": -10000,
+      "Over 2": -10000,
+      "Under 4": 575,
+      "Under 13": -1200,
+      "Under 3": 1100,
+      "Under 2": 2000
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "aa266da6f8d98646bc59d18ddbc5b2de",
+    "sport": "mlb",
+    "away_team": "Tampa Bay Rays",
+    "home_team": "New York Yankees",
+    "commence_time": "2026-10-08T03:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "New York Yankees",
+    "favorite_odds": -150,
+    "underdog": "Tampa Bay Rays",
+    "underdog_odds": 140,
+    "moneyline": {
+      "New York Yankees": -150,
+      "Tampa Bay Rays": 140
+    },
+    "runline": {
+      "New York Yankees -1.5": 146,
+      "Tampa Bay Rays +1.5": -164
+    },
+    "totals": {
+      "Over 7": -120,
       "Under 7": 105
     },
     "alt_runline": {
-      "Chicago Cubs +5.5": -3000,
-      "Chicago Cubs +4.5": -1080,
-      "Chicago Cubs +3.5": -599,
-      "Chicago Cubs +2.5": -360,
-      "Chicago Cubs +1.5": -182,
-      "Chicago Cubs -1.5": 165,
-      "Chicago Cubs -2.5": 270,
-      "Chicago Cubs -3.5": 418,
-      "Chicago Cubs -4.5": 600,
-      "Chicago Cubs -5.5": 1000,
-      "Chicago Cubs -6.5": 1300,
-      "Chicago Cubs -7.5": 1700,
-      "San Diego Padres -7.5": 1700,
-      "San Diego Padres -6.5": 1300,
-      "San Diego Padres -5.5": 1000,
-      "San Diego Padres -4.5": 568,
-      "San Diego Padres -3.5": 383,
-      "San Diego Padres -2.5": 255,
-      "San Diego Padres -1.5": 148,
-      "San Diego Padres +1.5": -210,
-      "San Diego Padres +2.5": -385,
-      "San Diego Padres +3.5": -680,
-      "San Diego Padres +4.5": -1200,
-      "San Diego Padres +5.5": -3000,
-      "Chicago Cubs -4": 579,
-      "Chicago Cubs -3": 385,
-      "Chicago Cubs -2": 225,
-      "Chicago Cubs -1": 140,
-      "Chicago Cubs +1": -150,
-      "Chicago Cubs +2": -265,
-      "Chicago Cubs +3": -537,
-      "Chicago Cubs +4": -980,
-      "Chicago Cubs +5": -1980,
-      "San Diego Padres +4": -1100,
-      "San Diego Padres +3": -610,
-      "San Diego Padres +2": -286,
-      "San Diego Padres +1": -185,
-      "San Diego Padres -1": 115,
-      "San Diego Padres -2": 205,
-      "San Diego Padres -3": 352,
-      "San Diego Padres -4": 538,
-      "San Diego Padres -5": 790
+      "New York Yankees -8.5": 1500,
+      "New York Yankees -7.5": 1200,
+      "New York Yankees -6.5": 1000,
+      "New York Yankees -5.5": 680,
+      "New York Yankees -4.5": 500,
+      "New York Yankees -3.5": 333,
+      "New York Yankees -2.5": 216,
+      "New York Yankees -1.5": 134,
+      "New York Yankees +1.5": -275,
+      "New York Yankees +2.5": -525,
+      "New York Yankees +3.5": -900,
+      "New York Yankees +4.5": -2200,
+      "New York Yankees +5.5": -4000,
+      "Tampa Bay Rays +7.5": -4500,
+      "Tampa Bay Rays +6.5": -3000,
+      "Tampa Bay Rays +5.5": -1400,
+      "Tampa Bay Rays +4.5": -850,
+      "Tampa Bay Rays +3.5": -500,
+      "Tampa Bay Rays +2.5": -296,
+      "Tampa Bay Rays +1.5": -177,
+      "Tampa Bay Rays -1.5": 230,
+      "Tampa Bay Rays -2.5": 346,
+      "Tampa Bay Rays -3.5": 500,
+      "Tampa Bay Rays -4.5": 870,
+      "Tampa Bay Rays -5.5": 1100,
+      "Tampa Bay Rays -6.5": 1500,
+      "Tampa Bay Rays -7.5": 1800,
+      "New York Yankees +4": -1620,
+      "New York Yankees +3": -840,
+      "New York Yankees +2": -400,
+      "New York Yankees +1": -220,
+      "New York Yankees -1": -112,
+      "New York Yankees -2": 184,
+      "New York Yankees -3": 302,
+      "New York Yankees -4": 472,
+      "New York Yankees -5": 710,
+      "Tampa Bay Rays -4": 720,
+      "Tampa Bay Rays -3": 488,
+      "Tampa Bay Rays -2": 311,
+      "Tampa Bay Rays -1": 182,
+      "Tampa Bay Rays +1": -122,
+      "Tampa Bay Rays +2": -265,
+      "Tampa Bay Rays +3": -441,
+      "Tampa Bay Rays +4": -800,
+      "Tampa Bay Rays +5": -1600
     },
     "alt_totals": {
       "Over 7.5": 106,
-      "Under 7.5": -122,
+      "Under 7.5": -125,
       "Over 2.5": -3000,
-      "Over 3.5": -760,
-      "Over 4.5": -360,
-      "Over 5.5": -215,
-      "Over 6.5": -150,
-      "Over 8.5": 145,
-      "Over 9.5": 220,
-      "Over 10.5": 300,
-      "Over 11.5": 430,
-      "Over 12.5": 575,
-      "Over 13.5": 830,
-      "Over 14.5": 1060,
-      "Over 15.5": 1400,
+      "Over 3.5": -810,
+      "Over 4.5": -455,
+      "Over 5.5": -233,
+      "Over 6.5": -159,
+      "Over 8.5": 148,
+      "Over 9.5": 240,
+      "Over 10.5": 330,
+      "Over 11.5": 480,
+      "Over 12.5": 630,
+      "Over 13.5": 900,
+      "Over 14.5": 1100,
+      "Over 15.5": 1500,
       "Over 16.5": 1700,
-      "Under 1.5": 1800,
+      "Under 1.5": 1700,
       "Under 2.5": 1100,
-      "Under 3.5": 525,
-      "Under 4.5": 350,
-      "Under 5.5": 200,
-      "Under 6.5": 135,
-      "Under 8.5": -167,
-      "Under 9.5": -245,
-      "Under 10.5": -335,
-      "Under 11.5": -670,
-      "Under 12.5": -1000,
-      "Under 13.5": -2000,
-      "Under 14.5": -3500,
-      "Over 4": -690,
-      "Over 5": -345,
-      "Over 6": -193,
-      "Over 8": 127,
+      "Under 3.5": 520,
+      "Under 4.5": 340,
+      "Under 5.5": 190,
+      "Under 6.5": 133,
+      "Under 8.5": -175,
+      "Under 9.5": -275,
+      "Under 10.5": -385,
+      "Under 11.5": -700,
+      "Under 12.5": -1100,
+      "Under 13.5": -2500,
+      "Under 14.5": -4000,
+      "Over 4": -730,
+      "Over 5": -384,
+      "Over 6": -202,
+      "Over 8": 126,
       "Over 9": 200,
       "Over 10": 280,
-      "Over 11": 400,
+      "Over 11": 409,
       "Under 4": 475,
-      "Under 5": 300,
+      "Under 5": 290,
       "Under 6": 170,
-      "Under 8": -157,
-      "Under 9": -230,
-      "Under 10": -335,
-      "Under 11": -500,
+      "Under 8": -152,
+      "Under 9": -235,
+      "Under 10": -345,
+      "Under 11": -560,
       "Over 7": -125,
       "Over 12": 550,
       "Over 2": -10000,
-      "Over 1.5": -10000,
       "Over 3": -3000,
+      "Over 1.5": -10000,
       "Under 7": 105,
       "Under 12": -1000,
-      "Under 2": 1700,
+      "Under 2": 1600,
       "Under 3": 950
     },
     "innings_1": {
@@ -2297,584 +620,32 @@
 
       },
       "totals": {
-        "Over 0.5": 112,
-        "Under 0.5": -130,
-        "Over 1.5": 215,
-        "Under 1.5": -305
+
       }
     },
     "innings_5": {
       "moneyline": {
-        "Chicago Cubs": 100,
-        "San Diego Padres": -110
+
       },
       "runline": {
-        "Chicago Cubs -0.5": 128,
-        "San Diego Padres +0.5": -155,
-        "Chicago Cubs +0.5": -140,
-        "San Diego Padres -0.5": 122
+
       },
       "totals": {
-        "Over 3.5": -140,
-        "Under 3.5": 108,
-        "Over 4": 105,
-        "Under 4": -125
+
       }
     },
-    "team_totals": [
-      {
-        "point": 3.5,
-        "over": 100,
-        "under": -122,
-        "team": "Chicago Cubs"
-      },
-      {
-        "point": 3.5,
-        "over": -110,
-        "under": -110,
-        "team": "San Diego Padres"
-      },
-      {
-        "point": 2.5,
-        "over": -175,
-        "under": 133,
-        "team": "Chicago Cubs"
-      },
-      {
-        "point": 4.5,
-        "over": 160,
-        "under": -205,
-        "team": "Chicago Cubs"
-      },
-      {
-        "point": 5.5,
-        "over": 230,
-        "under": -315,
-        "team": "San Diego Padres"
-      },
-      {
-        "point": 4.5,
-        "over": 148,
-        "under": -190,
-        "team": "San Diego Padres"
-      }
-    ],
+    "team_totals": [],
     "player_props": {
-      "hits": [
-        {
-          "point": 1.5,
-          "over": 199,
-          "under": -256,
-          "player": "Fernando Tatis Jr."
-        },
-        {
-          "point": 0.5,
-          "over": -210,
-          "under": 165,
-          "player": "Pete Crow-Armstrong"
-        },
-        {
-          "point": 0.5,
-          "over": -190,
-          "under": 158,
-          "player": "Nico Hoerner"
-        },
-        {
-          "point": 0.5,
-          "over": -200,
-          "under": 161,
-          "player": "Jackson Merrill"
-        },
-        {
-          "point": 0.5,
-          "over": -193,
-          "under": 165,
-          "player": "Ty France"
-        },
-        {
-          "point": 0.5,
-          "over": -190,
-          "under": 155,
-          "player": "Manny Machado"
-        },
-        {
-          "point": 0.5,
-          "over": -173,
-          "under": 137,
-          "player": "Alex Bregman"
-        },
-        {
-          "point": 0.5,
-          "over": -166,
-          "under": 133,
-          "player": "Dustin Harris"
-        },
-        {
-          "point": 0.5,
-          "over": -165,
-          "under": 129,
-          "player": "Seiya Suzuki"
-        },
-        {
-          "point": 0.5,
-          "over": -148,
-          "under": 130,
-          "player": "Xander Bogaerts"
-        },
-        {
-          "point": 0.5,
-          "over": -147,
-          "under": 115,
-          "player": "Michael Busch"
-        },
-        {
-          "point": 0.5,
-          "over": -130,
-          "under": 101,
-          "player": "Carson Kelly"
-        },
-        {
-          "point": 0.5,
-          "over": -134,
-          "under": 115,
-          "player": "Luis Campusano"
-        },
-        {
-          "point": 0.5,
-          "over": -120,
-          "under": 100,
-          "player": "Ian Happ"
-        },
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": -106,
-          "player": "Dansby Swanson"
-        },
-        {
-          "point": 0.5,
-          "over": -121,
-          "under": 103,
-          "player": "Gavin Sheets"
-        },
-        {
-          "point": 0.5,
-          "over": -110,
-          "under": -115,
-          "player": "Jake Cronenworth"
-        },
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": -123,
-          "player": "Michael Conforto"
-        },
-        {
-          "point": 0.5,
-          "over": -275,
-          "under": 195,
-          "player": "Fernando Tatis Jr."
-        },
-        {
-          "point": 0.5,
-          "over": -141,
-          "under": 108,
-          "player": "Austin Hays"
-        },
-        {
-          "point": 0.5,
-          "over": -172,
-          "under": 132,
-          "player": "Pedro Ramirez"
-        }
-      ],
-      "hr": [
-        {
-          "point": 0.5,
-          "over": 650,
-          "player": "Seiya Suzuki"
-        },
-        {
-          "point": 0.5,
-          "over": 550,
-          "player": "Jackson Merrill"
-        },
-        {
-          "point": 0.5,
-          "over": 480,
-          "player": "Manny Machado"
-        },
-        {
-          "point": 0.5,
-          "over": 800,
-          "player": "Carson Kelly"
-        },
-        {
-          "point": 0.5,
-          "over": 700,
-          "player": "Michael Conforto"
-        },
-        {
-          "point": 0.5,
-          "over": 430,
-          "player": "Fernando Tatis Jr."
-        },
-        {
-          "point": 0.5,
-          "over": 550,
-          "player": "Ty France"
-        },
-        {
-          "point": 0.5,
-          "over": 750,
-          "player": "Alex Bregman"
-        },
-        {
-          "point": 0.5,
-          "over": 850,
-          "player": "Dansby Swanson"
-        },
-        {
-          "point": 0.5,
-          "over": 650,
-          "player": "Ian Happ"
-        },
-        {
-          "point": 0.5,
-          "over": 700,
-          "player": "Michael Busch"
-        },
-        {
-          "point": 0.5,
-          "over": 750,
-          "player": "Xander Bogaerts"
-        },
-        {
-          "point": 0.5,
-          "over": 320,
-          "player": "Pete Crow-Armstrong"
-        },
-        {
-          "point": 0.5,
-          "over": 650,
-          "player": "Luis Campusano"
-        },
-        {
-          "point": 0.5,
-          "over": 1600,
-          "player": "Nico Hoerner"
-        }
-      ],
-      "rbi": [
-        {
-          "point": 0.5,
-          "over": 186,
-          "under": -220,
-          "player": "Manny Machado"
-        },
-        {
-          "point": 0.5,
-          "over": 188,
-          "under": -250,
-          "player": "Pete Crow-Armstrong"
-        },
-        {
-          "point": 0.5,
-          "over": 215,
-          "under": -225,
-          "player": "Fernando Tatis Jr."
-        },
-        {
-          "point": 0.5,
-          "over": 215,
-          "under": -250,
-          "player": "Jackson Merrill"
-        },
-        {
-          "point": 0.5,
-          "over": 215,
-          "under": -235,
-          "player": "Ty France"
-        },
-        {
-          "point": 0.5,
-          "over": 243,
-          "under": -275,
-          "player": "Alex Bregman"
-        },
-        {
-          "point": 0.5,
-          "over": 245,
-          "under": -325,
-          "player": "Seiya Suzuki"
-        },
-        {
-          "point": 0.5,
-          "over": 280,
-          "under": -354,
-          "player": "Xander Bogaerts"
-        },
-        {
-          "point": 0.5,
-          "over": 270,
-          "under": -300,
-          "player": "Luis Campusano"
-        },
-        {
-          "point": 0.5,
-          "over": 257,
-          "under": -325,
-          "player": "Michael Busch"
-        },
-        {
-          "point": 0.5,
-          "over": 280,
-          "under": -325,
-          "player": "Ian Happ"
-        },
-        {
-          "point": 0.5,
-          "over": 265,
-          "under": -388,
-          "player": "Dustin Harris"
-        },
-        {
-          "point": 0.5,
-          "over": 271,
-          "under": -397,
-          "player": "Gavin Sheets"
-        },
-        {
-          "point": 0.5,
-          "over": 280,
-          "under": -375,
-          "player": "Michael Conforto"
-        },
-        {
-          "point": 0.5,
-          "over": 295,
-          "under": -400,
-          "player": "Carson Kelly"
-        },
-        {
-          "point": 0.5,
-          "over": 310,
-          "under": -440,
-          "player": "Dansby Swanson"
-        },
-        {
-          "point": 0.5,
-          "over": 330,
-          "under": -400,
-          "player": "Nico Hoerner"
-        },
-        {
-          "point": 0.5,
-          "over": 331,
-          "under": -450,
-          "player": "Jake Cronenworth"
-        }
-      ],
-      "bases": [
-        {
-          "point": 1.5,
-          "over": 112,
-          "under": -144,
-          "player": "Fernando Tatis Jr."
-        },
-        {
-          "point": 1.5,
-          "over": 120,
-          "under": -149,
-          "player": "Pete Crow-Armstrong"
-        },
-        {
-          "point": 1.5,
-          "over": 143,
-          "under": -180,
-          "player": "Jackson Merrill"
-        },
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": -125,
-          "player": "Michael Conforto"
-        },
-        {
-          "point": 0.5,
-          "over": -165,
-          "under": 127,
-          "player": "Seiya Suzuki"
-        },
-        {
-          "point": 0.5,
-          "over": -105,
-          "under": -118,
-          "player": "Dansby Swanson"
-        },
-        {
-          "point": 0.5,
-          "over": -120,
-          "under": -104,
-          "player": "Ian Happ"
-        },
-        {
-          "point": 0.5,
-          "over": -145,
-          "under": 111,
-          "player": "Michael Busch"
-        },
-        {
-          "point": 0.5,
-          "over": -185,
-          "under": 140,
-          "player": "Nico Hoerner"
-        },
-        {
-          "point": 0.5,
-          "over": -128,
-          "under": -101,
-          "player": "Carson Kelly"
-        },
-        {
-          "point": 0.5,
-          "over": -175,
-          "under": 134,
-          "player": "Alex Bregman"
-        },
-        {
-          "point": 0.5,
-          "over": -161,
-          "under": 130,
-          "player": "Xander Bogaerts"
-        },
-        {
-          "point": 1.5,
-          "over": 155,
-          "under": -185,
-          "player": "Ty France"
-        },
-        {
-          "point": 0.5,
-          "over": -109,
-          "under": -119,
-          "player": "Jake Cronenworth"
-        },
-        {
-          "point": 0.5,
-          "over": -155,
-          "under": 115,
-          "player": "Luis Campusano"
-        },
-        {
-          "point": 1.5,
-          "over": 146,
-          "under": -175,
-          "player": "Manny Machado"
-        },
-        {
-          "point": 0.5,
-          "over": -164,
-          "under": 125,
-          "player": "Pedro Ramirez"
-        },
-        {
-          "point": 0.5,
-          "over": -135,
-          "under": 105,
-          "player": "Gavin Sheets"
-        },
-        {
-          "point": 0.5,
-          "over": -175,
-          "under": 135,
-          "player": "Dustin Harris"
-        },
-        {
-          "point": 1.5,
-          "over": 165,
-          "player": "Michael Busch"
-        },
-        {
-          "point": 1.5,
-          "over": 155,
-          "player": "Alex Bregman"
-        },
-        {
-          "point": 1.5,
-          "over": 195,
-          "player": "Xander Bogaerts"
-        },
-        {
-          "point": 1.5,
-          "over": 190,
-          "player": "Luis Campusano"
-        },
-        {
-          "point": 1.5,
-          "over": 200,
-          "player": "Dansby Swanson"
-        },
-        {
-          "point": 1.5,
-          "over": 185,
-          "player": "Carson Kelly"
-        },
-        {
-          "point": 1.5,
-          "over": 210,
-          "player": "Michael Conforto"
-        },
-        {
-          "point": 1.5,
-          "over": 150,
-          "player": "Seiya Suzuki"
-        },
-        {
-          "point": 1.5,
-          "over": 155,
-          "player": "Nico Hoerner"
-        },
-        {
-          "point": 1.5,
-          "over": 185,
-          "player": "Ian Happ"
-        }
-      ]
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
     },
     "pitcher_props": {
-      "strikeouts": [
-        {
-          "point": 4.5,
-          "over": -135,
-          "under": 120,
-          "player": "Michael King"
-        }
-      ],
-      "outs": [
-        {
-          "point": 14.5,
-          "over": -140,
-          "under": 108,
-          "player": "Michael King"
-        }
-      ],
-      "earned_runs": [
-        {
-          "point": 1.5,
-          "over": -119,
-          "under": -110,
-          "player": "Michael King"
-        }
-      ],
-      "hits_allowed": [
-        {
-          "point": 3.5,
-          "over": -142,
-          "under": 107,
-          "player": "Michael King"
-        }
-      ]
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
     }
   }
 ]
