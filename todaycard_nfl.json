@@ -1894,5 +1894,73 @@
       "earned_runs": [],
       "hits_allowed": []
     }
+  },
+  {
+    "gameId": "855f58fad5f0f14b239f4f63df27998b",
+    "sport": "nfl",
+    "away_team": "Seattle Seahawks",
+    "home_team": "Denver Broncos",
+    "commence_time": "2026-10-16T03:15:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Seattle Seahawks",
+    "favorite_odds": -125,
+    "underdog": "Denver Broncos",
+    "underdog_odds": 118,
+    "moneyline": {
+      "Denver Broncos": 118,
+      "Seattle Seahawks": -125
+    },
+    "runline": {
+      "Denver Broncos +1.5": -105,
+      "Seattle Seahawks -1.5": -105
+    },
+    "totals": {
+      "Over 42": -107,
+      "Under 42": -107
+    },
+    "alt_runline": {
+      "Denver Broncos +2.5": -110,
+      "Seattle Seahawks -2.5": -110
+    },
+    "alt_totals": {
+      "Over 42.5": -105,
+      "Under 42.5": -110
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
   }
 ]
