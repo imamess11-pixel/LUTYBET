@@ -1130,6 +1130,7 @@ const PLAYER_PROP_STATS = [
   { key: "hits", label: "Hits", market: "PLAYER_PROP_HITS" },
   { key: "hr", label: "HR", market: "PLAYER_PROP_HR" },
   { key: "rbi", label: "RBI", market: "PLAYER_PROP_RBI" }
+  { key: "bases", label: "BASES", market: "PLAYER_PROP_BASES"}
 ];
 
 const PITCHER_PROP_STATS = [
@@ -1138,7 +1139,7 @@ const PITCHER_PROP_STATS = [
   { key: "earned_runs", label: "Earned Runs", market: "PITCHER_PROP_ER" }
 ];
 
-// Recuerda que stat (hits/hr/rbi, o strikeouts/outs/earned_runs) esta
+// Recuerda que stat (hits/hr/rbi/bases, o strikeouts/outs/earned_runs) esta
 // activo por partido, para que sobreviva al refresco automatico de 30s.
 let propFilterState = new Map();
 
@@ -1929,7 +1930,7 @@ function renderTeamTotalsSection(game){
 
 }
 
-// Botones de filtro (Hits/HR/RBI o Strikeouts/Outs/Earned Runs) que
+// Botones de filtro (Hits/HR/RBI/BASES o Strikeouts/Outs/Earned Runs) que
 // muestran una lista a la vez. setPropFilter()/aplicarPropFilter()
 // manejan cual esta activa, y recuerdan la eleccion entre refrescos
 // igual que sectionOpenState.
