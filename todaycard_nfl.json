@@ -1,265 +1,5 @@
 [
-  {
-    "gameId": "86457f91112732f21ad4bb7d37bd291c",
-    "sport": "nfl",
-    "away_team": "Baltimore Ravens",
-    "home_team": "Atlanta Falcons",
-    "commence_time": "2026-10-12T03:20:00.000Z",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Atlanta Falcons",
-    "favorite_odds": -174,
-    "underdog": "Baltimore Ravens",
-    "underdog_odds": 155,
-    "moneyline": {
-      "Atlanta Falcons": -174,
-      "Baltimore Ravens": 155
-    },
-    "runline": {
-      "Atlanta Falcons -3.5": 103,
-      "Baltimore Ravens +3.5": -114
-    },
-    "totals": {
-      "Over 43.5": -109,
-      "Under 43.5": -102
-    },
-    "alt_runline": {
-      "Atlanta Falcons -3": -117,
-      "Baltimore Ravens +3": -105,
-      "Atlanta Falcons +5.5": -375,
-      "Atlanta Falcons +4.5": -335,
-      "Atlanta Falcons +3.5": -278,
-      "Atlanta Falcons +2.5": -225,
-      "Atlanta Falcons +1.5": -200,
-      "Atlanta Falcons -1.5": -168,
-      "Atlanta Falcons -2.5": -151,
-      "Atlanta Falcons -4.5": 112,
-      "Atlanta Falcons -5.5": 123,
-      "Baltimore Ravens -5.5": 255,
-      "Baltimore Ravens -4.5": 235,
-      "Baltimore Ravens -3.5": 205,
-      "Baltimore Ravens -2.5": 176,
-      "Baltimore Ravens -1.5": 161,
-      "Baltimore Ravens +1.5": 128,
-      "Baltimore Ravens +2.5": 116,
-      "Baltimore Ravens +4.5": -137,
-      "Baltimore Ravens +5.5": -152,
-      "Atlanta Falcons -3.5": -103,
-      "Baltimore Ravens +3.5": -121,
-      "Atlanta Falcons -6": 135,
-      "Atlanta Falcons -1": -175,
-      "Atlanta Falcons -4": 105,
-      "Atlanta Falcons +5": -360,
-      "Atlanta Falcons -5": 118,
-      "Atlanta Falcons +6": -435,
-      "Atlanta Falcons -2": -150,
-      "Atlanta Falcons +2": -210,
-      "Atlanta Falcons +1": -190,
-      "Atlanta Falcons +4": -315,
-      "Atlanta Falcons +3": -250,
-      "Baltimore Ravens +6": -167,
-      "Baltimore Ravens +1": 138,
-      "Baltimore Ravens +4": -129,
-      "Baltimore Ravens -5": 250,
-      "Baltimore Ravens +5": -143,
-      "Baltimore Ravens -6": 285,
-      "Baltimore Ravens +2": 120,
-      "Baltimore Ravens -2": 163,
-      "Baltimore Ravens -1": 165,
-      "Baltimore Ravens -4": 225,
-      "Baltimore Ravens -3": 188
-    },
-    "alt_totals": {
-      "Over 44": -110,
-      "Under 44": -120,
-      "Over 41.5": -142,
-      "Over 42.5": -130,
-      "Over 44.5": 104,
-      "Over 45.5": 116,
-      "Under 41.5": 120,
-      "Under 42.5": 110,
-      "Under 44.5": -127,
-      "Under 45.5": -143,
-      "Over 43.5": -110,
-      "Under 43.5": -108,
-      "Over 46": 120,
-      "Over 45": 105,
-      "Over 43": -125,
-      "Over 42": -145,
-      "Over 41": -165,
-      "Under 46": -160,
-      "Under 45": -135,
-      "Under 43": -105,
-      "Under 42": 110,
-      "Under 41": 125
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
-    "gameId": "e6d00eedd87d367e510314bd8cab8f6f",
-    "sport": "nfl",
-    "away_team": "Buffalo Bills",
-    "home_team": "Los Angeles Rams",
-    "commence_time": "2026-10-13T03:15:00.000Z",
-    "status": "scheduled",
-    "is_live": false,
-    "favorite": "Los Angeles Rams",
-    "favorite_odds": -150,
-    "underdog": "Buffalo Bills",
-    "underdog_odds": 140,
-    "moneyline": {
-      "Buffalo Bills": 140,
-      "Los Angeles Rams": -150
-    },
-    "runline": {
-      "Buffalo Bills +3": -105,
-      "Los Angeles Rams -3": 100
-    },
-    "totals": {
-      "Over 54.5": -107,
-      "Under 54.5": -105
-    },
-    "alt_runline": {
-      "Buffalo Bills +2.5": 105,
-      "Los Angeles Rams -2.5": -130,
-      "Buffalo Bills -5.5": 224,
-      "Buffalo Bills -4.5": 204,
-      "Buffalo Bills -3.5": 185,
-      "Buffalo Bills -2.5": 145,
-      "Buffalo Bills -1.5": 138,
-      "Buffalo Bills +1.5": 120,
-      "Buffalo Bills +3.5": -134,
-      "Buffalo Bills +4.5": -148,
-      "Buffalo Bills +5.5": -165,
-      "Los Angeles Rams +5.5": -345,
-      "Los Angeles Rams +4.5": -305,
-      "Los Angeles Rams +3.5": -275,
-      "Los Angeles Rams +2.5": -182,
-      "Los Angeles Rams +1.5": -166,
-      "Los Angeles Rams -1.5": -148,
-      "Los Angeles Rams -3.5": 110,
-      "Los Angeles Rams -4.5": 122,
-      "Los Angeles Rams -5.5": 135,
-      "Buffalo Bills +4": -139,
-      "Buffalo Bills -5": 235,
-      "Buffalo Bills -4": 210,
-      "Buffalo Bills +5": -157,
-      "Buffalo Bills -3": 175,
-      "Buffalo Bills +2": 115,
-      "Buffalo Bills -2": 140,
-      "Buffalo Bills +3": -112,
-      "Buffalo Bills -1": 140,
-      "Buffalo Bills +0.5": 130,
-      "Buffalo Bills -0.5": 132,
-      "Buffalo Bills +1": 125,
-      "Los Angeles Rams -4": 114,
-      "Los Angeles Rams +5": -335,
-      "Los Angeles Rams +4": -286,
-      "Los Angeles Rams -5": 125,
-      "Los Angeles Rams +3": -230,
-      "Los Angeles Rams -2": -135,
-      "Los Angeles Rams +2": -186,
-      "Los Angeles Rams -3": -109,
-      "Los Angeles Rams +1": -167,
-      "Los Angeles Rams -0.5": -162,
-      "Los Angeles Rams +0.5": -165,
-      "Los Angeles Rams -1": -145
-    },
-    "alt_totals": {
-      "Over 54": -120,
-      "Under 54": -108,
-      "Over 52.5": -142,
-      "Over 53.5": -125,
-      "Over 55.5": 110,
-      "Over 56.5": 120,
-      "Under 52.5": 113,
-      "Under 53.5": 101,
-      "Under 55.5": -127,
-      "Under 56.5": -138,
-      "Over 54.5": -108,
-      "Under 54.5": -110,
-      "Over 53": -135,
-      "Over 55": 100,
-      "Over 52": -150,
-      "Over 56": 115,
-      "Over 57": 130,
-      "Under 53": 105,
-      "Under 55": -125,
-      "Under 52": 115,
-      "Under 56": -140,
-      "Under 57": -160
-    },
-    "innings_1": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "innings_5": {
-      "moneyline": {
-
-      },
-      "runline": {
-
-      },
-      "totals": {
-
-      }
-    },
-    "team_totals": [],
-    "player_props": {
-      "hits": [],
-      "hr": [],
-      "rbi": [],
-      "bases": []
-    },
-    "pitcher_props": {
-      "strikeouts": [],
-      "outs": [],
-      "earned_runs": [],
-      "hits_allowed": []
-    }
-  },
-  {
+ {
     "gameId": "855f58fad5f0f14b239f4f63df27998b",
     "sport": "nfl",
     "away_team": "Seattle Seahawks",
@@ -290,6 +30,897 @@
     "alt_totals": {
       "Over 42.5": -105,
       "Under 42.5": -110
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "57418b2cf5aca558b3c98eafac1e264a",
+    "sport": "nfl",
+    "away_team": "Houston Texans",
+    "home_team": "Jacksonville Jaguars",
+    "commence_time": "2026-10-18T16:30:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Jacksonville Jaguars",
+    "favorite_odds": -154,
+    "underdog": "Houston Texans",
+    "underdog_odds": 145,
+    "moneyline": {
+      "Houston Texans": 145,
+      "Jacksonville Jaguars": -154
+    },
+    "runline": {
+      "Houston Texans +3": -102,
+      "Jacksonville Jaguars -3": -105
+    },
+    "totals": {
+      "Over 43": -107,
+      "Under 43": -107
+    },
+    "alt_runline": {
+      "Houston Texans +2.5": 100,
+      "Jacksonville Jaguars -2.5": -122
+    },
+    "alt_totals": {
+      "Over 43.5": -110,
+      "Under 43.5": -110,
+      "Over 42.5": -110,
+      "Under 42.5": -110
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "7c312fdf24fb35f58b0e07c2932cc997",
+    "sport": "nfl",
+    "away_team": "Chicago Bears",
+    "home_team": "Atlanta Falcons",
+    "commence_time": "2026-10-18T20:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Chicago Bears",
+    "favorite_odds": -122,
+    "underdog": "Atlanta Falcons",
+    "underdog_odds": 112,
+    "moneyline": {
+      "Atlanta Falcons": 112,
+      "Chicago Bears": -122
+    },
+    "runline": {
+      "Atlanta Falcons +1.5": 100,
+      "Chicago Bears -1.5": -110
+    },
+    "totals": {
+      "Over 47": -107,
+      "Under 47": -107
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+      "Over 47.5": -110,
+      "Under 47.5": -110,
+      "Over 46.5": -115,
+      "Under 46.5": -105
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "e86227938fd3cf008fc5648fb5128344",
+    "sport": "nfl",
+    "away_team": "Baltimore Ravens",
+    "home_team": "Cleveland Browns",
+    "commence_time": "2026-10-18T20:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Baltimore Ravens",
+    "favorite_odds": -142,
+    "underdog": "Cleveland Browns",
+    "underdog_odds": 136,
+    "moneyline": {
+      "Baltimore Ravens": -142,
+      "Cleveland Browns": 136
+    },
+    "runline": {
+      "Baltimore Ravens -2.5": -105,
+      "Cleveland Browns +2.5": -102
+    },
+    "totals": {
+      "Over 40": -107,
+      "Under 40": -107
+    },
+    "alt_runline": {
+      "Baltimore Ravens -3": -110,
+      "Cleveland Browns +3": -110
+    },
+    "alt_totals": {
+      "Over 40.5": -110,
+      "Under 40.5": -110,
+      "Over 41.5": -102,
+      "Under 41.5": -120
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "caca2d752fe1a1779029082e95332fcc",
+    "sport": "nfl",
+    "away_team": "Carolina Panthers",
+    "home_team": "Philadelphia Eagles",
+    "commence_time": "2026-10-18T20:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Philadelphia Eagles",
+    "favorite_odds": -122,
+    "underdog": "Carolina Panthers",
+    "underdog_odds": 114,
+    "moneyline": {
+      "Carolina Panthers": 114,
+      "Philadelphia Eagles": -122
+    },
+    "runline": {
+      "Carolina Panthers +2": -105,
+      "Philadelphia Eagles -2": -105
+    },
+    "totals": {
+      "Over 42.5": -107,
+      "Under 42.5": -107
+    },
+    "alt_runline": {
+      "Carolina Panthers +2.5": -110,
+      "Philadelphia Eagles -2.5": -110,
+      "Carolina Panthers +1.5": -110,
+      "Philadelphia Eagles -1.5": -110
+    },
+    "alt_totals": {
+      "Over 43.5": -115,
+      "Under 43.5": -105
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "84aa9e190e625d7e9cd67e1f157a45b4",
+    "sport": "nfl",
+    "away_team": "Tennessee Titans",
+    "home_team": "Indianapolis Colts",
+    "commence_time": "2026-10-18T20:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Indianapolis Colts",
+    "favorite_odds": -298,
+    "underdog": "Tennessee Titans",
+    "underdog_odds": 245,
+    "moneyline": {
+      "Indianapolis Colts": -298,
+      "Tennessee Titans": 245
+    },
+    "runline": {
+      "Indianapolis Colts -7": 100,
+      "Tennessee Titans +7": -110
+    },
+    "totals": {
+      "Over 43.5": -107,
+      "Under 43.5": -107
+    },
+    "alt_runline": {
+      "Indianapolis Colts -6.5": -110,
+      "Tennessee Titans +6.5": -110
+    },
+    "alt_totals": {
+      "Over 44.5": -110,
+      "Under 44.5": -110
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "0b0b582b32b09ab6ff6664ffae0c9653",
+    "sport": "nfl",
+    "away_team": "New York Jets",
+    "home_team": "New England Patriots",
+    "commence_time": "2026-10-18T20:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "New England Patriots",
+    "favorite_odds": -320,
+    "underdog": "New York Jets",
+    "underdog_odds": 270,
+    "moneyline": {
+      "New England Patriots": -320,
+      "New York Jets": 270
+    },
+    "runline": {
+      "New England Patriots -7": 100,
+      "New York Jets +7": -110
+    },
+    "totals": {
+      "Over 42.5": -107,
+      "Under 42.5": -107
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+      "Over 43.5": -105,
+      "Under 43.5": -105
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "1cf74afd313e9fd300e1462012b174cb",
+    "sport": "nfl",
+    "away_team": "New Orleans Saints",
+    "home_team": "New York Giants",
+    "commence_time": "2026-10-18T20:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "New Orleans Saints",
+    "favorite_odds": -118,
+    "underdog": "New York Giants",
+    "underdog_odds": 100,
+    "moneyline": {
+      "New Orleans Saints": -118,
+      "New York Giants": 100
+    },
+    "runline": {
+      "New Orleans Saints -1.5": -105,
+      "New York Giants +1.5": -105
+    },
+    "totals": {
+      "Over 44.5": -107,
+      "Under 44.5": -105
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+      "Over 45.5": -110,
+      "Under 45.5": -110
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "27f3994841ce8081c0b7349cf3d1e3d7",
+    "sport": "nfl",
+    "away_team": "Pittsburgh Steelers",
+    "home_team": "Tampa Bay Buccaneers",
+    "commence_time": "2026-10-18T20:00:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Pittsburgh Steelers",
+    "favorite_odds": -138,
+    "underdog": "Tampa Bay Buccaneers",
+    "underdog_odds": 130,
+    "moneyline": {
+      "Pittsburgh Steelers": -138,
+      "Tampa Bay Buccaneers": 130
+    },
+    "runline": {
+      "Pittsburgh Steelers -2.5": -110,
+      "Tampa Bay Buccaneers +2.5": 100
+    },
+    "totals": {
+      "Over 39": -107,
+      "Under 39": -107
+    },
+    "alt_runline": {
+      "Pittsburgh Steelers -3": -102,
+      "Tampa Bay Buccaneers +3": -118
+    },
+    "alt_totals": {
+      "Over 39.5": -110,
+      "Under 39.5": -110,
+      "Over 38.5": -110,
+      "Under 38.5": -110
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "3729ac6d2a66b642850caf2044cdc658",
+    "sport": "nfl",
+    "away_team": "Arizona Cardinals",
+    "home_team": "Los Angeles Rams",
+    "commence_time": "2026-10-18T23:05:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Los Angeles Rams",
+    "favorite_odds": -625,
+    "underdog": "Arizona Cardinals",
+    "underdog_odds": 530,
+    "moneyline": {
+      "Arizona Cardinals": 530,
+      "Los Angeles Rams": -625
+    },
+    "runline": {
+      "Arizona Cardinals +10.5": -105,
+      "Los Angeles Rams -10.5": -105
+    },
+    "totals": {
+      "Over 50.5": -107,
+      "Under 50.5": -107
+    },
+    "alt_runline": {
+      "Arizona Cardinals +11.5": -105,
+      "Los Angeles Rams -11.5": -115
+    },
+    "alt_totals": {
+      "Over 51.5": -105,
+      "Under 51.5": -115
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "45b2690b350ed45145c7a716b18e8e66",
+    "sport": "nfl",
+    "away_team": "Buffalo Bills",
+    "home_team": "Las Vegas Raiders",
+    "commence_time": "2026-10-18T23:25:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Buffalo Bills",
+    "favorite_odds": -225,
+    "underdog": "Las Vegas Raiders",
+    "underdog_odds": 205,
+    "moneyline": {
+      "Buffalo Bills": -225,
+      "Las Vegas Raiders": 205
+    },
+    "runline": {
+      "Buffalo Bills -4.5": -105,
+      "Las Vegas Raiders +4.5": -102
+    },
+    "totals": {
+      "Over 51": -107,
+      "Under 51": -107
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+      "Over 51.5": -108,
+      "Under 51.5": -110
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "20fefae8c296247460ba5773caa42218",
+    "sport": "nfl",
+    "away_team": "Los Angeles Chargers",
+    "home_team": "Kansas City Chiefs",
+    "commence_time": "2026-10-18T23:25:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Kansas City Chiefs",
+    "favorite_odds": -395,
+    "underdog": "Los Angeles Chargers",
+    "underdog_odds": 350,
+    "moneyline": {
+      "Kansas City Chiefs": -395,
+      "Los Angeles Chargers": 350
+    },
+    "runline": {
+      "Kansas City Chiefs -7.5": -105,
+      "Los Angeles Chargers +7.5": -105
+    },
+    "totals": {
+      "Over 44.5": -102,
+      "Under 44.5": -113
+    },
+    "alt_runline": {
+
+    },
+    "alt_totals": {
+      "Over 45.5": -110,
+      "Under 45.5": -110
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "82fd5a159fa130e67abab93a9537f70b",
+    "sport": "nfl",
+    "away_team": "Dallas Cowboys",
+    "home_team": "Green Bay Packers",
+    "commence_time": "2026-10-19T03:20:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "Dallas Cowboys",
+    "favorite_odds": -132,
+    "underdog": "Green Bay Packers",
+    "underdog_odds": 120,
+    "moneyline": {
+      "Dallas Cowboys": -132,
+      "Green Bay Packers": 120
+    },
+    "runline": {
+      "Dallas Cowboys -2": -105,
+      "Green Bay Packers +2": -105
+    },
+    "totals": {
+      "Over 51.5": -107,
+      "Under 51.5": -107
+    },
+    "alt_runline": {
+      "Dallas Cowboys -2.5": -110,
+      "Green Bay Packers +2.5": -110,
+      "Dallas Cowboys -1.5": -115,
+      "Green Bay Packers +1.5": -105
+    },
+    "alt_totals": {
+      "Over 50.5": -115,
+      "Under 50.5": -105
+    },
+    "innings_1": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "innings_5": {
+      "moneyline": {
+
+      },
+      "runline": {
+
+      },
+      "totals": {
+
+      }
+    },
+    "team_totals": [],
+    "player_props": {
+      "hits": [],
+      "hr": [],
+      "rbi": [],
+      "bases": []
+    },
+    "pitcher_props": {
+      "strikeouts": [],
+      "outs": [],
+      "earned_runs": [],
+      "hits_allowed": []
+    }
+  },
+  {
+    "gameId": "f122527f003276d3bca19efa48c902c1",
+    "sport": "nfl",
+    "away_team": "Washington Commanders",
+    "home_team": "San Francisco 49ers",
+    "commence_time": "2026-10-20T03:15:00.000Z",
+    "status": "scheduled",
+    "is_live": false,
+    "favorite": "San Francisco 49ers",
+    "favorite_odds": -390,
+    "underdog": "Washington Commanders",
+    "underdog_odds": 330,
+    "moneyline": {
+      "San Francisco 49ers": -390,
+      "Washington Commanders": 330
+    },
+    "runline": {
+      "San Francisco 49ers -7.5": -105,
+      "Washington Commanders +7.5": -105
+    },
+    "totals": {
+      "Over 49.5": -105,
+      "Under 49.5": -107
+    },
+    "alt_runline": {
+      "San Francisco 49ers -7": -115,
+      "Washington Commanders +7": -105
+    },
+    "alt_totals": {
+      "Over 50.5": -110,
+      "Under 50.5": -110
     },
     "innings_1": {
       "moneyline": {
